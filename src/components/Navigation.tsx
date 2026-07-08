@@ -2,7 +2,7 @@
 
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import { useTranslations, useLocale } from 'next-intl'
-import { Globe, Menu, X, ChevronDown, ChevronRight } from 'lucide-react'
+import { Globe, Menu, X, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { routing, type Locale } from '@/i18n/routing'
 import { ThemeToggle } from '@/components/ThemeToggle'
@@ -10,12 +10,14 @@ import { NAVIGATION_CONFIG } from '@/config/navigation'
 import { getLanguageDisplayNames } from '@/lib/i18n-utils'
 import { extractPrimaryKeyword } from '@/lib/utils'
 import type { NavPreviewData, NavPreviewArticle } from '@/types/nav-preview'
+import type { WikiLink } from '@/lib/wiki-links'
 
 interface NavigationProps {
 	navPreviewData: NavPreviewData
+	wikiLinks: WikiLink[]
 }
 
-export default function Navigation({ navPreviewData }: NavigationProps) {
+export default function Navigation({ navPreviewData, wikiLinks }: NavigationProps) {
 	const t = useTranslations()
 	const locale = useLocale() as Locale
 	const router = useRouter()
@@ -26,8 +28,11 @@ export default function Navigation({ navPreviewData }: NavigationProps) {
 	const [mobileExpandedItem, setMobileExpandedItem] = useState<string | null>(null)
 	const [randomArticles, setRandomArticles] = useState<NavPreviewArticle[]>([])
 	const [mobileRandomArticles, setMobileRandomArticles] = useState<NavPreviewArticle[]>([])
+	const [wikiMenuOpen, setWikiMenuOpen] = useState(false)
+	const [mobileWikiExpanded, setMobileWikiExpanded] = useState(false)
 	const langDropdownRef = useRef<HTMLDivElement>(null)
 	const navDropdownRef = useRef<HTMLDivElement>(null)
+	const wikiDropdownRef = useRef<HTMLDivElement>(null)
 
 	// 动态获取语言显示名称
 	const languageNames = getLanguageDisplayNames()
@@ -40,6 +45,9 @@ export default function Navigation({ navPreviewData }: NavigationProps) {
 			}
 			if (navDropdownRef.current && !navDropdownRef.current.contains(event.target as Node)) {
 				setOpenDropdown(null)
+			}
+			if (wikiDropdownRef.current && !wikiDropdownRef.current.contains(event.target as Node)) {
+				setWikiMenuOpen(false)
 			}
 		}
 		document.addEventListener('mousedown', handleClickOutside)
@@ -201,6 +209,40 @@ export default function Navigation({ navPreviewData }: NavigationProps) {
 							)}
 						</div>
 
+						{/* More Wikis Dropdown */}
+						<div className="relative hidden sm:block" ref={wikiDropdownRef}>
+							<button
+								onClick={() => setWikiMenuOpen(!wikiMenuOpen)}
+								className="flex items-center px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition border border-border text-xs"
+								aria-expanded={wikiMenuOpen}
+								aria-haspopup="menu"
+							>
+								More Wikis
+								<ChevronDown className={`w-3 h-3 ml-1 transition-transform ${wikiMenuOpen ? 'rotate-180' : ''}`} />
+							</button>
+							{wikiMenuOpen && (
+								<div
+									className="absolute right-0 mt-2 py-1 w-72 bg-card rounded-lg shadow-lg border border-border z-50"
+									role="menu"
+								>
+									{wikiLinks.map((wiki) => (
+										<a
+											key={wiki.url}
+											href={wiki.url}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 px-4 py-2.5 hover:bg-white/10 transition-colors text-sm text-foreground"
+											role="menuitem"
+											onClick={() => setWikiMenuOpen(false)}
+										>
+											<ExternalLink className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] flex-shrink-0" />
+											<span className="line-clamp-1">{wiki.name}</span>
+										</a>
+									))}
+								</div>
+							)}
+						</div>
+
 						{/* Mobile Menu Toggle */}
 						<button
 							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -268,6 +310,36 @@ export default function Navigation({ navPreviewData }: NavigationProps) {
 							})}
 							<div className="flex items-center gap-3 px-4 pt-2">
 								<ThemeToggle />
+							</div>
+							{/* More Wikis - Mobile */}
+							<div className="px-4">
+								<button
+									onClick={() => setMobileWikiExpanded(!mobileWikiExpanded)}
+									className="flex items-center justify-between w-full py-2.5 hover:bg-white/5 rounded-lg transition"
+								>
+									<span className="flex items-center gap-3 font-medium">
+										<ExternalLink className="w-5 h-5" />
+										More Wikis
+									</span>
+									<ChevronDown className={`w-4 h-4 transition-transform ${mobileWikiExpanded ? 'rotate-180' : ''}`} />
+								</button>
+								{mobileWikiExpanded && (
+									<div className="ml-8 mr-0 mb-2 border-l-2 border-border pl-3">
+										{wikiLinks.map((wiki) => (
+											<a
+												key={wiki.url}
+												href={wiki.url}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="flex items-center gap-2 py-2 text-sm text-foreground hover:text-[hsl(var(--nav-theme-light))] transition-colors"
+												onClick={() => { setMobileMenuOpen(false); setMobileWikiExpanded(false) }}
+											>
+												<ChevronRight className="w-3 h-3 text-[hsl(var(--nav-theme-light))] flex-shrink-0" />
+												<span className="line-clamp-1">{wiki.name}</span>
+											</a>
+										))}
+									</div>
+								)}
 							</div>
 						</div>
 					</div>
