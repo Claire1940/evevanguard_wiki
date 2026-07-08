@@ -1,8 +1,8 @@
 import { defineRouting } from 'next-intl/routing'
 
 export const routing = defineRouting({
-	// 支持的语言列表
-	locales: ['en', 'ru', 'pt', 'de', 'es', 'ja', 'tr', 'fr'],
+	// 支持的语言列表（依据 0_meta/evevanguard_wiki/languages.json：English/German/Spanish/Russian）
+	locales: ['en', 'de', 'es', 'ru'],
 
 	// 默认语言
 	defaultLocale: 'en',
