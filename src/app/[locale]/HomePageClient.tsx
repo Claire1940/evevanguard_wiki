@@ -237,15 +237,17 @@ export default function HomePageClient({
 
             {/* CTA Buttons */}
             <div className="mb-10 flex flex-col justify-center gap-3 sm:flex-row md:mb-12 md:gap-4">
-              <button
-                onClick={() => scrollToSection("beginner-guide")}
+              <a
+                href="https://evevanguard.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 md:px-8 md:py-4
                            bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)]
                            text-white rounded-lg font-semibold text-base md:text-lg transition-colors"
               >
                 <BookOpen className="w-5 h-5" />
                 {t.hero.getFreeCodesCTA}
-              </button>
+              </a>
               <a
                 href="https://store.steampowered.com/app/1872800/EVE_Vanguard/"
                 target="_blank"
@@ -1410,17 +1412,17 @@ export default function HomePageClient({
                 </li>
                 <li>
                   <a
-                    href="https://x.com/eveonline"
+                    href="https://www.youtube.com/@playevevanguard"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
-                    {t.footer.twitter}
+                    {t.footer.youtube}
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://steamcommunity.com/app/1872800"
+                    href="https://steamcommunity.com/app/1872800/discussions/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
