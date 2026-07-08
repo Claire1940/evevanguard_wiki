@@ -1,4 +1,15 @@
 {
+  "seo": {
+    "home": {
+      "title": "EVE Vanguard - Guía de lanzamiento, playtest y equipamiento",
+      "description": "EVE Vanguard cubre noticias de lanzamiento, acceso a playtests, armas, equipamientos, consejos de extracción, requisitos de PC y guías para principiantes del FPS de ciencia ficción.",
+      "keywords": "EVE Vanguard, Steam, FPS, extraction shooter, playtest, armas, equipamientos, requisitos de PC",
+      "ogTitle": "EVE Vanguard - Guía de lanzamiento, playtest y equipamiento",
+      "ogDescription": "EVE Vanguard cubre noticias de lanzamiento, acceso a playtests, armas, equipamientos, consejos de extracción, requisitos de PC y guías para principiantes del FPS de ciencia ficción.",
+      "twitterTitle": "EVE Vanguard - Guía de lanzamiento, playtest y equipamiento",
+      "twitterDescription": "EVE Vanguard cubre noticias de lanzamiento, acceso a playtests, armas, equipamientos, consejos de extracción, requisitos de PC y guías para principiantes del FPS de ciencia ficción."
+    }
+  },
   "nav": {
     "release": "Lanzamiento",
     "access": "Acceso",
@@ -6,5 +17,622 @@
     "gameplay": "Jugabilidad",
     "connection": "Conexión",
     "platforms": "Plataformas"
+  },
+  "common": {
+    "home": "Inicio",
+    "more": "Más",
+    "playNow": "Jugar en Steam",
+    "switchLanguage": "Cambiar idioma",
+    "switchTheme": "Cambiar tema",
+    "lightMode": "Modo claro",
+    "darkMode": "Modo oscuro",
+    "notFound": "Página no encontrada",
+    "notFoundDescription": "La página que buscas no existe.",
+    "backToHome": "Volver al inicio",
+    "relatedArticles": "Artículos relacionados",
+    "readMore": "Leer más",
+    "articlesComingSoon": "Artículos próximamente"
+  },
+  "hero": {
+    "badge": "FPS de extracción y aventura de ciencia ficción",
+    "title": "Wiki de EVE Vanguard",
+    "description": "Despliégate como un clon de guerra inmortal, asalta planetas hostiles, recupera tecnología avanzada, mejora armas, sobrevive a tiroteos PvPvE y realiza la extracción antes de que Nuevo Edén contraataque.",
+    "getFreeCodesCTA": "Obtener acceso al playtest",
+    "playOnSteamCTA": "Jugar en Steam",
+    "stats": {
+      "stat1": {
+        "value": "T3 2026",
+        "label": "Lanzamiento previsto"
+      },
+      "stat2": {
+        "value": "7–20 de julio de 2026",
+        "label": "Playtest alfa"
+      },
+      "stat3": {
+        "value": "100K+",
+        "label": "Listas de deseos de Steam"
+      },
+      "stat4": {
+        "value": "50 GB",
+        "label": "Almacenamiento requerido"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "Jugabilidad de EVE Vanguard",
+    "description": "Desciende a la superficie planetaria como un Warclone, saquea campos de batalla hostiles, supera en potencia de fuego a la Legión de Mordu y a los operadores rivales, y realiza la extracción antes de que el Nuevo Edén contraataque."
+  },
+  "tools": {
+    "title": "EVE Vanguard",
+    "titleHighlight": "Guías",
+    "subtitle": "Todo lo que necesitas para jugar a EVE Vanguard, desde el acceso Alfa y los conceptos básicos para principiantes hasta las armas, la extracción y las especificaciones de PC.",
+    "cards": [
+      {
+        "icon": "Download",
+        "title": "Acceso Alfa de EVE Vanguard",
+        "description": "Cómo descargar EVE Vanguard y unirse al playtest de la Operación Avalon"
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Guía de EVE Vanguard para principiantes",
+        "description": "Despliégate, saquea, lucha y realiza la extracción en tu primera incursión de EVE Vanguard"
+      },
+      {
+        "icon": "Target",
+        "title": "EVE Vanguard: Operación Avalon",
+        "description": "El evento Alfa, el campo de batalla y el cronograma actuales de EVE Vanguard"
+      },
+      {
+        "icon": "Swords",
+        "title": "Armas de EVE Vanguard",
+        "description": "Roles de armas, chipsets y planificación de equipamiento para EVE Vanguard"
+      },
+      {
+        "icon": "Package",
+        "title": "Extracción en EVE Vanguard",
+        "description": "Cuándo salir, qué llevar y cómo sobrevivir a la extracción"
+      },
+      {
+        "icon": "ScrollText",
+        "title": "Contratos de EVE Vanguard",
+        "description": "Objetivos, recuperación de restos y decisiones en el campo de batalla en EVE Vanguard"
+      },
+      {
+        "icon": "MonitorSmartphone",
+        "title": "Especificaciones de PC para EVE Vanguard",
+        "description": "Requisitos del sistema, fecha de lanzamiento en Steam y sistema antitrampas"
+      },
+      {
+        "icon": "Globe",
+        "title": "EVE Vanguard y EVE Online",
+        "description": "Cómo se conecta EVE Vanguard con el conflicto más amplio del Nuevo Edén"
+      }
+    ]
+  },
+  "modules": {
+    "eveVanguardDownloadAndAlphaAccess": {
+      "title": "Descarga y acceso Alfa de EVE Vanguard",
+      "eyebrow": "Acceso para jugar",
+      "intro": "EVE Vanguard ya se puede jugar a través del playtest Alfa de la Operación Avalon, con acceso disponible a través de Steam y el EVE Launcher. La Operación Avalon es el primer playtest Alfa de EVE Vanguard, que se llevará a cabo del 7 al 20 de julio de 2026, lo que permitirá a los jugadores desplegarse en la superficie planetaria, probar el combate rediseñado, experimentar con nuevas armas y ayudar a dar forma al futuro del juego.",
+      "cards": [
+        {
+          "title": "Alfa de la Operación Avalon",
+          "status": "Disponible del 7 al 20 de julio de 2026",
+          "description": "El playtest Alfa actual de EVE Vanguard ya está disponible y se centra en despliegues basados en el riesgo, saqueo, combate, extracción y comentarios de los jugadores."
+        },
+        {
+          "title": "Playtest de Steam",
+          "status": "Solicitar acceso",
+          "description": "La página de Steam permite a los jugadores solicitar acceso al playtest de EVE Vanguard. El juego figura con una ventana de lanzamiento prevista para el tercer trimestre de 2026."
+        },
+        {
+          "title": "EVE Launcher",
+          "status": "Pestaña Vanguard",
+          "description": "Los jugadores pueden acceder a la Operación Avalon a través del EVE Launcher durante el periodo de la Alfa de EVE Vanguard."
+        },
+        {
+          "title": "Requisitos de PC",
+          "status": "PC con Windows",
+          "description": "EVE Vanguard especifica Windows 10 o Windows 11, internet de banda ancha, 16 GB de RAM y 50 GB de almacenamiento disponible."
+        }
+      ]
+    },
+    "eveVanguardBeginnerGuide": {
+      "title": "Guía para principiantes de EVE Vanguard",
+      "eyebrow": "Guía para principiantes",
+      "intro": "Aprende el bucle de juego principal de EVE Vanguard antes de tu primer despliegue en los hostiles planetas de Nuevo Edén. EVE Vanguard es un FPS de extracción y aventura donde cada despliegue es un riesgo con límite de tiempo: los jugadores entran en campos de batalla hostiles como Warclones, cumplen objetivos, recolectan recursos valiosos, se enfrentan a amenazas PvE y PvP, y luego deciden cuándo extraer antes de perder lo que llevan.",
+      "steps": [
+        {
+          "title": "Despliégate en la superficie planetaria",
+          "description": "Comienza cada partida de EVE Vanguard desplegándote en un campo de batalla planetario hostil moldeado por la guerra general de Nuevo Edén."
+        },
+        {
+          "title": "Elige tu objetivo",
+          "description": "Las elecciones iniciales pueden incluir recolectar recursos, aceptar contratos, cazar Warclones rivales o colaborar con otros jugadores."
+        },
+        {
+          "title": "Asalta y recupera",
+          "description": "Registra zonas de impacto, áreas controladas por el enemigo, restos e instalaciones en busca de tecnología avanzada, reliquias y recursos valiosos."
+        },
+        {
+          "title": "Adapta tu equipo",
+          "description": "Utiliza los recursos recuperados y los objetos extraídos para fabricar armas, mejorar tu traje y preparar mejores equipamientos para futuros despliegues."
+        },
+        {
+          "title": "Sobrevive a la presión",
+          "description": "Prepárate para enfrentarse a enemigos PvE, Warclones rivales, el peligro creciente del campo de batalla y amenazas Némesis que hacen de cada misión de EVE Vanguard una carrera contrarreloj."
+        },
+        {
+          "title": "Extrae antes de que sea demasiado tarde",
+          "description": "La extracción es la decisión clave en EVE Vanguard. Vete con lo que has ganado o quédate más tiempo para obtener mejores recompensas a medida que aumenta el peligro."
+        }
+      ],
+      "quickTips": [
+        "Trata cada despliegue de EVE Vanguard como un riesgo con límite de tiempo, no como una línea de misiones fija.",
+        "El valor del botín aumenta cuanto más te adentres, pero también lo hace el peligro de los enemigos y los Warclones rivales.",
+        "Los recursos recuperados se conservan entre partidas, por lo que una extracción temprana aún te permite avanzar en tu progresión.",
+        "Las oportunidades de extracción pueden desaparecer, así que planifica tu salida antes de que el campo de batalla se vuelva en tu contra."
+      ]
+    },
+    "eveVanguardOperationAvalonGuide": {
+      "title": "Guía de la Operación Avalon de EVE Vanguard",
+      "eyebrow": "Evento alfa actual",
+      "intro": "La Operación Avalon es el principal evento alfa actual de EVE Vanguard, el cual introduce un nuevo campo de batalla, un sistema de disparo rediseñado, nuevas armas, una extracción rediseñada y conexiones más amplias con EVE Online. Gira en torno a decisiones difíciles, extracciones disputadas y el misterio que rodea al Command Block, y es el primer paso de la prueba de juego alfa hacia la alfa permanente planeada de EVE Vanguard a través del EVE Launcher en noviembre de 2026.",
+      "faqs": [
+        {
+          "question": "¿Cuándo estará activa la Operación Avalon en EVE Vanguard?",
+          "answer": "La Operación Avalon se llevará a cabo del 7 al 20 de julio de 2026, y se podrá acceder a EVE Vanguard a través de Steam y del EVE Launcher durante ese período."
+        },
+        {
+          "question": "¿Quién puede jugar a EVE Vanguard durante la Operación Avalon?",
+          "answer": "Las preguntas frecuentes de la Operación Avalon indican que EVE Vanguard está abierto a todos los jugadores durante esta alfa abierta, con acceso a través del EVE Launcher o mediante la solicitud de prueba de juego en Steam."
+        },
+        {
+          "question": "¿Cuál es el nuevo campo de batalla principal en EVE Vanguard?",
+          "answer": "La Operación Avalon introduce el campo de batalla Lost Convoy en EVE Vanguard, una nueva zona de despliegue donde los jugadores se adentran más para obtener mejores recompensas mientras las oportunidades de extracción se vuelven más limitadas."
+        },
+        {
+          "question": "¿Qué ha cambiado en el combate de EVE Vanguard?",
+          "answer": "La Operación Avalon trae a EVE Vanguard un sistema de disparo rediseñado, una mayor variedad de armas, fuerzas de la Legión de Mordu más letales y una experiencia de saqueo y extracción rediseñada."
+        },
+        {
+          "question": "¿Qué es el Command Block en EVE Vanguard?",
+          "answer": "El Command Block se encuentra en el corazón del mapa de EVE Vanguard y está vinculado a la nueva historia de Némesis. Las notas oficiales lo describen como un destino para Warclones preparados listos para adentrarse más en Avalon."
+        },
+        {
+          "question": "¿Cómo conecta la Operación Avalon a EVE Vanguard con EVE Online?",
+          "answer": "La actividad de los Warclones en EVE Vanguard puede influir en el evento general de la Operación Avalon en EVE Online, incluyendo la actividad vinculada en el campo de batalla y el desarrollo de la historia de Nuevo Edén."
+        }
+      ]
+    },
+    "eveVanguardWeaponsAndLoadoutGuide": {
+      "title": "Guía de armas y equipamiento de EVE Vanguard",
+      "eyebrow": "Armas y equipamientos",
+      "intro": "Consulta los sistemas clave de armas y equipamiento que los jugadores deben comprender antes de participar en la Operación Avalon en EVE Vanguard. EVE Vanguard no publica una lista de niveles de armas fija, por lo que este módulo agrupa las armas y los sistemas oficiales por función. La Operación Avalon destaca nuevas armas avanzadas, armas modulares, múltiples modos de disparo, cambio de tipo de daño, chipsets y la Nova Blade para remates a corta distancia.",
+      "tiers": [
+        {
+          "tier": "Corto alcance",
+          "items": [
+            {
+              "name": "SMG",
+              "role": "Arma de fuego rápida de corto alcance introducida para la Operation Avalon de EVE Vanguard."
+            },
+            {
+              "name": "Cañón de metralla",
+              "role": "Opción pesada de corto alcance destacada como parte del arsenal ampliado de EVE Vanguard."
+            },
+            {
+              "name": "Hoja Nova",
+              "role": "Arma cuerpo a cuerpo forjada a mano que se usa para acortar distancia con los enemigos en EVE Vanguard."
+            }
+          ]
+        },
+        {
+          "tier": "Medio a largo alcance",
+          "items": [
+            {
+              "name": "DMR láser",
+              "role": "Arma centrada en la precisión añadida al catálogo de armas avanzadas de EVE Vanguard."
+            },
+            {
+              "name": "Fusil de haz",
+              "role": "Fusil de tipo energía destacado en las actualizaciones de armas de EVE Vanguard."
+            }
+          ]
+        },
+        {
+          "tier": "Sistemas de armas adaptativos",
+          "items": [
+            {
+              "name": "Chipsets",
+              "role": "Piezas de personalización avanzada utilizadas para modificar las armas de EVE Vanguard y mantener las configuraciones entre despliegues."
+            },
+            {
+              "name": "Múltiples modos de disparo",
+              "role": "Las armas de EVE Vanguard pueden cambiar de configuración, como ráfagas y automático, según la preparación."
+            },
+            {
+              "name": "Cambio de tipo de daño",
+              "role": "EVE Vanguard detalla el cambio entre configuraciones de daño, como energético y cinético."
+            }
+          ]
+        },
+        {
+          "tier": "Planificación del equipamiento",
+          "items": [
+            {
+              "name": "Preparación de la Warbarge",
+              "role": "Entre los despliegues de EVE Vanguard, los Warclones fabrican, adquieren equipo y preparan sus equipamientos antes de iniciar las expediciones."
+            },
+            {
+              "name": "Progresión basada en la extracción",
+              "role": "Los recursos extraídos y las decisiones sobre el equipo determinan lo que los jugadores pueden llevar a la siguiente incursión de EVE Vanguard."
+            }
+          ]
+        }
+      ]
+    },
+    "eveVanguardExtractionAndLootingGuide": {
+      "title": "Guía de extracción y saqueo de EVE Vanguard",
+      "eyebrow": "Guía de extracción",
+      "intro": "Cada despliegue en EVE Vanguard se basa en una decisión fundamental: irte con lo que tienes o quedarte más tiempo para obtener mejores recompensas y un mayor peligro. EVE Vanguard es un FPS de extracción y aventura donde los Warclones se despliegan en la superficie planetaria, luchan en zonas hostiles, roban recursos valiosos e intentan extraer antes de que el campo de batalla se vuelva en su contra. Operation Avalon añade un bucle de saqueo y extracción rediseñado donde la gestión del tiempo importa tanto como la puntería.",
+      "steps": [
+        {
+          "title": "Despliega en el campo de batalla",
+          "description": "Operation Avalon envía a los jugadores de EVE Vanguard al campo de batalla de Lost Convoy. Desde el momento en que llegas, la sesión consiste en encontrar objetos de valor, sobrevivir a los combates y decidir hasta dónde adentrarse."
+        },
+        {
+          "title": "Elige qué buscar primero",
+          "description": "Las primeras elecciones en EVE Vanguard pueden incluir recolectar recursos, cumplir contratos, cazar a otros Warclones o colaborar con ellos. No hay una única ruta correcta porque cada despliegue cambia según el riesgo, los enemigos y los demás jugadores."
+        },
+        {
+          "title": "Saquea antes de que aumente el peligro",
+          "description": "Se pueden encontrar recursos valiosos, tecnología avanzada y reliquias perdidas alrededor de los restos del naufragio y de las instalaciones controladas por corporaciones. Quedarse más tiempo puede significar mejores recompensas, pero la presión aumenta a medida que avanza la misión de EVE Vanguard."
+        },
+        {
+          "title": "Vigila el momento de la extracción",
+          "description": "Los puntos de extracción en EVE Vanguard no están garantizados para siempre. A medida que las oportunidades desaparecen en el campo de batalla, salir se convierte en una decisión estratégica más que en un simple botón de salida."
+        },
+        {
+          "title": "Sal con vida o piérdelo todo",
+          "description": "Operation Avalon destaca claramente la regla de EVE Vanguard: regresa con vida o piérdelo todo. Cuanto más tiempo te quedes, mayores serán las recompensas, pero el planeta contraatacará con más fuerza."
+        },
+        {
+          "title": "Adéntrate más solo cuando estés preparado",
+          "description": "El Command Block se encuentra cerca del centro del mapa de EVE Vanguard y se presenta como un destino de alto riesgo vinculado a la historia de Nemesis, diseñado para los Warclones listos para adentrarse más que la mayoría de los jugadores."
+        }
+      ]
+    },
+    "eveVanguardContractsAndObjectivesGuide": {
+      "title": "Guía de contratos y objetivos de EVE Vanguard",
+      "eyebrow": "Objetivos",
+      "intro": "Los despliegues de EVE Vanguard giran en torno a contratos, combate, recuperación, recursos y elecciones en el campo de batalla que pueden cambiar el resto de la incursión. El bucle básico es simple: despliégate en planetas hostiles, acepta contratos de alto riesgo, lucha a través del peligro, recupera recursos, modifica tu equipo y extrae lo que puedas. La Operación Avalon también conecta la actividad de EVE Vanguard con eventos más amplios de Nuevo Edén, donde los objetivos de combate, hackeo y recuperación dan forma a la guerra tanto arriba como abajo.",
+      "cards": [
+        {
+          "title": "Acepta contratos de alto riesgo",
+          "description": "Los contratos dan estructura a un despliegue de EVE Vanguard y empujan a los jugadores hacia objetivos peligrosos en planetas hostiles."
+        },
+        {
+          "title": "Recupera recursos",
+          "description": "Los recursos se usan para modificar el equipo de EVE Vanguard y mejorar tus posibilidades en combates posteriores, lo que hace que la recuperación sea una parte clave para superar a los rivales."
+        },
+        {
+          "title": "Asalta zonas de impacto",
+          "description": "El bucle de juego de EVE Vanguard está diseñado en torno a asaltar zonas de impacto y apoderarse de tecnología exótica antes de que la situación se intensifique."
+        },
+        {
+          "title": "Asalta bases avanzadas",
+          "description": "Las bases avanzadas y las instalaciones controladas por corporaciones en EVE Vanguard contienen recursos valiosos, tecnología avanzada y reliquias perdidas, pero están protegidas por tropas de tierra de élite."
+        },
+        {
+          "title": "Lucha contra la Legión de Mordu",
+          "description": "La Operación Avalon introduce fuerzas de la Legión de Mordu más inteligentes y letales en EVE Vanguard. Los jugadores deberán sobrevivir tanto a la presión PvE como a posibles encuentros con Warclones."
+        },
+        {
+          "title": "Adáptate a otros Warclones",
+          "description": "Los jugadores de EVE Vanguard pueden cazar a otros Warclones, cooperar con ellos o traicionarlos. La confianza es parte del riesgo del despliegue, especialmente cuando las recompensas y las rutas de extracción son limitadas."
+        },
+        {
+          "title": "Usa rutas de eventos de combate, hackeo y recuperación",
+          "description": "En la Operación Avalon, las zonas de eventos de EVE Online incluyen oportunidades de combate, hackeo y recuperación que se conectan con la actividad de EVE Vanguard y con el Evento Mundial más amplio."
+        },
+        {
+          "title": "Avanza en los objetivos antes de que se cierre la extracción",
+          "description": "La jugada más segura en EVE Vanguard no siempre es la más rentable. Los jugadores deben decidir si terminar otro objetivo o extraer antes de que desaparezcan las oportunidades."
+        }
+      ]
+    },
+    "eveVanguardSystemRequirementsAndReleaseDate": {
+      "title": "Requisitos del sistema y fecha de lanzamiento de EVE Vanguard",
+      "eyebrow": "Especificaciones de PC",
+      "intro": "Consulta los requisitos de PC actuales, el calendario de lanzamiento en Steam, los idiomas compatibles y los detalles del sistema antitrampas de EVE Vanguard antes de descargar el juego o añadirlo a tu lista de deseos. EVE Vanguard está disponible para PC a través de Steam y el EVE Launcher. La página oficial de Steam muestra un lanzamiento previsto para el tercer trimestre de 2026, mientras que el sitio oficial de EVE Vanguard destaca el 16 de septiembre como la próxima fecha importante y detalla las especificaciones de PC mínimas y recomendadas.",
+      "tableColumns": {
+        "category": "Especificación",
+        "minimum": "Mínimo",
+        "recommended": "Recomendado"
+      },
+      "rows": [
+        {
+          "category": "Calendario de lanzamiento",
+          "minimum": "Alfa de la Operación Avalon: del 7 al 20 de julio de 2026 en Steam y el EVE Launcher",
+          "recommended": "Lanzamiento previsto en Steam: tercer trimestre de 2026; el sitio oficial destaca el 16 de septiembre"
+        },
+        {
+          "category": "Plataforma",
+          "minimum": "PC a través de Steam y el EVE Launcher",
+          "recommended": "Steam incluye las características MMO, PvP en línea, Cooperativo en línea, Un jugador y Préstamo familiar"
+        },
+        {
+          "category": "Sistema operativo",
+          "minimum": "Windows 10 de 64 bits 21H2/19044 o Windows 11 de 64 bits",
+          "recommended": "Windows 10 de 64 bits (última versión) o Windows 11 de 64 bits (última versión)"
+        },
+        {
+          "category": "CPU",
+          "minimum": "Intel i5-8400 o AMD Ryzen 5 1600X",
+          "recommended": "Intel i5-11600K o AMD Ryzen 5 5600X"
+        },
+        {
+          "category": "GPU",
+          "minimum": "NVIDIA RTX 2060 o AMD Radeon RX 5700 XT",
+          "recommended": "NVIDIA RTX 3080 o AMD Radeon RX 6900 XT"
+        },
+        {
+          "category": "VRAM",
+          "minimum": "6 GB",
+          "recommended": "8 GB+"
+        },
+        {
+          "category": "RAM",
+          "minimum": "16 GB DDR4",
+          "recommended": "16 GB DDR4"
+        },
+        {
+          "category": "Almacenamiento",
+          "minimum": "50 GB de espacio libre en SSD",
+          "recommended": "50 GB de espacio libre en NVMe"
+        },
+        {
+          "category": "Red",
+          "minimum": "Internet de banda ancha",
+          "recommended": "Internet de banda ancha"
+        },
+        {
+          "category": "DirectX",
+          "minimum": "DirectX 12.1 en el sitio oficial; Steam indica DirectX 12",
+          "recommended": "DirectX 12.1 en el sitio oficial; Steam indica DirectX 12"
+        },
+        {
+          "category": "Rendimiento esperado",
+          "minimum": "60 FPS en calidad baja, 1080p, modo FSR/DLSS Calidad",
+          "recommended": "60+ FPS en calidad alta/ultra, 1080p"
+        },
+        {
+          "category": "Antitrampas",
+          "minimum": "Easy Anti-Cheat a nivel de kernel",
+          "recommended": "Easy Anti-Cheat figura en Steam y puede requerir su eliminación manual tras la desinstalación"
+        },
+        {
+          "category": "Idioma",
+          "minimum": "Inglés figura en Steam",
+          "recommended": "Soporte para inglés mostrado en la tabla de idiomas de Steam"
+        }
+      ]
+    },
+    "eveVanguardEveOnlineConnectionAndRewards": {
+      "title": "Conexión y recompensas de EVE Vanguard y EVE Online",
+      "eyebrow": "Enlace de Nuevo Edén",
+      "intro": "EVE Vanguard se puede jugar como su propia experiencia de combate terrestre, pero los eventos mundiales pueden conectar las acciones de los Warclones con la actividad de EVE Online en el espacio. La Operación Avalon se describe como un universo, una guerra y dos formas de luchar: los Warclones de EVE Vanguard luchan en la superficie planetaria, mientras que los capsuleers de EVE Online pueden responder a eventos vinculados en el espacio a través de convoyes, zonas de combate, hackeo, recuperación de restos, Resonant Cyphers y líneas de recompensa de los imperios.",
+      "faqs": [
+        {
+          "question": "¿Es EVE Vanguard independiente de EVE Online?",
+          "answer": "Los jugadores pueden participar en cualquiera de los dos juegos de forma independiente. La Operación Avalon ofrece contenido tanto en EVE Online como en EVE Vanguard, pero jugar en ambos frentes ofrece más formas de experimentar la historia compartida entre los capsuleers y los Warclones de Vanguard."
+        },
+        {
+          "question": "¿Cómo afectan las acciones de EVE Vanguard a EVE Online?",
+          "answer": "Durante la Operación Avalon, los Warclones que completen suficientes expediciones en EVE Vanguard pueden activar turbonadas de AEGIS y zonas valiosas en EVE Online. Estas zonas crean oportunidades de combate, hackeo y recuperación de restos para los capsuleers."
+        },
+        {
+          "question": "¿Qué demostró la Operación Nemesis sobre la conexión con EVE Vanguard?",
+          "answer": "La Operación Nemesis utilizó una estructura de evento mundial compartida en la que las asignaciones de expedición de EVE Vanguard aportaban puntos globales. Cuando la barra de progreso se llenaba, aparecían convoyes asaltables en el espacio de EVE Online."
+        },
+        {
+          "question": "¿Qué son los Resonant Cyphers de EVE Vanguard?",
+          "answer": "Los Resonant Cyphers de EVE Vanguard son objetos de evento especiales de la Operación Avalon. Los capsuleers pueden recuperarlos durante el evento e intercambiarlos con comerciantes de objetos designados por botín valioso, componentes potentes y otras recompensas."
+        },
+        {
+          "question": "¿Dónde están los comerciantes de objetos de la Operación Avalon para EVE Vanguard?",
+          "answer": "Los comerciantes de objetos están disponibles en todo el espacio de los imperios, incluyendo Amarr, New Caldari, Dodixie, Rens, Sifilar, Kinakka, Ostingele, Hadozeko, Poitot y SL-YBS, donde se pueden intercambiar los Resonant Cyphers de EVE Vanguard."
+        },
+        {
+          "question": "¿Qué recompensas de EVE Online están vinculadas a EVE Vanguard?",
+          "answer": "Las recompensas incluyen Breach Control, Lorharyth's Modified Inertial Stabilizer, potenciadores volátiles, drones Aralez de Mordu's Legion, puntos de habilidad, implantes, un fondo de personaje temático de Vanguard, nuevos SKINs, componentes de SKINR, cajas de recompensa Arkombine Arisen, recompensas por inicio de sesión diario y Twitch Drops."
+        },
+        {
+          "question": "¿Cómo afecta EVE Vanguard a la historia de la Operación Avalon?",
+          "answer": "Intercambiar los Resonant Cyphers de EVE Vanguard en el espacio de un imperio respalda la relación secreta de ese imperio con Vanguard. El imperio con más intercambios se convertirá en el primer lugar donde Avalon se refugie tras el evento."
+        },
+        {
+          "question": "¿Cuál es la forma sencilla de entender la conexión con EVE Vanguard?",
+          "answer": "EVE Vanguard es la guerra terrestre y EVE Online es la guerra espacial. Los eventos mundiales conectan ambos lados, por lo que los despliegues de EVE Vanguard pueden influir en lo que los capsulistas ven, combaten, saquean y desbloquean en New Eden."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Preguntas",
+    "titleHighlight": "frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre EVE Vanguard",
+    "questions": [
+      {
+        "question": "¿Qué es EVE Vanguard?",
+        "answer": "EVE Vanguard es un FPS de extracción y aventura de ciencia ficción ambientado en el universo de New Eden. Te despliegas como un Warclone inmortal, asaltas planetas hostiles, recuperas tecnología avanzada, luchas contra amenazas PvE y PvP y extraes antes de que el campo de batalla te abrume."
+      },
+      {
+        "question": "¿Cuándo es la fecha de lanzamiento de EVE Vanguard?",
+        "answer": "EVE Vanguard tiene un lanzamiento previsto para el tercer trimestre de 2026 en Steam, y el sitio oficial destaca el 16 de septiembre como la próxima fecha importante. Antes de eso, EVE Vanguard se podrá jugar a través de la prueba de juego Alfa de Operation Avalon."
+      },
+      {
+        "question": "¿Cómo accedo a la prueba de juego de EVE Vanguard?",
+        "answer": "Puedes acceder a EVE Vanguard solicitando acceso a la prueba de juego en la página de Steam o abriendo Operation Avalon a través del EVE Launcher durante la ventana Alfa del 7 al 20 de julio de 2026."
+      },
+      {
+        "question": "¿En qué plataformas está disponible EVE Vanguard?",
+        "answer": "EVE Vanguard es un juego de PC disponible a través de Steam y el EVE Launcher. Steam enumera características de JcJ en línea, Cooperativo en línea, Un jugador y Préstamo familiar para EVE Vanguard."
+      },
+      {
+        "question": "¿Está conectado EVE Vanguard con EVE Online?",
+        "answer": "Sí. EVE Vanguard es la guerra terrestre y EVE Online es la guerra espacial. Durante Operation Avalon, los despliegues de EVE Vanguard pueden activar eventos, sitios y recompensas vinculados que los capsulistas experimentan en EVE Online."
+      },
+      {
+        "question": "¿Qué tipo de juego es EVE Vanguard?",
+        "answer": "EVE Vanguard es un FPS de extracción y aventura con armas modulares, chipsets, recuperación, contratos y extracción basada en el riesgo. Cada despliegue de EVE Vanguard obliga a elegir entre salir con tu botín o quedarte más tiempo para obtener mayores recompensas y un mayor peligro."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para desplegarte en EVE Vanguard?",
+    "description": "Únete a la comunidad de EVE Vanguard en Discord para enterarte de las novedades de las pruebas de juego, consejos de equipamiento y guías de extracción.",
+    "joinCommunity": "Únete a Discord",
+    "joinGame": "Juega en Steam"
+  },
+  "footer": {
+    "title": "Wiki de EVE Vanguard",
+    "description": "Tu centro de recursos completo para el lanzamiento de EVE Vanguard, pruebas de juego, armas, equipamientos, extracción, mapas y guías de especificaciones de PC.",
+    "resources": "Recursos",
+    "community": "Comunidad",
+    "legal": "Legal",
+    "discord": "Discord",
+    "youtube": "YouTube",
+    "steamCommunity": "Comunidad de Steam",
+    "steamStore": "Tienda de Steam",
+    "about": "Acerca de",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "copyrightNotice": "Copyright",
+    "copyright": "© 2026 EVE Vanguard Wiki. No afiliado con los desarrolladores de EVE Vanguard.",
+    "disclaimer": "Sitio web de recursos no oficial creado por fans."
+  },
+  "pages": {
+    "release": {
+      "title": "Fecha de lanzamiento e información de estreno de EVE Vanguard",
+      "description": "Todo sobre la fecha de lanzamiento de EVE Vanguard, las pruebas de juego de Operation Avalon, la beta abierta, las ventanas de acceso anticipado y la hoja de ruta oficial hacia el lanzamiento.",
+      "metaTitle": "Fecha de lanzamiento de EVE Vanguard: estreno, beta y hoja de ruta",
+      "metaDescription": "Sigue la fecha de lanzamiento de EVE Vanguard, las pruebas de juego alfa de Operation Avalon, el calendario de la beta abierta y la hoja de ruta oficial. Mantente al día con el cronograma de lanzamiento.",
+      "categoryLabel": "INFORMACIÓN DE LANZAMIENTO",
+      "whatIs": "¿Qué es el lanzamiento de EVE Vanguard?",
+      "whatIsDescription": "El lanzamiento de EVE Vanguard sigue cada etapa del FPS de aventura y extracción de CCP Games a medida que avanza desde los playtests de la alfa de Operation Avalon hacia el lanzamiento completo. Cubre fechas de lanzamiento, ventanas de beta, fases de acceso anticipado y la hoja de ruta oficial.",
+      "why": "¿Por qué seguir el cronograma de lanzamiento?",
+      "whySteps": {
+        "step1Title": "Únete a los playtests antes de tiempo",
+        "step1Description": "Entra en la alfa y los playtests cerrados de Operation Avalon antes del lanzamiento para dar forma al juego y dominar las mecánicas.",
+        "step2Title": "Planifica la configuración de tu PC",
+        "step2Description": "Consulta los requisitos del sistema y la disponibilidad de la plataforma para estar listo en el momento en que los servidores se activen.",
+        "step3Title": "Sigue los hitos de la hoja de ruta",
+        "step3Description": "Sigue la hoja de ruta oficial para saber cuándo se lanzarán nuevas operaciones, planetas y características después del lanzamiento."
+      },
+      "featured": "Destacados y esenciales",
+      "all": "Todas las guías de lanzamiento"
+    },
+    "access": {
+      "title": "Acceso a EVE Vanguard: descarga, playtest y registro",
+      "description": "Cómo obtener acceso a EVE Vanguard: descarga el cliente, únete a los playtests de Operation Avalon, solicita códigos de acceso y regístrate para la alfa.",
+      "metaTitle": "Acceso a EVE Vanguard - Guía de descarga, playtest y registro",
+      "metaDescription": "Aprende cómo obtener acceso a EVE Vanguard: descarga el cliente, únete a los playtests de Operation Avalon, solicita códigos de acceso y regístrate para la alfa en PC.",
+      "categoryLabel": "GUÍA DE ACCESO",
+      "whatIs": "¿Qué es el acceso a EVE Vanguard?",
+      "whatIsDescription": "El acceso a EVE Vanguard cubre todas las formas de entrar al juego durante sus fases de alfa y playtest, desde descargar el EVE Launcher y el cliente de Steam hasta solicitar códigos de acceso y unirse al playtest de Operation Avalon.",
+      "why": "¿Por qué asegurar el acceso temprano?",
+      "whySteps": {
+        "step1Title": "Únete a Operation Avalon",
+        "step1Description": "Entra en el playtest principal y experimenta el ciclo de juego del shooter de extracción antes del lanzamiento completo.",
+        "step2Title": "Domina el sistema de loadouts",
+        "step2Description": "El acceso anticipado te permite aprender sobre los loadouts modulares, la pérdida de clones y las mecánicas de extracción antes que los demás.",
+        "step3Title": "Da forma al desarrollo",
+        "step3Description": "Los comentarios de los playtests influyen directamente en el equilibrio, los mapas y las características antes del lanzamiento."
+      },
+      "featured": "Destacados y esenciales",
+      "all": "Todas las guías de acceso"
+    },
+    "guide": {
+      "title": "Guías y tutoriales de EVE Vanguard",
+      "description": "Guías completas de EVE Vanguard: tutoriales para principiantes, cómo extraer, estrategia de Operation Avalon, consejos para contratos y mecánicas básicas de supervivencia.",
+      "metaTitle": "Guías de EVE Vanguard - Tutoriales para principiantes y consejos de extracción",
+      "metaDescription": "Domina EVE Vanguard con guías para principiantes, tutoriales de extracción, estrategia de Operation Avalon, consejos para contratos y mecánicas básicas de supervivencia.",
+      "categoryLabel": "GUÍAS",
+      "whatIs": "¿Qué son las guías de EVE Vanguard?",
+      "whatIsDescription": "Las guías de EVE Vanguard te guían a través de cada nivel del FPS de aventura y extracción: desde tu primer despliegue y loadouts para principiantes hasta estrategias de extracción avanzadas, objetivos de contratos y misiones de Operation Avalon.",
+      "why": "¿Por qué leer las guías?",
+      "whySteps": {
+        "step1Title": "Aprende a extraer de forma segura",
+        "step1Description": "Comprende el ciclo de extracción, la pérdida de clones y cómo abandonar un planeta con tu botín intacto.",
+        "step2Title": "Completa contratos de manera eficiente",
+        "step2Description": "Domina los objetivos de los contratos, las misiones de Operation Avalon y los encuentros PvE para obtener mejores recompensas.",
+        "step3Title": "Sobrevive más tiempo",
+        "step3Description": "Aprende consejos sobre posicionamiento, equipamientos modulares y cómo evitar emboscadas para sobrevivir más que otros mercenarios."
+      },
+      "featured": "Destacado y esencial",
+      "all": "Todas las guías"
+    },
+    "gameplay": {
+      "title": "Jugabilidad y mecánicas de combate de EVE Vanguard",
+      "description": "Análisis profundos de la jugabilidad de EVE Vanguard: mecánicas de shooter de extracción, combate FPS, PvE y PvP, armas, vehículos y asignaciones.",
+      "metaTitle": "Jugabilidad de EVE Vanguard: combate, armas y mecánicas de extracción",
+      "metaDescription": "Explora la jugabilidad de EVE Vanguard: mecánicas de shooter de extracción, combate FPS, modos PvE y PvP, armas, vehículos y asignaciones en todo New Eden.",
+      "categoryLabel": "JUGABILIDAD",
+      "whatIs": "¿Qué es la jugabilidad de EVE Vanguard?",
+      "whatIsDescription": "La jugabilidad de EVE Vanguard es un FPS de aventura y extracción de alto riesgo ambientado en planetas hostiles del universo de EVE Online. Te despliegas como un mercenario clon, completas asignaciones, luchas contra amenazas PvE y rivales PvP, recoges botín y te extraes antes de perderlo todo.",
+      "why": "¿Por qué entender la jugabilidad?",
+      "whySteps": {
+        "step1Title": "Domina el bucle de extracción",
+        "step1Description": "Aprende el ritmo de riesgo y recompensa al desplegarte, saquear y extraer con tu equipo.",
+        "step2Title": "Elige las armas y vehículos adecuados",
+        "step2Description": "Adapta tu equipamiento y vehículo al tipo de misión para obtener una ventaja táctica en el campo.",
+        "step3Title": "Navega por el PvE y PvP",
+        "step3Description": "Sabe cuándo las amenazas provienen de enemigos de la IA y cuándo te cazan mercenarios rivales."
+      },
+      "featured": "Destacado y esencial",
+      "all": "Todas las guías de jugabilidad"
+    },
+    "connection": {
+      "title": "La conexión de EVE Vanguard con EVE Online",
+      "description": "Cómo se conecta EVE Vanguard con EVE Online: el universo compartido de New Eden, el sistema Nemesis, los vínculos económicos y cómo se compara con Dust 514 y Frontier.",
+      "metaTitle": "EVE Vanguard y EVE Online: conexión del universo, Nemesis y lore",
+      "metaDescription": "Descubre cómo se conecta EVE Vanguard con EVE Online: el universo compartido de New Eden, el sistema Nemesis, los vínculos económicos y cómo se compara con Dust 514.",
+      "categoryLabel": "CONEXIÓN CON EL UNIVERSO",
+      "whatIs": "¿Cuál es la conexión de EVE Vanguard con EVE Online?",
+      "whatIsDescription": "EVE Vanguard es un FPS de combate terrestre ambientado en el mismo universo de New Eden que EVE Online. Las acciones de los jugadores repercuten entre ambos juegos a través del lore compartido, el sistema Nemesis y los vínculos económicos: los mercenarios terrestres y los capsulistas de naves espaciales luchan en un único mundo persistente.",
+      "why": "¿Por qué importa la conexión?",
+      "whySteps": {
+        "step1Title": "Un universo persistente",
+        "step1Description": "Las batallas terrestres y espaciales alimentan la misma economía viva y guerra de territorios de New Eden.",
+        "step2Title": "Comprende el sistema Nemesis",
+        "step2Description": "El sistema Nemesis vincula a los mercenarios clones con los capsulistas, uniendo tu destino al de los jugadores de EVE Online.",
+        "step3Title": "Conoce el lore",
+        "step3Description": "Descubre cómo Vanguard amplía la historia de Dust 514 y se adapta a la visión a largo plazo de CCP para New Eden."
+      },
+      "featured": "Destacado y esencial",
+      "all": "Todas las guías de conexión"
+    },
+    "platforms": {
+      "title": "Plataformas y requisitos del sistema de EVE Vanguard",
+      "description": "Soporte de plataformas y especificaciones de PC para EVE Vanguard: disponibilidad en Steam, requisitos de PC, especificaciones mínimas y compatibilidad de dispositivos.",
+      "metaTitle": "Plataformas de EVE Vanguard: Steam, especificaciones de PC y requisitos del sistema",
+      "metaDescription": "Consulta el soporte de plataformas de EVE Vanguard: disponibilidad en Steam y PC, requisitos del sistema mínimos y recomendados, y compatibilidad de dispositivos.",
+      "categoryLabel": "PLATAFORMAS Y ESPECIFICACIONES",
+      "whatIs": "¿En qué plataformas está disponible EVE Vanguard?",
+      "whatIsDescription": "EVE Vanguard está diseñado para PC y está disponible a través de Steam y el EVE Launcher. Esta sección cubre qué plataformas son compatibles con el juego, las especificaciones mínimas y recomendadas para PC, y qué hardware necesitas para ejecutar este FPS de extracción con fluidez.",
+      "why": "¿Por qué comprobar la plataforma y las especificaciones?",
+      "whySteps": {
+        "step1Title": "Confirma que funciona en tu PC",
+        "step1Description": "Compara tu equipo con las especificaciones mínimas y recomendadas antes de descargar el cliente.",
+        "step2Title": "Consíguelo en la tienda adecuada",
+        "step2Description": "Encuentra EVE Vanguard en Steam y el EVE Launcher y vincula tu cuenta correctamente.",
+        "step3Title": "Optimiza el rendimiento",
+        "step3Description": "Ajusta la configuración y el hardware para lograr una tasa de fotogramas fluida durante los intensos tiroteos de extracción."
+      },
+      "featured": "Destacados y esenciales",
+      "all": "Todas las guías de plataformas"
+    }
   }
 }
