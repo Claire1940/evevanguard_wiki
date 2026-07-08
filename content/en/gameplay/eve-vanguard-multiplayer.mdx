@@ -1,0 +1,160 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Multiplayer: Co-Op Squads & PvPvE Tactics",
+  description: "Master EVE Vanguard multiplayer mechanics. Learn squad size, co-op strategies, PvPvE rules, and how planetary ground combat connects to EVE Online.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/121c24/00f0ff?text=Multiplayer+Tactics+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **EVE Vanguard Multiplayer**: A high-stakes, persistent PvPvE extraction-adventure FPS set in New Eden.
+- **Co-Op Dynamics**: Squad-based deployments prioritizing resource looting, strategic combat, and coordinated extractions.
+- **PvPvE Structure**: Engage hostile Mordu's Legion forces (PvE) while defending against rival Warclone squads (PvP).
+- **New Eden Connection**: Ground actions directly impact the starship battles and political landscape of EVE Online.
+</Callout>
+
+<Section icon={Swords} title="EVE Vanguard Multiplayer: The Next Era of PvPvE Warfare">
+
+EVE Vanguard multiplayer delivers a dark, dystopian sandbox FPS experience where players deploy as immortal Warclones. Operating within the shared universe of New Eden, your squad is tasked with raiding planetary crash sites, assaulting corporate-controlled forward bases, and extracting valuable technology. However, the battlefield is far from empty. You must constantly balance the threat of elite PvE factions, such as Mordu's Legion, with the unpredictable danger of rival player squads hunting for the exact same loot.
+
+**Video Highlights:**
+- **Persistent Universe**: Ground-level combat directly tied to the star system politics of EVE Online.
+- **Advanced Gunplay**: Modular weapon platforms featuring multiple fire modes and damage switching.
+- **Contested Extraction**: Limited exit options that force squads into high-stakes choke points.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard Official Trailer" />
+
+Survival in this harsh, sci-fi landscape requires an understanding of how squads are organized and how to approach PvPvE encounters. The table below outlines the core parameters of the multiplayer experience.
+
+| Multiplayer Feature | Specification Details | Tactical Impact |
+| :--- | :--- | :--- |
+| **Match Format** | Persistent lobby with active PvPvE | No safe zones once deployed planetside |
+| **Primary Enemies** | Mordu's Legion (NPCs) & rival squads (Players) | Must prepare loadouts for both threats |
+| **Squad Matchmaking** | Supported via Steam & EVE Launcher | Coordination is required for high-tier zones |
+| **Loot Rules** | Full-loss on death unless extracted | High risk dictates careful engagement choices |
+
+<Callout type="warning" title="Deploying Solo vs Squads">
+While solo deployment is possible, EVE Vanguard multiplayer is heavily balanced around squad coordination. Solo Warclones will face full-sized enemy squads without the ability to be revived by teammates.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Co-Op Squad Strategies & Team Synergy">
+
+Succeeding in the co-op environment of EVE Vanguard requires clear role division and tactical discipline. Unlike traditional team deathmatch games, your primary objective is to secure loot and extract alive, not to maximize your kill count. 
+
+<CardGrid cols={3}>
+  <Card title="The Pointman">
+    - **Close-Range Specialist**: Equips fast-firing SMGs or Shrapnel Cannons to clear tight spaces.
+    - **Scout Role**: Leads the squad into installations and spots enemy defensive lines.
+    - **Melee Finisher**: Uses the Nova Blade for silent, close-quarters takedowns.
+  </Card>
+  <Card title="The Marksman">
+    - **Precision Fire**: Utilizes the Laser DMR or Beam Rifle to pick off targets from afar.
+    - **Overwatch**: Covers the squad during hacking objectives and extraction calls.
+    - **Shield Pressure**: Strips enemy energy shields using specialized chipsets.
+  </Card>
+  <Card title="The Support">
+    - **Utility Carrier**: Manages squad healing, revives, and tactical deployables.
+    - **Resource Mule**: Safely holds high-value salvaged technology during movement.
+    - **Flanker Defense**: Watches the rear to prevent enemy squads from third-party attacks.
+  </Card>
+</CardGrid>
+
+To maximize your efficiency during deployments, squads should coordinate their loadouts to cover all combat distances and damage types.
+
+| Role | Primary Weapon | Damage Type Focus | Core Responsibility |
+| :--- | :--- | :--- | :--- |
+| **Breacher** | SMG / Shrapnel Cannon | Kinetic / High Impact | Clear interior structures & push rival squads |
+| **Support** | Modular Assault Rifle | Hybrid / Sustained | Suppressive fire, squad revives, loot transport |
+| **Marksman** | Laser DMR / Beam Rifle | Energy / Precision | Neutralize sniper threats & cover extraction zones |
+
+<Callout type="tip" title="Coordinate Your Damage Types">
+Ensure your squad has a mix of energy and kinetic weapons. Energy weapons quickly melt enemy shields, while kinetic weapons deal massive damage to raw armor and health pools.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="The PvPvE Gameplay Loop: Step-by-Step">
+
+Every deployment in EVE Vanguard multiplayer follows a strict, high-tension loop. From the moment your drop capsule hits the surface to the final extraction beacon, your squad must make rapid, calculated decisions.
+
+<Steps>
+  <Step num="1" title="Planetside Insertion">
+    Your squad drops into a contested battlefield such as the Lost Convoy zone. Immediately find cover, check your map, and identify nearby contract objectives and extraction points.
+  </Step>
+  <Step num="2" title="Contract Execution">
+    Engage Mordu's Legion forces to complete high-stakes contracts. Keep noise to a minimum; gunfire will alert nearby rival Warclone squads to your exact position.
+  </Step>
+  <Step num="3" title="Looting & Tech Salvage">
+    Raid crash sites and secure exotic technology. Prioritize high-tier chipsets and Resonant Cyphers, which can be traded for valuable rewards.
+  </Step>
+  <Step num="4" title="Contested Extraction">
+    As the session timer counts down, head to an active extraction point. Secure the perimeter, deploy defensive utility, and defend the zone against desperate rival squads trying to steal your loot.
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Trophy} title="Multiplayer Milestones & Progression">
+
+To establish dominance in New Eden's ground war, your squad should work toward specific progression milestones. Extracting resources allows you to craft better gear, giving you a distinct advantage in subsequent deployments.
+
+<Checklist
+  id="multiplayer-progression"
+  title="Squad Objectives & Milestones:"
+  items={[
+    "Complete 10 successful squad extractions with full loot bags",
+    "Unlock advanced weapon chipsets for modular customization",
+    "Successfully defend an extraction point against a rival player squad",
+    "Recover and extract a high-value Resonant Cypher",
+    "Coordinate a combined planetary strike that influences the space war"
+  ]}
+/>
+
+The rewards of your ground operations are not limited to your Vanguard inventory. Successful extractions feed directly into the broader New Eden conflict.
+
+| Extracted Resource | Primary Ground Use | EVE Online Connection |
+| :--- | :--- | :--- |
+| **Resonant Cyphers** | Crafting advanced weapon parts | Exchanged at empire traders for valuable space assets |
+| **Exotic Tech Salvage** | Unlocking modular gun frames | Contributes to global faction war progress tracks |
+| **Weapon Chipsets** | Modifying fire modes and recoil | Showcases squad combat efficiency on public leaderboards |
+
+<Callout type="success" title="The Shared War Effort">
+Your victories in EVE Vanguard multiplayer directly impact EVE Online. Completing ground contracts can trigger orbital events, spawning valuable combat and hacking sites for starship pilots in space.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="EVE Vanguard Multiplayer FAQ">
+
+<FAQ items={[
+  {
+    question: "Is EVE Vanguard multiplayer strictly PvP, or is there PvE content?",
+    answer: "EVE Vanguard is a hybrid PvPvE extraction shooter. You will fight both AI-controlled factions, like Mordu's Legion, and active player-controlled Warclone squads in the same deployment."
+  },
+  {
+    question: "Can I play EVE Vanguard multiplayer solo, or do I need a squad?",
+    answer: "You can deploy solo, but it is highly recommended to play in a squad. Solos share the same lobbies as coordinated teams, making survival and extraction significantly more difficult."
+  },
+  {
+    question: "Do my actions in Vanguard multiplayer affect EVE Online?",
+    answer: "Yes. Ground deployments contribute to shared world events. Successful extractions can trigger space-based anomalies, orbital bombardments, and faction war progression in EVE Online."
+  },
+  {
+    question: "What happens to my multiplayer loot if my squad wipes?",
+    answer: "EVE Vanguard features full-loss rules upon death. If your entire squad is eliminated and no one extracts your gear, all gathered resources, salvaged tech, and unsecure equipment are lost."
+  }
+]} />
+
+</Section>

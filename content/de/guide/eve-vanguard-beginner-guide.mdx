@@ -1,0 +1,197 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Activity, Cpu } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Einsteiger-Guide: 2026 Playtest & Taktiken",
+  description: "Meistere den EVE Vanguard Einsteiger-Guide für die Alpha 2026. Erfahre alles über Warclone-Einsätze, Extraktionstaktiken, Waffen-Loadouts und PC-Systemanforderungen.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/0a0a0a/00ffff?text=EVE+Vanguard+Beginner+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Schnellstart-Guide">
+- **EVE Vanguard Einsteiger-Guide**: Konzentriert sich auf den Kern-Loop aus Bereitstellung, Plündern und Extrahieren als unsterblicher Warclone.
+- **Operation Avalon**: Der aktuelle Alpha-Playtest läuft vom 7. Juli bis zum 20. Juli 2026 auf dem Schlachtfeld des Verlorenen Konvois (Lost Convoy).
+- **Extraktions-Mechanik**: Überleben ist Pflicht; wer die Extraktion nicht schafft, verliert alle gesammelten Ressourcen und die gesamte Ausrüstung.
+- **Kampfsystem**: Bietet eine Mischung aus PvE gegen Mordus Legion und riskanten PvP-Kämpfen gegen rivalisierende Warclones.
+- **New Eden Verbindung**: Aktionen auf der Planetenoberfläche beeinflussen direkt das größere EVE Online-Universum und dessen Welt-Events.
+</Callout>
+
+<Section icon={Target} title="Erste Schritte: Zugang und Bereitstellung">
+
+EVE Vanguard ist ein düsterer Sci-Fi-Extraction-Shooter, der im riesigen Universum von New Eden spielt. Im Gegensatz zu den weltraumfahrenden Kapselpiloten in EVE Online spielst du hier einen Warclone – einen unsterblichen Soldaten, der auf die Oberfläche feindlicher Planeten entsandt wird, um hochriskante Verträge zu erfüllen. Das Spiel befindet sich derzeit in der Alpha-Phase, wobei das große Event **Operation Avalon** als primärer Einstiegspunkt für neue Spieler während des Testfensters im Juli 2026 dient.
+
+**Video-Highlights:**
+- Übersicht über die Warclone-Bereitstellungssequenz und den atmosphärischen Eintritt.
+- Visuelle Aufschlüsselung des Schlachtfelds „Lost Convoy“ und wichtiger Points of Interest.
+- Demonstration der neuen MP (SMG) und Schrapnell-Kanone im Live-Kampf.
+- Erklärung der Extraktions-Benutzeroberfläche und der Countdown-Mechaniken.
+- Einführung in das Command-Block-Ziel im Herzen der Karte.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard - Offizieller Gameplay-Trailer" />
+
+Um deine Reise zu beginnen, musst du dir zuerst Zugang über den EVE Launcher sichern oder einen Playtest-Platz auf Steam anfordern. Das Spiel ist modular aufgebaut und ermöglicht eine tiefgreifende Anpassung deiner Waffen und Ausrüstung zwischen den Einsätzen. Als neuer Spieler ist dein erstes Ziel nicht nur das Eliminieren von Feinden, sondern das Überleben, um die Extraktionszeiten und die Ressourcenverwaltungssysteme zu verstehen, die das EVE Vanguard-Erlebnis definieren.
+
+| Zugangsmethode | Plattform | Anforderung |
+| :--- | :--- | :--- |
+| **Steam Playtest** | PC (Steam) | Klicke auf der Shop-Seite auf „Zugriff anfordern“ |
+| **EVE Launcher** | PC (Standalone) | Navigiere im Launcher zum Vanguard-Reiter |
+| **Alpha-Zeitplan** | Alle | Operation Avalon: 7.–20. Juli 2026 |
+| **Release-Fenster** | Steam/Launcher | Geplant für Q3 2026 |
+
+<Callout type="tip" title="Profi-Tipp">
+Wenn du ein EVE Online-Spieler bist, stelle sicher, dass deine Konten verknüpft sind. Fortschritte in Vanguard können dir Resonanz-Chiffren und Skillpunkte einbringen, die für deine weltraumfahrenden Charaktere äußerst wertvoll sind.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Der Kern-Gameplay-Loop: Bereitstellen, Plündern, Extrahieren">
+
+Die grundlegende Struktur des **EVE Vanguard Einsteiger-Guides** dreht sich um einen Zyklus mit hohem Risiko und hoher Belohnung. Jeder Einsatz ist eine zeitlich begrenzte Mission, bei der du den Abschluss deiner Ziele gegen die ständig wachsende Gefahr durch die Umgebung und andere Spieler abwägen musst.
+
+<Steps>
+  <Step num="1" title="Landung und Zielauswahl">
+    Überprüfe nach der Landung auf dem Schlachtfeld des Verlorenen Konvois deine Karte auf aktive Verträge. Die Ziele reichen von der Bergung exotischer Technologien an Absturzstellen bis hin zum Angriff auf korporationsgesteuerte Vorposten. Priorisiere zu Beginn deiner Karriere Aktivitäten mit geringem Risiko, um deinen ersten Vorrat aufzubauen.
+  </Step>
+  <Step num="2" title="Bergung und Kampf">
+    Durchsuche Wrackteile und Installationen nach fortschrittlicher Technologie und Relikten. Du wirst auf Mordus Legion treffen – hochrangige KI-Streitkräfte, die wertvolle Beute bewachen. Bereite dich auf PvE-Feuergefechte vor, aber achte stets auf die Geräusche anderer Warclones. In EVE Vanguard ist jede Begegnung mit einem anderen Spieler ein potenzieller Verrat.
+  </Step>
+  <Step num="3" title="Ausrüstungsanpassung">
+    Nutze während des Sammelns von Ressourcen dein Warbarge zwischen den Runden, um deine Waffen zu modifizieren. Das modulare Waffensystem ermöglicht es dir, zwischen Energie- und kinetischen Schadensarten zu wechseln. Die Anpassung deines Schadensausstoßes an die zu erwartenden Gegner ist entscheidend für die Effizienz.
+  </Step>
+  <Step num="4" title="Die Extraktions-Entscheidung">
+    Extraktionspunkte sind nicht dauerhaft aktiv. Im Verlauf der Runde öffnen und schließen sich Extraktionsfenster auf der Karte. Du musst entscheiden, ob du für legendäre Beute weiter zum Command Block vordringen oder einen frühen Ausgang wählen möchtest, um das bereits Gefundene zu sichern.
+  </Step>
+</Steps>
+
+| Aktivität | Risikostufe | Primäre Belohnung |
+| :--- | :--- | :--- |
+| **Absturzstellen-Bezug** | Niedrig/Mittel | Einfache Bergungsgüter, Waffenteile |
+| **Vorposten-Angriff** | Hoch | Fortschrittliche Technologie, Resonanz-Chiffren |
+| **Command-Block-Vorstoß** | Sehr Hoch | Seltene Relikte, Nemesis-Story-Gegenstände |
+| **Ressourcensammeln** | Niedrig | Herstellungsmaterialien, Munition |
+
+<Callout type="warning" title="Wichtige Warnung">
+Wenn du vor der Extraktion stirbst, verlierst du alles in deinem Inventar. Im Gegensatz zu vielen anderen Shootern gibt es in EVE Vanguard keine Trostpreise. Wer es nicht zum Schiff schafft, geht mit leeren Händen aus.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Waffen und Loadout-Management">
+
+Der Erfolg in EVE Vanguard hängt stark von deinem Loadout ab. Das Spiel verfügt über ein modulares Waffensystem, bei dem „Chipsätze“ und Feuermodi an deinen Spielstil angepasst werden können. Operation Avalon hat mehrere neue Waffentypen eingeführt, die die taktischen Optionen für Warclones erweitern.
+
+<CardGrid cols={3}>
+  <Card title="Nahkampf">
+    - **MP (SMG)**: Hohe Feuerrate für enge Korridore.
+    - **Schrapnell-Kanone**: Verheerend auf kurze Distanz.
+    - **Nova-Klinge**: Nahkampf-Finisher für lautlose Takedowns.
+  </Card>
+  <Card title="Mittlere bis hohe Reichweite">
+    - **Laser-DMR**: Präzise Energiewaffe für offenes Gelände.
+    - **Strahlengewehr**: Kontinuierlicher Schaden zur Unterdrückung von Feinden.
+    - **Adaptives Gewehr**: Vielseitiges Werkzeug für Allzweck-Kämpfe.
+  </Card>
+  <Card title="Hilfsmittel & Technik">
+    - **Kinetik-Chips**: Am besten gegen physische Rüstung.
+    - **Energie-Chips**: Effektiv gegen Schilde.
+    - **Modulare Visiere**: Essenziell, um Bedrohungen frühzeitig zu erkennen.
+  </Card>
+</CardGrid>
+
+Berücksichtige bei der Erstellung deines Loadouts die Mechanik des „Schadensart-Wechsels“. Steam und offizielle Dokumentationen heben die Möglichkeit hervor, Konfigurationen mitten im Einsatz zu wechseln. Dies ist wichtig, wenn du dich von einem PvE-Bereich (wo Gegner anfällig für Energie sein können) in eine PvP-Begegnung begibst, bei der kinetische Munition gegen den Anzug eines rivalisierenden Warclones effektiver sein könnte.
+
+| Waffentyp | Schadensmodus | Beste Kampfdistanz |
+| :--- | :--- | :--- |
+| **MP (SMG)** | Kinetisch/Feuerstoß | 5m - 15m |
+| **Laser-DMR** | Energie/Halbautomatisch | 30m - 100m |
+| **Schrapnell-Kanone** | Kinetisch/Streuung | 2m - 10m |
+| **Strahlengewehr** | Energie/Kontinuierlich | 20m - 50m |
+
+<Callout type="success" title="Taktischer Tipp">
+Führe immer eine Mischung aus Schadensarten mit dir. Die Verwendung der falschen Schadensart gegen einen geschildeten Kommandanten von Mordus Legion kann deine Time-to-Kill verdoppeln, was dich anfällig für Angriffe von dritter Seite durch andere Spieler macht.
+</Callout>
+
+</Section>
+
+<Section icon={Cpu} title="Systemanforderungen und Leistungsoptimierung">
+
+EVE Vanguard ist ein visuell anspruchsvoller Titel, der auf einer modernen Architektur basiert. Um einen Wettbewerbsvorteil zu haben, solltest du stabile 60 FPS anstreben. Das Spiel nutzt Easy Anti-Cheat (EAC) auf Kernel-Ebene, um faires Spielverhalten zu gewährleisten, was ein Standard für Extraction-Shooter mit hohem Einsatz ist.
+
+| Komponente | Mindestanforderungen | Empfohlene Spezifikationen |
+| :--- | :--- | :--- |
+| **Betriebssystem** | Windows 10/11 64-Bit | Windows 10/11 Aktuellste Version |
+| **Prozessor** | Intel i5-8400 / AMD Ryzen 5 1600X | Intel i5-11600K / AMD Ryzen 5 5600X |
+| **Grafikkarte** | RTX 2060 / Radeon RX 5700 XT | RTX 3080 / Radeon RX 6900 XT |
+| **Arbeitsspeicher** | 16 GB DDR4 | 16 GB DDR4/DDR5 |
+| **Speicherplatz** | 50 GB SSD | 50 GB NVMe |
+| **DirectX** | Version 12 | Version 12.1 |
+
+Die Leistung kann durch die Verwendung der Modi FSR oder DLSS „Qualität“ weiter optimiert werden, was die offizielle Website empfiehlt, um auf Hardware mit Mindestanforderungen bei 1080p 60 FPS zu erreichen. Aufgrund der Speicherplatzanforderung von 50 GB wird die Installation des Spiels auf einem NVMe-Laufwerk dringend empfohlen, um die Ladezeiten zwischen dem Warbarge und der Planetenoberfläche zu verkürzen.
+
+<Callout type="info" title="Hardware-Hinweis">
+EVE Vanguard erfordert eine Breitband-Internetverbindung. Eine hohe Latenz kann zu „Desynchronisationen“ während der Extraktion führen, was zu einer fehlgeschlagenen Mission führen kann, selbst wenn du direkt in der Extraktionszone stehst.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="EVE Online-Verbindung und Spielerziele">
+
+Das Alleinstellungsmerkmal von EVE Vanguard ist die Philosophie des „Gemeinsamen Universums“. Deine Aktionen als Warclone sind nicht isoliert; sie tragen zur politischen und wirtschaftlichen Landschaft von New Eden bei. Während der Operation Avalon können Warclones das Auftreten von AEGIS-Stürmen und hochwertigen Standorten in EVE Online beeinflussen.
+
+<Checklist
+  id="beginner-milestones"
+  title="Meilensteine für neue Warclones:"
+  items={[
+    "Schließe 5 erfolgreiche Extraktionen im Verlorenen Konvoi ab",
+    "Erwirb und installiere deinen ersten Waffen-Chipsatz",
+    "Besiege einen Kommandanten von Mordus Legion an einem Vorposten",
+    "Handle mit Resonanz-Chiffren bei einem Imperiums-Gegenstandshändler",
+    "Extrahiere erfolgreich aus der Command-Block-Zone"
+  ]}
+/>
+
+Imperiums-Gegenstandshändler befinden sich in großen Handelszentren wie Amarr, Dodixie und Jita. Der Umtausch von Vanguard-Resonanz-Chiffren an diesen Orten unterstützt die geheime Forschung des jeweiligen Imperiums und kann exklusive SKINs, Skillpunkte und Implantate für deine EVE Online-Charaktere freischalten.
+
+| Imperium | Hauptzentrum | Belohnungsschwerpunkt |
+| :--- | :--- | :--- |
+| **Amarr** | Amarr | Rüstungsimplantate, Goldene SKINs |
+| **Caldari** | Jita / New Caldari | Schildtechnologie, Hybridkomponenten |
+| **Gallente** | Dodixie | Drohnentechnologie, Skillpunkt-Kisten |
+| **Minmatar** | Rens / Hek | Projektiltechnologie, Geschwindigkeitsbooster |
+
+<Callout type="tip" title="Strategie-Tipp">
+Wenn du primär für EVE Online-Belohnungen spielst, konzentriere dich auf die „Vertragseffizienz“. Das gleichzeitige Annehmen mehrerer kleiner Verträge, die sich im selben Gebiet überschneiden, ist der schnellste Weg, um globale Punkte für Welt-Events zu sammeln.
+</Callout>
+
+</Section>
+
+<Section icon={Activity} title="Häufig gestellte Fragen">
+
+<FAQ items={[
+  {
+    question: "Ist EVE Vanguard ein separates Spiel von EVE Online?",
+    answer: "Ja, es ist ein eigenständiges FPS-Erlebnis, aber es teilt sich dasselbe Universum und Kontosystem. Deine Aktionen in Vanguard können die Welt von EVE Online beeinflussen und umgekehrt."
+  },
+  {
+    question: "Was passiert, wenn ich die Extraktion in EVE Vanguard nicht schaffe?",
+    answer: "Du verlierst die gesamte Beute, alle Ressourcen und die Ausrüstung, die du während dieses spezifischen Einsatzes gesammelt hast. Du kehrst nur mit deiner grundlegenden Startausrüstung auf dein Warbarge zurück."
+  },
+  {
+    question: "Wie erhalte ich Zugang zum Alpha-Playtest 2026?",
+    answer: "Du kannst den Zugang über die Schaltfläche „Zugriff anfordern“ auf der Steam-Shop-Seite von EVE Vanguard beantragen oder direkt über den Vanguard-Reiter im EVE Launcher zugreifen, wenn du ein aktives Konto besitzt."
+  },
+  {
+    question: "Kann ich EVE Vanguard solo spielen oder benötige ich einen Trupp?",
+    answer: "Du kannst solo spielen, aber der Verlorene Konvoi ist eine PvPvE-Umgebung. Sich mit anderen Warclones zu verbünden, erhöht deine Überlebenschancen gegen rivalisierende Spieler und die Elite-Streitkräfte von Mordus Legion erheblich."
+  }
+]} />
+
+</Section>

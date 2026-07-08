@@ -1,0 +1,194 @@
+import { Swords, Target, Shield, Zap, Settings, Crosshair, ListChecks, HelpCircle } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Armas de EVE Vanguard: Mejores Equipamientos y Guía de Combate",
+  description: "Domina el sistema de armas de EVE Vanguard. Guía detallada sobre SMGs, DMR láser, rifles de haz, chipsets y tipos de daño para la prueba de juego Operation Avalon de 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/0a0a0c/00f0ff?text=EVE+Vanguard+Weapons+Guide",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "eve vanguard, armas, equipamiento, combate, guía, operación avalon"
+}
+
+<Callout type="info" title="Guía Rápida">
+- Las **armas de EVE Vanguard** se centran en la modularidad, permitiendo a los jugadores adaptar los modos de disparo y tipos de daño durante el despliegue.
+- El cambio entre daño de **Energía vs. Cinético** es una mecánica central necesaria para romper escudos y destruir armaduras de manera eficiente.
+- Los **Chipsets de Armas** son la forma principal de personalizar el rendimiento, afectando la estabilidad, la cadencia de fuego y funciones especializadas.
+- La **Operación Avalon** (julio de 2026) introduce el SMG y el Cañón de Metralla, ampliando el meta de combate a corta distancia.
+- El **riesgo de extracción** se aplica a tu equipo; equilibra siempre tus configuraciones de armas de alto nivel con la probabilidad de una retirada exitosa.
+</Callout>
+
+<Section icon={Swords} title="Clasificación de Armas y Mecánicas Centrales">
+
+El arsenal en EVE Vanguard está diseñado para la versatilidad dentro de un entorno de extracción hostil. A diferencia de los shooters tradicionales donde las armas son estáticas, las **armas de EVE Vanguard** utilizan un marco modular. Cada despliegue como Warclone requiere una comprensión profunda de cómo tu arma principal interactúa con los peligros del entorno y las defensas enemigas. En el meta actual de 2026, las armas se categorizan por su alcance efectivo y sistemas de entrega de energía.
+
+<CardGrid cols={3}>
+  <Card title="Dominio a Corto Alcance">
+    - **SMG**: Alta cadencia de fuego, ideal para limpiar habitaciones.
+    - **Cañón de Metralla**: Daño de ráfaga masivo a quemarropa.
+    - **Hoja Nova**: El apoyo cuerpo a cuerpo esencial para eliminaciones silenciosas.
+  </Card>
+  <Card title="Alcance Medio a Largo">
+    - **DMR Láser**: Disparo de energía de precisión para eliminar objetivos.
+    - **Rifle de Haz**: Salida de energía sostenida para supresión a media distancia.
+    - **Configuraciones de Asalto**: Ajustes versátiles para combate general.
+  </Card>
+  <Card title="Sistemas Adaptativos">
+    - **Ranuras Modulares**: 3-5 ranuras para la integración de chipsets.
+    - **Selectores de Modo**: Cambia entre ráfaga, automático y semiautomático.
+    - **Convertidores de Daño**: Alterna entre salidas Cinéticas y de Energía.
+  </Card>
+</CardGrid>
+
+La efectividad en combate depende en gran medida de hacer coincidir el tipo de daño de tu arma con el perfil de defensa del enemigo. Las fuerzas de la Legión de Mordu, prominentes en la Operación Avalon de julio de 2026, a menudo se despliegan con blindajes por capas que resisten las balas cinéticas estándar pero se derriten bajo haces de energía concentrados.
+
+| Tipo de Arma | Alcance Principal | Perfil de Daño | Ideal para |
+| :--- | :--- | :--- | :--- |
+| **SMG** | 0-15m | Cinético/Energía | CQC, Limpieza de interiores |
+| **Cañón de Metralla** | 0-10m | Cinético Alto | Armadura pesada, Emboscadas |
+| **DMR Láser** | 30-100m+ | Energía Pura | Precisión a largo alcance, Escudos |
+| **Rifle de Haz** | 15-50m | Energía Sostenida | Escaramuzas de medio alcance |
+| **Hoja Nova** | Cuerpo a cuerpo | Térmico/Físico | Sigilo, Último recurso |
+
+<Callout type="tip" title="Estrategia Pro">
+Mantén siempre tu Hoja Nova equipada como secundaria. No requiere munición y es la forma más rápida de rematar a un Warclone herido durante una recarga caótica.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Personalización Modular y Chipsets">
+
+La modularidad es la característica definitoria del ecosistema de las **armas de EVE Vanguard**. Los jugadores no solo encuentran armas "mejores"; las construyen. Mediante el uso de Chipsets —componentes tecnológicos avanzados recuperados de superficies planetarias o ganados a través de contratos— puedes alterar fundamentalmente el comportamiento de un arma. Durante la prueba de juego de la Operación Avalon, la profundidad de este sistema se ha ampliado para permitir configuraciones específicas "Némesis" diseñadas para contrarrestar objetivos de drones de alta amenaza.
+
+<Steps>
+  <Step num="1" title="Accede a la Armería de la Barcaza de Guerra">
+    Antes del despliegue, entra en la interfaz de la Barcaza de Guerra (Warbarge) para seleccionar tu chasis base. El chasis determina tu retroceso base y peso.
+  </Step>
+  <Step num="2" title="Selecciona tus Chipsets Principales">
+    Instala hasta tres chipsets primarios. Estos dictan la cadencia de fuego, la capacidad del cargador y los patrones de retroceso de tu arma.
+  </Step>
+  <Step num="3" title="Configura los Convertidores de Daño">
+    Decide si tu arma priorizará el daño Cinético o de Energía. Las configuraciones avanzadas permiten un selector híbrido, aunque esto consume más batería.
+  </Step>
+  <Step num="4" title="Calibra los Modos de Disparo">
+    Asigna modos de disparo específicos (Semi, Ráfaga, Auto) a tu interruptor selector. Esto es crucial para gestionar el consumo de munición durante despliegues largos.
+  </Step>
+  <Step num="5" title="Finaliza y Sincroniza">
+    Sincroniza el equipamiento con el enlace neuronal de tu Warclone. Asegúrate de tener los recursos necesarios para mantener la configuración si no logras extraer.
+  </Step>
+</Steps>
+
+| Tipo de Chipset | Efecto Común | Efecto Raro/Épico | Compatibilidad |
+| :--- | :--- | :--- | :--- |
+| **Unidad de Enfriamiento** | +10% Disipación de Calor | Cero sobrecalentamiento por 3s | Armas Láser/Haz |
+| **Estabilizador** | -15% Retroceso Vertical | Compensación dinámica de oscilación | Todas las armas principales |
+| **Overclocker** | +5% Cadencia de Fuego | Balas explosivas al 5º impacto | SMG, Cañón de Metralla |
+| **Paquete de Batería** | +20% Capacidad de Energía | Celdas de autorecarga | Armas basadas en energía |
+
+<Callout type="warning" title="Riesgo de Recursos">
+Los chipsets de alto nivel se pierden si mueres sin extraer. Sopesa siempre el beneficio de una configuración "poderosa" frente al riesgo del peligro creciente en el campo de batalla del Convoy Perdido.
+</Callout>
+
+</Section>
+
+<Section icon={Crosshair} title="Tipos de Daño: Cinético vs. Energía">
+
+Comprender la dualidad del daño de las **armas de EVE Vanguard** es la diferencia entre una extracción exitosa y un despliegue fallido. El modelo de combate de 2026 enfatiza un enfoque de "Escudo y luego Armadura". La mayoría de los enemigos avanzados, incluidos los Warclones rivales y las tropas de élite de la Legión de Mordu, utilizan escudos de energía que son altamente resistentes a los proyectiles físicos pero vulnerables a la energía térmica y electromagnética.
+
+**Características del Daño de Energía:**
+- **Ventajas**: Agota rápidamente las barras azules de escudo; alta precisión a distancia.
+- **Desventajas**: Alta generación de calor; impacto mínimo en placas de armadura física.
+- **Fuentes Principales**: DMR Láser, Rifle de Haz, SMG convertido a energía.
+
+**Características del Daño Cinético:**
+- **Ventajas**: Destroza las placas amarillas de armadura; causa un aturdimiento significativo.
+- **Desventajas**: Fuertemente mitigado por escudos activos; caída de bala significativa.
+- **Fuentes Principales**: Cañón de Metralla, SMG estándar, Rifles convertidos a cinético.
+
+| Tipo de Defensa | Debilidad | Resistencia | Indicador Visual |
+| :--- | :--- | :--- | :--- |
+| **Escudo de Energía** | Energía/Térmico | Cinético/Impacto | Malla hexagonal azul brillante |
+| **Armadura Física** | Cinético/Impacto | Energía/Térmico | Revestimiento gris mate o metálico |
+| **Estructura** | Cinético de Ráfaga Alta | Energía Sostenida | Maquinaria/cableado expuesto |
+
+<Callout type="success" title="Sinergia Táctica">
+En juego de escuadrón, designa a un jugador como el "Rompe Escudos" usando un DMR Láser y a otro como el "Destructor de Armaduras" con un Cañón de Metralla para una eficiencia máxima.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Mejores Equipamientos para la Operación Avalon 2026">
+
+A partir de julio de 2026, el meta de las **armas de EVE Vanguard** se ha desplazado hacia configuraciones de alta movilidad que pueden manejar la verticalidad de los nuevos mapas del Convoy Perdido. Ya sea que estés cazando Cifrados Resonantes o asaltando bases de avanzada, tu equipamiento debe estar especializado. A continuación se presentan los tres arquetipos más efectivos utilizados actualmente por los Warclones de alto nivel.
+
+| Arquetipo | Arma Principal | Chipset Clave | Equipo Secundario |
+| :--- | :--- | :--- | :--- |
+| **El Infiltrado** | SMG (Config. Energía) | Estabilizador + Silenciador | Hoja Nova, Camuflaje |
+| **El Tirador** | DMR Láser | Unidad Enfriamiento + Zoom | Escáner, Minas de Proximidad |
+| **El Asaltante** | Cañón de Metralla | Overclocker + Cargador | Escudo Pesado, Granadas |
+
+### Configuración Recomendada: El Híbrido de Avalon
+Esta configuración está diseñada específicamente para jugadores en solitario que necesitan manejar tanto encuentros PvE contra la Legión de Mordu como PvP contra otros Warclones. Utiliza la versatilidad del Rifle de Haz emparejado con chipsets específicos para permitir una adaptación rápida.
+
+- **Arma**: Rifle de Haz
+- **Chipsets**: Convertidor Híbrido (selector Cinético/Energía), Disipador de Calor, Batería Extendida.
+- **Táctica**: Usa el modo de Energía para quitar los escudos a distancia, luego cambia al modo Cinético a medida que el enemigo se acerca para destrozar su armadura.
+
+<Callout type="info" title="Nota sobre Munición">
+Las armas de energía no usan cargadores tradicionales, sino que dependen de paquetes de baterías y gestión de calor. Las armas cinéticas requieren cajas de munición física que se encuentran en lugares de impacto o bases de avanzada.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Progresión de Armas y Estrategia de Extracción">
+
+En EVE Vanguard, tus armas son una extensión de tu progresión persistente. Los recursos que extraes —como tecnología exótica y reliquias perdidas— se utilizan para desbloquear chasis de armas de mayor nivel y ranuras de chipsets más potentes. Durante la Operación Avalon de 2026, el "Bloque de Mando" en el centro del mapa se ha convertido en la fuente principal de componentes de armas de "grado Némesis".
+
+<Checklist
+  id="weapon-prep"
+  title="Lista de Verificación de Preparación para el Despliegue:"
+  items={[
+    "Verificar que todas las ranuras de chipsets estén llenas y sincronizadas.",
+    "Comprobar los niveles de batería para armas principales de energía.",
+    "Asegurarse de que la Hoja Nova esté afilada para remates cuerpo a cuerpo.",
+    "Hacer coincidir los tipos de daño con la presencia enemiga esperada (Mordu vs. Drones).",
+    "Confirmar tu plan de extracción basado en el valor del equipo."
+  ]}
+/>
+
+Permanecer más tiempo en un despliegue aumenta la posibilidad de encontrar piezas de armas raras, pero también aumenta la probabilidad de encontrar amenazas "Némesis" que pueden superar fácilmente a un Warclone mal equipado. Los jugadores más exitosos priorizan la confiabilidad del arma sobre el daño puro, asegurándose de tener la estabilidad y la gestión de calor para sobrevivir a un tiroteo sostenido.
+
+<Callout type="tip" title="Prioridad de Saqueo">
+Al asaltar lugares de impacto, prioriza los "Fragmentos de Tecnología de Armas". Son la única forma de mejorar permanentemente las estadísticas base de tus armas en la Barcaza de Guerra.
+</Callout>
+
+</Section>
+
+<Section icon={HelpCircle} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Puedo cambiar mi equipamiento de armas durante una misión?",
+    answer: "No, tu arma base y tus chipsets se bloquean una vez que te despliegas. Sin embargo, puedes alternar modos de disparo y tipos de daño si tu arma está equipada con los componentes modulares necesarios."
+  },
+  {
+    question: "¿Qué pasa con mis armas de EVE Vanguard si no logro extraer?",
+    answer: "Si mueres y no logras extraer, pierdes la instancia específica del arma y cualquier chipset conectado a ella. Necesitarás conseguir equipo nuevo o usar un equipamiento 'inicial' básico para tu próxima incursión."
+  },
+  {
+    question: "¿Es la Hoja Nova mejor que un arma para el sigilo?",
+    answer: "Sí. La Hoja Nova es completamente silenciosa y atraviesa los escudos de energía si golpeas a un objetivo desprevenido por la espalda, lo que la convierte en la opción superior para completar contratos de sigilo."
+  },
+  {
+    question: "¿Cómo desbloqueo el nuevo SMG en la Operación Avalon?",
+    answer: "El SMG está disponible a través de la armería de la Barcaza de Guerra durante la prueba de juego del 7 al 20 de julio de 2026. Las variantes avanzadas se pueden desbloquear completando contratos de combate específicos de la Legión de Mordu."
+  }
+]} />
+
+</Section>

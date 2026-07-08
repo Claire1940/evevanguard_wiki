@@ -1,0 +1,170 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Requisitos Mínimos de EVE Vanguard: Guía de Requisitos de PC y Rendimiento",
+  description: "Consulta los requisitos mínimos oficiales de EVE Vanguard, los requisitos recomendados para PC, la compatibilidad con Steam Deck y consejos de optimización de rendimiento para 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1bc2d5/fff?text=PC+Specs+and+Requirements",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, requisitos mínimos, requisitos PC, rendimiento, Steam Deck, guía"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Requisito Principal**: Ejecutar EVE Vanguard requiere un sistema operativo **Windows 10 o 11 de 64 bits**.
+- **Barrera de Hardware**: Debes tener al menos **16 GB de RAM DDR4** y un **SSD con 50 GB de espacio libre**.
+- **Rendimiento Objetivo**: Los **requisitos mínimos de EVE Vanguard** apuntan a **60 FPS a 1080p** usando ajustes Bajos y tecnología de escalado.
+- **Advertencia de Anti-Cheat**: El juego utiliza **Easy Anti-Cheat (EAC)** a nivel de kernel, lo que afecta la compatibilidad con Linux y Steam Deck.
+</Callout>
+
+<Section icon={Shield} title="Requisitos Oficiales del Sistema para EVE Vanguard">
+
+Antes de desplegarte como un clon de guerra (warclone) inmortal en los campos de batalla planetarios de Nuevo Edén, debes asegurarte de que tu equipo cumpla con los estándares de hardware necesarios [00基础信息]. EVE Vanguard está construido sobre un motor moderno y visualmente exigente que requiere una potencia de procesamiento robusta, transmisión rápida de activos y una tarjeta gráfica compatible con DirectX 12 [homepage-modules-1, homepage-modules-2].
+
+Los desarrolladores han definido distintos niveles de hardware para ayudarte a calcular el rendimiento esperado durante las fases de prueba activas como la Operación Avalon [homepage-modules-1]. A continuación se muestra la matriz oficial de especificaciones de hardware que compara las configuraciones mínimas y recomendadas.
+
+| Componente | Especificación Mínima | Especificación Recomendada |
+| :--- | :--- | :--- |
+| **SO** | Windows 10 64-bit (21H2/19044) / Windows 11 | Windows 10 64-bit (Última versión) / Windows 11 |
+| **CPU** | Intel i5-8400 / AMD Ryzen 5 1600X | Intel i5-11600K / AMD Ryzen 5 5600X |
+| **GPU** | NVIDIA RTX 2060 / AMD Radeon RX 5700 XT | NVIDIA RTX 3080 / AMD Radeon RX 6900 XT |
+| **VRAM** | 6 GB | 8 GB o superior |
+| **RAM** | 16 GB DDR4 | 16 GB DDR4 |
+| **Almacenamiento** | 50 GB de espacio libre (Se requiere SSD) | 50 GB de espacio libre (Se recomienda NVMe) |
+| **DirectX** | Versión 12 / 12.1 | Versión 12 / 12.1 |
+| **Red** | Conexión a Internet de banda ancha | Conexión a Internet de banda ancha |
+
+**Puntos destacados del video:**
+- Desglose visual detallado de los entornos del shooter de extracción de ciencia ficción.
+- Demostraciones de combate en tiempo real que muestran el manejo de armas y efectos de partículas.
+- Vistazo directo a las superposiciones de la interfaz de usuario, mapas tácticos y secuencias de despliegue.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard Alpha Gameplay Trailer" />
+
+<Callout type="warning" title="El SSD es Obligatorio">
+No intentes instalar EVE Vanguard en una unidad de disco duro tradicional (HDD). El juego depende en gran medida de la transmisión rápida de activos para un despliegue planetario fluido y un combate PvPvE de alto riesgo. Instalarlo en un HDD provocará tirones severos (stuttering), tiempos de carga prolongados y posibles errores de desconexión.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Expectativas de Rendimiento y Escalado">
+
+Cumplir con los **requisitos mínimos de EVE Vanguard** no significa que debas comprometer totalmente la claridad visual. El juego está optimizado para utilizar tecnologías modernas de escalado para cerrar la brecha entre el rendimiento y la fidelidad.
+
+| Resolución Objetivo | Ajuste de Calidad | Modo de Escalado | Tasa de Fotogramas Esperada |
+| :--- | :--- | :--- | :--- |
+| **1080p (Mínimos)** | Bajo | FSR / DLSS Calidad | 60 FPS |
+| **1080p (Recomendados)** | Alto / Ultra | Nativo (Sin Escalado) | 60+ FPS |
+| **1440p (Recomendados)** | Alto | FSR / DLSS Calidad | 60+ FPS |
+
+Para lograr una ventaja competitiva estable durante tiroteos intensos contra clones de guerra rivales o fuerzas hostiles de la Legión de Mordu, se recomienda encarecidamente reducir los ajustes gráficos [homepage-modules-2].
+
+<CardGrid cols={3}>
+  <Card title="Prioridad de Escalado">
+    Activa siempre **DLSS** (para tarjetas NVIDIA) o **FSR** (para tarjetas AMD). Establécelos en modo **Calidad** para preservar la nitidez de la imagen mientras obtienes un aumento significativo en la tasa de fotogramas.
+  </Card>
+  <Card title="Gestión de VRAM">
+    El juego requiere al menos **6 GB de VRAM** [homepage-modules-2]. Si tu GPU tiene exactamente 6 GB, mantén la calidad de las texturas en Medio o Bajo para evitar tirones por asignación de memoria.
+  </Card>
+  <Card title="Cuellos de Botella de la CPU">
+    Con un alto número de jugadores y rutas complejas de IA, el rendimiento de la CPU es crítico. Cierra las aplicaciones en segundo plano como navegadores web y software de grabación antes de iniciar el juego.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Optimiza tu Configuración de Windows">
+Activa el **Modo de Juego de Windows** y asegúrate de que los controladores de tu tarjeta gráfica estén actualizados a la última versión. Tanto NVIDIA como AMD lanzan frecuentemente controladores "Game Ready" optimizados específicamente para las fases de prueba activas.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Guía Paso a Paso para la Preparación del Hardware">
+
+Sigue estos pasos para preparar el sistema operativo de tu PC y el directorio del lanzador para EVE Vanguard antes de hacer clic en desplegar [homepage-modules-1].
+
+<Steps>
+  <Step num="1" title="Verifica la Disponibilidad de Almacenamiento">
+    Asegúrate de que tu unidad de estado sólido (SSD) o NVMe de destino tenga al menos **50 GB de espacio no asignado** [homepage-modules-1, homepage-modules-2]. Ve a *Este equipo*, haz clic derecho en tu unidad y selecciona *Propiedades* para confirmar.
+  </Step>
+  <Step num="2" title="Actualiza DirectX y Windows">
+    Ve a *Windows Update* e instala todas las actualizaciones de calidad pendientes. EVE Vanguard requiere compatibilidad con **DirectX 12**, que depende de bibliotecas del sistema actualizadas [homepage-modules-2].
+  </Step>
+  <Step num="3" title="Configura Easy Anti-Cheat">
+    El juego se inicia junto con **Easy Anti-Cheat (EAC)** [homepage-modules-2]. Asegúrate de que tu software antivirus no bloquee el instalador del servicio EAC, ya que un fallo al inicializar impedirá que el juego arranque.
+  </Step>
+  <Step num="4" title="Configura el Lanzador">
+    Descarga el [Lanzador de EVE](https://evevanguard.com/) oficial o accede a la prueba a través de la [página de la tienda de Steam](https://store.steampowered.com/app/1872800/EVE_Vanguard/) [00基础信息]. Usa la pestaña dedicada de Vanguard para iniciar la descarga.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Listo para el Despliegue">
+Una vez completados estos pasos, tu sistema estará totalmente configurado para manejar los descensos planetarios sin interrupciones a nivel de software.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Compatibilidad con Steam Deck y Linux">
+
+Para los jugadores que buscan llevar sus misiones de aventura y extracción a cualquier lugar, la compatibilidad con Steam Deck es un punto de gran interés [00基础信息]. Sin embargo, la estructura técnica actual presenta obstáculos específicos para los usuarios de dispositivos portátiles.
+
+| Característica | Estado de Compatibilidad | Notas Técnicas |
+| :--- | :--- | :--- |
+| **Steam Deck OS (SteamOS)** | No soportado / Incompatible | El Easy Anti-Cheat (EAC) a nivel de kernel no está configurado actualmente para entornos de ejecución Proton/Linux [homepage-modules-2]. |
+| **Windows en Steam Deck** | Parcialmente jugable | Ejecutar Windows en Steam Deck evita los bloqueos de EAC en Linux, pero el hardware está por debajo de los requisitos mínimos de CPU/GPU. |
+| **Requisito de Easy Anti-Cheat** | Obligatorio | Steam y la documentación oficial señalan que EAC debe ejecutarse activamente en segundo plano para conectarse a los servidores [homepage-modules-2]. |
+
+Debido a que EVE Vanguard está diseñado como un shooter PvPvE competitivo de alta fidelidad, los desarrolladores han centrado los esfuerzos de optimización en hardware de escritorio dedicado [00基础信息, homepage-modules-2].
+
+<Callout type="warning" title="Nota sobre la Desinstalación de EAC">
+Easy Anti-Cheat se instala automáticamente junto con el cliente del juego. Si decides desinstalar EVE Vanguard, es posible que debas eliminar manualmente los archivos residuales de EAC a través del Panel de Control de Windows para limpiar completamente el directorio de tu sistema [homepage-modules-2].
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de Verificación de Optimización Previa al Despliegue">
+
+Usa esta lista para asegurarte de que tu sistema funcione a su máxima eficiencia antes de entrar al campo de batalla del Convoy Perdido [homepage-modules-1, homepage-modules-2].
+
+<Checklist
+  id="spec-optimization"
+  title="Lista de Verificación de Hardware y Sistema:"
+  items={[
+    "Verifica que el juego esté instalado en una unidad SSD o NVMe.",
+    "Confirma que tu tarjeta gráfica tenga al menos 6 GB de VRAM dedicada.",
+    "Actualiza los controladores de la GPU a la última versión Game Ready.",
+    "Activa la Programación de GPU acelerada por hardware (HAGS) en la configuración de Windows.",
+    "Configura el Lanzador de EVE para que se cierre automáticamente al iniciar el juego.",
+    "Asegúrate de que tu conexión de banda ancha sea estable (se recomienda encarecidamente Ethernet por cable)."
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Puedo ejecutar EVE Vanguard en un sistema que no cumpla con los requisitos mínimos?",
+    answer: "Aunque el cliente del juego podría iniciarse en hardware de gama baja, es probable que experimentes caídas severas de la tasa de fotogramas por debajo de 30 FPS, tirones a nivel de hardware y posibles fallos debido a la insuficiencia de VRAM o limitaciones de RAM."
+  },
+  {
+    question: "¿Se requiere una conexión a Internet activa para jugar?",
+    answer: "Sí. EVE Vanguard es un shooter de extracción multijugador en línea persistente. Se requiere una conexión a Internet de banda ancha estable para conectarse a los servidores, al emparejamiento y para sincronizar el progreso de tu personaje con el universo en vivo."
+  },
+  {
+    question: "¿Por qué el juego requiere un SSD?",
+    answer: "EVE Vanguard presenta grandes mapas planetarios con activos de alta fidelidad que deben cargarse dinámicamente mientras atraviesas el campo de batalla. Los discos duros tradicionales (HDD) no pueden transmitir datos lo suficientemente rápido, lo que causa importantes cuellos de botella en el rendimiento."
+  },
+  {
+    question: "¿EVE Vanguard es compatible con mandos o diseños portátiles?",
+    answer: "El juego está diseñado principalmente para entradas de teclado y ratón en PC. Aunque las configuraciones básicas de mando pueden funcionar, el soporte nativo completo y la optimización de la interfaz de usuario para pantallas portátiles no están garantizados durante las fases iniciales de prueba."
+  }
+]} />
+
+</Section>

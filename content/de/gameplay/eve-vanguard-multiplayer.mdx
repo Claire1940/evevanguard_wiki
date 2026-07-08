@@ -1,0 +1,160 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Multiplayer: Koop-Squads & PvPvE-Taktiken",
+  description: "Meistere die Multiplayer-Mechaniken von EVE Vanguard. Erfahre mehr über Squad-Größen, Koop-Strategien, PvPvE-Regeln und wie der planetare Bodenkampf mit EVE Online verknüpft ist.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/121c24/00f0ff?text=Multiplayer+Tactics+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Schnellstart-Guide">
+- **EVE Vanguard Multiplayer**: Ein hochriskantes, persistentes PvPvE-Extraktions-Adventure-FPS, das in New Eden spielt.
+- **Koop-Dynamik**: Squad-basierte Einsätze mit Fokus auf Ressourcen-Looting, strategischen Kampf und koordinierte Extraktionen.
+- **PvPvE-Struktur**: Bekämpfe feindliche Streitkräfte der Mordu's Legion (PvE), während du dich gegen rivalisierende Warclone-Squads (PvP) verteidigst.
+- **Verbindung zu New Eden**: Bodenaktionen wirken sich direkt auf die Raumschiffschlachten und die politische Landschaft von EVE Online aus.
+</Callout>
+
+<Section icon={Swords} title="EVE Vanguard Multiplayer: Die nächste Ära des PvPvE-Kampfes">
+
+Der Multiplayer-Modus von EVE Vanguard bietet ein düsteres, dystopisches Sandbox-FPS-Erlebnis, bei dem Spieler als unsterbliche Warclones eingesetzt werden. Inmitten des gemeinsamen Universums von New Eden hat Ihr Squad die Aufgabe, planetare Absturzstellen zu plündern, von Konzernen kontrollierte Vorposten anzugreifen und wertvolle Technologien zu bergen. Das Schlachtfeld ist jedoch alles andere als leer. Sie müssen ständig die Bedrohung durch Elite-PvE-Fraktionen wie Mordu's Legion mit der unvorhersehbaren Gefahr rivalisierender Spieler-Squads abwägen, die Jagd auf genau dieselbe Beute machen.
+
+**Video-Highlights:**
+- **Persistentes Universum**: Bodenkämpfe, die direkt mit der Systempolitik von EVE Online verknüpft sind.
+- **Fortschrittliches Gunplay**: Modulare Waffenplattformen mit mehreren Feuermodi und Schadenswechseln.
+- **Umkämpfte Extraktion**: Begrenzte Fluchtoptionen, die Squads in hochriskante Nadelöhre zwingen.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="Offizieller Trailer zu EVE Vanguard" />
+
+Das Überleben in dieser rauen Sci-Fi-Landschaft erfordert ein Verständnis dafür, wie Squads organisiert sind und wie man an PvPvE-Begegnungen herangeht. Die folgende Tabelle skizziert die Kernparameter des Multiplayer-Erlebnisses.
+
+| Multiplayer-Feature | Spezifikationsdetails | Taktische Auswirkung |
+| :--- | :--- | :--- |
+| **Match-Format** | Persistente Lobby mit aktivem PvPvE | Keine Sicherheitszonen nach dem Absetzen auf dem Planeten |
+| **Primäre Feinde** | Mordu's Legion (NPCs) & rivalisierende Squads (Spieler) | Ausrüstung muss auf beide Bedrohungen vorbereitet sein |
+| **Squad-Matchmaking** | Unterstützt über Steam & EVE Launcher | Koordination ist für hochstufige Zonen erforderlich |
+| **Loot-Regeln** | Vollständiger Verlust bei Tod, sofern nicht extrahiert | Hohes Risiko erfordert vorsichtige Kampfentscheidungen |
+
+<Callout type="warning" title="Solo-Einsatz vs. Squads">
+Obwohl Soloeinsätze möglich sind, ist der EVE Vanguard Multiplayer stark auf die Koordination im Squad ausgelegt. Solo-Warclones stehen vollständigen gegnerischen Squads gegenüber, ohne die Möglichkeit, von Teamkollegen wiederbelebt zu werden.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Koop-Squad-Strategien & Team-Synergie">
+
+Um im Koop-Modus von EVE Vanguard erfolgreich zu sein, sind eine klare Rollenverteilung und taktische Disziplin erforderlich. Im Gegensatz zu traditionellen Team-Deathmatch-Spielen besteht Ihr Hauptziel darin, Beute zu sichern und lebend zu entkommen, und nicht darin, Ihre Abschusszahl zu maximieren.
+
+<CardGrid cols={3}>
+  <Card title="Der Pointman">
+    - **Nahkampfspezialist**: Rüstet schnell feuernde SMGs oder Schrapnellkanonen aus, um enge Räume zu säubern.
+    - **Späher-Rolle**: Führt den Squad in Anlagen und klärt feindliche Verteidigungslinien auf.
+    - **Nahkampf-Finisher**: Nutzt die Nova-Klinge für lautlose Ausschaltungen im Nahkampf.
+  </Card>
+  <Card title="Der Präzisionsschütze">
+    - **Präzisionsfeuer**: Nutzt das Laser-DMR oder Strahlengewehr, um Ziele aus der Ferne auszuschalten.
+    - **Rückendeckung**: Sichert den Squad während Hacking-Zielen und Extraktionsanforderungen ab.
+    - **Schilddruck**: Baut die Energieschilde von Feinden mithilfe spezialisierter Chipsätze ab.
+  </Card>
+  <Card title="Der Unterstützer">
+    - **Hilfsmittelträger**: Verwaltet Squad-Heilung, Wiederbelebungen und taktische Ausrüstung.
+    - **Ressourcen-Muli**: Trägt wertvolle geborgene Technologie sicher während der Bewegung.
+    - **Flankenschutz**: Sichert den Rückraum, um Angriffe durch rivalisierende Squads von hinten zu verhindern.
+  </Card>
+</CardGrid>
+
+Um Ihre Effizienz bei Einsätzen zu maximieren, sollten Squads ihre Ausrüstung aufeinander abstimmen, um alle Kampfdistanzen und Schadensarten abzudecken.
+
+| Rolle | Primärwaffe | Fokus Schadensart | Kernaufgabe |
+| :--- | :--- | :--- | :--- |
+| **Stürmer** | SMG / Schrapnellkanone | Kinetisch / Hohe Wucht | Innenräume säubern & gegnerische Squads zurückdrängen |
+| **Unterstützer** | Modulares Sturmgewehr | Hybrid / Kontinuierlich | Sperrfeuer, Squad-Wiederbelebungen, Beutetransport |
+| **Präzisionsschütze** | Laser-DMR / Strahlengewehr | Energie / Präzision | Scharfschützen ausschalten & Extraktionszonen sichern |
+
+<Callout type="tip" title="Stimmen Sie Ihre Schadensarten ab">
+Achten Sie darauf, dass Ihr Squad eine Mischung aus Energie- und kinetischen Waffen mitführt. Energiewaffen lassen feindliche Schilde schnell schmelzen, während kinetische Waffen massiven Schaden an Rüstung und Gesundheit anrichten.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Der PvPvE-Gameplay-Loop: Schritt für Schritt">
+
+Jeder Einsatz im EVE Vanguard Multiplayer folgt einem strengen, spannungsgeladenen Ablauf. Vom Moment, in dem Ihre Landekapsel die Oberfläche berührt, bis zum letzten Extraktionssignal muss Ihr Squad schnelle, kalkulierte Entscheidungen treffen.
+
+<Steps>
+  <Step num="1" title="Planetare Landung">
+    Ihr Squad landet in einem umkämpften Schlachtfeld wie der Zone „Verlorener Konvoi“. Suchen Sie sofort Deckung, überprüfen Sie Ihre Karte und identifizieren Sie nahegelegene Vertragsziele und Extraktionspunkte.
+  </Step>
+  <Step num="2" title="Vertragsausführung">
+    Bekämpfen Sie die Streitkräfte der Mordu's Legion, um lukrative Verträge abzuschließen. Halten Sie den Lärm minimal; Schüsse verraten rivalisierenden Warclone-Squads Ihre genaue Position.
+  </Step>
+  <Step num="3" title="Looting & Technologie-Bergung">
+    Plündern Sie Absturzstellen und sichern Sie exotische Technologie. Priorisieren Sie hochstufige Chipsätze und Resonanz-Chiffren, die gegen wertvolle Belohnungen eingetauscht werden können.
+  </Step>
+  <Step num="4" title="Umkämpfte Extraktion">
+    Wenn der Timer der Sitzung abläuft, begeben Sie sich zu einem aktiven Extraktionspunkt. Sichern Sie den Bereich, platzieren Sie defensive Hilfsmittel und verteidigen Sie die Zone gegen verzweifelte feindliche Squads, die versuchen, Ihre Beute zu stehlen.
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Trophy} title="Multiplayer-Meilensteine & Fortschritt">
+
+Um die Vorherrschaft im Bodenkrieg von New Eden zu erlangen, sollte Ihr Squad auf bestimmte Fortschrittsmeilensteine hinarbeiten. Das Extrahieren von Ressourcen ermöglicht es Ihnen, bessere Ausrüstung herzustellen, was Ihnen bei nachfolgenden Einsätzen einen klaren Vorteil verschafft.
+
+<Checklist
+  id="multiplayer-progression"
+  title="Squad-Ziele & Meilensteine:"
+  items={[
+    "Schließen Sie 10 erfolgreiche Squad-Extraktionen mit vollen Beutetaschen ab",
+    "Schalten Sie fortschrittliche Waffen-Chipsätze für modulare Anpassungen frei",
+    "Verteidigen Sie erfolgreich einen Extraktionspunkt gegen ein rivalisierendes Spieler-Squad",
+    "Bergen und extrahieren Sie eine wertvolle Resonanz-Chiffre",
+    "Koordinieren Sie einen kombinierten planetaren Schlag, der den Weltraumkrieg beeinflusst"
+  ]}
+/>
+
+Die Belohnungen Ihrer Bodenoperationen sind nicht auf Ihr Vanguard-Inventar beschränkt. Erfolgreiche Extraktionen fließen direkt in den größeren Konflikt von New Eden ein.
+
+| Extrahierte Ressource | Primäre Bodennutzung | Verbindung zu EVE Online |
+| :--- | :--- | :--- |
+| **Resonanz-Chiffren** | Herstellung fortschrittlicher Waffenteile | Tausch bei Imperiums-Händlern gegen wertvolle Weltraum-Assets |
+| **Exotische Tech-Bergung** | Freischalten modularer Waffengehäuse | Trägt zum Fortschritt im globalen Fraktionskrieg bei |
+| **Waffen-Chipsätze** | Modifizieren von Feuermodi und Rückstoß | Präsentiert die Kampfeffizienz des Squads auf öffentlichen Bestenlisten |
+
+<Callout type="success" title="Die gemeinsamen Kriegsanstrengungen">
+Ihre Siege im EVE Vanguard Multiplayer wirken sich direkt auf EVE Online aus. Das Abschließen von Bodenverträgen kann orbitale Ereignisse auslösen, die wertvolle Kampf- und Hacking-Gebiete für Raumschiffpiloten im Weltraum freischalten.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="EVE Vanguard Multiplayer FAQ">
+
+<FAQ items={[
+  {
+    question: "Ist der EVE Vanguard Multiplayer reines PvP oder gibt es auch PvE-Inhalte?",
+    answer: "EVE Vanguard ist ein hybrider PvPvE-Extraktions-Shooter. Sie kämpfen im selben Einsatz sowohl gegen KI-gesteuerte Fraktionen wie Mordu's Legion als auch gegen aktive, von Spielern gesteuerte Warclone-Squads."
+  },
+  {
+    question: "Kann ich den EVE Vanguard Multiplayer solo spielen oder brauche ich einen Squad?",
+    answer: "Sie können solo einrücken, es wird jedoch dringend empfohlen, in einem Squad zu spielen. Solospieler teilen sich dieselben Lobbies mit koordinierten Teams, was das Überleben und die Extraktion erheblich erschwert."
+  },
+  {
+    question: "Beeinflussen meine Aktionen im Vanguard-Multiplayer EVE Online?",
+    answer: "Ja. Bodeneinsätze tragen zu gemeinsamen Weltereignissen bei. Erfolgreiche Extraktionen können weltraumbasierte Anomalien, Orbitalbeschuss und den Fortschritt im Fraktionskrieg in EVE Online auslösen."
+  },
+  {
+    question: "Was passiert mit meiner Multiplayer-Beute, wenn mein Squad komplett eliminiert wird?",
+    answer: "EVE Vanguard nutzt bei Tod die Regel des vollständigen Verlusts. Wenn Ihr gesamtes Squad eliminiert wird und niemand Ihre Ausrüstung extrahiert, gehen alle gesammelten Ressourcen, geborgene Technologie und ungesicherte Ausrüstung verloren."
+  }
+]} />
+
+</Section>

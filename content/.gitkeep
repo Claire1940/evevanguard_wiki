@@ -1,3 +1,0 @@
-# 此文件用于保留 content/ 目录骨架。
-# generate-content-manifest.mjs 需要 content/ 目录存在才能生成内容清单；
-# 当前内容已清空（Part3 多语言与导航阶段），后续 part 会重新填充 MDX 文章。

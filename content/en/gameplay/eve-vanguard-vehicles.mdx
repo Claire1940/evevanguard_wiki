@@ -1,0 +1,184 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Truck, Plane, Zap } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Vehicles: Warbarge Systems & Convoy Guide",
+  description: "Explore the role of EVE Vanguard vehicles, from the orbital Warbarge hub to the tactical Lost Convoy objectives in the Operation Avalon playtest.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e293b/00f2ff?text=EVE+Vanguard+Vehicles",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Keyword**: Understanding **eve vanguard vehicles** starts with the Warbarge and tactical convoys.
+- **Warbarge Hub**: Your primary orbital vehicle serves as the central hub for loadout customization and crafting.
+- **Lost Convoy**: A major vehicle-based objective in Operation Avalon where players raid wreckage for tech.
+- **Extraction Craft**: Specialized transport vehicles are required to leave the battlefield with your salvaged loot.
+- **Tactical Interaction**: While direct driving is limited in Alpha, vehicles define the flow of PvE and PvP combat.
+</Callout>
+
+<Section icon={Plane} title="The Warbarge: Your Primary Orbital Vehicle">
+
+In the current state of the game, the most significant of all **eve vanguard vehicles** is the Warbarge. Unlike traditional ground transport, the Warbarge serves as an orbital command center where Warclones reside between deployments. It is not merely a menu screen but a functional environment where players prepare for the high-stakes extraction gameplay that defines New Eden’s planetary conflicts.
+
+The Warbarge is where you manage your persistent progression. As you extract resources from the surface, you bring them back to this orbital asset to upgrade your gear, modify weapon chipsets, and plan your next drop. It represents the "home" vehicle for every player, acting as the bridge between the ground war and the wider EVE Online universe.
+
+<CardGrid cols={3}>
+  <Card title="Loadout Customization">
+    - **Modify Weapons**: Install chipsets found on the surface.
+    - **Gear Prep**: Choose between Energy and Kinetic setups.
+    - **Persistent Growth**: Store extracted technology and relics.
+  </Card>
+  <Card title="Mission Briefing">
+    - **Contract Selection**: Pick high-stakes objectives.
+    - **Deployment Choice**: Select drop zones like Lost Convoy.
+    - **Intel Gathering**: Review battlefield data before launching.
+  </Card>
+  <Card title="Resource Management">
+    - **Salvage Processing**: Convert raw loot into usable parts.
+    - **Suit Upgrades**: Enhance your Warclone's survivability.
+    - **Tech Research**: Unlock advanced weaponry for future runs.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Pro Tip">
+Always visit the Warbarge crafting station immediately after a successful extraction to secure your items and check for available weapon chipset upgrades.
+</Callout>
+
+| Feature | Description | Interaction Type |
+| :--- | :--- | :--- |
+| **Orbital Hub** | The central player ship for all Warclones | Social/Management |
+| **Crafting Bench** | Station for modifying modular firearms | Utility/Upgrade |
+| **Deployment Pods** | The vehicle used to drop into the battlefield | Transport/Transition |
+| **Storage Vault** | Secure location for all extracted technology | Economy/Persistence |
+
+</Section>
+
+<Section icon={Truck} title="Lost Convoy: Tactical Vehicle Objectives">
+
+The **eve vanguard vehicles** found on the planetary surface are currently centered around the "Lost Convoy" battlefield. In Operation Avalon, this site serves as a graveyard of armored transports and corporate logistics vehicles that have been intercepted or destroyed. These vehicles are not just background assets; they are the primary source of high-tier loot and the focal point for intense PvPvE firefights.
+
+The Lost Convoy represents a shift in how players interact with the environment. Instead of simple scavenging, players must navigate the wreckage of these massive transports, which often contain "Command Blocks" or other critical technology tied to the Nemesis storyline. These vehicle graveyards are protected by elite Mordu's Legion forces, making them the most dangerous zones on the map.
+
+<Callout type="warning" title="High Risk Zone">
+Vehicle wreckage sites are often "hot zones" where multiple Warclone squads will converge. Expect heavy resistance and potential ambushes from rival players.
+</Callout>
+
+| Vehicle Type | Role in Battlefield | Loot Potential |
+| :--- | :--- | :--- |
+| **Armored Transports** | Wreckage sites found in the Lost Convoy | High (Relics/Tech) |
+| **Logistics Trucks** | Sources of ammunition and basic resources | Medium (Supplies) |
+| **Mordu's Gunships** | PvE threats that patrol high-value zones | Extreme (Boss Loot) |
+| **Scout Rovers** | Environmental set pieces indicating enemy paths | Low (Intel Only) |
+
+</Section>
+
+<Section icon={Target} title="How to Interact with Battlefield Vehicles">
+
+Interacting with vehicles in EVE Vanguard requires a tactical approach. Since you cannot currently hop into a driver's seat and roam the map, your interaction is focused on salvaging, hacking, and using them for cover. Following a specific protocol when approaching these sites will significantly increase your survival rate during the Operation Avalon playtest.
+
+<Steps>
+  <Step num="1" title="Scout the Perimeter">
+    Before approaching a vehicle wreck, use your DMR or long-range optics to check for Mordu's Legion sentries or hidden Warclones.
+  </Step>
+  <Step num="2" title="Identify the Core">
+    Locate the Command Block or primary cargo container within the vehicle. These are usually highlighted during specific contracts.
+  </Step>
+  <Step num="3" title="Clear the Defenders">
+    Engage the elite ground troops protecting the convoy. Use grenades to clear groups of enemies huddled around the armored plates.
+  </Step>
+  <Step num="4" title="Salvage and Extract">
+    Once the area is clear, interact with the vehicle's storage systems to gather resources. Prepare to move quickly toward an extraction point.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Tactical Advantage">
+The heavy armor of destroyed convoy vehicles is bulletproof. Use the wheels and chassis as indestructible cover when engaging enemies in open terrain.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Extraction Ships and Deployment Pods">
+
+The lifecycle of a deployment is bookended by two specific **eve vanguard vehicles**: the Deployment Pod and the Extraction Ship. Your journey begins with a high-velocity drop from the Warbarge in a pod that slams into the surface, and it ends with a desperate signal to an extraction craft.
+
+The extraction process is the most critical phase of any mission. Unlike other shooters where extraction might be a simple timer, in EVE Vanguard, the availability of these transport vehicles changes based on the "risk-based" deployment system. As the match progresses, extraction opportunities may disappear, forcing you to push deeper into the map to find a remaining craft.
+
+<Checklist
+  id="extraction-prep"
+  title="Extraction Vehicle Checklist:"
+  items={[
+    "Verify extraction point status on the HUD",
+    "Ensure all high-value loot is in the secure inventory",
+    "Check ammunition levels before signaling the craft",
+    "Deploy defensive gadgets to cover the landing zone",
+    "Coordinate with squadmates for a synchronized exit"
+  ]}
+/>
+
+| Transport Phase | Vehicle Used | Gameplay Impact |
+| :--- | :--- | :--- |
+| **Infiltration** | Deployment Pod | Determines starting location and initial risk |
+| **Exfiltration** | Extraction Craft | The only way to secure persistent rewards |
+| **Emergency Exit** | Specialized Escape Pods | High-risk, low-reward alternative exits |
+
+<Callout type="info" title="Important Notice">
+If you fail to reach the extraction vehicle before it departs or the mission timer expires, you will lose all un-secured resources and gear carried during that run.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Future of Vehicles in EVE Vanguard">
+
+While the current Alpha focuses on the Warbarge and static vehicle objectives, the "sci-fi sandbox FPS" label suggests a broader horizon for **eve vanguard vehicles**. Official development notes from Operation Avalon and Operation Nemesis hint at a world where the connection between space and ground is seamless. This could eventually include player-controlled ground vehicles, atmospheric flight, and even more complex orbital-to-surface transport systems.
+
+The integration with EVE Online is a key indicator of future vehicle depth. As EVE Online capsuleers interact with convoys in space, those actions trigger events on the ground. In the future, we may see "World Events" where players must protect a moving convoy across a map or disable an enemy's transport fleet to prevent reinforcements.
+
+<CardGrid cols={2}>
+  <Card title="Potential Ground Vehicles">
+    - **Fast Attack Rovers**: For quick traversal of large maps.
+    - **Armored Personnel Carriers**: Squad-based transport for raids.
+    - **Mobile Cover Units**: Deployable shields on wheels.
+  </Card>
+  <Card title="Atmospheric Assets">
+    - **Dropships**: Player-piloted extraction and insertion craft.
+    - **Close Air Support**: Drones or ships providing orbital fire.
+    - **Reconnaissance UAVs**: Advanced scouting vehicles.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Community Insight">
+Keep an eye on the official EVE Vanguard Discord and Steam community discussions for teasers regarding "Modular Vehicle Systems" planned for post-2026 updates.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="EVE Vanguard Vehicles FAQ">
+
+<FAQ items={[
+  {
+    question: "Can I drive vehicles in the EVE Vanguard Alpha?",
+    answer: "In the current Operation Avalon playtest, players cannot drive ground vehicles. Vehicles like the Lost Convoy serve as tactical objectives and loot sources, while the Warbarge is your orbital hub."
+  },
+  {
+    question: "What is the most important vehicle in the game?",
+    answer: "The Warbarge is the most critical vehicle for progression, as it is where you customize your loadouts, craft gear, and manage your persistent inventory between deployments."
+  },
+  {
+    question: "How do I find the Lost Convoy vehicles?",
+    answer: "The Lost Convoy is a specific map/battlefield available during playtests. You can select it from the deployment screen on your Warbarge to enter a zone filled with vehicle wreckage and high-tier loot."
+  },
+  {
+    question: "Will there be driveable vehicles in the future?",
+    answer: "While not officially confirmed for the immediate Q3 2026 release, the game is described as a sci-fi sandbox FPS, which traditionally includes vehicle gameplay as the maps expand."
+  }
+]} />
+
+</Section>

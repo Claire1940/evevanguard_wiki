@@ -1,1 +1,10 @@
-{}
+{
+  "nav": {
+    "release": "Релиз",
+    "access": "Доступ",
+    "guide": "Гайд",
+    "gameplay": "Геймплей",
+    "connection": "Связь",
+    "platforms": "Платформы"
+  }
+}

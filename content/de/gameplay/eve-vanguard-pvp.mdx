@@ -1,0 +1,203 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard PvP: Kampf-Taktiken & Loadout-Leitfaden",
+  description: "Meistern Sie EVE Vanguard PvP mit unserem Experten-Leitfaden zu Waffen, Extraktionstaktiken und Loadouts für den Operation Avalon Alpha-Playtest in New Eden.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1a1a1a/00ffff?text=EVE+Vanguard+PvP+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team",
+  keywords: "EVE Vanguard, PvP, Kampf-Taktiken, Loadouts, Operation Avalon, Extraktion"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- **EVE Vanguard PvP** ist ein hochriskantes PvPvE-Erlebnis, bei dem Warclones in den feindseligen Umgebungen von New Eden um Ressourcen kämpfen.
+- **Kampfmechaniken** basieren auf einer Mischung aus kinetischen und Energie-Schadensarten, was von den Spielern verlangt, ihre Feuermodi an die gegnerische Verteidigung anzupassen.
+- **Die Extraktionsstrategie** ist die gefährlichste Phase, da rivalisierende Spieler in den letzten Minuten oft an den begrenzten Extraktionspunkten zusammentreffen.
+- **Loadout-Optimierung** durch modulare Chipsätze und spezialisierte Waffen wie das Laser DMR ist entscheidend für das Überleben in Fernkampfgefechten.
+- **Operation Avalon** führt das Schlachtfeld „Lost Convoy“ ein, das den Fokus auf Vertikalität und umkämpfte Ziele legt.
+</Callout>
+
+<Section icon={Map} title="Die PvPvE-Landschaft von New Eden">
+
+Im aktuellen Operation Avalon Alpha-Playtest stellt **EVE Vanguard PvP** den ultimativen Test für jeden Warclone dar. Im Gegensatz zu traditionellen Shootern basiert EVE Vanguard auf einem Extraktions-Abenteuer-Modell, bei dem die Umgebung ebenso tödlich ist wie die rivalisierenden Spieler. Sie werden auf planetaren Schlachtfeldern wie dem „Lost Convoy“ abgesetzt, wo Ihr primäres Ziel darin besteht, Verträge zu erfüllen, Technologie zu bergen und lebend zu extrahieren. Die Anwesenheit anderer Warclones bedeutet jedoch, dass jedes Ziel ein potenzieller Brennpunkt für intensive Kämpfe ist.
+
+<CardGrid cols={3}>
+  <Card title="PvP-Ziele">
+    - **Ressourcenstreitigkeiten**
+    - **Vertragssabotage**
+    - **Verhinderung der Extraktion**
+  </Card>
+  <Card title="PvE-Bedrohungen">
+    - **Truppen der Mordus Legion**
+    - **Nemesis-Drohnen**
+    - **Automatisierte Geschütztürme**
+  </Card>
+  <Card title="Umweltgefahren">
+    - **Atmosphärischer Druck**
+    - **Sperrzonen**
+    - **Eingeschränkte Sicht**
+  </Card>
+</CardGrid>
+
+In **EVE Vanguard PvP** steht alles auf dem Spiel. Wenn Sie im Kampf fallen, verlieren Sie alle Beute und Ressourcen, die Sie während dieses Einsatzes gesammelt haben. Diese „Alles-verlieren“-Mechanik erzwingt eine Verhaltensänderung bei den Spielern, bei der Tarnung und taktische Positionierung oft wichtiger sind als pure Aggression. Ob Sie rivalisierende Warclones wegen ihrer Ausrüstung jagen oder einfach nur versuchen, Ihre Beute zu verteidigen – das Verständnis des Schlachtfeldflusses ist unerlässlich.
+
+| Begegnungstyp | Risikostufe | Potenzielle Belohnung | Empfohlene Strategie |
+|:--- |:--- |:--- |:--- |
+| **Zielverteidigung** | Mittel | Hoch | Deckung und platzierbare Sensoren nutzen |
+| **Extraktions-Hinterhalt** | Extrem | Sehr hoch | Perimeter vor dem Anfordern auskundschaften |
+| **Zufällige Begegnung** | Hoch | Variabel | Sichtlinie unterbrechen, falls unterlegen |
+| **Nemesis-Jagd** | Hoch | Elite-Tech | Mit Teammitgliedern koordinieren |
+
+<Callout type="warning" title="Risikomanagement">
+In **EVE Vanguard PvP** stirbt der lauteste Spieler meist zuerst. Schüsse sind aus großer Entfernung zu hören und locken sowohl KI-Verstärkung als auch opportunistische rivalisierende Spieler an Ihren Standort.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Kampfmechaniken und Schadensarten">
+
+Erfolg in **EVE Vanguard PvP** erfordert ein tiefes Verständnis der modularen Waffensysteme des Spiels. Waffen in EVE Vanguard sind nicht statisch; sie können mit Chipsätzen modifiziert werden, um ihre Leistung zu verändern. Eine Kernmechanik besteht darin, zwischen Schadensarten zu wechseln, um die gegnerische Verteidigung effizient zu durchbrechen. Die meisten Warclones nutzen eine Kombination aus Schilden und Panzerung, und die Verwendung der falschen Schadensart kann Ihre Time-to-Kill (TTK) erheblich verlängern.
+
+| Schadensart | Hauptziel | Effektivität | Visueller Indikator |
+|:--- |:--- |:--- |:--- |
+| **Kinetisch** | Panzerung / Gesundheit | Hoch gegen physische Platten | Weiße/Gelbe Funken |
+| **Energie** | Schilde | Baut blaue Balken schnell ab | Blaues/Cyanfarbenes Leuchten |
+| **Hybrid** | Ausgewogen | Moderat gegen alle Typen | Gemischte Effekte |
+
+Bei Kämpfen in **EVE Vanguard PvP** besteht die standardmäßige taktische Schleife darin, energiebasierten Feuermodi oder Waffen (wie das Strahlengewehr) zu verwenden, um die Schilde eines Gegners zu zerstören, und dann schnell auf kinetisches Feuer (wie die SMG oder Schrapnell-Kanone) zu wechseln, um die verbleibende Panzerung zu zerfetzen. Spieler, die diese „Shield-Gate“-Mechanik nicht beherrschen, werden gegenüber erfahrenen Veteranen massiv im Nachteil sein.
+
+<CardGrid cols={2}>
+  <Card title="Offensive Taktiken">
+    - **Flankieren**: Nutzen Sie die Vertikalität der Lost Convoy-Karte, um über Ihr Ziel zu gelangen.
+    - **Unterdrückung**: Verwenden Sie Waffen mit hoher Kapazität, um Feinde in Deckung zu halten, während Teammitglieder vorrücken.
+  </Card>
+  <Card title="Defensive Taktiken">
+    - **Schild-Regeneration**: Ziehen Sie sich hinter feste Deckung zurück, damit Ihr Energieschild neu starten kann.
+    - **Nova-Klinge**: Halten Sie eine Nahkampfwaffe für Paniksituationen im Nahkampf bereit.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Waffenanpassung">
+Überprüfen Sie vor dem Einsatz immer die aktuelle Chipsatz-Konfiguration Ihrer Waffe. Ein Laser DMR mit Energie-Fokus-Chipsätzen ist verheerend gegen Schilde, wird aber ohne Unterstützung Schwierigkeiten haben, ein gepanzertes Ziel auszuschalten.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Beste Waffen für PvP-Gefechte">
+
+Das Arsenal, das während der Alpha-Playtests 2026 zur Verfügung steht, bietet eine Vielzahl von Werkzeugen für unterschiedliche Kampfrollen. Die Wahl der richtigen Waffe für **EVE Vanguard PvP** hängt stark von Ihrem beabsichtigten Spielstil und dem spezifischen Bereich der Karte ab, den Sie kontrollieren möchten. Zum Beispiel begünstigen die engen Korridore von Vorposten die Schrapnell-Kanone, während die offenen Ebenen des Lost Convoy das Laser DMR erforderlich machen.
+
+<Steps>
+  <Step num="1" title="Wählen Sie Ihre primäre Rolle">
+    Entscheiden Sie, ob Sie der „Pointman“ (Nahbereich), „Unterstützer“ (mittlere Distanz) oder „Präzisionsschütze“ (Fernkampf) sind. Ihre Waffenwahl muss diese Rolle widerspiegeln, um Team-Synergien zu gewährleisten.
+  </Step>
+  <Step num="2" title="Analysieren Sie das Kartenlayout">
+    In Operation Avalon befinden sich viele Ziele in Kratern oder Wrackteilen. Mitteldistanzwaffen wie das Strahlengewehr bieten in diesen abwechslungsreichen Umgebungen die größte Vielseitigkeit.
+  </Step>
+  <Step num="3" title="Rüsten Sie komplementäre Chipsätze aus">
+    Wenn Sie eine SMG verwenden, rüsten Sie Chipsätze aus, die den Rückstoß verringern oder die Magazingröße erhöhen. Konzentrieren Sie sich bei Präzisionsgewehren auf Schaden pro Schuss und Projektilgeschwindigkeit.
+  </Step>
+</Steps>
+
+| Waffe | Rolle | Ideale Reichweite | PvP-Stärke |
+|:--- |:--- |:--- |:--- |
+| **SMG** | CQC / Flankieren | 0-15m | Hohe Feuerrate, Mobilität |
+| **Schrapnell-Kanone** | Erstürmung | 0-10m | Extremer Burst-Schaden |
+| **Laser DMR** | Präzision | 30-100m | Hohe Genauigkeit, Schilddruck |
+| **Strahlengewehr** | Allzweck | 15-50m | Vielseitige Feuermodi |
+| **Nova-Klinge** | Nahkampf-Finisher | 0-2m | Lautlos, ignoriert niedrige Panzerung |
+
+<Callout type="success" title="Die Meta-Wahl">
+Seit dem Playtest im Juli 2026 gilt das **Laser DMR** in Kombination mit einer **SMG** als das effektivste Allround-Loadout für **EVE Vanguard PvP**. Es ermöglicht Ihnen, Feinde auf Distanz zu bedrängen und sich bei einem Vorstoß zu verteidigen.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Extraktionstaktiken und Überleben">
+
+Die Extraktionsphase ist der Zeitpunkt, an dem die meisten **EVE Vanguard PvP**-Begegnungen stattfinden. Wenn sich der Missionstimer dem Ende nähert, werden Extraktionspunkte zu Brennpunkten für verzweifelte Warclones. Um den Planeten erfolgreich zu verlassen, müssen Sie mehr tun, als nur die Zone zu erreichen; Sie müssen sie verteidigen, bis der Transport eintrifft.
+
+**Extraktions-Sicherheits-Checkliste:**
+<Checklist
+  id="extraction-safety"
+  title="Protokoll vor der Extraktion:"
+  items={[
+    "Extraktionsperimeter mit einer Fernoptik auskundschaften",
+    "Mindestens zwei feste Deckungsmöglichkeiten innerhalb der Zone identifizieren",
+    "Auf frische Kampfspuren prüfen (Leichen oder Patronenhülsen)",
+    "Sicherstellen, dass alle Waffen voll geladen sind, bevor der Transport gerufen wird",
+    "Verbleibende taktische Ausrüstung einsetzen, um die Flanken zu sichern"
+  ]}
+/>
+
+In Operation Avalon wurde die Extraktionsmechanik so umgestaltet, dass sie stärker umkämpft ist. Rivalisierende Spieler können sehen, wenn eine Extraktion ausgelöst wird, was Ihren Standort effektiv auf der Karte markiert. Dies schafft ein „King of the Hill“-Szenario, in dem Sie Wellen von KI und potenziell mehrere Spielertrupps abwehren müssen.
+
+<Steps>
+  <Step num="1" title="Die Annäherung">
+    Laufen Sie niemals direkt in die Mitte einer Extraktionszone. Nähern Sie sich von einer Anhöhe oder über verdeckte Routen, um potenzielle Camper zu entdecken.
+  </Step>
+  <Step num="2" title="Das Anfordern">
+    Sobald das Gebiet sauber ist, lösen Sie die Extraktion aus und begeben sich sofort in eine Verteidigungsposition. Stehen Sie nicht direkt auf dem Signalfeuer.
+  </Step>
+  <Step num="3" title="Das Halten">
+    Nutzen Sie Granaten und Unterdrückungsfeuer, um Feinde in Schach zu halten. Wenn ein rivalisierender Trupp eintrifft, priorisieren Sie das Überleben vor Kills – Sie müssen nur am Leben bleiben, bis der Timer Null erreicht.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Taktischer Rückzug">
+Wenn die Extraktionszone zu stark von rivalisierenden Spielern belagert wird, ist es oft besser, den Ort aufzugeben und einen sekundären Extraktionspunkt anzusteuern, sofern die Zeit es erlaubt. Seine Beute zu verlieren ist schlimmer, als ein paar Minuten Zeit zu verlieren.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Fortgeschrittene Progression und Warclone-Anpassung">
+
+Der Fortschritt in **EVE Vanguard PvP** ist an Ihre Fähigkeit gebunden, wertvolle Ressourcen und Technologie zu extrahieren. Diese Gegenstände werden auf Ihrer Warbarge verwendet, um fortschrittliche Chipsätze herzustellen und die Fähigkeiten Ihres Anzugs zu verbessern. Ein gut optimierter Warclone kann deutlich mehr Gesundheit, eine schnellere Schildregeneration oder verbesserte Tarnung im Vergleich zu einem neuen Rekruten haben.
+
+**Wichtige Progressionselemente:**
+- **Resonanz-Chiffren**: Seltene Gegenstände, die während Einsätzen geborgen werden und hochrangige Belohnungen freischalten.
+- **Modulare Chipsätze**: Die primäre Methode, um das Waffenverhalten und die Schadensprofile anzupassen.
+- **Anzugs-Upgrades**: Permanente Verbesserungen der physischen Attribute Ihres Warclones, wie Ausdauer und Tragfähigkeit.
+
+| Upgrade-Kategorie | Fokus | PvP-Vorteil |
+|:--- |:--- |:--- |
+| **Neuralverbindungen** | Genauigkeit / Handhabung | Schnelleres Zielen (ADS) und reduziertes Schwanken |
+| **Plattenverstärkung** | Panzerung / Gesundheit | Erhöht die Überlebensfähigkeit gegen kinetisches Feuer |
+| **Kondensator-Booster** | Schildeffizienz | Schnellerer Schild-Neustart nach erlittenem Schaden |
+| **Sensor-Arrays** | Erkennung | Erhöht die Reichweite, in der Feinde markiert werden |
+
+<Callout type="tip" title="EVE Online Synergie">
+Denken Sie daran, dass Ihre Aktionen in **EVE Vanguard PvP** den weiteren Krieg in EVE Online beeinflussen können. Das Abschließen spezifischer Verträge trägt zu Weltereignissen bei, die lukrative Möglichkeiten für Kapselpiloten im Weltraum auslösen können, die wiederum Vanguard-Operationen unterstützen können.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Häufig gestellte Fragen">
+
+<FAQ items={[
+  {
+    question: "Ist EVE Vanguard ein reines PvP-Spiel?",
+    answer: "Nein, es ist ein PvPvE-Extraktions-Shooter. Während Sie auf andere Spieler treffen (PvP), besteht ein Großteil des Gameplays darin, gegen KI-Fraktionen wie die Mordus Legion zu kämpfen und PvE-Ziele zu erfüllen."
+  },
+  {
+    question: "Was passiert, wenn ich in EVE Vanguard PvP sterbe?",
+    answer: "Der Tod führt zum Verlust aller Gegenstände, Ressourcen und Bergungsgüter, die während dieses spezifischen Einsatzes gesammelt wurden. Ihre permanente Progression, wie freigeschaltete Chipsätze und Anzugs-Upgrades, bleibt jedoch erhalten."
+  },
+  {
+    question: "Kann ich EVE Vanguard solo spielen oder brauche ich einen Trupp?",
+    answer: "Sie können solo spielen, aber das Spiel ist für das Zusammenspiel im Trupp ausbalanciert. Solo-Spieler müssen in PvP-Begegnungen viel vorsichtiger sein, da sie nicht von Teammitgliedern wiederbelebt werden können."
+  },
+  {
+    question: "Wie wechsle ich während des Kampfes die Schadensart?",
+    answer: "Schadensarten werden durch den Feuermodus Ihrer Waffe und die ausgerüsteten Chipsätze bestimmt. Viele Waffen ermöglichen es Ihnen, mit einem Hotkey zwischen verschiedenen Modi (z. B. kinetisch und Energie) umzuschalten."
+  }
+]} />
+
+</Section>

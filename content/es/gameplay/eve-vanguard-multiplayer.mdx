@@ -1,0 +1,160 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Multijugador de EVE Vanguard: Escuadrones Cooperativos y Tácticas PvPvE",
+  description: "Domina las mecánicas multijugador de EVE Vanguard. Aprende sobre el tamaño de los escuadrones, estrategias cooperativas, reglas PvPvE y cómo el combate terrestre planetario se conecta con EVE Online.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/121c24/00f0ff?text=Multiplayer+Tactics+Guide",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Multijugador de EVE Vanguard**: Un FPS de aventura y extracción PvPvE persistente de alto riesgo ambientado en New Eden.
+- **Dinámicas Cooperativas**: Despliegues basados en escuadrones que priorizan el saqueo de recursos, el combate estratégico y las extracciones coordinadas.
+- **Estructura PvPvE**: Enfréntate a las fuerzas hostiles de la Legión de Mordu (PvE) mientras te defiendes de escuadrones rivales de Warclones (PvP).
+- **Conexión con New Eden**: Las acciones en tierra impactan directamente en las batallas de naves espaciales y el panorama político de EVE Online.
+</Callout>
+
+<Section icon={Swords} title="Multijugador de EVE Vanguard: La próxima era de la guerra PvPvE">
+
+El multijugador de EVE Vanguard ofrece una experiencia FPS sandbox oscura y distópica donde los jugadores se despliegan como Warclones inmortales. Operando dentro del universo compartido de New Eden, tu escuadrón tiene la tarea de asaltar lugares de accidentes planetarios, atacar bases avanzadas controladas por corporaciones y extraer tecnología valiosa. Sin embargo, el campo de batalla está lejos de estar vacío. Debes equilibrar constantemente la amenaza de facciones PvE de élite, como la Legión de Mordu, con el peligro impredecible de los escuadrones de jugadores rivales que buscan exactamente el mismo botín.
+
+**Puntos destacados del video:**
+- **Universo Persistente**: Combate a nivel de suelo vinculado directamente a la política de los sistemas estelares de EVE Online.
+- **Balística Avanzada**: Plataformas de armas modulares con múltiples modos de disparo y cambio de tipo de daño.
+- **Extracción Disputada**: Opciones de salida limitadas que obligan a los escuadrones a enfrentarse en puntos de control de alto riesgo.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard Official Trailer" />
+
+La supervivencia en este duro paisaje de ciencia ficción requiere comprender cómo se organizan los escuadrones y cómo abordar los encuentros PvPvE. La siguiente tabla resume los parámetros centrales de la experiencia multijugador.
+
+| Característica Multijugador | Detalles de Especificación | Impacto Táctico |
+| :--- | :--- | :--- |
+| **Formato de Partida** | Sala persistente con PvPvE activo | Sin zonas seguras una vez desplegado en el planeta |
+| **Enemigos Principales** | Legión de Mordu (PNJ) y escuadrones rivales (Jugadores) | Se deben preparar equipamientos para ambas amenazas |
+| **Emparejamiento de Escuadrón** | Soportado a través de Steam y el Launcher de EVE | Se requiere coordinación para zonas de alto nivel |
+| **Reglas de Botín** | Pérdida total al morir a menos que se extraiga | El alto riesgo dicta elecciones de combate cuidadosas |
+
+<Callout type="warning" title="Despliegue en Solitario vs. Escuadrones">
+Aunque el despliegue en solitario es posible, el multijugador de EVE Vanguard está fuertemente equilibrado en torno a la coordinación de escuadrones. Los Warclones solitarios se enfrentarán a escuadrones enemigos completos sin la posibilidad de ser reanimados por compañeros.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Estrategias de Escuadrón Cooperativo y Sinergia de Equipo">
+
+Tener éxito en el entorno cooperativo de EVE Vanguard requiere una división clara de roles y disciplina táctica. A diferencia de los juegos tradicionales de duelo por equipos, tu objetivo principal es asegurar el botín y extraer con vida, no maximizar tu recuento de bajas.
+
+<CardGrid cols={3}>
+  <Card title="El Vanguardia">
+    - **Especialista en Corto Alcance**: Equipa subfusiles de disparo rápido o cañones de metralla para limpiar espacios cerrados.
+    - **Rol de Explorador**: Lidera al escuadrón en las instalaciones y detecta las líneas defensivas enemigas.
+    - **Rematador Cuerpo a Cuerpo**: Utiliza la Hoja Nova para eliminaciones silenciosas en distancias cortas.
+  </Card>
+  <Card title="El Tirador">
+    - **Fuego de Precisión**: Utiliza el DMR láser o el fusil de haz para eliminar objetivos desde lejos.
+    - **Vigilancia**: Cubre al escuadrón durante los objetivos de hackeo y las llamadas de extracción.
+    - **Presión de Escudos**: Agota los escudos de energía enemigos utilizando chipsets especializados.
+  </Card>
+  <Card title="El Apoyo">
+    - **Portador de Utilidad**: Gestiona la curación del escuadrón, las reanimaciones y los desplegables tácticos.
+    - **Mula de Recursos**: Transporta de forma segura tecnología recuperada de alto valor durante el movimiento.
+    - **Defensa de Flancos**: Vigila la retaguardia para evitar que escuadrones enemigos realicen ataques de terceros.
+  </Card>
+</CardGrid>
+
+Para maximizar tu eficiencia durante los despliegues, los escuadrones deben coordinar sus equipamientos para cubrir todas las distancias de combate y tipos de daño.
+
+| Rol | Arma Principal | Enfoque de Tipo de Daño | Responsabilidad Principal |
+| :--- | :--- | :--- | :--- |
+| **Brechador** | Subfusil / Cañón de metralla | Cinético / Alto impacto | Limpiar estructuras interiores y presionar escuadrones rivales |
+| **Apoyo** | Fusil de asalto modular | Híbrido / Sostenido | Fuego de supresión, reanimaciones, transporte de botín |
+| **Tirador** | DMR láser / Fusil de haz | Energía / Precisión | Neutralizar francotiradores y cubrir zonas de extracción |
+
+<Callout type="tip" title="Coordina tus Tipos de Daño">
+Asegúrate de que tu escuadrón tenga una mezcla de armas de energía y cinéticas. Las armas de energía eliminan rápidamente los escudos enemigos, mientras que las cinéticas infligen un daño masivo a la armadura y la salud.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="El Ciclo de Juego PvPvE: Paso a Paso">
+
+Cada despliegue en el multijugador de EVE Vanguard sigue un ciclo estricto y de alta tensión. Desde el momento en que tu cápsula de descenso toca la superficie hasta la baliza de extracción final, tu escuadrón debe tomar decisiones rápidas y calculadas.
+
+<Steps>
+  <Step num="1" title="Inserción Planetaria">
+    Tu escuadrón aterriza en un campo de batalla disputado, como la zona del Convoy Perdido. Busca cobertura de inmediato, consulta tu mapa e identifica los objetivos de contrato cercanos y los puntos de extracción.
+  </Step>
+  <Step num="2" title="Ejecución de Contratos">
+    Enfréntate a las fuerzas de la Legión de Mordu para completar contratos de alto riesgo. Mantén el ruido al mínimo; los disparos alertarán a los escuadrones de Warclones rivales sobre tu posición exacta.
+  </Step>
+  <Step num="3" title="Saqueo y Recuperación Técnica">
+    Asalta los lugares de accidentes y asegura tecnología exótica. Prioriza los chipsets de alto nivel y los Cifrados Resonantes, que pueden intercambiarse por valiosas recompensas.
+  </Step>
+  <Step num="4" title="Extracción Disputada">
+    A medida que el temporizador de la sesión llega a cero, dirígete a un punto de extracción activo. Asegura el perímetro, despliega utilidades defensivas y defiende la zona contra escuadrones rivales desesperados que intentan robar tu botín.
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Trophy} title="Hitos y Progresión Multijugador">
+
+Para establecer el dominio en la guerra terrestre de New Eden, tu escuadrón debe trabajar para alcanzar hitos de progresión específicos. La extracción de recursos te permite fabricar mejor equipo, lo que te otorga una ventaja clara en despliegues posteriores.
+
+<Checklist
+  id="multiplayer-progression"
+  title="Objetivos e Hitos del Escuadrón:"
+  items={[
+    "Completar 10 extracciones de escuadrón exitosas con bolsas de botín llenas",
+    "Desbloquear chipsets de armas avanzados para personalización modular",
+    "Defender con éxito un punto de extracción contra un escuadrón de jugadores rivales",
+    "Recuperar y extraer un Cifrado Resonante de alto valor",
+    "Coordinar un ataque planetario combinado que influya en la guerra espacial"
+  ]}
+/>
+
+Las recompensas de tus operaciones terrestres no se limitan a tu inventario de Vanguard. Las extracciones exitosas alimentan directamente el conflicto más amplio de New Eden.
+
+| Recurso Extraído | Uso Principal en Tierra | Conexión con EVE Online |
+| :--- | :--- | :--- |
+| **Cifrados Resonantes** | Fabricación de piezas de armas avanzadas | Intercambiados en comerciantes imperiales por activos espaciales valiosos |
+| **Chatarra Tecnológica Exótica** | Desbloqueo de armazones de armas modulares | Contribuye al progreso global de la guerra de facciones |
+| **Chipsets de Armas** | Modificación de modos de disparo y retroceso | Muestra la eficiencia en combate del escuadrón en tablas de clasificación |
+
+<Callout type="success" title="El Esfuerzo de Guerra Compartido">
+Tus victorias en el multijugador de EVE Vanguard impactan directamente en EVE Online. Completar contratos terrestres puede desencadenar eventos orbitales, generando valiosos sitios de combate y hackeo para los pilotos de naves espaciales.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Preguntas Frecuentes del Multijugador de EVE Vanguard">
+
+<FAQ items={[
+  {
+    question: "¿EVE Vanguard es estrictamente PvP o hay contenido PvE?",
+    answer: "EVE Vanguard es un shooter de extracción híbrido PvPvE. Lucharás tanto contra facciones controladas por la IA, como la Legión de Mordu, como contra escuadrones de Warclones controlados por jugadores en el mismo despliegue."
+  },
+  {
+    question: "¿Puedo jugar al multijugador de EVE Vanguard en solitario o necesito un escuadrón?",
+    answer: "Puedes desplegarte en solitario, pero se recomienda encarecidamente jugar en escuadrón. Los jugadores en solitario comparten las mismas salas que los equipos coordinados, lo que hace que la supervivencia y la extracción sean significativamente más difíciles."
+  },
+  {
+    question: "¿Mis acciones en el multijugador de Vanguard afectan a EVE Online?",
+    answer: "Sí. Los despliegues terrestres contribuyen a eventos del mundo compartido. Las extracciones exitosas pueden desencadenar anomalías espaciales, bombardeos orbitales y progreso en la guerra de facciones en EVE Online."
+  },
+  {
+    question: "¿Qué pasa con mi botín multijugador si mi escuadrón es eliminado?",
+    answer: "EVE Vanguard cuenta con reglas de pérdida total al morir. Si todo tu escuadrón es eliminado y nadie extrae tu equipo, todos los recursos recolectados, la tecnología recuperada y el equipo no asegurado se pierden."
+  }
+]} />
+
+</Section>

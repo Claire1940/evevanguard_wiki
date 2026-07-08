@@ -1,0 +1,167 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Connected to EVE Online: Intergame Systems Guide",
+  description: "Discover how EVE Vanguard connects to EVE Online. Learn about shared New Eden world events, Quasar backend tech, Resonant Cyphers, and Warclone rewards.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/121c24/00f0ff?text=EVE+Vanguard+Connection+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Connection**: The game utilizes a shared backend to link planetside Warclone deployments directly with space-faring Capsuleer actions in EVE Online.
+- **Technical Architecture**: Real-time integration is powered by CCP's **Quasar backend** using Event-Driven Architecture (EDA) to bridge both games.
+- **Core Loop**: Completing planetary contracts in EVE Vanguard directly influences system corruption, suppression, and space-based world events.
+- **Shared Economy**: Players can acquire **Resonant Cyphers** and valuable blueprints planetside to trade or manufacture assets in orbit.
+- **Target Release**: The developers aim to establish a **24/7 persistent link** between both games by the end of 2026.
+</Callout>
+
+<Section icon={Map} title="How EVE Vanguard Connected to EVE Online Shapes New Eden">
+
+The planetary battlefields of New Eden are no longer isolated from the massive space economy above. The core design of EVE Vanguard is built around a direct connection to EVE Online, creating a unified war front where actions on the ground directly echo through the stars. Players deploy planetside as immortal Warclones to complete high-stakes contracts, gather resources, and extract valuable technology. 
+
+Rather than existing as a generic spin-off, EVE Vanguard serves as the boots-on-the-ground extension of the main MMO. This connection ensures that every planetary expedition contributes to the ongoing territorial and political struggles of New Eden's major factions.
+
+**Video Highlights:**
+- **Shared Universe**: How ground victories impact orbital sovereignty and faction warfare.
+- **Immortal Warclones**: The lore behind the Arkombine mercenary group and Sleeper technology.
+- **Real-Time Data**: A brief look at how backend servers communicate across both clients.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard - Connected to EVE Online" />
+
+<Callout type="tip" title="Strategic Alignment">
+Aligning your planetary deployments with active Faction Warfare systems in EVE Online maximizes your impact on the war effort, generating valuable resources for your allied corporations.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="The Quasar Backend: How the Connection Works">
+
+The link between EVE Vanguard and EVE Online is made possible by CCP Games' custom backend infrastructure, known as **Quasar**. Although both games run on completely different engines—EVE Online on its legacy codebase and EVE Vanguard on Unreal Engine 5—they communicate in near-real-time using an Event-Driven Architecture (EDA).
+
+When a Warclone completes an objective on a hostile planet, the Vanguard backend acts as a trusted publisher. It sends structured data packets directly to Quasar via a highly secure, private network using gRPC and protocol buffers. 
+
+| Backend Component | Primary Function | Impact on Players |
+| :--- | :--- | :--- |
+| **Vanguard Client** | Sends real-time combat and contract event data | Tracks player actions on the ground |
+| **Quasar Gateway** | Processes incoming events and securely verifies game states | Bridges the two independent game engines |
+| **EVE Online Services** | Aggregates data into active Faction Warfare systems | Shifts system-wide corruption or suppression levels |
+
+<CardGrid cols={2}>
+  <Card title="Event-Driven Architecture">
+    - **Scalable Design**: Allows both games to scale independently without affecting server stability.
+    - **Decoupled Systems**: State changes (like character undocking or contract completion) are published onto a central message bus.
+    - **Real-Time Updates**: Ground actions update active Faction Warfare stats in space within milliseconds.
+  </Card>
+  <Card title="Secure gRPC Integration">
+    - **Trusted Publisher**: Vanguard servers are validated within CCP's private network using PKI certificates.
+    - **Fast Communication**: Minimizes latency between planetary extractions and orbital market changes.
+    - **Future-Proof**: Lays the technical foundation for two-way, real-time interactive events.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Technical Note">
+This real-time connection means that a squad of players completing a hacking contract in EVE Vanguard can immediately alter the radar signature of a space station or unlock orbital strike options for friendly fleets in EVE Online.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Operation Avalon: Shared World Events and Rewards">
+
+The **Operation Avalon Alpha playtest** (running from July 7 to July 20, 2026) showcases the direct gameplay connection between the two titles. During this event, Warclone actions on the ground directly trigger unique opportunities for Capsuleers flying in space.
+
+When Vanguard players successfully complete planetary expeditions, they generate **Global Points** that contribute to a shared universe-wide progress bar. Once this gauge is filled, unique anomalies and high-value convoys appear in EVE Online space, creating immediate PvE and PvP opportunities for space pilots.
+
+<Steps>
+  <Step num="1" title="Complete Ground Contracts">
+    Vanguard players deploy to the **Lost Convoy battlefield**, completing hacking, salvaging, and combat objectives.
+  </Step>
+  <Step num="2" title="Generate Resonant Cyphers">
+    Successful extractions award planetary players and space pilots with **Vanguard Resonant Cyphers**.
+  </Step>
+  <Step num="3" title="Trigger Space Anomalies">
+    Accumulated points trigger special AEGIS squalls and raidable convoys across designated solar systems in EVE Online.
+  </Step>
+  <Step num="4" title="Redeem at Empire Traders">
+    Capsuleers collect Resonant Cyphers and exchange them at major trade hubs for exclusive faction rewards.
+  </Step>
+</Steps>
+
+| Target System Type | Connected Activity | Shared Event Reward |
+| :--- | :--- | :--- |
+| **Vanguard Ground Zones** | Resource harvesting and Mordu's Legion combat | Blueprint drops, weapon chipsets, and raw ores |
+| **EVE Online Space Sites** | Raiding convoys, hacking data vaults, and salvaging | Skill Points, volatile boosters, and custom SKINs |
+| **Empire Trade Hubs** | Exchanging Resonant Cyphers with faction brokers | Lorharyth's Modified Inertial Stabilizers, faction drones |
+
+<Callout type="warning" title="Loot Rules">
+Just like in EVE Online, EVE Vanguard features a full-loss death mechanic. If your Warclone is eliminated before reaching the extraction zone, all gathered resources, weapon chipsets, and unredeemed blueprints are permanently lost.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Industry and Economic Interoperability">
+
+The connection between EVE Vanguard and EVE Online extends deeply into the game economies. In New Eden, everything is player-driven, and the developers are actively integrating Vanguard into this legendary economic ecosystem. 
+
+While you risk losing your active loadout upon death, a successful extraction allows you to secure **blueprints**. These blueprints are highly valuable because they allow you to manufacture replacement weapons and gear in orbit using raw materials harvested from planetary mining and container scavenging.
+
+<Checklist
+  id="economic-integration"
+  title="Key Economic Links to Master:"
+  items={[
+    "Secure weapon blueprints during planetary extractions to build gear copies in orbit [1.2.4].",
+    "Mine rare planetary ores that can only be found in contested Vanguard battlefields.",
+    "Trade extracted high-tech salvage on the regional EVE Online market to earn ISK.",
+    "Support your corporation's manufacturing lines by supplying planetary data cores."
+  ]}
+/>
+
+<Callout type="success" title="Manufacturing Tip">
+Always prioritize extracting blueprints over common resources. Blueprints allow you to bypass the high cost of purchasing pre-made weapons from market traders, securing your long-term war efforts.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Connecting Your Accounts and Getting Started">
+
+To experience the connected universe of New Eden, players must link their profiles through a unified launcher. Because the games are deeply integrated, you do not need to manage separate accounts to enjoy both experiences.
+
+| Step | Action Required | Details |
+| :--- | :--- | :--- |
+| **1** | Download EVE Launcher | Install the official launcher from the EVE Vanguard website. |
+| **2** | Sign In or Register | Use your existing EVE Online account or create a new one. |
+| **3** | Install EVE Vanguard | Select the Vanguard tab in the launcher and allocate 50 GB of SSD space. |
+| **4** | Deploy Planetside | Launch the game client and begin completing connected contracts. |
+
+<Callout type="info" title="Launcher Compatibility">
+During the active Alpha playtest windows, you can launch EVE Vanguard directly from the EVE Online Launcher. Your character progress and faction standings will automatically sync between both titles.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "Is EVE Vanguard connected to EVE Online permanently?",
+    answer: "Yes. While players can participate in either game independently, the developers are building EVE Vanguard to be directly connected to EVE Online, with plans for a 24/7 persistent link by the end of 2026."
+  },
+  {
+    question: "Do actions in EVE Vanguard affect the EVE Online economy?",
+    answer: "Yes. Vanguard players can extract blueprints and rare planetary resources that feed directly into the manufacturing and trade networks of EVE Online's regional markets."
+  },
+  {
+    question: "What happens to my gear in EVE Vanguard when I die?",
+    answer: "EVE Vanguard features a full-loss death mechanic similar to EVE Online. If you die before extracting, you lose all the physical gear your Warclone was carrying, though secured blueprints remain safe in orbit."
+  },
+  {
+    question: "How does the Quasar backend link the two games?",
+    answer: "The Quasar backend uses an Event-Driven Architecture (EDA) to translate ground achievements in EVE Vanguard into real-time faction warfare corruption and suppression updates in EVE Online."
+  }
+]} />
+
+</Section>

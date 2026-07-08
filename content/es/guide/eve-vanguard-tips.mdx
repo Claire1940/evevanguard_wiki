@@ -1,0 +1,155 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Consejos para EVE Vanguard: Las mejores estrategias de supervivencia y extracción",
+  description: "Domina EVE Vanguard con consejos esenciales sobre combate, recolección de recursos, equipamientos y cómo sobrevivir en los hostiles campos de batalla de New Eden.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/121b2d/00f0ff?text=Vanguard+Survival+Tips",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Objetivo principal**: Despliégate en la superficie planetaria como un clon de guerra inmortal, completa contratos de alto riesgo, recolecta recursos raros y extráelos de forma segura [base-info].
+- **Meta de combate**: Controla el intenso retroceso de las armas usando ráfagas cortas, realiza remates cuerpo a cuerpo en distancias cortas y utiliza los tipos de munición correctos.
+- **Prioridad de supervivencia**: Despliega un escudo portátil inmediatamente al aparecer para proteger a tu escuadrón de tiroteos repentinos.
+- **Elección de extracción**: Vigila de cerca el temporizador del mapa; los bombardeos orbitales destruyen sistemáticamente los puntos de extracción a medida que avanza la partida.
+- **Bucle de progresión**: Usa la tecnología extraída para comprar planos y fabricar mejoras de armas dentro del hangar de tu barcaza de guerra.
+</Callout>
+
+<Section icon={Map} title="Consejos de EVE Vanguard para principiantes">
+
+Entrar en los campos de batalla planetarios de New Eden requiere una mente aguda y reflejos rápidos. Para destacar en este shooter de extracción tipo sandbox, debes entender el bucle básico de desplegarse, saquear, luchar y extraer [base-info]. El éxito no se trata solo de tener la mejor puntería; se trata de tomar decisiones inteligentes y calculadas bajo una presión extrema.
+
+| Categoría del consejo | Acción clave | Beneficio táctico | Prioridad |
+| :--- | :--- | :--- | :--- |
+| **Sonido** | Usa auriculares de calidad | Localiza los pasos y disparos enemigos en estructuras de varios pisos | ★★★★★ |
+| **Preparación de munición** | Fabrica munición de reserva inmediatamente | Evita quedarte sin balas durante encuentros PvP repentinos | ★★★★★ |
+| **Información del mapa** | Mantén pulsado Tab para ver el minimapa | Rastrea puntos de interés, objetivos hostiles y señales de aliados en tiempo real | ★★★★☆ |
+| **Trabajo en equipo** | Usa el micrófono con pulsar para hablar | Coordina rutas de flanqueo y el intercambio de recursos con tu escuadrón | ★★★★☆ |
+
+<Callout type="tip" title="Consejo profesional: El silencio es supervivencia">
+Evita disparar a personajes no jugadores (PNJ) o torretas automáticas a menos que sea absolutamente necesario. El eco de los disparos alerta a los jugadores rivales de tu ubicación exacta, dejándote vulnerable a ataques de flanco inmediatos.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Combate y personalización de armas">
+
+El juego de armas en este shooter de extracción es altamente táctico, con un retroceso significativo y sistemas de armas modulares. Saber cómo configurar los chipsets de tus armas y cambiar los tipos de daño sobre la marcha determina si ganas o pierdes un tiroteo [base-info]. 
+
+<CardGrid cols={3}>
+  <Card title="Munición cinética">
+    - **Barata de fabricar** usando recursos básicos
+    - Altamente efectiva contra **objetivos PNJ** estándar
+    - Tipo de munición equipado por defecto al aparecer
+  </Card>
+  <Card title="Munición de energía">
+    - Requiere **recursos minados** para fabricarse
+    - Extremadamente efectiva contra **jugadores rivales**
+    - Destroza escudos y objetivos de misión
+  </Card>
+  <Card title="Cuerpo a cuerpo con Hoja Nova">
+    - Arma de corto alcance forjada a mano [homepage-modules-1]
+    - Inflige **daño masivo** al instante
+    - Perfecta para remates silenciosos en distancias cortas
+  </Card>
+</CardGrid>
+
+Para maximizar tu eficiencia en combate, apunta con la mira (ADS) a un objetivo. La retícula inteligente analizará al enemigo y mostrará sus vulnerabilidades de daño específicas.
+
+| Sistema de armas | Modo de disparo | Mejor alcance | Chipset óptimo |
+| :--- | :--- | :--- | :--- |
+| **Subfusil (SMG)** | Automático | Corto alcance | Amplificador de daño, cadencia de tiro |
+| **DMR láser** | Semiautomático | Largo alcance | Óptica de precisión, sensor de amenazas |
+| **Fusil de haz** | Continuo | Medio alcance | Eficiencia energética, disipador de calor [homepage-modules-1] |
+
+<Callout type="warning" title="Advertencia de retroceso">
+Disparar a lo loco hará que falles la mayoría de tus disparos. Utiliza siempre ráfagas cortas y controladas o modos de disparo tiro a tiro para mantener la precisión.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Guía paso a paso de supervivencia y progresión">
+
+Para establecer un ciclo exitoso de despliegues y mejoras, debes seguir un enfoque estructurado en cada partida. Usa esta guía de progresión paso a paso para asegurar tu botín y construir un arsenal poderoso.
+
+<Steps>
+  <Step num="1" title="Asegura tu zona de aparición">
+    Inmediatamente después de aterrizar en la superficie, abre tu menú de fabricación ('Z' por defecto) y construye un **escudo portátil**. Esto proporciona cobertura instantánea para tu escuadrón.
+  </Step>
+  <Step num="2" title="Selecciona un contrato">
+    Abre tu menú de contratos (Bloq Mayús) y selecciona un objetivo activo. Céntrate en encontrar componentes electrónicos en cajas en el suelo, ya que son los más fáciles de asegurar.
+  </Step>
+  <Step num="3" title="Saquea y mina">
+    Explora lugares de impacto e instalaciones para rescatar tecnología, reliquias y recursos [base-info]. Recoge **biomasa** de los enemigos derrotados; este es el único recurso que te permite curar tu salud base.
+  </Step>
+  <Step num="4" title="Mejora en la barcaza de guerra">
+    Después de una incursión exitosa, regresa a tu hangar para comprar planos. Fabricar armas a partir de planos es mucho más rentable que comprar armas directamente, especialmente porque pierdes el equipo equipado al morir.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Mecánicas de curación">
+Aunque tus escudos cinéticos se regeneran automáticamente tras ponerte a cubierto durante unos segundos, tu salud base no lo hace. Debes mantener presionada la tecla de curación (3 por defecto) para consumir la biomasa recolectada y restaurar tu barra de salud.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Tácticas de extracción y gestión de riesgos">
+
+La extracción es la prueba definitiva de supervivencia. Cuanto más tiempo permanezcas en el planeta, mejor será el botín, pero el entorno y los jugadores hostiles contraatacarán con mucha más fuerza [base-info].
+
+| Fase de extracción | Peligro ambiental | Respuesta táctica |
+| :--- | :--- | :--- |
+| **Inicio de la sesión** | Baja densidad de jugadores, 5 puntos de extracción activos | Céntrate en completar contratos y recolectar recursos |
+| **Mitad de la sesión** | Los bombardeos comienzan a cerrar los puntos de extracción | Vigila el temporizador del mapa y localiza los puntos restantes |
+| **Final de la sesión** | Solo queda 1 punto de extracción activo | Prepárate para emboscadas PvP intensas; coordínate con tu escuadrón para avanzar |
+
+<Callout type="danger" title="Bombardeos orbitales">
+No te dejes atrapar por las zonas rojas de bombardeo. Estos ataques orbitales destruyen sistemáticamente los puntos de extracción (Puentes Armónicos) uno a uno y matarán a tu clon de guerra al instante.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de objetivos de despliegue">
+
+Usa esta lista para realizar un seguimiento de tu progreso y asegurarte de maximizar el valor de cada descenso al planeta.
+
+<Checklist
+  id="vanguard-goals"
+  title="Hitos esenciales del despliegue:"
+  items={[
+    "Desplegar un escudo defensivo dentro de los 10 segundos posteriores al aterrizaje [1.1.2]",
+    "Recolectar suficientes recursos básicos para fabricar 60 rondas de munición de energía",
+    "Asegurar al menos un componente electrónico o reliquia de alto valor",
+    "Recuperar biomasa de un enemigo caído para rellenar tu barra de salud",
+    "Extraer con éxito a través de un Puente Armónico antes del bombardeo final"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Cómo curo a mi personaje durante una misión?",
+    answer: "Tu escudo de energía se regenera automáticamente después de unos segundos fuera de combate, pero tu salud base requiere biomasa. Debes despojar biomasa de jugadores o PNJ muertos y mantener presionada la tecla de curación para restaurar la salud."
+  },
+  {
+    question: "¿Qué pasa con mi botín si no logro extraer?",
+    answer: "Si mueres o no logras llegar a un Puente Armónico activo antes de que los bombardeos orbitales los destruyan, tu clon de guerra físico es destruido y pierdes todos los recursos y equipos que llevabas."
+  },
+  {
+    question: "¿Por qué debería comprar planos de armas en lugar de armas directamente?",
+    answer: "Los planos te permiten fabricar armas repetidamente usando recursos básicos. Dado que la muerte resulta en la pérdida de tu equipo, los planos ofrecen una forma muy rentable de reconstruir tu equipamiento."
+  }
+]} />
+
+</Section>

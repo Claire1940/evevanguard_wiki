@@ -1,0 +1,196 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Monitor, Cpu } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "eve vanguard pc: System Requirements & Alpha Access Guide",
+  description: "Master eve vanguard pc with our guide on system requirements, Operation Avalon playtest access, weapon loadouts, and extraction strategies for 2026.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/0f172a/38bdf8?text=EVE+Vanguard+PC+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **eve vanguard pc** is a sci-fi extraction shooter set in the New Eden universe, currently in Alpha.
+- **Operation Avalon** runs from July 7 to July 20, 2026, featuring the Lost Convoy battlefield.
+- **System Requirements** demand a minimum of 16 GB RAM and 50 GB SSD storage space.
+- **Core Loop** involves deploying as a Warclone, completing contracts, and extracting before death.
+- **EVE Online Link** allows ground actions to impact the wider space-based territorial war.
+</Callout>
+
+<Section icon={Monitor} title="eve vanguard pc System Requirements">
+
+Running **eve vanguard pc** requires modern hardware to handle its high-fidelity environments and intense PvE/PvP combat. As the game is developed on Unreal Engine 5, performance is heavily dependent on both your GPU and your storage speed. Solid State Drives (SSD) are not just recommended; they are effectively mandatory for loading the large-scale planetary battlefields without significant stuttering.
+
+| Component | Minimum Specification | Recommended Specification |
+| :--- | :--- | :--- |
+| **OS** | Windows 10/11 (64-bit) | Windows 10/11 (Latest) |
+| **CPU** | Intel i5-8400 / Ryzen 5 1600X | Intel i5-11600K / Ryzen 5 5600X |
+| **GPU** | NVIDIA RTX 2060 / RX 5700 XT | NVIDIA RTX 3080 / RX 6900 XT |
+| **VRAM** | 6 GB | 8 GB+ |
+| **RAM** | 16 GB DDR4 | 16 GB DDR4 |
+| **Storage** | 50 GB SSD | 50 GB NVMe SSD |
+| **DirectX** | Version 12 | Version 12.1 |
+
+The developers have optimized the game to target 60 FPS at 1080p resolution. If you are using the minimum specifications, you should expect to use FSR or DLSS in "Quality" mode with Low settings to maintain a stable frame rate during heavy firefights.
+
+<Callout type="warning" title="Anti-Cheat Note">
+The PC version utilizes kernel-level Easy Anti-Cheat (EAC). Ensure your Windows installation is up to date and that no conflicting software is running, as EAC is required for all online playtests.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="How to Access Operation Avalon Alpha">
+
+Accessing the current playtest for **eve vanguard pc** is a straightforward process, but it requires participation during specific windows. The Operation Avalon event, scheduled for July 2026, is the primary way for players to test the new "Lost Convoy" map and the revamped weapon systems.
+
+<Steps>
+  <Step num="1" title="Select Your Platform">
+    Decide whether you want to play via Steam or the standalone EVE Launcher. Both platforms provide the same game experience and server access.
+  </Step>
+  <Step num="2" title="Request Access on Steam">
+    Navigate to the Steam Store page and look for the "Join the EVE Vanguard Playtest" section. Click "Request Access" to be added to the queue.
+  </Step>
+  <Step num="3" title="EVE Launcher Method">
+    If you already play EVE Online, open the EVE Launcher and look for the "Vanguard" tab. If your account is eligible, the download option will appear here.
+  </Step>
+  <Step num="4" title="Installation and Login">
+    Download the approximately 50 GB client. Once installed, launch the game and log in using your CCP account credentials.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Access Tip">
+Steam access is often granted in waves. If you don't receive an immediate invite, keep an eye on your email or the official Discord for announcements regarding additional player slots.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Weapon Systems and Loadouts">
+
+Combat in **eve vanguard pc** is built around modular weapon systems. Unlike traditional shooters, your loadout can be adapted between deployments using chipsets and different damage types. During Operation Avalon, players have access to a widened arsenal designed for various engagement ranges.
+
+<CardGrid cols={3}>
+  <Card title="Close Quarters">
+    - **SMG**: High fire rate, ideal for clearing bunkers.
+    - **Shrapnel Cannon**: Massive burst damage at point-blank range.
+    - **Nova Blade**: Melee finisher for stealth or desperate situations.
+  </Card>
+  <Card title="Mid-Range Utility">
+    - **Beam Rifle**: Reliable energy damage with moderate recoil.
+    - **Assault Rifle**: The standard-issue versatile kinetic firearm.
+    - **Modular Chips**: Swap fire modes from burst to full-auto.
+  </Card>
+  <Card title="Long-Range Precision">
+    - **Laser DMR**: High precision, burns through shields effectively.
+    - **Kinetic Sniper**: Slow fire rate but devastating single-shot damage.
+    - **Optics**: Customizable scopes for varied planetary visibility.
+  </Card>
+</CardGrid>
+
+Understanding damage types is critical for survival. Most enemies have specific vulnerabilities that can be exploited by switching your weapon configuration on the fly.
+
+| Damage Type | Best Against | Gameplay Effect |
+| :--- | :--- | :--- |
+| **Energy** | Shields and Tech | Rapidly depletes blue shield bars. |
+| **Kinetic** | Armor and Flesh | High penetration against physical plating. |
+| **Hybrid** | General Purpose | Balanced damage but lower specialization. |
+
+<Callout type="success" title="Loadout Strategy">
+Always bring at least one weapon capable of Energy damage. Mordu's Legion enemies often deploy heavy shielding that kinetic weapons struggle to bypass quickly.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="The Extraction Gameplay Loop">
+
+The core of **eve vanguard pc** is the extraction-adventure loop. You deploy as an immortal Warclone into a hostile environment, complete objectives, and must reach an extraction point to secure your loot. If you die before extracting, you lose the resources gathered during that specific deployment.
+
+**Phase 1: Deployment**
+You drop into the battlefield with your chosen loadout. In Operation Avalon, this is typically the Lost Convoy map, characterized by crashed ships and industrial outposts.
+
+**Phase 2: Objectives and Contracts**
+Use your map to locate high-stakes contracts. These might involve hacking terminals, salvaging exotic technology, or eliminating specific Mordu's Legion commanders.
+
+**Phase 3: Looting and Survival**
+Search wreckage for Resonant Cyphers and advanced tech. Be wary of other Warclones; while you can cooperate, the scarcity of extraction points often leads to betrayal.
+
+**Phase 4: Extraction**
+Extraction points are not always active. You must monitor the battlefield timer and move to the designated zones when they open. The longer you stay, the more "Nemesis" threats will escalate, making survival significantly harder.
+
+| Objective Type | Reward Tier | Risk Level |
+| :--- | :--- | :--- |
+| **Resource Salvage** | Low to Medium | Low - Common in outskirts. |
+| **Data Hacking** | High | Medium - Requires time to stay stationary. |
+| **Command Block** | Very High | Extreme - Located in the heart of the map. |
+| **Bounty Hunting** | Variable | High - Involves PvP or Elite PvE. |
+
+<Callout type="info" title="Tactical Advice">
+The "Command Block" at the center of the Avalon map is a high-risk zone. Only attempt this if you are in a squad with optimized gear, as it attracts the deadliest AI and most aggressive players.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Integration with EVE Online">
+
+One of the most unique features of **eve vanguard pc** is its direct connection to the EVE Online universe. Ground operations are not isolated; they contribute to a shared war effort known as World Events.
+
+When Warclones successfully complete expeditions, they generate Resonant Cyphers and other data. This activity can trigger specific "AEGIS squalls" in EVE Online, creating new combat and hacking sites for space-faring capsuleers. This creates a symbiotic relationship where ground players and space players can support each other's progression.
+
+| Reward Category | Vanguard Benefit | EVE Online Benefit |
+| :--- | :--- | :--- |
+| **Resonant Cyphers** | Gear Upgrades | Marketable Loot / Components |
+| **Global Points** | Event Progression | Unlocks Empire Rewards |
+| **Tech Relics** | Weapon Chipsets | SKINs and Skill Points |
+
+<Callout type="tip" title="Empire Trading">
+Exchanging your gathered Cyphers at specific Empire traders in EVE Online (such as in Amarr or New Caldari) helps that faction gain influence in the Avalon storyline.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Beginner Checklist and FAQ">
+
+To ensure your first few hours in **eve vanguard pc** are successful, follow this essential checklist. The game has a steep learning curve, and preparation is the difference between a successful extraction and losing all your gear.
+
+<Checklist
+  id="vanguard-start"
+  title="First Deployment Goals:"
+  items={[
+    "Verify PC specs and update GPU drivers for DirectX 12.1.",
+    "Complete the 'Basic Training' contract to understand movement.",
+    "Successfully extract at least once with a full inventory.",
+    "Equip your first weapon chipset in the Warbarge menu.",
+    "Join the official Discord to find a squad for the Lost Convoy."
+  ]}
+/>
+
+<Callout type="info" title="Final Pro Tip">
+Sound is your best friend. Listen for the distinct hum of enemy drones or the heavy footsteps of other Warclones. Using a high-quality headset on PC will give you a massive competitive advantage.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "Is EVE Vanguard a separate game from EVE Online?",
+    answer: "Yes, it is a standalone FPS client, but it shares the same account system and universe. Actions in Vanguard directly influence events and rewards in EVE Online."
+  },
+  {
+    question: "Can I play eve vanguard pc on Steam Deck?",
+    answer: "Currently, the kernel-level Easy Anti-Cheat may cause compatibility issues with SteamOS. It is officially supported on Windows-based PCs."
+  },
+  {
+    question: "What happens if I die during a mission?",
+    answer: "You lose the resources and loot you collected during that run. However, your persistent progression and any gear you 'insured' or kept in your Warbarge remain safe."
+  },
+  {
+    question: "When is the full release of EVE Vanguard?",
+    answer: "The game has a planned Steam release window of Q3 2026, following several Alpha and Beta playtest phases throughout the year."
+  }
+]} />
+
+</Section>

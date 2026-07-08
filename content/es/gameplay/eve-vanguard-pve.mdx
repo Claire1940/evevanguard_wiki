@@ -1,0 +1,193 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "eve vanguard pve: Tácticas de Extracción y Guía de Misiones",
+  description: "Domina el juego eve vanguard pve con nuestra guía sobre contratos, combate contra la Legión de Mordu, extracción de botín y estrategias de misión para la Operación Avalon 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/121212/00ffff?text=EVE+Vanguard+PvE+Tactics",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de eve vanguard",
+  keywords: "eve vanguard, pve, tácticas, extracción, misiones, guía, legión de mordu"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **eve vanguard pve** se centra en misiones de extracción de alto riesgo donde la supervivencia y la gestión de recursos son primordiales.
+- El **Cumplimiento de Contratos** es el método principal de progresión, involucrando objetivos de combate, hackeo y salvamento.
+- La **Legión de Mordu** actúa como la principal amenaza de IA, requiriendo posicionamiento táctico y conocimiento de los tipos de daño.
+- El **Tiempo de Extracción** determina si conservas tu botín ganado con esfuerzo o si lo pierdes todo ante la creciente hostilidad del planeta.
+- Los **Equipamientos Adaptativos** que utilizan chipsets modulares permiten a los jugadores cambiar entre daño cinético y de energía en medio del despliegue.
+</Callout>
+
+<Section icon={Target} title="EVE Vanguard PvE: El Ciclo de Juego Principal">
+
+**eve vanguard pve** es una sofisticada experiencia de aventura y extracción ambientada en el vasto universo de Nuevo Edén. Como un Warclone inmortal, tu objetivo principal es desplegarte en superficies planetarias hostiles, cumplir contratos de alto riesgo y extraer con recursos valiosos antes de que el campo de batalla se vuelva insostenible. A diferencia de los shooters de arena tradicionales, el componente PvE de EVE Vanguard enfatiza la evaluación de riesgos sobre el conteo de bajas. Cada despliegue es una apuesta calculada donde el entorno, los enemigos de IA y el reloj conspiran contra tu supervivencia.
+
+En el ciclo actual de la Operación Avalon 2026, el bucle de juego se define por una progresión persistente. Los recursos recuperados durante una incursión exitosa se transfieren de vuelta a tu Barcaza de Guerra, donde pueden usarse para fabricar chipsets de armas avanzados, mejorar los sistemas del traje y prepararse para despliegues aún más peligrosos. Esto crea un vínculo significativo entre tu desempeño táctico en el terreno y tu poder a largo plazo como combatiente.
+
+<CardGrid cols={3}>
+  <Card title="Desplegar">
+    Lánzate desde tu Barcaza de Guerra hacia zonas en disputa como el campo de batalla del Convoy Perdido para comenzar tu misión.
+  </Card>
+  <Card title="Contrato">
+    Participa en objetivos dinámicos que incluyen hackeo de datos, recuperación de recursos y ataques tácticos contra la IA.
+  </Card>
+  <Card title="Extraer">
+    Asegura una zona de aterrizaje y escapa con tu botín antes de que las defensas planetarias o los clones rivales te superen.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Consejo Pro: La Mentalidad del Warclone">
+El éxito en **eve vanguard pve** no se trata solo de ganar cada pelea; se trata de saber qué peleas evitar. Si tu inventario está lleno de tecnología rara, prioriza la extracción sobre un último objetivo.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Contratos y Objetivos del Campo de Batalla">
+
+El corazón de la experiencia **eve vanguard pve** reside en su sistema de contratos. Estos no son meras misiones secundarias, sino la base estructural de cada despliegue. Los contratos te empujan a territorios peligrosos, como instalaciones controladas por corporaciones o lugares de accidentes, donde reside la mayor concentración de botín y enemigos. En la Operación Avalon, estos objetivos a menudo están vinculados a eventos más amplios de Nuevo Edén, lo que significa que tus acciones en tierra pueden influir en el estado de la guerra interestelar que ocurre arriba.
+
+| Tipo de Misión | Objetivo Principal | Dificultad | Recompensas Clave |
+| :--- | :--- | :--- | :--- |
+| **Incursión de Salvamento** | Recuperar tecnología de choques | Baja-Media | Componentes de Armas, Chatarra |
+| **Hackeo de Datos** | Vulnerar terminales seguras | Media | Cifrados Resonantes, Inteligencia |
+| **Asalto** | Neutralizar bases de la Legión de Mordu | Alta | Chipsets Raros, Equipo Avanzado |
+| **El Bloque de Mando** | Penetración profunda en Avalon | Extrema | Botín de Élite, Lore de Némesis |
+
+Cada tipo de contrato requiere un enfoque táctico diferente. Las incursiones de salvamento exigen velocidad y conciencia espacial para localizar alijos ocultos, mientras que el Hackeo de Datos requiere que defiendas una posición estática mientras tus sistemas evitan el cifrado corporativo. La introducción del campo de batalla "Convoy Perdido" ha añadido una capa de narrativa ambiental, donde los jugadores deben navegar entre restos para encontrar objetos de misión específicos mientras evitan patrullas de IA de alta densidad.
+
+<Callout type="warning" title="Peligros Ambientales">
+Los campos de batalla en 2026 son más volátiles que nunca. Mantente atento a los cambios atmosféricos y a las borrascas de AEGIS que pueden interrumpir tu HUD o atraer refuerzos enemigos.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Enfrentando a la Legión de Mordu y Amenazas de IA">
+
+El combate en **eve vanguard pve** se caracteriza por su "tiroteo reconstruido", que enfatiza el peso, la gestión del retroceso y el posicionamiento táctico. Tus principales adversarios son las fuerzas de la Legión de Mordu: mercenarios de élite con una IA avanzada que les permite flanquear, usar coberturas de manera efectiva y suprimir a los jugadores con fuego pesado. Comprender su comportamiento es esencial para sobrevivir a los contratos de alto nivel.
+
+<CardGrid cols={2}>
+  <Card title="Infantería de Mordu">
+    La tropa de tierra estándar. Utilizan rifles y granadas estándar. Peligrosos en grupo, a menudo intentan inmovilizar a los jugadores mientras los especialistas avanzan.
+  </Card>
+  <Card title="Especialistas de la Legión">
+    Equipados con escudos de energía o Cañones de Metralla pesados. Estas unidades requieren fuego concentrado y cambio de tipo de daño para ser neutralizadas eficazmente.
+  </Card>
+  <Card title="Drones Némesis">
+    Amenazas automatizadas que patrullan zonas de alto valor. Sus patrones de vuelo erráticos y láseres de alta frecuencia los convierten en un objetivo prioritario en cualquier enfrentamiento.
+  </Card>
+  <Card title="Comandantes de Élite">
+    Se encuentran en el corazón de los Bloques de Mando. Poseen grandes reservas de salud y pueden solicitar refuerzos si no se eliminan rápidamente.
+  </Card>
+</CardGrid>
+
+Para contrarrestar estas amenazas, los jugadores deben dominar el sistema de armas modulares. Armas como el DMR Láser y el Cañón de Metralla pueden modificarse con chipsets para cambiar entre daño Cinético y de Energía. En **eve vanguard pve**, los escudos son altamente resistentes al fuego cinético pero se derriten bajo los haces de energía, mientras que la armadura física se destruye mejor con proyectiles cinéticos de alta velocidad.
+
+| Tipo de Daño | Mejor Contra | Indicador Visual | Arma Recomendada |
+| :--- | :--- | :--- | :--- |
+| **Cinético** | Salud, Armadura Física | Chispas Blancas/Amarillas | SMG, Cañón de Metralla |
+| **Energía** | Escudos de Energía | Brillo Azul/Distorsión | DMR Láser, Rifle de Haz |
+| **Térmico** | Daño Persistente | Calor Naranja/Rojo | Mods Especializados |
+
+<Callout type="success" title="Maestría en Combate">
+Lleva siempre al menos un arma capaz de infligir daño de energía. Quitarle el escudo a un especialista de la Legión de Mordu es la única forma de terminar rápidamente un enfrentamiento antes de que pidan refuerzos.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Dominando la Ventana de Extracción">
+
+La fase más crítica de **eve vanguard pve** es la extracción. En la Operación Avalon, los puntos de extracción no son estáticos ni están garantizados. A medida que avanza la misión, ciertas zonas de aterrizaje pueden verse comprometidas o cerrarse por completo, obligando a los jugadores a adentrarse más en territorio hostil para encontrar una salida. Este modelo de "despliegue basado en el riesgo" significa que cuanto más tiempo te quedes, más difícil será salir.
+
+<Steps>
+  <Step num="1" title="Vigila el temporizador de extracción">
+    Mantén un ojo constante en el reloj de la sesión. A medida que el tiempo se agota, el número de puntos de extracción disponibles disminuye.
+  </Step>
+  <Step num="2" title="Despeja la zona de aterrizaje (LZ)">
+    Una vez que solicites la extracción, es probable que las fuerzas de la Legión de Mordu intenten interceptarte. Asegura el perímetro antes de que llegue la nave de transporte.
+  </Step>
+  <Step num="3" title="Defiende la secuencia de extracción">
+    La nave tarda tiempo en aterrizar y abrir sus puertas. Usa coberturas desplegables o el entorno para sobrevivir a la última oleada de atacantes de IA.
+  </Step>
+  <Step num="4" title="Asegura tu botín">
+    Solo los objetos que estén en tu inventario en el momento de la extracción exitosa se guardarán en tu perfil persistente de Warclone.
+  </Step>
+</Steps>
+
+No lograr extraer resulta en la pérdida total de todos los recursos y el equipo recolectado durante esa incursión. Aunque tu Warclone es inmortal y reaparecerá en la Barcaza de Guerra, los objetos físicos que llevabas se quedan en la superficie del planeta. Esto convierte el sprint final hacia la nave en la parte más intensa de la experiencia **eve vanguard pve**.
+
+<Callout type="info" title="Retirada Táctica">
+Si la zona de aterrizaje está demasiado caliente, no temas moverte a un punto de extracción secundario. Es mejor pasar tres minutos extra viajando que perder treinta minutos de progreso en una resistencia fallida.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Sistemas de Armas y Gestión de Equipamiento">
+
+La preparación en la Barcaza de Guerra es tan importante como tu desempeño en el terreno. El sistema de equipamiento en **eve vanguard pve** se basa en armas de fuego modulares que pueden adaptarse a roles específicos. Ya sea que prefieras la acción trepidante de un SMG o la precisión de un DMR Láser, tu elección de chipsets y equipo secundario como la Nova Blade definirá tu estilo de juego.
+
+| Rol de Arma | Ideal Para | Característica Clave | Estrategia |
+| :--- | :--- | :--- | :--- |
+| **Especialista CQC** | Espacios Cerrados, Incursiones | SMG, Nova Blade | Alta movilidad, flanqueo |
+| **Tirador** | Largo Alcance, Defensa | DMR Láser, Rifle de Haz | Alta precisión, eliminación de escudos |
+| **Artillero Pesado** | Control de Grupos, Jefes | Cañón de Metralla | Gran daño de área, fuego de supresión |
+
+Los chipsets son el núcleo de la personalización de armas. Estos objetos se encuentran durante los despliegues y te permiten modificar los modos de disparo (ráfaga, automático) y los tipos de daño. Para una configuración equilibrada en **eve vanguard pve**, recomendamos un arma principal con alto daño cinético para rematar enemigos y un arma de energía secundaria para lidiar con los escudos.
+
+<Callout type="tip" title="Optimización del Equipamiento">
+La Nova Blade no es solo para lucirse. En combates a corta distancia, un ataque cuerpo a cuerpo a menudo puede acabar con un enemigo más rápido que recargar, ahorrándote segundos preciosos durante un tiroteo intenso.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Hitos de la Operación Avalon">
+
+La Operación Avalon (del 7 al 20 de julio de 2026) introduce objetivos específicos que conectan la guerra terrestre con el universo más amplio de EVE Online. Al completar estos hitos, los jugadores pueden ganar Cifrados Resonantes y otras recompensas que son intercambiables en el espacio del imperio.
+
+<Checklist
+  id="avalon-pve-goals"
+  title="Hitos Esenciales de PvE:"
+  items={[
+    "Extraer con éxito del campo de batalla del Convoy Perdido 5 veces",
+    "Completar 10 contratos de hackeo de alto riesgo",
+    "Neutralizar a 50 especialistas de la Legión de Mordu",
+    "Recuperar y extraer una reliquia del Bloque de Mando",
+    "Provocar una borrasca de AEGIS mediante actividad en tierra"
+  ]}
+/>
+
+Estos hitos están diseñados para guiar a los nuevos jugadores a través de las mecánicas principales de **eve vanguard pve**, mientras recompensan a los veteranos por adentrarse en las zonas más peligrosas. Participar en estos objetivos también contribuye a la reputación de tu imperio en la relación secreta con Vanguard, lo que podría influir en futuros desarrollos de la historia en Nuevo Edén.
+
+<Callout type="success" title="Recompensas del Universo Compartido">
+No olvides revisar tus recompensas en el lado de EVE Online. La actividad en Vanguard puede desbloquear SKINs, puntos de habilidad y potenciadores especiales para tu cápsula.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Es jugable eve vanguard pve en solitario?",
+    answer: "Sí, puedes desplegarte solo. Sin embargo, la dificultad escala según la zona de la misión, y algunos contratos de alto nivel como el Bloque de Mando son significativamente más fáciles con un escuadrón."
+  },
+  {
+    question: "¿Qué pasa si muero en una sesión de eve vanguard pve?",
+    answer: "Perderás todo el botín, recursos y equipo que llevabas para ese despliegue específico. Tu Warclone reaparecerá en la Barcaza de Guerra con tu equipo base."
+  },
+  {
+    question: "¿Cómo consigo mejores armas para pve?",
+    answer: "Debes extraer con componentes de armas y chipsets encontrados durante las misiones. Estos se usan luego en tu Barcaza de Guerra para modificar y mejorar tu arsenal para futuras incursiones."
+  },
+  {
+    question: "¿Mis acciones en pve afectan a EVE Online?",
+    answer: "Sí. En la Operación Avalon, completar suficientes expediciones puede desencadenar eventos como borrascas de AEGIS y crear nuevos sitios de combate o hackeo para los jugadores en EVE Online."
+  }
+]} />
+
+</Section>

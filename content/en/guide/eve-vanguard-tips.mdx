@@ -1,0 +1,156 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Tips: Best Survival & Extraction Strategies",
+  description: "Master EVE Vanguard with essential tips on combat, resource gathering, loadouts, and surviving the harsh battlefields of New Eden.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/121b2d/00f0ff?text=Vanguard+Survival+Tips",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Objective**: Deploy planetside as an immortal warclone, complete high-stakes contracts, gather rare resources, and extract securely [base-info].
+- **Combat Meta**: Manage intense weapon recoil using short bursts, use melee finishers in close quarters, and utilize the correct ammunition types.
+- **Survival Priority**: Build a deployable shield immediately upon spawning to protect your squad from sudden firefights.
+- **Extraction Choice**: Watch the map timer closely; orbital bombardments systematically destroy extraction points as the match progresses.
+- **Progression Loop**: Use extracted technology to buy blueprints and craft weapon upgrades inside your warbarge hangar.
+</Callout>
+
+<Section icon={Map} title="EVE Vanguard Tips for Beginners">
+
+Entering the planetary battlefields of New Eden requires a sharp mind and quick reflexes. To excel in the sandbox extraction shooter, you must understand the basic loop of deploying, looting, fighting, and extracting [base-info]. Success is not just about having the best aim; it is about making smart, calculated decisions under extreme pressure.
+
+| Tip Category | Key Action | Tactical Benefit | Priority |
+| :--- | :--- | :--- | :--- |
+| **Sound Play** | Use quality headphones | Pinpoints enemy footsteps and gunfire in multi-floored structures | ★★★★★ |
+| **Ammo Prep** | Buffer-craft ammo immediately | Prevents running out of bullets during sudden PvP encounters | ★★★★★ |
+| **Map Intel** | Hold Tab for minimap | Tracks points of interest, hostile targets, and ally pings in real-time | ★★★★☆ |
+| **Teamwork** | Use push-to-talk mic | Coordinates flanking routes and resource sharing with your squad | ★★★★☆ |
+
+<Callout type="tip" title="Pro Tip: Silence is Survival">
+Avoid shooting non-player characters (NPCs) or automated turrets unless absolutely necessary. Gunfire echo alerts rival players to your exact location, leaving you vulnerable to immediate flank attacks.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Combat and Weapon Customization">
+
+The gunplay in this extraction shooter is highly tactical, featuring significant recoil and modular weapon systems. Knowing how to configure your weapon chipsets and swap damage types on the fly determines whether you win or lose a firefight [base-info]. 
+
+<CardGrid cols={3}>
+  <Card title="Kinetic Ammunition">
+    - **Cheap to craft** using basic resources
+    - Highly effective against standard **NPC targets**
+    - Default ammo type equipped at spawn
+  </Card>
+  <Card title="Energy Ammunition">
+    - Requires **mined resources** to craft
+    - Extremely effective against **rival players**
+    - Shreds shields and objective targets
+  </Card>
+  <Card title="Nova Blade Melee">
+    - Hand-forged close-quarters weapon [homepage-modules-1]
+    - Deals **massive damage** instantly
+    - Perfect for silent CQB finishers
+  </Card>
+</CardGrid>
+
+To maximize your combat efficiency, aim down your sights (ADS) over a target. The smart reticle will analyze the enemy and display their specific damage vulnerabilities.
+
+| Weapon System | Fire Mode | Best Range | Optimal Chipset |
+| :--- | :--- | :--- | :--- |
+| **SMG** | Full-Auto | Close Range | Damage Amplifier, Rate of Fire |
+| **Laser DMR** | Semi-Auto | Long Range | Precision Optics, Threat Sensor |
+| **Beam Rifle** | Continuous | Mid Range | Energy Efficiency, Heat Sink [homepage-modules-1] |
+
+<Callout type="warning" title="Recoil Warning">
+Spraying and praying will cause you to miss most of your shots. Always utilize short, controlled bursts or single-tap firing modes to maintain accuracy.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Step-by-Step Survival and Progression Guide">
+
+To establish a successful cycle of deployments and upgrades, you must follow a structured approach to each match. Use this step-by-step progression guide to secure your loot and build a powerful arsenal.
+
+<Steps>
+  <Step num="1" title="Secure Your Spawn">
+    Immediately upon landing on the surface, open your crafting menu ('Z' by default) and build a **deployable shield**. This provides instant cover for your squad.
+  </Step>
+  <Step num="2" title="Select a Contract">
+    Open your contracts menu (Caps Lock) and select an active objective. Focus on finding electronic components in ground crates, as they are the easiest to secure.
+  </Step>
+  <Step num="3" title="Loot and Mine">
+    Explore crash sites and installations to salvage technology, relics, and resources [base-info]. Collect **biomass** from defeated enemies; this is the only resource that allows you to heal your base health.
+  </Step>
+  <Step num="4" title="Upgrade at the Warbarge">
+    After a successful run, return to your hanger to buy blueprints. Manufacturing weapons from blueprints is much more cost-effective than buying flat-out guns, especially since you lose equipped gear upon death.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Healing Mechanics">
+While your kinetic shields automatically regenerate after taking cover for a few seconds, your base health does not. You must hold the heal hotkey (3 by default) to consume collected biomass and restore your health bar.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Extraction Tactics and Risk Management">
+
+Extraction is the ultimate test of survival. The longer you stay planetside, the better the loot becomes—but the environment and hostile players will fight back significantly harder [base-info].
+
+| Extraction Phase | Environmental Danger | Tactical Response |
+| :--- | :--- | :--- |
+| **Early Session** | Low player density, 5 active extraction points | Focus on completing contracts and gathering resources |
+| **Mid Session** | Bombardments begin closing extraction points | Keep an eye on the map timer and locate the remaining points |
+| **Late Session** | Only 1 extraction point remains active | Expect heavy PvP campouts; coordinate with your squad to push |
+
+<Callout type="danger" title="Orbital Bombardments">
+Do not get caught in the red bombardment zones. These orbital strikes systematically destroy extraction points (Harmonic Bridges) one by one and will kill your warclone instantly.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Deployment Goals Checklist">
+
+Use this checklist to track your progress and ensure you are maximizing the value of every single planet drop.
+
+<Checklist
+  id="vanguard-goals"
+  title="Essential Deployment Milestones:"
+  items={[
+    "Deploy a defensive shield within 10 seconds of landing [1.1.2]",
+    "Harvest enough raw resources to craft 60 rounds of energy ammo",
+    "Secure at least one high-value electronic component or relic",
+    "Recover biomass from a fallen enemy to top off your health pool",
+    "Extract successfully through a Harmonic Bridge before the final bombardment"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Frequently Asked Questions">
+
+<FAQ items={."
+  },
+  {
+    question: "How do I heal my character during a mission?",
+    answer: "Your energy shield regenerates automatically after a few seconds out of combat, but your base health requires biomass. You must loot biomass from dead players or NPCs and hold the heal key to restore health."
+  },
+  {
+    question: "What happens to my loot if I fail to extract?",
+    answer: "If you die or fail to reach an active Harmonic Bridge before orbital bombardments destroy them, your physical warclone is destroyed and you lose all carried resources and equipment."
+  },
+  {
+    question: "Why should I buy weapon blueprints instead of flat-out guns?",
+    answer: "Blueprints allow you to manufacture weapons repeatedly using raw resources. Since death results in losing your gear, blueprints provide a highly cost-effective way to rebuild your loadouts."
+  }
+]} />
+
+</Section>

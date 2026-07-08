@@ -1,0 +1,193 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Zap, Activity } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard vs DUST 514: Guía de Evolución y Comparativa de 2026",
+  description: "Compara EVE Vanguard frente a DUST 514. Explora la transición de los combates de arena en PS3 a un shooter de extracción y aventura en PC, incluyendo jugabilidad, recompensas y conexiones con EVE Online.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/121212/00ffff?text=Vanguard+vs+Dust+514",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, DUST 514, comparativa, shooter de extracción, CCP Games, New Eden, Warclones"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **EVE Vanguard vs DUST 514**: El cambio principal radica en la transición de un shooter de arena exclusivo para PS3 a un **shooter de extracción y aventura para PC**.
+- **Jugabilidad Principal**: Vanguard se centra en **bucles de extracción PvPvE**, recolección de recursos y supervivencia, mientras que DUST 514 se estructuraba en torno a la conquista planetaria a gran escala.
+- **Conexión con EVE Online**: Ambos juegos se conectan con New Eden, pero Vanguard utiliza **Eventos Mundiales y Cifrados Resonantes** en lugar de los ataques orbitales directos de DUST.
+- **Estado Actual**: DUST 514 cerró sus servidores en 2016; **EVE Vanguard** se encuentra actualmente en fase Alfa (Operation Avalon) con un lanzamiento previsto para el tercer trimestre de 2026.
+- **Evolución Técnica**: Vanguard utiliza Unreal Engine 5, ofreciendo entornos de alta fidelidad en comparación con la tecnología heredada de la era de la PS3.
+</Callout>
+
+<Section icon={Activity} title="La Evolución del FPS de EVE">
+
+La comparativa de **EVE Vanguard vs DUST 514** es más que un simple enfrentamiento de títulos; representa la evolución de una década en la visión de CCP Games para el combate terrestre dentro del universo de New Eden. Mientras que DUST 514 abrió camino como el primer MMOFPS para consolas conectado a un juego espacial de PC, EVE Vanguard llega en 2026 como un sofisticado y moderno shooter de extracción diseñado para integrarse a la perfección con el ecosistema actual de EVE Online.
+
+DUST 514 se definía por sus batallas masivas de 32v32 y el sueño de los \"Ataques Orbitales\" solicitados por los jugadores de EVE Online. Sin embargo, estaba limitado por el hardware de la PlayStation 3. EVE Vanguard, desarrollado para PC de gama alta, traslada el enfoque hacia despliegues de alto riesgo a pequeña escala, donde la supervivencia y la extracción de recursos son los objetivos principales.
+
+| Característica | DUST 514 (Legado) | EVE Vanguard (2026) |
+| :--- | :--- | :--- |
+| **Plataforma** | PlayStation 3 | PC (Steam / Launcher de EVE) |
+| **Género** | Arena Táctica / Conquista | Shooter de Extracción y Aventura |
+| **Motor** | Unreal Engine 3 | Unreal Engine 5 |
+| **Número de Jugadores** | Gran escala (hasta 64 jugadores) | PvPvE basado en escuadrones |
+| **Objetivo Principal** | Capturar territorio / Ganar partida | Recuperar tecnología / Extraer con vida |
+| **Estado** | Cerrado (mayo de 2016) | Prueba Alfa (Operation Avalon) |
+
+<Callout type="tip" title="Contexto Histórico">
+Muchos veteranos de DUST 514 reconocerán el lore de los \"Warclones\". En EVE Vanguard, sigues siendo un mercenario inmortal, pero las consecuencias de perder tu clon físico ahora están ligadas a la pérdida de todo el botín y equipamiento que no hayas logrado extraer.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mecánicas de Juego: Arena vs Extracción">
+
+Al analizar **EVE Vanguard vs DUST 514**, la diferencia más significativa radica en el bucle de juego. DUST 514 seguía una estructura tradicional de \"partidas\" donde los jugadores luchaban por puntos de control. Una vez que terminaba la partida, los resultados influían en la soberanía planetaria dentro de la Guerra de Facciones de EVE Online.
+
+EVE Vanguard adopta el modelo de **shooter de extracción**. Cada despliegue es una misión independiente en la que te dejas caer en un campo de batalla planetario hostil, como el campo de batalla de Lost Convoy en Operation Avalon. Debes completar contratos, luchar contra la Legión de Mordu o contra Warclones rivales, y llegar a un punto de extracción antes de que se agote el tiempo.
+
+<CardGrid cols={2}>
+  <Card title="Estilo de Combate de DUST 514">
+    - **Gran Escala**: Centrado en avances de primera línea y combate de vehículos.
+    - **Guerra Persistente**: Las batallas contribuían a la conquista de distritos planetarios.
+    - **Basado en Clases**: Uso intensivo de trajes de descenso especializados (\"Dropsuits\": Logística, Asalto, Centinela).
+  </Card>
+  <Card title="Estilo de Combate de EVE Vanguard">
+    - **Profundidad Táctica**: Centrado en el sigilo, la recolección de recursos y la adaptación modular de armas.
+    - **Riesgo/Recompensa**: Permanecer más tiempo aumenta la recompensa, pero eleva la probabilidad de perderlo todo.
+    - **Equipamiento Adaptativo**: Uso de chipsets y alternancia de tipos de daño (Energía vs Cinético).
+  </Card>
+</CardGrid>
+
+| Mecánica | Lógica de DUST 514 | Lógica de EVE Vanguard |
+| :--- | :--- | :--- |
+| **Penalización por Muerte** | Pérdida de un clon/traje del inventario | Pérdida de todo el botín y equipo llevado en la incursión |
+| **Saqueo** | Mínimo (economía basada en el mercado) | Crítico (recolección de recursos para fabricación) |
+| **Vehículos** | Tanques, LAV y naves de descenso | Centrado actualmente en el combate de infantería (Warclones) |
+| **Armamento** | Tipos de armas fijos con mejoras | Armas modulares con chipsets intercambiables |
+
+<Callout type="warning" title="El Riesgo de la Extracción">
+A diferencia de DUST 514, donde una derrota simplemente significaba un rango más bajo o la pérdida de ISK, EVE Vanguard exige que \"regreses con vida o lo pierdas todo\". Esto genera una tensión que no existía en la jugabilidad clásica de estilo arena.
+</Callout>
+
+</Section>
+
+<Section icon={Zap} title="Conectando con New Eden: La Guerra Compartida">
+
+La filosofía de \"Un Universo, Una Guerra\" sigue siendo el núcleo de ambos juegos, pero su implementación ha cambiado. En la comparativa **EVE Vanguard vs DUST 514**, la conexión con EVE Online ha pasado de ser un apoyo táctico directo a una construcción estratégica del mundo.
+
+En DUST 514, un jugador en el espacio podía disparar un rayo láser literal desde su nave para destruir un tanque en tierra. En EVE Vanguard (específicamente durante Operation Avalon en julio de 2026), la conexión se gestiona a través de **Eventos Mundiales**. Las acciones de los Warclones en tierra provocan \"chubascos AEGIS\" y revelan ubicaciones valiosas en el espacio para los capsulistas de EVE Online.
+
+<Steps>
+  <Step num="1" title="Despliegue">
+    Los Warclones se despliegan en los planetas para completar contratos de alto riesgo y recuperar \"Cifrados Resonantes\".
+  </Step>
+  <Step num="2" title="Sincronización de Datos">
+    Las extracciones exitosas aportan Puntos Globales a un medidor de progreso compartido en New Eden.
+  </Step>
+  <Step num="3" title="Impacto Espacial">
+    Cuando el medidor se llena, aparecen convoyes asaltables y zonas de combate en el espacio de EVE Online para los capsulistas.
+  </Step>
+  <Step num="4" title="Bucle de Recompensas">
+    Los capsulistas intercambian los datos de Vanguard en los centros imperiales (Amarr, Jita, etc.) por Puntos de Habilidad y SKINs exclusivas.
+  </Step>
+</Steps>
+
+| Tipo de Conexión | Método de DUST 514 | Método de EVE Vanguard |
+| :--- | :--- | :--- |
+| **Interacción Directa** | Ataques Orbitales (en tiempo real) | Eventos Mundiales (impacto estratégico) |
+| **Recompensas** | ISK y Puntos de Lealtad | Cifrados Resonantes y Puntos de Habilidad |
+| **Vínculo de Lore** | Distritos Planetarios | Líneas argumentales de Operation Avalon / Nemesis |
+| **Economía** | Monedero de ISK compartido (parcial) | Recompensas compartidas y progresión de eventos |
+
+<Callout type="success" title="El Cifrado Resonante">
+Durante la Operación Avalon, los objetos más valiosos son los Cifrados Resonantes. Estos elementos tienden un puente entre la guerra terrestre y la espacial, permitiendo a los jugadores influir en las relaciones con los imperios.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Armamento y Equipamiento: Arsenal Moderno">
+
+El armamento en **EVE Vanguard vs DUST 514** muestra un salto cualitativo en cuanto a modularidad. DUST 514 contaba con armas icónicas como el Fusil de Descargas (Scrambler Rifle) y el Lanzador de Masa (Mass Driver), pero su funcionamiento era mayormente estático. EVE Vanguard introduce un **Sistema de Armas Adaptativo**.
+
+Los jugadores de Vanguard pueden alternar entre tipos de daño (Energía vs Cinético) y modos de disparo sobre la marcha. Operation Avalon presenta un arsenal rediseñado que incluye el subfusil (SMG), el Cañón de Metralla (Shrapnel Cannon) y el fusil de precisión láser (Laser DMR).
+
+| Rol del Arma | Ejemplo en DUST 514 | Equivalente en EVE Vanguard |
+| :--- | :--- | :--- |
+| **Corto Alcance** | Escopeta de Combate | Cañón de Metralla / Hoja Nova |
+| **Versátil** | Fusil de Asalto | Subfusil (Modular) |
+| **Largo Alcance** | Fusil de Francotirador | Laser DMR / Fusil de Haz |
+| **Personalización** | Basada en árbol de habilidades | Mejoras modulares basadas en chipsets |
+
+<Checklist
+  id="vanguard-loadout"
+  title="Esenciales para el Despliegue en Vanguard:"
+  items={[
+    "Equipa un arma principal con alternancia de Energía/Cinético",
+    "Instala chipsets para aumentar la capacidad del cargador",
+    "Lleva una Hoja Nova para remates cuerpo a cuerpo",
+    "Verifica la integridad del traje de armadura antes del despliegue",
+    "Selecciona un contrato de alto riesgo para maximizar las recompensas"
+  ]}
+/>
+
+<Callout type="info" title="La Hoja Nova">
+La Hoja Nova, uno de los elementos favoritos del lore por la comunidad, regresa en EVE Vanguard como un arma cuerpo a cuerpo forjada a mano, ofreciendo una opción letal para combates a corta distancia que resulta mucho más visceral que el combate cuerpo a cuerpo de la era de PS3.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Requisitos Técnicos y Rendimiento">
+
+Una de las diferencias más evidentes entre **EVE Vanguard vs DUST 514** es el hardware requerido. DUST 514 estaba limitado a la PlayStation 3, lo que restringía su alcance y fidelidad gráfica. EVE Vanguard es un título moderno para PC que requiere recursos significativos para ejecutar sus entornos en Unreal Engine 5.
+
+| Componente | Requisito Mínimo (Vanguard) | Recomendado (Vanguard) |
+| :--- | :--- | :--- |
+| **SO** | Windows 10/11 de 64 bits | Windows 10/11 de 64 bits |
+| **CPU** | Intel i5-8400 / Ryzen 5 1600X | Intel i5-11600K / Ryzen 5 5600X |
+| **GPU** | NVIDIA RTX 2060 / RX 5700 XT | NVIDIA RTX 3080 / RX 6900 XT |
+| **RAM** | 16 GB DDR4 | 16 GB DDR4 |
+| **Almacenamiento** | SSD de 50 GB | NVMe de 50 GB |
+| **DirectX** | Versión 12 | Versión 12.1 |
+
+<Callout type="warning" title="Nota sobre el Sistema Antitrampas">
+A diferencia de DUST 514, que estaba limitado a consolas, EVE Vanguard utiliza **Easy Anti-Cheat (EAC)**. Este es un controlador a nivel de kernel necesario para garantizar el juego limpio en el entorno competitivo de extracción.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Conclusión: ¿Cuál es Mejor?">
+
+Al comparar **EVE Vanguard vs DUST 514**, se revela una evolución en la propia industria de los videojuegos. DUST 514 fue un experimento audaz de conectividad multiplataforma que se adelantó a su tiempo. EVE Vanguard es la materialización refinada de ese sueño, construida sobre el popular género de los shooters de extracción, el cual encaja a la perfección con la filosofía de \"riesgo vs recompensa\" del universo de EVE.
+
+Aunque los veteranos de DUST 514 puedan echar de menos las batallas masivas de 64 jugadores, Vanguard ofrece una conexión más profunda y personal con el mundo de New Eden. Con su lanzamiento previsto para el tercer trimestre de 2026 y las continuas pruebas Alfa como Operation Avalon, Vanguard se perfila para convertirse en la experiencia FPS definitiva de EVE.
+
+<FAQ items={[
+  {
+    question: "¿Puedo usar mi antiguo personaje de DUST 514 en EVE Vanguard?",
+    answer: "No. EVE Vanguard es un juego completamente nuevo en una plataforma diferente. Sin embargo, el lore sigue conectado y seguirás jugando como un Warclone."
+  },
+  {
+    question: "¿Es EVE Vanguard gratuito como lo era DUST 514?",
+    answer: "Actualmente, EVE Vanguard es accesible para los jugadores de EVE Online con estado Omega durante las pruebas Alfa, pero el modelo de negocio definitivo para el lanzamiento en el tercer trimestre de 2026 no se ha detallado por completo."
+  },
+  {
+    question: "¿Tiene EVE Vanguard vehículos como los tanques de DUST 514?",
+    answer: "A partir de la Alfa de la Operación Avalon en 2026, el enfoque se centra en el combate de infantería. Aún no se han introducido vehículos, aunque la naturaleza de extracción del juego se enfoca fuertemente en la supervivencia terrestre."
+  },
+  {
+    question: "¿Qué juego tiene una conexión más sólida con EVE Online?",
+    answer: "DUST 514 tenía una interacción más directa en tiempo real (Ataques Orbitales), mientras que EVE Vanguard posee una conexión más estratégica, donde las acciones en tierra desencadenan Eventos Mundiales a gran escala en el espacio."
+  }
+]} />
+
+<Callout type="success" title="Veredicto Final">
+Si disfrutas de la supervivencia de alto riesgo y el saqueo táctico, **EVE Vanguard** representa una mejora masiva respecto a la experiencia del legado de DUST 514.
+</Callout>
+
+</Section>

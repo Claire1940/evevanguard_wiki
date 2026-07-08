@@ -1,1 +1,698 @@
-{}
+{
+  "de": {
+    "access": [
+      {
+        "slug": "eve-vanguard-access-code",
+        "file": "eve-vanguard-access-code"
+      },
+      {
+        "slug": "eve-vanguard-alpha",
+        "file": "eve-vanguard-alpha"
+      },
+      {
+        "slug": "eve-vanguard-download",
+        "file": "eve-vanguard-download"
+      },
+      {
+        "slug": "eve-vanguard-how-to-get-access",
+        "file": "eve-vanguard-how-to-get-access"
+      },
+      {
+        "slug": "eve-vanguard-join-playtest",
+        "file": "eve-vanguard-join-playtest"
+      },
+      {
+        "slug": "eve-vanguard-playtest",
+        "file": "eve-vanguard-playtest"
+      },
+      {
+        "slug": "eve-vanguard-sign-up",
+        "file": "eve-vanguard-sign-up"
+      }
+    ],
+    "connection": [
+      {
+        "slug": "eve-vanguard-affect-eve-online",
+        "file": "eve-vanguard-affect-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-connected-to-eve-online",
+        "file": "eve-vanguard-connected-to-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-eve-online",
+        "file": "eve-vanguard-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-nemesis",
+        "file": "eve-vanguard-nemesis"
+      },
+      {
+        "slug": "eve-vanguard-vs-dust-514",
+        "file": "eve-vanguard-vs-dust-514"
+      },
+      {
+        "slug": "eve-vanguard-vs-frontier",
+        "file": "eve-vanguard-vs-frontier"
+      }
+    ],
+    "gameplay": [
+      {
+        "slug": "eve-vanguard-assignments",
+        "file": "eve-vanguard-assignments"
+      },
+      {
+        "slug": "eve-vanguard-extraction-shooter",
+        "file": "eve-vanguard-extraction-shooter"
+      },
+      {
+        "slug": "eve-vanguard-fps",
+        "file": "eve-vanguard-fps"
+      },
+      {
+        "slug": "eve-vanguard-gameplay",
+        "file": "eve-vanguard-gameplay"
+      },
+      {
+        "slug": "eve-vanguard-multiplayer",
+        "file": "eve-vanguard-multiplayer"
+      },
+      {
+        "slug": "eve-vanguard-pve",
+        "file": "eve-vanguard-pve"
+      },
+      {
+        "slug": "eve-vanguard-pvp",
+        "file": "eve-vanguard-pvp"
+      },
+      {
+        "slug": "eve-vanguard-vehicles",
+        "file": "eve-vanguard-vehicles"
+      },
+      {
+        "slug": "eve-vanguard-weapons",
+        "file": "eve-vanguard-weapons"
+      }
+    ],
+    "guide": [
+      {
+        "slug": "eve-vanguard-beginner-guide",
+        "file": "eve-vanguard-beginner-guide"
+      },
+      {
+        "slug": "eve-vanguard-contracts",
+        "file": "eve-vanguard-contracts"
+      },
+      {
+        "slug": "eve-vanguard-extraction-guide",
+        "file": "eve-vanguard-extraction-guide"
+      },
+      {
+        "slug": "eve-vanguard-guide",
+        "file": "eve-vanguard-guide"
+      },
+      {
+        "slug": "eve-vanguard-how-to-extract",
+        "file": "eve-vanguard-how-to-extract"
+      },
+      {
+        "slug": "eve-vanguard-how-to-play",
+        "file": "eve-vanguard-how-to-play"
+      },
+      {
+        "slug": "eve-vanguard-operation-avalon",
+        "file": "eve-vanguard-operation-avalon"
+      },
+      {
+        "slug": "eve-vanguard-tips",
+        "file": "eve-vanguard-tips"
+      }
+    ],
+    "platforms": [
+      {
+        "slug": "eve-vanguard-minimum-specs",
+        "file": "eve-vanguard-minimum-specs"
+      },
+      {
+        "slug": "eve-vanguard-pc",
+        "file": "eve-vanguard-pc"
+      },
+      {
+        "slug": "eve-vanguard-steam",
+        "file": "eve-vanguard-steam"
+      },
+      {
+        "slug": "eve-vanguard-system-requirements",
+        "file": "eve-vanguard-system-requirements"
+      }
+    ],
+    "release": [
+      {
+        "slug": "eve-vanguard-early-access",
+        "file": "eve-vanguard-early-access"
+      },
+      {
+        "slug": "eve-vanguard-launch-date",
+        "file": "eve-vanguard-launch-date"
+      },
+      {
+        "slug": "eve-vanguard-open-beta",
+        "file": "eve-vanguard-open-beta"
+      },
+      {
+        "slug": "eve-vanguard-release-date",
+        "file": "eve-vanguard-release-date"
+      },
+      {
+        "slug": "eve-vanguard-release",
+        "file": "eve-vanguard-release"
+      },
+      {
+        "slug": "eve-vanguard-roadmap",
+        "file": "eve-vanguard-roadmap"
+      }
+    ]
+  },
+  "en": {
+    "access": [
+      {
+        "slug": "eve-vanguard-access-code",
+        "file": "eve-vanguard-access-code"
+      },
+      {
+        "slug": "eve-vanguard-alpha",
+        "file": "eve-vanguard-alpha"
+      },
+      {
+        "slug": "eve-vanguard-download",
+        "file": "eve-vanguard-download"
+      },
+      {
+        "slug": "eve-vanguard-how-to-get-access",
+        "file": "eve-vanguard-how-to-get-access"
+      },
+      {
+        "slug": "eve-vanguard-join-playtest",
+        "file": "eve-vanguard-join-playtest"
+      },
+      {
+        "slug": "eve-vanguard-playtest",
+        "file": "eve-vanguard-playtest"
+      },
+      {
+        "slug": "eve-vanguard-sign-up",
+        "file": "eve-vanguard-sign-up"
+      }
+    ],
+    "connection": [
+      {
+        "slug": "eve-vanguard-affect-eve-online",
+        "file": "eve-vanguard-affect-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-connected-to-eve-online",
+        "file": "eve-vanguard-connected-to-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-eve-online",
+        "file": "eve-vanguard-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-nemesis",
+        "file": "eve-vanguard-nemesis"
+      },
+      {
+        "slug": "eve-vanguard-vs-dust-514",
+        "file": "eve-vanguard-vs-dust-514"
+      },
+      {
+        "slug": "eve-vanguard-vs-frontier",
+        "file": "eve-vanguard-vs-frontier"
+      }
+    ],
+    "gameplay": [
+      {
+        "slug": "eve-vanguard-assignments",
+        "file": "eve-vanguard-assignments"
+      },
+      {
+        "slug": "eve-vanguard-extraction-shooter",
+        "file": "eve-vanguard-extraction-shooter"
+      },
+      {
+        "slug": "eve-vanguard-fps",
+        "file": "eve-vanguard-fps"
+      },
+      {
+        "slug": "eve-vanguard-gameplay",
+        "file": "eve-vanguard-gameplay"
+      },
+      {
+        "slug": "eve-vanguard-multiplayer",
+        "file": "eve-vanguard-multiplayer"
+      },
+      {
+        "slug": "eve-vanguard-pve",
+        "file": "eve-vanguard-pve"
+      },
+      {
+        "slug": "eve-vanguard-pvp",
+        "file": "eve-vanguard-pvp"
+      },
+      {
+        "slug": "eve-vanguard-vehicles",
+        "file": "eve-vanguard-vehicles"
+      },
+      {
+        "slug": "eve-vanguard-weapons",
+        "file": "eve-vanguard-weapons"
+      }
+    ],
+    "guide": [
+      {
+        "slug": "eve-vanguard-beginner-guide",
+        "file": "eve-vanguard-beginner-guide"
+      },
+      {
+        "slug": "eve-vanguard-contracts",
+        "file": "eve-vanguard-contracts"
+      },
+      {
+        "slug": "eve-vanguard-extraction-guide",
+        "file": "eve-vanguard-extraction-guide"
+      },
+      {
+        "slug": "eve-vanguard-guide",
+        "file": "eve-vanguard-guide"
+      },
+      {
+        "slug": "eve-vanguard-how-to-extract",
+        "file": "eve-vanguard-how-to-extract"
+      },
+      {
+        "slug": "eve-vanguard-how-to-play",
+        "file": "eve-vanguard-how-to-play"
+      },
+      {
+        "slug": "eve-vanguard-operation-avalon",
+        "file": "eve-vanguard-operation-avalon"
+      },
+      {
+        "slug": "eve-vanguard-tips",
+        "file": "eve-vanguard-tips"
+      }
+    ],
+    "platforms": [
+      {
+        "slug": "eve-vanguard-minimum-specs",
+        "file": "eve-vanguard-minimum-specs"
+      },
+      {
+        "slug": "eve-vanguard-pc",
+        "file": "eve-vanguard-pc"
+      },
+      {
+        "slug": "eve-vanguard-steam",
+        "file": "eve-vanguard-steam"
+      },
+      {
+        "slug": "eve-vanguard-system-requirements",
+        "file": "eve-vanguard-system-requirements"
+      }
+    ],
+    "release": [
+      {
+        "slug": "eve-vanguard-early-access",
+        "file": "eve-vanguard-early-access"
+      },
+      {
+        "slug": "eve-vanguard-launch-date",
+        "file": "eve-vanguard-launch-date"
+      },
+      {
+        "slug": "eve-vanguard-open-beta",
+        "file": "eve-vanguard-open-beta"
+      },
+      {
+        "slug": "eve-vanguard-release-date",
+        "file": "eve-vanguard-release-date"
+      },
+      {
+        "slug": "eve-vanguard-release",
+        "file": "eve-vanguard-release"
+      },
+      {
+        "slug": "eve-vanguard-roadmap",
+        "file": "eve-vanguard-roadmap"
+      }
+    ]
+  },
+  "es": {
+    "access": [
+      {
+        "slug": "eve-vanguard-access-code",
+        "file": "eve-vanguard-access-code"
+      },
+      {
+        "slug": "eve-vanguard-alpha",
+        "file": "eve-vanguard-alpha"
+      },
+      {
+        "slug": "eve-vanguard-download",
+        "file": "eve-vanguard-download"
+      },
+      {
+        "slug": "eve-vanguard-how-to-get-access",
+        "file": "eve-vanguard-how-to-get-access"
+      },
+      {
+        "slug": "eve-vanguard-join-playtest",
+        "file": "eve-vanguard-join-playtest"
+      },
+      {
+        "slug": "eve-vanguard-playtest",
+        "file": "eve-vanguard-playtest"
+      },
+      {
+        "slug": "eve-vanguard-sign-up",
+        "file": "eve-vanguard-sign-up"
+      }
+    ],
+    "connection": [
+      {
+        "slug": "eve-vanguard-affect-eve-online",
+        "file": "eve-vanguard-affect-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-connected-to-eve-online",
+        "file": "eve-vanguard-connected-to-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-eve-online",
+        "file": "eve-vanguard-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-nemesis",
+        "file": "eve-vanguard-nemesis"
+      },
+      {
+        "slug": "eve-vanguard-vs-dust-514",
+        "file": "eve-vanguard-vs-dust-514"
+      },
+      {
+        "slug": "eve-vanguard-vs-frontier",
+        "file": "eve-vanguard-vs-frontier"
+      }
+    ],
+    "gameplay": [
+      {
+        "slug": "eve-vanguard-assignments",
+        "file": "eve-vanguard-assignments"
+      },
+      {
+        "slug": "eve-vanguard-extraction-shooter",
+        "file": "eve-vanguard-extraction-shooter"
+      },
+      {
+        "slug": "eve-vanguard-fps",
+        "file": "eve-vanguard-fps"
+      },
+      {
+        "slug": "eve-vanguard-gameplay",
+        "file": "eve-vanguard-gameplay"
+      },
+      {
+        "slug": "eve-vanguard-multiplayer",
+        "file": "eve-vanguard-multiplayer"
+      },
+      {
+        "slug": "eve-vanguard-pve",
+        "file": "eve-vanguard-pve"
+      },
+      {
+        "slug": "eve-vanguard-pvp",
+        "file": "eve-vanguard-pvp"
+      },
+      {
+        "slug": "eve-vanguard-vehicles",
+        "file": "eve-vanguard-vehicles"
+      },
+      {
+        "slug": "eve-vanguard-weapons",
+        "file": "eve-vanguard-weapons"
+      }
+    ],
+    "guide": [
+      {
+        "slug": "eve-vanguard-beginner-guide",
+        "file": "eve-vanguard-beginner-guide"
+      },
+      {
+        "slug": "eve-vanguard-contracts",
+        "file": "eve-vanguard-contracts"
+      },
+      {
+        "slug": "eve-vanguard-extraction-guide",
+        "file": "eve-vanguard-extraction-guide"
+      },
+      {
+        "slug": "eve-vanguard-guide",
+        "file": "eve-vanguard-guide"
+      },
+      {
+        "slug": "eve-vanguard-how-to-extract",
+        "file": "eve-vanguard-how-to-extract"
+      },
+      {
+        "slug": "eve-vanguard-how-to-play",
+        "file": "eve-vanguard-how-to-play"
+      },
+      {
+        "slug": "eve-vanguard-operation-avalon",
+        "file": "eve-vanguard-operation-avalon"
+      },
+      {
+        "slug": "eve-vanguard-tips",
+        "file": "eve-vanguard-tips"
+      }
+    ],
+    "platforms": [
+      {
+        "slug": "eve-vanguard-minimum-specs",
+        "file": "eve-vanguard-minimum-specs"
+      },
+      {
+        "slug": "eve-vanguard-pc",
+        "file": "eve-vanguard-pc"
+      },
+      {
+        "slug": "eve-vanguard-steam",
+        "file": "eve-vanguard-steam"
+      },
+      {
+        "slug": "eve-vanguard-system-requirements",
+        "file": "eve-vanguard-system-requirements"
+      }
+    ],
+    "release": [
+      {
+        "slug": "eve-vanguard-early-access",
+        "file": "eve-vanguard-early-access"
+      },
+      {
+        "slug": "eve-vanguard-launch-date",
+        "file": "eve-vanguard-launch-date"
+      },
+      {
+        "slug": "eve-vanguard-open-beta",
+        "file": "eve-vanguard-open-beta"
+      },
+      {
+        "slug": "eve-vanguard-release-date",
+        "file": "eve-vanguard-release-date"
+      },
+      {
+        "slug": "eve-vanguard-release",
+        "file": "eve-vanguard-release"
+      },
+      {
+        "slug": "eve-vanguard-roadmap",
+        "file": "eve-vanguard-roadmap"
+      }
+    ]
+  },
+  "ru": {
+    "access": [
+      {
+        "slug": "eve-vanguard-access-code",
+        "file": "eve-vanguard-access-code"
+      },
+      {
+        "slug": "eve-vanguard-alpha",
+        "file": "eve-vanguard-alpha"
+      },
+      {
+        "slug": "eve-vanguard-download",
+        "file": "eve-vanguard-download"
+      },
+      {
+        "slug": "eve-vanguard-how-to-get-access",
+        "file": "eve-vanguard-how-to-get-access"
+      },
+      {
+        "slug": "eve-vanguard-join-playtest",
+        "file": "eve-vanguard-join-playtest"
+      },
+      {
+        "slug": "eve-vanguard-playtest",
+        "file": "eve-vanguard-playtest"
+      },
+      {
+        "slug": "eve-vanguard-sign-up",
+        "file": "eve-vanguard-sign-up"
+      }
+    ],
+    "connection": [
+      {
+        "slug": "eve-vanguard-affect-eve-online",
+        "file": "eve-vanguard-affect-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-connected-to-eve-online",
+        "file": "eve-vanguard-connected-to-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-eve-online",
+        "file": "eve-vanguard-eve-online"
+      },
+      {
+        "slug": "eve-vanguard-nemesis",
+        "file": "eve-vanguard-nemesis"
+      },
+      {
+        "slug": "eve-vanguard-vs-dust-514",
+        "file": "eve-vanguard-vs-dust-514"
+      },
+      {
+        "slug": "eve-vanguard-vs-frontier",
+        "file": "eve-vanguard-vs-frontier"
+      }
+    ],
+    "gameplay": [
+      {
+        "slug": "eve-vanguard-assignments",
+        "file": "eve-vanguard-assignments"
+      },
+      {
+        "slug": "eve-vanguard-extraction-shooter",
+        "file": "eve-vanguard-extraction-shooter"
+      },
+      {
+        "slug": "eve-vanguard-fps",
+        "file": "eve-vanguard-fps"
+      },
+      {
+        "slug": "eve-vanguard-gameplay",
+        "file": "eve-vanguard-gameplay"
+      },
+      {
+        "slug": "eve-vanguard-multiplayer",
+        "file": "eve-vanguard-multiplayer"
+      },
+      {
+        "slug": "eve-vanguard-pve",
+        "file": "eve-vanguard-pve"
+      },
+      {
+        "slug": "eve-vanguard-pvp",
+        "file": "eve-vanguard-pvp"
+      },
+      {
+        "slug": "eve-vanguard-vehicles",
+        "file": "eve-vanguard-vehicles"
+      },
+      {
+        "slug": "eve-vanguard-weapons",
+        "file": "eve-vanguard-weapons"
+      }
+    ],
+    "guide": [
+      {
+        "slug": "eve-vanguard-beginner-guide",
+        "file": "eve-vanguard-beginner-guide"
+      },
+      {
+        "slug": "eve-vanguard-contracts",
+        "file": "eve-vanguard-contracts"
+      },
+      {
+        "slug": "eve-vanguard-extraction-guide",
+        "file": "eve-vanguard-extraction-guide"
+      },
+      {
+        "slug": "eve-vanguard-guide",
+        "file": "eve-vanguard-guide"
+      },
+      {
+        "slug": "eve-vanguard-how-to-extract",
+        "file": "eve-vanguard-how-to-extract"
+      },
+      {
+        "slug": "eve-vanguard-how-to-play",
+        "file": "eve-vanguard-how-to-play"
+      },
+      {
+        "slug": "eve-vanguard-operation-avalon",
+        "file": "eve-vanguard-operation-avalon"
+      },
+      {
+        "slug": "eve-vanguard-tips",
+        "file": "eve-vanguard-tips"
+      }
+    ],
+    "platforms": [
+      {
+        "slug": "eve-vanguard-minimum-specs",
+        "file": "eve-vanguard-minimum-specs"
+      },
+      {
+        "slug": "eve-vanguard-pc",
+        "file": "eve-vanguard-pc"
+      },
+      {
+        "slug": "eve-vanguard-steam",
+        "file": "eve-vanguard-steam"
+      },
+      {
+        "slug": "eve-vanguard-system-requirements",
+        "file": "eve-vanguard-system-requirements"
+      }
+    ],
+    "release": [
+      {
+        "slug": "eve-vanguard-early-access",
+        "file": "eve-vanguard-early-access"
+      },
+      {
+        "slug": "eve-vanguard-launch-date",
+        "file": "eve-vanguard-launch-date"
+      },
+      {
+        "slug": "eve-vanguard-open-beta",
+        "file": "eve-vanguard-open-beta"
+      },
+      {
+        "slug": "eve-vanguard-release-date",
+        "file": "eve-vanguard-release-date"
+      },
+      {
+        "slug": "eve-vanguard-release",
+        "file": "eve-vanguard-release"
+      },
+      {
+        "slug": "eve-vanguard-roadmap",
+        "file": "eve-vanguard-roadmap"
+      }
+    ]
+  }
+}

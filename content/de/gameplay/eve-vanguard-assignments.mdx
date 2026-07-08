@@ -1,0 +1,206 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Einsätze: Leitfaden für Verträge & Missionsbelohnungen",
+  description: "Meistern Sie die EVE Vanguard Einsätze mit unserem Leitfaden zu Verträgen, Zielen und Belohnungen in Operation Avalon. Erfahren Sie, wie Sie Missionen abschließen und sicher extrahieren.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1a1a2e/00ffff?text=Vanguard+Assignments+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team",
+  keywords: "EVE Vanguard, Einsätze, Verträge, Operation Avalon, Missionen, Belohnungen, Extraktion, New Eden"
+}
+
+<Callout type="info" title="Schnellanleitung">
+- **EVE Vanguard Einsätze (Assignments)** sind hochriskante Verträge, die den Kern des Gameplays ausmachen: Bereitstellung, Zielerfüllung und Extraktion.
+- **Operation Avalon** führt das Schlachtfeld „Der verlorene Konvoi“ (Lost Convoy) ein, das mit überarbeiteten Plünderungsmechaniken und einer klügeren KI der Mordu's Legion aufwartet.
+- **Die Vertragsvielfalt** umfasst Kampf-, Hacking- und Bergungsmissionen, die den größeren Konflikt im New Eden von EVE Online beeinflussen.
+- **Das Timing der Extraktion** ist entscheidend; ein längerer Verbleib erhöht das Belohnungspotenzial, steigert jedoch das Risiko, sämtlichen Fortschritt zu verlieren, drastisch.
+- **Gemeinsame Belohnungen** ermöglichen es Spielern, Resonanz-Chiffren (Resonant Cyphers) und Skillpunkte zu verdienen, die die Brücke zwischen Boden- und Weltraumkrieg schlagen.
+</Callout>
+
+<Section icon={Target} title="EVE Vanguard Einsätze und Verträge verstehen">
+
+Im düsteren Sci-Fi-Universum von New Eden sind **EVE Vanguard Einsätze** die primäre Methode für Warclones, um Ansehen, Ressourcen und Einfluss zu erlangen. Diese Einsätze sind keine bloßen Nebenquests; sie bilden das mechanische Herzstück des Extraktions-Abenteuers. Wenn Sie auf einer Planetenoberfläche landen, bemisst sich Ihr Erfolg an Ihrer Fähigkeit, sich in feindlichen Umgebungen zurechtzufinden, Vertragsparameter zu erfüllen und wertvolle Technologien zu sichern, bevor sich das Extraktionsfenster schließt.
+
+Die aktuelle Entwicklungsphase, insbesondere Operation Avalon, hat die Tiefe dieser Missionen erheblich erweitert. Einsätze bieten nun dynamische Ziele, die sich basierend auf Spielerinteraktionen und Umwelteinflüssen verändern können. Ob Sie eine Absturzstelle plündern oder einen Außenposten verteidigen – das Verständnis der Hierarchie dieser Aufgaben ist überlebenswichtig.
+
+| Einsatzkategorie | Primäres Ziel | Typische Belohnung | Risikostufe |
+| :--- | :--- | :--- | :--- |
+| Kampfverträge | Streitkräfte der Mordu's Legion eliminieren | Waffenkomponenten, Munition | Hoch |
+| Hacking-Missionen | In Konzernanlagen eindringen | Resonanz-Chiffren, Daten | Mittel |
+| Bergungsoperationen | Technologie aus Wracks bergen | Rohstoffe, Credits | Niedrig-Mittel |
+| Elite-Einsätze | Den Kommandoblock sichern | Seltene Blaupausen, Hohe EP | Extrem |
+
+<Callout type="tip" title="Strategische Priorität">
+Priorisieren Sie immer Einsätze, die zu Ihrer aktuellen Ausrüstung passen. Wenn Sie mit einem Laser-DMR ausgerüstet sind, konzentrieren Sie sich auf Fernkampfverträge, um beim Erfüllen der Ziele einen taktischen Vorteil zu behalten.
+</Callout>
+
+Einsätze werden vor dem Start über das Warbarge-Interface vergeben. Spieler müssen ihren Weg sorgfältig wählen, da die Umgebung auf der Planetenoberfläche unbarmherzig ist. Die Einführung des Schlachtfelds „Der verlorene Konvoi“ im Jahr 2026 hat neue vertikale Ebenen und Umweltgefahren hinzugefügt, die selbst einfache Bergungsaufträge zu einer harten Prüfung taktischer Geduld machen.
+
+</Section>
+
+<Section icon={Map} title="Operation Avalon: Missionsstruktur und Taktiken">
+
+Operation Avalon markiert eine entscheidende Wende in der Durchführung von **EVE Vanguard Einsätzen**. Dieser Alpha-Spieltest, der vom 7. Juli bis zum 20. Juli 2026 läuft, konzentriert sich auf „risikobasierte Einsätze“. Im Gegensatz zu traditionellen Shootern, bei denen das Ziel lediglich darin besteht, ein Match zu gewinnen, verlangt Vanguard von Ihnen, Ihre Gier mit der Realität des Extraktions-Timers abzuwägen.
+
+Das Schlachtfeld ist eine persistente Zone, in der mehrere Warclones dieselben oder gegensätzliche Einsätze verfolgen können. Dies schafft eine PvPvE-Umgebung, in der die größte Bedrohung für Ihren Missionserfolg nicht die KI-gesteuerte Mordu's Legion sein muss, sondern ein rivalisierender Spieler, der es auf Ihre Beute abgesehen hat.
+
+**Wichtige Missionsfeatures in Operation Avalon:**
+- **Der verlorene Konvoi:** Ein riesiges, von Trümmern übersätes Schlachtfeld, das als primäre Zone für hochrangige Einsätze dient.
+- **Dynamische Extraktion:** Extraktionspunkte sind nicht mehr statisch; sie erscheinen und verschwinden abhängig vom Fortschritt der Sitzung.
+- **Der Kommandoblock:** Ein zentrales Ziel, das mit der Nemesis-Storyline verknüpft ist. Es bietet die höchsten Belohnungen, zieht aber auch die gefährlichsten Bedrohungen an.
+
+<CardGrid cols={2}>
+  <Card title="PvE-Fokus">
+    - Soldaten der Mordu's Legion jagen
+    - Automatisierte Verteidigungsanlagen ausschalten
+    - **Sicherer Fortschritt** für Solospieler
+    - Beständiges Sammeln von Ressourcen
+  </Card>
+  <Card title="PvP-Fokus">
+    - Extraktionen rivalisierender Warclones abfangen
+    - Um hochkarätige Bergungsstellen kämpfen
+    - **Risikoreiches, lohnendes** Gameplay
+    - Potenzial für massive Beutezüge
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Gefahrenwarnung">
+Der Planet schlägt umso härter zurück, je länger Sie bleiben. In Operation Avalon steigt die Umweltgefahr nach der 15-Minuten-Marke drastisch an, was die Extraktion für Nachzügler erheblich erschwert.
+</Callout>
+
+Um diese Einsätze erfolgreich zu meistern, müssen die Spieler die überarbeiteten Schießmechaniken nutzen. Die Einführung der MP (SMG) und der Splitterkanone (Shrapnel Cannon) bietet mehr Optionen für Nahkämpfe, die bei der Verteidigung von Zielpunkten oder beim Hacken von Terminals häufig vorkommen.
+
+</Section>
+
+<Section icon={Swords} title="Schritt-für-Schritt-Anleitung zum Missionsabschluss">
+
+Das Abschließen von **EVE Vanguard Einsätzen** erfordert ein diszipliniertes Vorgehen. Wer ohne Plan in ein Ziel stürzt, verliert garantiert seine Ausrüstung und seinen Fortschritt. Folgen Sie diesem taktischen Ablauf, um Ihre Effizienz im Spieltest 2026 zu maximieren.
+
+<Steps>
+  <Step num="1" title="Vorbereitung auf dem Warbarge">
+    Besuchen Sie vor dem Start den Vanguard-Reiter im EVE-Launcher. Überprüfen Sie die verfügbaren Verträge und wählen Sie einen aus, der zu Ihrer aktuellen Ausrüstung passt. Stellen Sie sicher, dass Ihre Waffen-Chipsätze auf die Schadensarten (Energie oder Kinetisch) eingestellt sind, die gegen die erwarteten Feinde am effektivsten sind.
+  </Step>
+  <Step num="2" title="Planetare Landung">
+    Überprüfen Sie sofort nach der Landung Ihre taktische Karte. Identifizieren Sie den nächstgelegenen Zielpunkt und lokalisieren Sie potenzielle Extraktionszonen. Bewegen Sie sich nicht direkt ins Zentrum der Karte, sondern an den Rändern entlang, um erste Ressourcen zu sammeln und nach rivalisierenden Warclones Ausschau zu halten.
+  </Step>
+  <Step num="3" title="Kampf am Einsatzziel">
+    Sobald Sie den Einsatzort erreicht haben, säubern Sie die unmittelbare Umgebung von den Truppen der Mordu's Legion. Wenn der Einsatz Hacking erfordert, errichten Sie Verteidigungslinien. Nutzen Sie die Nova-Klinge für lautlose Kills, um patrouillierende Trupps nicht auf Ihre Anwesenheit aufmerksam zu machen.
+  </Step>
+  <Step num="4" title="Ressourcen sichern">
+    Sobald das Ziel erreicht ist, plündern Sie das Gebiet gründlich. In Operation Avalon enthalten Wracks und Anlagen „exotische Technologie“, die für den langfristigen Fortschritt unerlässlich ist. Priorisieren Sie hochwertige Gegenstände wie Resonanz-Chiffren gegenüber gewöhnlichen Materialien.
+  </Step>
+  <Step num="5" title="Taktische Extraktion">
+    Sobald Ihr Hauptziel erfüllt ist, überprüfen Sie Ihre Gesundheit und Munition. Wenn Sie nur noch wenig Vorräte haben, begeben Sie sich zum nächsten Extraktionspunkt. Denken Sie daran: Ein nicht extrahierter Einsatz bringt null Belohnungen. Sichern Sie Ihre Beute und kehren Sie zum Warbarge zurück.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Mission erfüllt">
+Eine erfolgreiche Extraktion sichert nicht nur Ihre Beute, sondern zahlt auch auf die „Globalen Punkte“ ein, was den größeren Krieg in EVE Online direkt beeinflusst.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Die Verbindung zu EVE Online: Globale Einsätze">
+
+Einer der einzigartigsten Aspekte der **EVE Vanguard Einsätze** ist ihre direkte Auswirkung auf das EVE Online-Universum. Dieses Konzept, beschrieben als „Ein Universum, ein Krieg“, bedeutet, dass Ihre Aktionen am Boden als Warclone Ereignisse im Weltraum für die Kapselpiloten von EVE Online auslösen können.
+
+Während der Operation Avalon und früherer Events wie Operation Nemesis trug das Abschließen bestimmter Expeditions-Einsätze zu reichsweiten Zielen bei. Wenn die Community die Fortschrittsanzeige durch Bodenmissionen füllt, erscheinen im Weltraum von EVE Online plünderbare Konvois und AEGIS-Stürme. Diese Synergie ermöglicht es Bodenspielern, „Türen zu öffnen“ für Weltraumspieler, wodurch ein wahrhaft vernetztes Ökosystem entsteht.
+
+| Belohnungstyp | Quelle | Verwendung in EVE Online |
+| :--- | :--- | :--- |
+| Resonanz-Chiffren | Hacking- / Bergungs-Einsätze | Umtausch gegen SKINs und Komponenten |
+| Globale Punkte | Missionsabschluss | Löst Weltereignisse und Konvois aus |
+| Skillpunkte | Tägliche Einsätze | Charakterfortschritt für beide Spiele |
+| Breach Control | Elite-Einsätze | Spezialisierte Module für den Weltraumkampf |
+
+<CardGrid cols={3}>
+  <Card title="Unterstützung der Reiche">
+    Der Tausch von Resonanz-Chiffren bei Händlern der Fraktionen unterstützt bestimmte Reiche wie Amarr oder Caldari.
+  </Card>
+  <Card title="Marktauswirkung">
+    In Vanguard extrahierte Ressourcen können die Herstellung fortschrittlicher Komponenten auf dem Markt von New Eden beeinflussen.
+  </Card>
+  <Card title="Fortschritt der Story">
+    Das Reich mit den erfolgreichsten Einsätzen bestimmt den erzählerischen Ausgang des Avalon-Events.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Vernetzte Belohnungen">
+Viele Belohnungen, wie die Kisten von „Arkombine Arisen“ und Twitch-Drops, sind sowohl in EVE Vanguard als auch in EVE Online verfügbar und belohnen Spieler, die an beiden Fronten des Konflikts kämpfen.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Loadout-Optimierung für maximale Effizienz">
+
+Um Ihre Erfolgsquote bei den **EVE Vanguard Einsätzen** zu maximieren, muss Ihre Ausrüstung anpassungsfähig sein. Operation Avalon hat modulare Waffensysteme eingeführt, die den Wechsel von Schadensarten und mehrere Feuermodi ermöglichen. Zu wissen, wie man diese Werkzeuge einsetzt, entscheidet über eine erfolgreiche Extraktion oder einen gescheiterten Einsatz.
+
+**Empfohlene Ausrüstungskomponenten:**
+- **Primärwaffe:** Strahlengewehr (Beam Rifle) oder Laser-DMR für vielseitige Kampfdistanzen.
+- **Sekundärwaffe:** MP (SMG) zum Säubern enger Korridore in Innenanlagen.
+- **Nahkampf:** Nova-Klinge für ressourceneffiziente Kills.
+- **Chipsätze:** Konzentrieren Sie sich auf Stabilität und Nachladegeschwindigkeit, um in intensiven Feuergefechten einen hohen Schaden pro Sekunde aufrechtzuerhalten.
+
+| Komponente | Vorteil | Bester Einsatztyp |
+| :--- | :--- | :--- |
+| Kinetischer Chipsatz | Höherer Schaden gegen Rüstung | Kampf gegen Mordu's Legion |
+| Energie-Chipsatz | Effektiv gegen Schilde | Angriffe auf Außenposten |
+| Tarnmodul | Reduziertes Geräuschprofil | Hacking / Infiltration |
+| Extra-Munitions-Rig | Erhöhte Ausdauer | Langwierige Bergungen |
+
+<Checklist
+  id="deployment-checklist"
+  title="Checkliste vor dem Einsatz:"
+  items={[
+    "Vertragsauswahl im Warbarge überprüfen",
+    "Feuermodi der Waffen kontrollieren (Feuerstoß vs. Auto)",
+    "Mindestens einen Energie- und einen Kinetik-Chipsatz ausrüsten",
+    "PC-Spezifikationen prüfen (16 GB RAM erforderlich)",
+    "Sicherstellen, dass 50 GB Speicherplatz für Playtest-Updates frei sind"
+  ]}
+/>
+
+<Callout type="tip" title="Waffenanpassung">
+Vergessen Sie nicht, die in früheren Runden extrahierten Ressourcen zu nutzen, um Ihren Anzug und Ihre Waffen aufzuwerten. Der Fortschritt in EVE Vanguard ist persistent – ein erfolgreicher Einsatz heute macht die Mission von morgen leichter.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Fazit und FAQ">
+
+Das Meistern von **EVE Vanguard Einsätzen** ist ein Prozess stetiger taktischer Verfeinerung. Während sich das Spiel auf seine geplante Veröffentlichung im 3. Quartal 2026 zubewegt, wird die Komplexität dieser Missionen weiter zunehmen. Indem Sie sich auf den Kernkreislauf aus Vorbereitung, Zielerfüllung und disziplinierter Extraktion konzentrieren, werden Sie zu einem gefürchteten Warclone im Dienste der Reiche von New Eden.
+
+Egal, ob Sie solo spielen oder sich mit einem Trupp koordinieren – denken Sie daran, dass jeder Einsatz eine andere Geschichte schreibt. Die Entscheidungen, die Sie auf der Oberfläche des Planeten treffen, hallen durch die Sterne und prägen die Zukunft des größten Sandbox-MMOs der Geschichte.
+
+<FAQ items={[
+  {
+    question: "Wie erhalte ich Zugriff auf die EVE Vanguard Einsätze?",
+    answer: "Sie können während aktiver Playtest-Phasen wie Operation Avalon über den EVE-Launcher auf die Einsätze zugreifen. Sie müssen auf der Steam-Seite Zugriff anfordern oder ein aktives EVE Online-Abonnement besitzen, um den Vanguard-Reiter nutzen zu können."
+  },
+  {
+    question: "Was passiert, wenn ich während eines Einsatzes sterbe?",
+    answer: "Wenn Sie vor der Extraktion sterben, verlieren Sie alle Ressourcen, Technologien und Beutestücke, die Sie während dieses Einsatzes gesammelt haben. Ihr Charakterfortschritt und Ihre persistenten Ausrüstungs-Upgrades bleiben jedoch erhalten."
+  },
+  {
+    question: "Beeinflussen die EVE Vanguard Einsätze meinen Charakter in EVE Online?",
+    answer: "Ja. Durch das Abschließen von Einsätzen können Sie Skillpunkte, Resonanz-Chiffren und andere Belohnungen verdienen, die mit Ihrem EVE Online-Konto geteilt werden. So können Sie in beiden Spielen gleichzeitig Fortschritte erzielen."
+  },
+  {
+    question: "Was ist der schwierigste Einsatztyp?",
+    answer: "Elite-Einsätze, die den Kommandoblock oder hochrangige Bosse der Mordu's Legion beinhalten, sind am schwierigsten. Diese erfordern hochentwickelte Ausrüstung und oft die Zusammenarbeit mit anderen Warclones."
+  }
+]} />
+
+<Callout type="info" title="Schlussbemerkung">
+Operation Avalon läuft vom 7. Juli bis zum 20. Juli 2026. Nutzen Sie dieses Zeitfenster, um die Zukunft der EVE Vanguard Einsätze mitzugestalten und exklusive Alpha-Belohnungen zu ergattern.
+</Callout>
+
+</Section>

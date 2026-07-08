@@ -1,0 +1,182 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Extraktion: Strategie- & Überlebenshandbuch 2026",
+  description: "Meistern Sie den Extraktions-Loop in EVE Vanguard. Erfahren Sie, wie Sie Ressourcen extrahieren, Risiken in Operation Avalon managen und auf dem Schlachtfeld des Lost Convoy überleben.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/0ea5e9?text=EVE+Vanguard+Extraction+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki-Team",
+  keywords: "EVE Vanguard, Extraktion, Operation Avalon, New Eden, Warclone, Überlebensguide"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- **EVE Vanguard Extraktion**: Die Kernmechanik besteht darin, ausgewiesene Zonen zu erreichen und einen Countdown zu überleben, bevor der Sitzungstimer abläuft.
+- **Risikomanagement**: Ein längerer Aufenthalt erhöht die Beutequalität, steigert aber exponentiell die Chance auf eine Einmischung durch **Mordu's Legion** oder rivalisierende Warclones.
+- **Operation Avalon**: Dieser Spieltest von 2026 bietet einen überarbeiteten Extraktions-Loop, bei dem Extraktionspunkte im Verlauf der Mission verschwinden können.
+- **Todesstrafe**: Wenn die Extraktion fehlschlägt, gehen alle nicht gesicherten Ressourcen und Ausrüstungsgegenstände verloren, die während des Einsatzes gesammelt wurden.
+- **Primärziel**: Priorisieren Sie immer das **Extraktionssignal** gegenüber dem Plündern in letzter Minute, um den Fortschritt zu sichern.
+</Callout>
+
+<Section icon={Map} title="Den Extraktions-Loop verstehen">
+
+In der düsteren Sci-Fi-Welt von New Eden ist der Einsatz als Warclone ein riskantes Wagnis. **EVE Vanguard: Wie man extrahiert** ist die kritischste Frage, die jeder Spieler beantworten muss, bevor er einen feindseligen Planeten betritt. Das Spiel ist als Extraktions-Abenteuer-FPS definiert, was bedeutet, dass Ihr Erfolg nicht allein an Abschüssen gemessen wird, sondern daran, was Sie erfolgreich zu Ihrem Warbarge zurückbringen.
+
+Der Extraktionsprozess ist kein einfacher „Beenden“-Button. Es ist eine taktische Phase der Mission, die Timing, Positionierung und Kampfbereitschaft erfordert. Im aktuellen Alpha-Spieltest **Operation Avalon** reagiert die Umgebung dynamischer als je zuvor. Spieler müssen das **Lost Convoy**-Schlachtfeld navigieren, wo die Fenster für einen sicheren Abflug begrenzt und stark umkämpft sind.
+
+| Phase | Priorität | Hauptbedrohung | Ziel |
+| :--- | :--- | :--- | :--- |
+| **Infiltration** | Niedrig | Umgebung | Präsenz etablieren und Beutezonen identifizieren |
+| **Engagement** | Moderat | PvE-Patrouillen | Verträge abschließen und Ressourcen sammeln |
+| **Konsolidierung** | Hoch | Rivalisierende Warclones | Hochwertige Tech sichern und zum Ausgang bewegen |
+| **Extraktion** | Kritisch | Alles | Den Extraktionspunkt bis zum Abflug verteidigen |
+
+<Callout type="warning" title="Die goldene Regel">
+Wenn Sie nicht lebend extrahieren, verlieren Sie alles. Es gibt keine Teilbelohnungen für das „fast“ Erreichen des Schiffes. In EVE Vanguard ist Überleben die einzige Währung, die für den langfristigen Fortschritt zählt.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Wie man extrahiert: Schritt-für-Schritt-Verfahren">
+
+Das Meistern der technischen Schritte des Extraktionsprozesses ist für jeden Warclone unerlässlich. Die Benutzeroberfläche bietet mehrere Indikatoren, aber das Chaos des Kampfes kann leicht dazu führen, dass ein Zeitfenster verpasst wird. Befolgen Sie dieses Protokoll, um eine erfolgreiche Rückkehr in den Orbit zu gewährleisten.
+
+<Steps>
+  <Step num="1" title="Aktive Extraktionszone lokalisieren">
+    Öffnen Sie Ihre taktische Karte und identifizieren Sie grüne Symbole, die aktive Extraktionspunkte darstellen. Beachten Sie, dass in **Operation Avalon** einige Punkte temporär sind und deaktiviert werden, wenn die planetare Situation eskaliert.
+  </Step>
+  <Step num="2" title="Sitzungstimer verwalten">
+    Jeder Einsatz hat ein hartes Zeitlimit. Sie müssen den Extraktionsprozess mit genügend verbleibender Zeit einleiten, um den Countdown zu überleben. Wenn der Sitzungstimer Null erreicht, bevor Sie abfliegen, gilt der Einsatz als gescheitert.
+  </Step>
+  <Step num="3" title="Landeperimeter sichern">
+    Extraktionspunkte werden oft von Truppen der **Mordu's Legion** bewacht oder von rivalisierenden Spielern belagert. Führen Sie vor dem Anfordern der Abholung einen 360-Grad-Check der Umgebung durch, um sicherzustellen, dass Sie nicht in einen Hinterhalt geraten.
+  </Step>
+  <Step num="4" title="Abflug signalisieren">
+    Interagieren Sie mit dem Extraktionsfeuer, um den finalen Countdown zu starten. Diese Aktion alarmiert normalerweise nahegelegene Feinde über Ihre Position und verwandelt die Extraktionszone in eine Kampfarena im „King of the Hill“-Stil.
+  </Step>
+  <Step num="5" title="Verteidigen und Boarding">
+    Bleiben Sie innerhalb der markierten Zone, bis der Timer Null erreicht. Nutzen Sie Deckung, mobile Schilde oder Unterdrückungsfeuer, um Bedrohungen fernzuhalten. Sobald das Schiff eintrifft, werden Sie automatisch extrahiert.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Taktisches Timing">
+Versuchen Sie, an der Extraktionszone einzutreffen, wenn noch mindestens 3-5 Minuten der Gesamtsitzung verbleiben. Dies bietet einen Puffer für unerwartete Gefechte oder die Notwendigkeit, zu einem sekundären Ausgang zu rotieren, falls der erste zu stark belagert wird.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Risiko-Nutzen-Strategie">
+
+Die grundlegende Spannung bei der **EVE Vanguard Extraktion** liegt im „Nur noch ein Raum“-Syndrom. Je tiefer Sie in konzernkontrollierte Anlagen oder Absturzstellen vordringen, desto besser ist die Beute. Doch der Planet wehrt sich umso härter, je länger Sie bleiben.
+
+<CardGrid cols={3}>
+  <Card title="Das sichere Spiel">
+    - **Extraktionszeitpunkt**: Früh (10-15 Min.)
+    - **Beutequalität**: Niedrig bis Mittel
+    - **Risikostufe**: Minimal
+    - **Ziel**: Beständiger Fortschritt und Sicherheit der Ausrüstung.
+  </Card>
+  <Card title="Der ausgewogene Run">
+    - **Extraktionszeitpunkt**: Mitte der Sitzung
+    - **Beutequalität**: Hoch
+    - **Risikostufe**: Moderat
+    - **Ziel**: Abschluss mehrerer Verträge und Upgrade von Chipsätzen.
+  </Card>
+  <Card title="Der High Roller">
+    - **Extraktionszeitpunkt**: Letztes Fenster
+    - **Beutequalität**: Exotisch / Relikte
+    - **Risikostufe**: Extrem
+    - **Ziel**: Sicherung des **Command Blocks** oder seltener Tech.
+  </Card>
+</CardGrid>
+
+| Faktor | Auswirkung bei geringem Risiko | Auswirkung bei hohem Risiko |
+| :--- | :--- | :--- |
+| **Gegnerdichte** | Spärliche Patrouillen | Elite-Trupps der Mordu's Legion |
+| **Rivalisierende Präsenz** | Geringe Wahrscheinlichkeit | Hohe Wahrscheinlichkeit an Ausgängen |
+| **Beute-Stufe** | Basiskomponenten | Resonante Chiffren und Relikte |
+| **Extraktions-Schwierigkeit** | Routine | Stark umkämpft / Begrenzte Punkte |
+
+<Callout type="success" title="Fortschritts-Tipp">
+Neue Spieler sollten sich bei ihren ersten 5-10 Einsätzen auf „Das sichere Spiel“ konzentrieren. Ein Vorrat an Basiswaffen und Credits ist wichtiger, als einem einzelnen hochwertigen Relikt nachzujagen und dabei zu sterben.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Extraktionskampf und Loadouts">
+
+Ihre Ausrüstung beeinflusst maßgeblich Ihre Fähigkeit, einen Extraktionspunkt zu halten. Während die **SMG** hervorragend für aggressive Überfälle geeignet ist, sind es oft defensive Werkzeuge, die einen Warclone in den letzten zwei Minuten einer Mission retten.
+
+**Essentielle Ausrüstung für die Extraktion:**
+- **Mobile Deckung**: Unerlässlich für offene Extraktionszonen, in denen natürliche Deckung spärlich ist.
+- **Sensorgranaten**: Nutzen Sie diese, um rivalisierende Warclones aufzudecken, die versuchen, sich an Ihre Position heranzuschleichen.
+- **Energie-/Kinetik-Munition**: Stellen Sie sicher, dass Sie genug von beidem haben, um sowohl geschildete Mordu-Truppen als auch gepanzerte Spieler zu bekämpfen.
+- **Nova-Klinge**: Ein zuverlässiger letzter Ausweg für den Nahkampf innerhalb des Extraktionskreises.
+
+| Waffentyp | Rolle bei der Extraktion | Effektivität |
+| :--- | :--- | :--- |
+| **Laser DMR** | Fernunterdrückung | ★★★★☆ |
+| **Schrapnell-Kanone** | Punktverteidigung / Nahkampf | ★★★★★ |
+| **Strahlengewehr** | Dauerfeuer auf NPCs | ★★★☆☆ |
+| **SMG** | Mobilität und Flankieren | ★★★★☆ |
+
+<Callout type="info" title="Modulare Anpassung">
+Nutzen Sie Ihre **Chipsätze**, um Ihre Primärwaffe für bessere Stabilität oder Magazingröße zu modifizieren. Während der Extraktion kann die Fähigkeit, länger ohne Nachladen zu feuern, den Unterschied zwischen Leben und Tod ausmachen.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Operation Avalon: Neue Extraktionsmechaniken">
+
+Das Update **Operation Avalon** vom Juli 2026 führte mehrere Änderungen an der Extraktions-Meta ein. Das **Lost Convoy**-Schlachtfeld ist dynamisch, und Spieler müssen sich an die „Nemesis“-Bedrohung anpassen, die Standard-Extraktionsprotokolle stören kann.
+
+<Checklist
+  id="avalon-checklist"
+  title="Bereitschaft für die Operation Avalon Extraktion:"
+  items={[
+    "Überprüfen, ob der Command Block aktiv ist (erhöht die Bedrohungsstufe)",
+    "Auf AEGIS-Böen achten, die bestimmte Ausgänge deaktivieren könnten",
+    "Sicherstellen, dass genug Tech geborgen wurde, um das Risiko zu rechtfertigen",
+    "Globale Punkte überwachen, falls am EVE Online World Event teilgenommen wird",
+    "Den nächstgelegenen 'Notfall'-Extraktionspunkt als Backup identifizieren"
+  ]}
+/>
+
+Die Verbindung zwischen **EVE Vanguard** und **EVE Online** bedeutet, dass Ihre erfolgreiche Extraktion zum größeren Krieg in New Eden beiträgt. Extrahierte **Resonante Chiffren** können im Empire-Raum gegen massive Belohnungen getauscht werden, einschließlich Skillpunkten und einzigartigen SKINs.
+
+<Callout type="tip" title="Der Command Block">
+Der Command Block im Zentrum der Karte ist ein Ziel mit hohem Risiko. Wenn Sie beabsichtigen, mit Beute aus diesem Bereich zu extrahieren, müssen Sie mit dem stärksten Widerstand im Spiel rechnen. Versuchen Sie dies nur mit einem vollen Squad und optimierten Loadouts.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Zusammenfassung und FAQ">
+
+Das Meistern der **EVE Vanguard Extraktion** ist ein Lernprozess darüber, wann man gierig und wann man vorsichtig sein sollte. Indem Sie den strukturierten Schritten der Zonenlokalisierung, Perimeterreinigung und Zeitverwaltung folgen, können Sie sicherstellen, dass Ihr Warclone auf den planetaren Schlachtfeldern von New Eden zur Legende wird.
+
+<FAQ items={[
+  {
+    question: "Was passiert, wenn der Sitzungstimer Null erreicht, bevor ich extrahiere?",
+    answer: "Der Einsatz gilt als gescheitert. Alle während dieser Sitzung gesammelten Ressourcen, Ausrüstungsgegenstände oder Items gehen verloren, und Ihr Warclone wird ohne Belohnungen zwangsweise zum Warbarge zurückgesetzt."
+  },
+  {
+    question: "Können andere Spieler denselben Extraktionspunkt nutzen, den ich gerufen habe?",
+    answer: "Ja. Extraktionspunkte sind öffentlich. Rivalisierende Warclones können versuchen, Ihre Extraktion zu kapern oder Sie zu töten, während Sie auf das Ende des Timers warten. Bleiben Sie immer wachsam."
+  },
+  {
+    question: "Gibt es Gegenstände, die sicher sind, auch wenn ich die Extraktion nicht schaffe?",
+    answer: "Im Allgemeinen nein. EVE Vanguard folgt strengen Extraction-Shooter-Regeln. Bestimmte persistente Fortschrittselemente wie Ihr allgemeines Account-Level und freigeschaltete Chipsätze bleiben jedoch erhalten, auch wenn Sie die physischen Gegenstände eines spezifischen Runs verlieren."
+  },
+  {
+    question: "Wie finde ich die beste Beute zum Extrahieren in Operation Avalon?",
+    answer: "Hochwertige Beute findet man in Konzernanlagen, Absturzstellen und im zentralen Command-Block-Bereich. Suchen Sie nach Relikten und fortschrittlicher Technologie, aber stellen Sie sich auf Elite-Verteidiger der Mordu's Legion ein."
+  }
+]} />
+
+</Section>

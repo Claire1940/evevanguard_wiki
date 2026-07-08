@@ -1,0 +1,199 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Extraktions-Leitfaden: Meistere den High-Stakes Loot-Loop",
+  description: "Erfahre, wie du in EVE Vanguard überlebst und erfolgreich extrahierst. Unser Extraktions-Leitfaden deckt den Kern-Gameplay-Loop, Loot-Prioritäten und taktische Überlebenstipps für Warclones ab.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/00f2ff?text=Extraction+Mastery+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- **EVE Vanguard Extraktions-Leitfaden**: Das Überleben hängt davon ab, den Kreislauf aus Absetzen, Plündern und der Wahl des richtigen Moments zum Verlassen zu meistern.
+- **Risikomanagement**: Ein längerer Verbleib erhöht die Belohnungen, steigert jedoch auch die Chance, jeglichen Fortschritt an rivalisierende Warclones oder Mordus Legion zu verlieren.
+- **Operation Avalon**: Dieser Playtest im Jahr 2026 führt das Schlachtfeld „Lost Convoy“ und eine überarbeitete Extraktionsmechanik ein.
+- **Loot-Priorität**: Konzentriere dich auf fortschrittliche Technologie, Relikte und Ressourcen, die für Waffen-Chipsätze und Anzug-Upgrades benötigt werden.
+- **Extraktionspunkte**: Punkte sind nicht statisch; sie verschwinden mit der Zeit, was das Timing ebenso kritisch macht wie dein Kampfgeschick.
+</Callout>
+
+<Section icon={Map} title="Den Kern-Extraktions-Loop verstehen">
+
+Im düsteren Sci-Fi-Universum von New Eden wirst du als unsterblicher Warclone abgesetzt. Der **eve vanguard extraktions-leitfaden** beginnt mit dem Verständnis deines grundlegenden Zwecks: Du bist eine Bodeneinheit in einem weitaus größeren intergalaktischen Krieg. Im Gegensatz zu traditionellen Shootern wird der Sieg nicht durch deine Abschusszahl definiert, sondern durch das, was du zurück zu deinem Warbarge transportieren kannst. Jeder Einsatz ist ein kalkuliertes Risiko, bei dem die Umgebung, andere Spieler und die Zeit selbst deine primären Gegner sind.
+
+Der Gameplay-Loop ist ein hochspannender Kreislauf, der sowohl taktisches Schießen als auch strategische Planung erfordert. Du landest auf feindlichen planetaren Schlachtfeldern, die oft durch die laufenden Konflikte in EVE Online geprägt sind, um Verträge zu erfüllen und nach Technologie zu suchen. In dem Moment, in dem du landest, beginnt die Uhr zu ticken.
+
+<CardGrid cols={2}>
+  <Card title="Einsatzphase">
+    - **Infiltration**: Lande im „Lost Convoy“ oder auf ähnlichen Schlachtfeldern.
+    - **Ziele**: Konzentriere dich auf Verträge, Hacking oder das Sammeln von Ressourcen.
+    - **Anfängliche Tarnung**: Nutze die ersten Minuten, um die Positionen der Rivalen auszukundschaften.
+  </Card>
+  <Card title="Extraktionsphase">
+    - **Hohe Einsätze**: Der Planet wehrt sich gegen Ende der Sitzung immer heftiger.
+    - **Entscheidungsfindung**: Wähle zwischen einer letzten Plünderungstour oder einem sicheren Abzug.
+    - **Sicherung von Vermögenswerten**: Nur extrahierte Gegenstände tragen zum dauerhaften Fortschritt bei.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Tipp der Redaktion">
+Priorisiere deine Vertragsziele immer früh im Match. Dies stellt sicher, dass du eine solide Basis an Belohnungen hast, bevor das Schlachtfeld zu chaotisch für eine sichere Extraktion wird.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Wie man extrahiert: Schritt-für-Schritt-Anleitung">
+
+Die Extraktion ist der gefährlichste Teil einer jeden Mission. In EVE Vanguard ist der Extraktionsprozess kein einfacher „Beenden“-Button. Es ist ein lautstarkes, weithin sichtbares Ereignis, das jedem rivalisierenden Warclone in der Umgebung deine Absichten signalisiert. Während des „Operation Avalon“-Playtests (7.–20. Juli 2026) wurden die Extraktionsmechaniken überarbeitet, um umkämpfte Zonen und begrenzte Zeitfenster stärker zu betonen.
+
+<Steps>
+  <Step num="1" title="Finde einen aktiven Extraktionspunkt">
+    Öffne deine taktische Karte, um verfügbare Extraktionszonen zu identifizieren. Beachte, dass einige Punkte inaktiv sein oder eine begrenzte Kapazität haben können. Auf dem Schlachtfeld „Lost Convoy“ befinden sich diese Punkte oft in stark frequentierten Bereichen.
+  </Step>
+  <Step num="2" title="Sende das Signal zur Abholung">
+    Sobald du die Extraktionszone erreichst, musst du das Signal initiieren. Dies startet oft einen Countdown-Timer. Sei dir bewusst, dass diese Aktion nahegelegene Streitkräfte von Mordus Legion oder rivalisierende Spieler auf deine genaue Position aufmerksam machen kann.
+  </Step>
+  <Step num="3" title="Verteidige den Perimeter">
+    Es dauert seine Zeit, bis sich das Extraktionsfenster öffnet. Du musst deine Stellung gegen eskalierende Wellen von Feinden halten. Nutze die Umgebung als Deckung und setze alle defensiven Gadgets oder Hilfsmittel ein, die du erbeutet hast.
+  </Step>
+  <Step num="4" title="Sichere die Fracht">
+    Wenn das Extraktionsfahrzeug oder das Portal eintrifft, musst du die Zone physisch betreten. Stelle sicher, dass sich alle Teammitglieder im Radius befinden, wenn du in einer Gruppe spielst. Sobald der Timer auf Null steht, wirst du zurück in den Orbit geholt.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Wichtige Warnung">
+Wenn du stirbst, bevor der Extraktions-Timer abgelaufen ist, verlierst du alles, was du während dieses Durchgangs gesammelt hast – einschließlich deiner aktuellen Ausrüstung, sofern diese nicht versichert oder Teil eines permanenten Loadouts war.
+</Callout>
+
+| Extraktionsphase | Gefahrenstufe | Hauptbedrohung | Empfohlene Aktion |
+| :--- | :--- | :--- | :--- |
+| **Annäherung** | Niedrig | Scharfschützen/Hinterhalte | Bewege dich von Deckung zu Deckung, nutze Scans |
+| **Signalisierung** | Mittel | Mordus Legion | Platziere Näherungsminen/Geschütztürme |
+| **Stellung halten** | Hoch | Rivalisierende Warclones | Konzentriere dich auf eine 360-Grad-Wahrnehmung |
+| **Letztes Einsteigen** | Extrem | Granaten/Nahkampf | Nutze Rauchgranaten oder Sperrfeuer |
+
+</Section>
+
+<Section icon={Trophy} title="Plünderungsstrategie und Ressourcen-Priorität">
+
+Um das Beste aus diesem **eve vanguard extraktions-leitfaden** herauszuholen, musst du wissen, was es wert ist, transportiert zu werden. Der Inventarplatz ist begrenzt, und jedes Kilogramm Beute verlangsamt dich oder nimmt den Platz von etwas Wertvollerem ein. Die Ressourcen, die du auf dem Planeten findest, werden verwendet, um fortschrittliche Waffen-Chipsätze herzustellen, deinen Anzug aufzurüsten und die Kriegsanstrengungen in New Eden zu unterstützen.
+
+| Beutekategorie | Seltenheit | Hauptverwendungszweck | Fundort |
+| :--- | :--- | :--- | :--- |
+| **Tech-Relikte** | Selten | High-Tier-Crafting | Konzernanlagen/Tresore |
+| **Waffen-Chips** | Mittel | Modulare Waffen-Upgrades | Feindliche Landekapseln/Kisten |
+| **Rohmineralien** | Häufig | Einfache Munition/Reparaturen | Oberflächenvorkommen/Bergungsstellen |
+| **Resonanz-Chiffren** | Event | EVE Online-Belohnungen | Event-Standorte von Operation Avalon |
+
+Die Einführung des „Command Blocks“ in jüngsten Updates hat die Loot-Dynamik verändert. Dieser risikoreiche Ort im Herzen der Karte bietet die lukrativsten Belohnungen, wird jedoch von Elite-Truppen der Mordus Legion bewacht. Nur gut vorbereitete Warclones sollten versuchen, dieses Gebiet zu überfallen.
+
+<Callout type="success" title="Profi-Tipp">
+Wenn dein Inventar voll ist und du ein Tech-Relikt findest, wirf deine Basismineralien weg. Relikte bieten pro Slot einen deutlich höheren Fortschrittswert als gewöhnliche Ressourcen.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Loadout-Vorbereitung für den Extraktionserfolg">
+
+Dein Loadout bestimmt, wie du mit Bedrohungen während des Extraktionsfensters umgehst. Operation Avalon hat das Arsenal um Waffen erweitert, die für verschiedene Kampfentfernungen geeignet sind. Die Wahl des richtigen Werkzeugs für den Job ist entscheidend, um den letzten Vorstoß zum Extraktionspunkt zu überleben.
+
+<CardGrid cols={3}>
+  <Card title="Nahkampf">
+    - **SMG**: Hohe Feuerrate zum Säubern von Extraktionszonen.
+    - **Shrapnel Cannon**: Verheerend auf kürzeste Distanz.
+    - **Nova-Klinge**: Unverzichtbar für lautlose Kills und Finishing-Blows.
+  </Card>
+  <Card title="Mittlere Reichweite">
+    - **Strahlengewehr**: Zuverlässiger Energieschaden gegen Schilde.
+    - **Sturmgewehr**: Ausgewogen für die meisten planetaren Begegnungen.
+    - **Adaptive Chips**: Wechsle zwischen kinetischem und Energieschaden.
+  </Card>
+  <Card title="Präzision auf Distanz">
+    - **Laser-DMR**: Perfekt, um Scharfschützen auszuschalten, die Ausgänge bewachen.
+    - **Scout-Scharfschützengewehre**: Hohes Risiko, hohe Belohnung für Solospieler.
+    - **Optische Upgrades**: Verbesserter Zoom für eine bessere Lageerkennung.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Waffenanpassung">
+Nutze das Warbarge zwischen den Einsätzen, um deine Waffen mit geborgenen Chipsätzen zu modifizieren. Dies ermöglicht es dir, deine Feuermodi und Schadensarten an die spezifischen Feinde anzupassen, die du bei der nächsten Mission erwartest.
+</Callout>
+
+| Waffentyp | Optimale Reichweite | Bestens geeignet gegen | Hauptmerkmal |
+| :--- | :--- | :--- | :--- |
+| **SMG** | 0-15m | Ungepanzerte Warclones | Hohe Mobilität, schnelles Nachladen |
+| **Laser-DMR** | 30-100m | Eliten der Mordus Legion | Präzise Energiestrahlen |
+| **Shrapnel Cannon** | 0-10m | Gegnergruppen | Breite Streuung, hoher Taumel-Effekt |
+| **Strahlengewehr** | 15-40m | Schildziele | Kontinuierliches Feuer, hohe Hitzeentwicklung |
+
+</Section>
+
+<Section icon={Shield} title="Operation Avalon: Spezialziele">
+
+Der Alpha-Playtest von Operation Avalon, der vom 7. bis 20. Juli 2026 läuft, ist mehr als nur ein Kampftest. Er schlägt die Brücke zwischen dem Bodenkrieg und dem Weltraumkrieg von EVE Online. Die Aktionen der Warclones auf der Oberfläche beeinflussen direkt die Verfügbarkeit von AEGIS-Stürmen und speziellen Standorten für Kapselpiloten im Orbit.
+
+<Checklist
+  id="avalon-objectives"
+  title="Ziele der Operation Avalon:"
+  items={[
+    "Schließe 5 erfolgreiche Extraktionen aus dem Lost Convoy ab",
+    "Sichere ein Command-Block-Tech-Relikt",
+    "Besiege einen Kommandanten der Mordus Legion",
+    "Tausche Resonanz-Chiffren mit Händlern der Imperien",
+    "Löse eine Welt-Event-Verknüpfung zu EVE Online aus"
+  ]}
+/>
+
+<Callout type="warning" title="Event-Timing">
+Die Extraktionsmöglichkeiten in Operation Avalon sind an die „Nemesis“-Bedrohung gekoppelt. Mit steigender Bedrohungsstufe können Extraktionspunkte korrumpiert werden oder spezielle Hacking-Fähigkeiten zur Aktivierung erfordern.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Technische Anforderungen und Setup">
+
+Bevor du diesen **eve vanguard extraktions-leitfaden** in die Praxis umsetzen kannst, stelle sicher, dass deine Hardware den intensiven Umgebungen der Planeten von New Eden gewachsen ist. Das Spiel ist für moderne PC-Hardware optimiert und erfordert eine stabile Breitbandverbindung für seine persistenten Weltelemente.
+
+| Kategorie | Mindestanforderung | Empfohlene Spezifikation |
+| :--- | :--- | :--- |
+| **Betriebssystem** | Windows 10 (64-Bit) | Windows 11 (64-Bit) |
+| **Prozessor (CPU)** | Intel i5-8400 / Ryzen 5 1600X | Intel i5-11600K / Ryzen 5 5600X |
+| **Grafikkarte (GPU)** | RTX 2060 / RX 5700 XT | RTX 3080 / RX 6900 XT |
+| **Arbeitsspeicher (RAM)** | 16 GB DDR4 | 16 GB DDR4 |
+| **Speicherplatz** | 50 GB SSD | 50 GB NVMe |
+| **DirectX** | Version 12 | Version 12.1 |
+
+<Callout type="info" title="Hinweis zum Anti-Cheat">
+EVE Vanguard nutzt Easy Anti-Cheat (EAC) auf Kernel-Ebene, um eine faire Wettbewerbsumgebung zu gewährleisten. Stelle sicher, dass deine Systemtreiber auf dem neuesten Stand sind, um Kompatibilitätsprobleme zu vermeiden.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Extraktion FAQ">
+
+<FAQ items={[
+  {
+    question: "Was passiert, wenn ich den Extraktions-Timer verpasse?",
+    answer: "Wenn der Timer Null erreicht und du dich nicht in der Extraktionszone befindest, gilt die Mission als gescheitert. Du verlierst alle nicht extrahierte Beute und deine aktuelle Ausrüstung."
+  },
+  {
+    question: "Kann ich zusammen mit einer rivalisierenden Gruppe extrahieren?",
+    answer: "Technisch gesehen ja, sofern sie dich nicht eliminieren. Extraktionszonen sind gemeinsam genutzte Bereiche. Die meisten Spieler werden ihren Abzug jedoch aggressiv verteidigen, um ihre eigene Sicherheit zu garantieren."
+  },
+  {
+    question: "Wie bekomme ich mehr Resonanz-Chiffren?",
+    answer: "Resonanz-Chiffren sind an speziellen Event-Standorten während der Operation Avalon zu finden. Sie werden oft von der Mordus Legion bewacht oder befinden sich in hochgesicherten Konzernbereichen."
+  },
+  {
+    question: "Hilft mir mein Fortschritt in EVE Online in Vanguard?",
+    answer: "Obwohl die Spiele durch Welt-Events und Belohnungen miteinander verbunden sind, sind die Kampfwerte deines Vanguard-Warclones unabhängig von den Fähigkeiten deines EVE Online-Charakters."
+  }
+]} />
+
+</Section>

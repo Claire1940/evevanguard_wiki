@@ -1,0 +1,194 @@
+import { Swords, Target, Shield, Zap, Settings, Crosshair, ListChecks, HelpCircle } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Waffen: Beste Loadouts & Kampf-Guide",
+  description: "Meistern Sie das Waffensystem von EVE Vanguard. Detaillierter Guide zu SMGs, Laser-DMRs, Strahlengewehren, Chipsätzen und Schadensarten für den Operation Avalon Playtest 2026.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/0a0a0c/00f0ff?text=EVE+Vanguard+Weapons+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team",
+  keywords: "EVE Vanguard Waffen, Kampf-Guide, Loadouts, Operation Avalon, Chipsätze"
+}
+
+<Callout type="info" title="Schnellanleitung">
+- **EVE Vanguard Waffen** setzen auf Modularität, sodass Spieler Feuermodi und Schadensarten mitten im Einsatz anpassen können.
+- Der Wechsel zwischen **Energie- und kinetischem Schaden** ist eine Kernmechanik, um Schilde effizient zu brechen und Panzerungen zu zerfetzen.
+- **Waffen-Chipsätze** sind die primäre Methode zur Leistungsanpassung und beeinflussen Stabilität, Feuerraten und spezialisierte Funktionen.
+- **Operation Avalon** (Juli 2026) führt die SMG und die Schrapnellkanone ein und erweitert damit das Meta für den Nahkampf.
+- Das **Extraktionsrisiko** gilt für Ihre Ausrüstung; wägen Sie High-Tier-Waffen-Builds immer gegen die Wahrscheinlichkeit eines erfolgreichen Rückzugs ab.
+</Callout>
+
+<Section icon={Swords} title="Waffenklassifizierung und Kernmechaniken">
+
+Das Arsenal in EVE Vanguard ist auf Vielseitigkeit in einer harten Extraktionsumgebung ausgelegt. Anders als in herkömmlichen Shootern, in denen Waffen statisch sind, nutzen **EVE Vanguard Waffen** ein modulares Framework. Jeder Einsatz als Warclone erfordert ein tiefes Verständnis dafür, wie Ihre Primärwaffe mit Umweltgefahren und feindlichen Verteidigungen interagiert. Im aktuellen Meta von 2026 werden Waffen nach ihrer effektiven Reichweite und ihren Energieliefersystemen kategorisiert.
+
+<CardGrid cols={3}>
+  <Card title="Dominanz im Nahbereich">
+    - **SMG**: Hohe Feuerrate, ideal zum Klären von Räumen.
+    - **Schrapnellkanone**: Massiver Burst-Schaden auf kürzeste Distanz.
+    - **Nova-Klinge**: Das unverzichtbare Nahkampf-Backup für lautlose Takedowns.
+  </Card>
+  <Card title="Mittlere bis lange Distanz">
+    - **Laser-DMR**: Präzises Energiefeuer zum Ausschalten von Zielen.
+    - **Strahlengewehr**: Kontinuierliche Energieleistung für Unterdrückungsfeuer auf mittlere Distanz.
+    - **Sturmkonfigurationen**: Vielseitige Setups für allgemeine Kämpfe.
+  </Card>
+  <Card title="Adaptive Systeme">
+    - **Modulare Slots**: 3-5 Slots für die Integration von Chipsätzen.
+    - **Feuermodus-Umschalter**: Wechseln Sie zwischen Burst, Auto und Halbautomatik.
+    - **Schadenskonverter**: Wechseln Sie zwischen kinetischem und Energie-Output.
+  </Card>
+</CardGrid>
+
+Die Kampf-Effektivität hängt stark davon ab, den Schadenstyp Ihrer Waffe auf das Verteidigungsprofil des Gegners abzustimmen. Die Streitkräfte von Mordus Legion, die im Juli 2026 in Operation Avalon prominent vertreten sind, rücken oft mit mehrschichtigen Schilden vor, die Standard-Kinetikgeschossen widerstehen, aber unter fokussierten Energiestrahlen schmelzen.
+
+| Waffentyp | Primäre Reichweite | Schadensprofil | Bestens geeignet für |
+| :--- | :--- | :--- | :--- |
+| **SMG** | 0-15m | Kinetisch/Energie | CQC, Innenraum-Klärung |
+| **Schrapnellkanone** | 0-10m | Hohe Kinetik | Schwere Panzerung, Hinterhalte |
+| **Laser-DMR** | 30-100m+ | Reine Energie | Fernpräzision, Schilde |
+| **Strahlengewehr** | 15-50m | Kontinuierliche Energie | Scharmützel auf mittlere Distanz |
+| **Nova-Klinge** | Nahkampf | Thermisch/Physisch | Stealth, letzter Ausweg |
+
+<Callout type="tip" title="Profi-Strategie">
+Führen Sie Ihre Nova-Klinge immer als Sekundärwaffe mit sich. Sie benötigt keine Munition und ist der schnellste Weg, einen verwundeten Warclone während eines chaotischen Nachladevorgangs zu erledigen.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Modulare Anpassung und Chipsätze">
+
+Modularität ist das definierende Merkmal des **EVE Vanguard Waffen**-Ökosystems. Spieler finden nicht einfach nur "bessere" Waffen; sie bauen sie. Durch den Einsatz von Chipsätzen – fortschrittliche technologische Komponenten, die von Planetenoberflächen geborgen oder durch Verträge verdient werden – können Sie das Verhalten einer Waffe grundlegend verändern. Während des Operation Avalon Playtests wurde die Tiefe dieses Systems erweitert, um spezifische "Nemesis"-Builds zu ermöglichen, die gegen hochgefährliche Drohnenziele entwickelt wurden.
+
+<Steps>
+  <Step num="1" title="Zugriff auf die Warbarge-Waffenkammer">
+    Betreten Sie vor dem Einsatz das Warbarge-Interface, um Ihr Basis-Chassis auszuwählen. Das Chassis bestimmt Ihren Basis-Rückstoß und Ihr Gewicht.
+  </Step>
+  <Step num="2" title="Kern-Chipsätze auswählen">
+    Installieren Sie bis zu drei primäre Chipsätze. Diese bestimmen die Feuerrate, die Magazinkapazität und das Rückstoßverhalten Ihrer Waffe.
+  </Step>
+  <Step num="3" title="Schadenskonverter konfigurieren">
+    Entscheiden Sie, ob Ihre Waffe primär kinetischen oder Energieschaden verursachen soll. Fortgeschrittene Builds ermöglichen einen Hybrid-Umschalter, der jedoch mehr Batterie verbraucht.
+  </Step>
+  <Step num="4" title="Feuermodi kalibrieren">
+    Weisen Sie Ihrem Umschalter spezifische Feuermodi (Einzel, Burst, Auto) zu. Dies ist entscheidend für die Verwaltung des Munitionsverbrauchs bei langen Einsätzen.
+  </Step>
+  <Step num="5" title="Finalisieren und Synchronisieren">
+    Synchronisieren Sie das Loadout mit dem Neural-Link Ihres Warclones. Stellen Sie sicher, dass Sie über die erforderlichen Ressourcen verfügen, um den Build beizubehalten, falls die Extraktion fehlschlägt.
+  </Step>
+</Steps>
+
+| Chipsatz-Typ | Gewöhnlicher Effekt | Seltener/Epischer Effekt | Kompatibilität |
+| :--- | :--- | :--- | :--- |
+| **Kühleinheit** | +10% Hitzeableitung | Kein Überhitzen für 3 Sekunden | Laser-/Strahlenwaffen |
+| **Stabilisator** | -15% Vertikaler Rückstoß | Dynamische Schwankungskompensation | Alle Primärwaffen |
+| **Overclocker** | +5% Feuerrate | Explosivgeschosse beim 5. Treffer | SMG, Schrapnellkanone |
+| **Batteriepack** | +20% Energiekapazität | Selbstaufladende Zellen | Energiebasierte Waffen |
+
+<Callout type="warning" title="Ressourcenrisiko">
+Hochwertige Chipsätze gehen verloren, wenn Sie sterben, ohne extrahiert zu werden. Wägen Sie den Nutzen eines "übermächtigen" Builds immer gegen das eskalierende Risiko auf dem Schlachtfeld des "Lost Convoy" ab.
+</Callout>
+
+</Section>
+
+<Section icon={Crosshair} title="Schadensarten: Kinetisch vs. Energie">
+
+Das Verständnis der Dualität des Schadens von **EVE Vanguard Waffen** ist der Unterschied zwischen einer erfolgreichen Extraktion und einem gescheiterten Einsatz. Das Kampfmodell von 2026 betont den "Erst Schild, dann Panzerung"-Ansatz. Die meisten fortgeschrittenen Feinde, einschließlich rivalisierender Warclones und Elite-Truppen der Mordus Legion, nutzen Energieschilde, die gegen physische Projektile hochresistent, aber anfällig für thermische und elektromagnetische Energie sind.
+
+**Merkmale von Energieschaden:**
+- **Vorteile**: Baut blaue Schildbalken schnell ab; hohe Genauigkeit auf Distanz.
+- **Nachteile**: Hohe Hitzeentwicklung; minimaler Effekt auf physische Panzerplatten.
+- **Primäre Quellen**: Laser-DMR, Strahlengewehr, energiekonvertierte SMG.
+
+**Merkmale von kinetischem Schaden:**
+- **Vorteile**: Zertrümmert gelbe Panzerplatten; verursacht erhebliches Taumeln.
+- **Nachteile**: Wird durch aktive Schilde stark abgeschwächt; erheblicher Geschossabfall.
+- **Primäre Quellen**: Schrapnellkanone, Standard-SMG, kinetisch konvertierte Gewehre.
+
+| Verteidigungstyp | Schwäche | Resistenz | Visueller Indikator |
+| :--- | :--- | :--- | :--- |
+| **Energieschild** | Energie/Thermisch | Kinetisch/Einschlag | Blau leuchtendes hexagonales Netz |
+| **Physische Panzerung** | Kinetisch/Einschlag | Energie/Thermisch | Mattgraue oder metallische Platten |
+| **Struktur** | Hoher Kinetik-Burst | Kontinuierliche Energie | Freiliegende Maschinen/Verkabelung |
+
+<Callout type="success" title="Taktische Synergie">
+Weisen Sie im Teamspiel einem Spieler die Rolle des "Schildbrechers" mit einem Laser-DMR zu und einem anderen die des "Panzerungszerfetzer" mit einer Schrapnellkanone, um maximale Effizienz zu erreichen.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Beste Loadouts für Operation Avalon 2026">
+
+Seit Juli 2026 hat sich das Meta für **EVE Vanguard Waffen** hin zu hochmobilen Builds verschoben, welche die Vertikalität der neuen "Lost Convoy"-Karten bewältigen können. Ob Sie Resonanz-Chiffren jagen oder Vorposten stürmen, Ihr Loadout muss spezialisiert sein. Unten aufgeführt sind die drei effektivsten Archetypen, die derzeit von Top-Warclones verwendet werden.
+
+| Archetyp | Primärwaffe | Kern-Chipsatz | Sekundäre Ausrüstung |
+| :--- | :--- | :--- | :--- |
+| **Der Infiltrator** | SMG (Energie-Konfig) | Stabilisator + Schalldämpfer | Nova-Klinge, Tarnung |
+| **Der Scharfschütze** | Laser-DMR | Kühleinheit + Zoom | Scanner, Näherungsminen |
+| **Der Stürmer** | Schrapnellkanone | Overclocker + Magazin | Schwerer Schild, Granaten |
+
+### Empfohlener Build: Der Avalon-Hybrid
+Dieser Build wurde speziell für Solospieler entwickelt, die sowohl PvE-Begegnungen mit der Mordus Legion als auch PvP-Kämpfe gegen andere Warclones bestehen müssen. Er nutzt die Vielseitigkeit des Strahlengewehrs gepaart mit spezifischen Chipsätzen für eine schnelle Anpassung.
+
+- **Waffe**: Strahlengewehr
+- **Chipsätze**: Hybrid-Konverter (Kinetik/Energie-Umschalter), Kühlkörper, erweiterte Batterie.
+- **Taktik**: Nutzen Sie den Energiemodus, um Schilde aus der Ferne zu entfernen, und wechseln Sie in den kinetischen Modus, wenn der Feind näher kommt, um seine Panzerung zu zerfetzen.
+
+<Callout type="info" title="Hinweis zur Munition">
+Energiewaffen verwenden keine herkömmlichen Magazine, sondern verlassen sich auf Batteriepacks und Hitze-Management. Kinetische Waffen benötigen physische Munitionskisten, die an Absturzstellen oder in Vorposten zu finden sind.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Waffenfortschritt und Extraktionsstrategie">
+
+In EVE Vanguard sind Ihre Waffen eine Erweiterung Ihres beständigen Fortschritts. Die Ressourcen, die Sie extrahieren – wie exotische Technologie und verlorene Relikte – werden verwendet, um höherwertige Waffenchassis und leistungsstärkere Chipsatz-Slots freizuschalten. Während der Operation Avalon 2026 ist der "Command Block" im Zentrum der Karte zur primären Quelle für Waffenkomponenten der "Nemesis-Klasse" geworden.
+
+<Checklist
+  id="weapon-prep"
+  title="Checkliste für die Einsatzbereitschaft:"
+  items={[
+    "Überprüfen Sie, ob alle Chipsatz-Slots gefüllt und synchronisiert sind.",
+    "Batteriestände für energiebasierte Primärwaffen prüfen.",
+    "Sicherstellen, dass die Nova-Klinge für Nahkampf-Finisher geschärft ist.",
+    "Schadensarten an die erwartete Feindpräsenz anpassen (Mordus Legion vs. Drohnen).",
+    "Extraktionsplan basierend auf dem Wert der Ausrüstung bestätigen."
+  ]}
+/>
+
+Ein längeres Verbleiben im Einsatz erhöht die Chance, seltene Waffenteile zu finden, steigert aber auch die Wahrscheinlichkeit, auf "Nemesis"-Bedrohungen zu stoßen, die einen schlecht ausgerüsteten Warclone leicht überwältigen können. Die erfolgreichsten Spieler priorisieren die Zuverlässigkeit der Waffe gegenüber reinem Schaden und stellen sicher, dass sie über die Stabilität und das Hitze-Management verfügen, um ein anhaltendes Feuergefecht zu überleben.
+
+<Callout type="tip" title="Looting-Priorität">
+Priorisieren Sie beim Plündern von Absturzstellen "Waffentech-Fragmente". Dies ist die einzige Möglichkeit, Ihre Basis-Waffenwerte auf der Warbarge dauerhaft zu verbessern.
+</Callout>
+
+</Section>
+
+<Section icon={HelpCircle} title="FAQ">
+
+<FAQ items={[
+  {
+    question: "Kann ich mein Waffen-Loadout während einer Mission ändern?",
+    answer: "Nein, Ihre Basiswaffe und Chipsätze sind gesperrt, sobald Sie im Einsatz sind. Sie können jedoch Feuermodi und Schadensarten umschalten, wenn Ihre Waffe mit den erforderlichen modularen Komponenten ausgestattet ist."
+  },
+  {
+    question: "Was passiert mit meinen EVE Vanguard Waffen, wenn die Extraktion fehlschlägt?",
+    answer: "Wenn Sie sterben und die Extraktion fehlschlägt, verlieren Sie die spezifische Waffeninstanz und alle daran angebrachten Chipsätze. Sie müssen neue Ausrüstung beschaffen oder ein einfaches 'Starter'-Loadout für Ihren nächsten Run verwenden."
+  },
+  {
+    question: "Ist die Nova-Klinge besser für Stealth geeignet als eine Schusswaffe?",
+    answer: "Ja. Die Nova-Klinge ist völlig lautlos und umgeht Energieschilde, wenn Sie ein ahnungsloses Ziel von hinten treffen, was sie zur überlegenen Wahl für heimliche Vertragsabschlüsse macht."
+  },
+  {
+    question: "Wie schalte ich die neue SMG in Operation Avalon frei?",
+    answer: "Die SMG ist während des Playtests vom 7. bis 20. Juli 2026 über die Warbarge-Waffenkammer verfügbar. Fortgeschrittene Varianten können durch den Abschluss spezifischer Kampfverträge der Mordus Legion freigeschaltet werden."
+  }
+]} />
+
+</Section>

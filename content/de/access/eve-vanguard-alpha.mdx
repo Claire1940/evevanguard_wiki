@@ -1,0 +1,194 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Alpha: Leitfaden für Zugang und Gameplay von Operation Avalon",
+  description: "Meistern Sie die EVE Vanguard Alpha während der Operation Avalon. Erfahren Sie, wie Sie am Playtest teilnehmen, Loadouts optimieren, die Extraktion überleben und die PC-Anforderungen überprüfen.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/121212/00ffff?text=EVE+Vanguard+Alpha+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Schnellanleitung">
+- **eve vanguard alpha**: Der aktuelle Operation Avalon Playtest läuft vom 7. Juli bis zum 20. Juli 2026.
+- **Zugangsmethoden**: Spieler können über die **Steam Playtest**-Anfrage oder den Vanguard-Reiter im **EVE Launcher** beitreten.
+- **Kernschleife**: Rücken Sie als Warclone aus, schließen Sie Verträge ab, bergen Sie Ressourcen und führen Sie eine **Extraktion** durch, bevor die Gefahr zu groß wird.
+- **Neue Inhalte**: Operation Avalon führt das Schlachtfeld **Lost Convoy** sowie fortschrittliche Waffen wie die SMG und das Laser-DMR ein.
+- **PC-Anforderungen**: Ein 64-Bit-Windows-Betriebssystem, **16 GB RAM** und **50 GB SSD**-Speicherplatz sind für eine stabile Leistung zwingend erforderlich.
+</Callout>
+
+<Section icon={Map} title="So erhalten Sie Zugang zur EVE Vanguard Alpha">
+
+Der Einsatz in der **eve vanguard alpha** erfordert je nach bevorzugter Plattform eine Reihe bestimmter Schritte. Als Extraktions-Adventure-FPS im EVE Online-Universum ermöglicht diese technische Vorschau den Spielern, hochriskante planetare Kämpfe zu erleben und gleichzeitig zur Entwicklung des für das dritte Quartal 2026 geplanten fertigen Spiels beizutragen. Egal, ob Sie ein erfahrener Kapselpilot oder ein neuer Rekrut sind – das Verständnis der Einstiegspunkte ist der erste Schritt zu einem erfolgreichen Einsatz.
+
+**Video-Highlights:**
+- Cinematischer Überblick über die planetaren Schlachtfelder in New Eden.
+- Aufnahmen vom Einsatz der Warclones und taktischen Kämpfen.
+- Vorschau auf die Extraktionsmechaniken und feindselige Umgebungen.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard - Offizieller Trailer" />
+
+Der Zugang konzentriert sich derzeit auf das Event **Operation Avalon**. Spieler haben zwei Hauptwege, um das Schlachtfeld zu betreten. Die Steam-Plattform bietet eine „Zugriff anfordern“-Funktion, während der native EVE Launcher einen eigenen Vanguard-Reiter für bestehende Community-Mitglieder bereitstellt.
+
+| Plattform | Zugangsmethode | Aktueller Status |
+| :--- | :--- | :--- |
+| **Steam** | Schaltfläche „Zugriff anfordern“ auf der Shop-Seite | Offen für Alpha-Playtest |
+| **EVE Launcher** | Navigieren Sie zum Vanguard-Reiter | Live für Operation Avalon |
+| **EVE-Website** | Konto erstellen und mit Steam verknüpfen | Für den Fortschritt erforderlich |
+
+<Callout type="warning" title="Hinweis zum Alpha-Zugang">
+Die Teilnahme an der **eve vanguard alpha** ist von der Verfügbarkeit abhängig. Obwohl Operation Avalon eine „Open Alpha“ ist, sollten Spieler frühzeitig über Steam den Zugang anfordern, um sich ihren Platz in der Einsatzwarteschlange zu sichern.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Operation Avalon: Event-Details und Ziele">
+
+Operation Avalon stellt einen gewaltigen Sprung nach vorn für die **eve vanguard alpha** dar. Dieses Event läuft vom 7. Juli bis zum 20. Juli 2026 und führt das Schlachtfeld **Lost Convoy** ein – eine Zone, in der die Umgebung selbst ebenso gefährlich ist wie die rivalisierenden Warclones, auf die Sie treffen werden. Das Event dient dazu, die überarbeitete Schießmechanik und die neu integrierten Beutesysteme zu testen.
+
+Im Herzen der Karte liegt der **Command Block**, ein hochriskantes Ziel, das mit der aufkommenden Nemesis-Storyline verknüpft ist. Dieser Ort ist für die am besten vorbereiteten Trupps gedacht und bietet unvergleichliche Belohnungen auf Kosten extremer Verwundbarkeit. Die Spieler müssen ihre Gier gegen die unaufhaltsam tickende Uhr der Extraktion abwägen.
+
+| Feature | Beschreibung | Strategischer Einfluss |
+| :--- | :--- | :--- |
+| **Lost Convoy** | Neues Schlachtfeld mit dichten Trümmerfeldern | Hohe Vertikalität und viel Deckung |
+| **Command Block** | Zentrales, hochriskantes Ziel | Löst das Erscheinen von Elite-Gegnern aus |
+| **Mordu's Legion** | Intelligentere, tödlichere KI-Gegner | Erfordert taktische Koordination |
+| **Resonant Cyphers** | Event-spezifische Beutegegenstände | Eintauschbar gegen EVE Online-Belohnungen |
+
+<Checklist
+  id="avalon-goals"
+  title="Meilensteine von Operation Avalon:"
+  items={[
+    "Schließen Sie 5 erfolgreiche Extraktionen aus dem Lost Convoy ab",
+    "Sichern Sie sich ein Datenfragment des Command Blocks",
+    "Besiegen Sie 20 Elite-Einheiten von Mordu's Legion",
+    "Tauschen Sie Resonant Cyphers auf einer Station des Imperiums ein",
+    "Modifizieren Sie eine Waffe mithilfe des neuen Chipsatz-Systems"
+  ]}
+/>
+
+<Callout type="tip" title="Profi-Tipp">
+Der Command Block wird oft von rivalisierenden Spielern belagert. Nutzen Sie Optiken mit hoher Reichweite, um die Umgebung auszukundschaften, bevor Sie sich dem Ziel widmen.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Kernspielschleife und Strategie für Anfänger">
+
+Für Neulinge in der **eve vanguard alpha** dreht sich die Spielschleife vor allem um das Risikomanagement. Sie rücken als unsterblicher Warclone aus, aber Ihre Ausrüstung und Ihre Beute sind überaus sterblich. Wenn Sie im Kampf fallen, ohne einen Extraktionspunkt zu erreichen, verlieren Sie alles, was Sie während dieses Einsatzes gesammelt haben.
+
+<Steps>
+  <Step num="1" title="Vorbereitung auf dem Warbarge">
+    Besuchen Sie vor dem Start Ihr Warbarge, um Ihr Loadout auszuwählen. Wählen Sie Ihre Primärwaffe und rüsten Sie die notwendigen Chipsätze aus. Stellen Sie sicher, dass Ihr Anzug repariert ist und Sie ein klares Ziel vor Augen haben.
+  </Step>
+  <Step num="2" title="Planetarer Einsatz">
+    Nach der Landung hat die Orientierung oberste Priorität. Überprüfen Sie Ihre Karte auf aktive Verträge und die nächstgelegenen Extraktionszonen. Vermeiden Sie offenes Gelände, auf dem Sie ein leichtes Ziel für Scharfschützen sind.
+  </Step>
+  <Step num="3" title="Plündern und Bergen">
+    Durchsuchen Sie Absturzstellen und Konzernanlagen. Halten Sie Ausschau nach fortschrittlicher Technologie, Relikten und Rohstoffen. Diese Gegenstände sind unerlässlich, um Ihre Ausrüstung zwischen den Runden herzustellen und zu verbessern.
+  </Step>
+  <Step num="4" title="Taktische Extraktion">
+    Extraktionspunkte sind nicht dauerhaft aktiv. Im Laufe der Sitzung werden einige Ausgänge geschlossen, während andere hart umkämpft sein werden. Entscheiden Sie frühzeitig, wann Sie das Gebiet verlassen, um Ihren Fortschritt zu sichern.
+  </Step>
+</Steps>
+
+<CardGrid cols={3}>
+  <Card title="Aggressiver Plünderer">
+    - **Fokus**: Jagd auf andere Warclones
+    - **Ausrüstung**: SMG und Nova Blade
+    - **Risiko**: Sehr hoch
+  </Card>
+  <Card title="Heimlicher Berger">
+    - **Fokus**: Sammeln seltener Ressourcen
+    - **Ausrüstung**: Laser-DMR und Tarnungs-Chips
+    - **Risiko**: Moderat
+  </Card>
+  <Card title="Vertragsspezialist">
+    - **Fokus**: Abschließen von Kartenzielen
+    - **Ausrüstung**: Strahlengewehr und Panzerplatten
+    - **Risiko**: Hoch
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Überlebensstrategie">
+In der **eve vanguard alpha** ist Information Macht. Nutzen Sie Ihren Scanner häufig, um Elektronik und feindliche Bewegungen in der Nähe aufzuspüren. Manchmal ist das Vermeiden eines Kampfes die profitabelste Entscheidung, die Sie treffen können.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Waffen und fortschrittliche Loadout-Systeme">
+
+Das Arsenal in der **eve vanguard alpha** wurde für Operation Avalon erweitert. Waffen sind jetzt modularer aufgebaut, sodass Spieler zwischen Schadensarten wie Energie und Kinetik wechseln können, um bestimmte feindliche Schilde oder Rüstungen zu umgehen. Das Verständnis der Rolle jeder Schusswaffe ist entscheidend für die Zusammensetzung des Trupps.
+
+Die Einführung von **Chipsätzen** ermöglicht eine tiefgehende Anpassung. Diese Module können Feuermodi ändern (z. B. von Feuerstoß auf Vollautomatik wechseln) oder Ihren Schüssen Elementareffekte hinzufügen. Da Sie diese Konfigurationen zwischen den Einsätzen behalten können (sofern Sie überleben), stellen sie einen bedeutenden Teil Ihres dauerhaften Fortschritts dar.
+
+| Waffentyp | Bester Einsatzzweck | Hauptmerkmal |
+| :--- | :--- | :--- |
+| **SMG** | Nahkampf | Extrem hohe Feuerrate |
+| **Shrapnel Cannon** | Verteidigung auf kürzeste Distanz | Hoher Berstschaden, weite Streuung |
+| **Laser DMR** | Präzision auf mittlere bis lange Distanz | Energiebasiert, hohe Genauigkeit |
+| **Beam Rifle** | Unterdrückungsfeuer auf große Distanz | Kontinuierlicher Schadensstrahl |
+| **Nova Blade** | Heimlichkeit und Todesstöße | Lautloser Nahkampf, ignoriert leichte Rüstung |
+
+<Callout type="info" title="Waffenmechanik">
+Denken Sie daran, dass Energiewaffen im Allgemeinen effektiver gegen Schilde sind, während kinetische Waffen der Hülle und Rüstung mehr Schaden zufügen. Koordinieren Sie sich mit Ihrem Team, um eine ausgewogene Mischung an Schadensarten mitzuführen.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Systemanforderungen und Leistungsoptimierung">
+
+Um die **eve vanguard alpha** flüssig ausführen zu können, muss Ihr PC den modernen Standards eines High-Fidelity-FPS entsprechen. Das Spiel nutzt fortschrittliche Beleuchtungs- und Physik-Engines, die eine Solid-State-Drive (SSD) für das Streaming von Assets erfordern. Wenn Sie das Spiel auf einer herkömmlichen HDD ausführen, wird dies höchstwahrscheinlich zu erheblichen Rucklern und langen Ladezeiten führen.
+
+| Komponente | Mindestanforderung | Empfohlene Spezifikation |
+| :--- | :--- | :--- |
+| **Betriebssystem** | Windows 10/11 64-Bit | Windows 11 64-Bit |
+| **Prozessor** | Intel i5-8400 / Ryzen 5 1600X | Intel i5-11600K / Ryzen 5 5600X |
+| **Grafikkarte** | RTX 2060 / RX 5700 XT | RTX 3080 / RX 6900 XT |
+| **Arbeitsspeicher** | 16 GB DDR4 | 16 GB+ DDR4/DDR5 |
+| **Speicherplatz** | 50 GB SSD | 50 GB NVMe SSD |
+| **DirectX** | Version 12 | Version 12.1 |
+
+<Callout type="warning" title="Anti-Cheat-Informationen">
+EVE Vanguard verwendet **Easy Anti-Cheat (EAC)**. Stellen Sie sicher, dass keine in Konflikt stehende Software im Hintergrund läuft, da EAC den Start des Spiels verhindern kann, wenn es nicht autorisierte Overlays oder Debugging-Tools erkennt.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="EVE Online-Verbindung und FAQ">
+
+Einer der einzigartigsten Aspekte der **eve vanguard alpha** ist ihre direkte Verbindung zum EVE Online-Universum. Aktionen, die von Warclones auf der Oberfläche von Planeten durchgeführt werden, können Ereignisse im Weltraum für Kapselpiloten auslösen. Beispielsweise kann das Abschließen von genügend Expeditionen während der Operation Avalon „AEGIS-Böen“ in EVE Online erzeugen, wodurch neue Kampf- und Hacking-Gebiete für weltraumfahrende Spieler entstehen.
+
+Diese Philosophie von „Ein Universum, ein Krieg“ bedeutet, dass Sie selbst dann, wenn Sie den Bodenkampf bevorzugen, zur großen Geschichte von New Eden beitragen. Belohnungen wie Skillpunkte, exklusive Skins und Resonant Cyphers können zwischen den beiden Spielen übertragen werden, was Vanguard zu einem wertvollen Werkzeug für jeden EVE-Spieler macht.
+
+<FAQ items={[
+  {
+    question: "Ist die EVE Vanguard Alpha kostenlos spielbar?",
+    answer: "Während des Operation Avalon-Events ist der Zugang im Allgemeinen offen für alle, die ihn auf Steam anfordern oder ein aktives EVE Online-Konto besitzen. Bitte prüfen Sie jedoch die offizielle Website auf spezifische 'Omega'-Statusanforderungen für bestimmte Playtests."
+  },
+  {
+    question: "Kann ich EVE Vanguard auf dem Steam Deck spielen?",
+    answer: "Derzeit ist EVE Vanguard für Windows-PCs optimiert. Obwohl einige Benutzer versuchen, es über Proton unter Linux/Steam Deck auszuführen, können das Easy Anti-Cheat-System und die hohen Hardwareanforderungen die Kompatibilität einschränken."
+  },
+  {
+    question: "Verliere ich meine Waffen, wenn ich in der Alpha sterbe?",
+    answer: "Ja, EVE Vanguard ist ein Extraction-Shooter. Wenn Sie sterben und die Extraktion fehlschlägt, verlieren Sie die Ausrüstung und Beute, die Sie in dieser Sitzung bei sich trugen. Einige Fortschrittselemente wie freigeschaltete Blaupausen und Chipsätze bleiben jedoch dauerhaft erhalten."
+  },
+  {
+    question: "Wie erhalte ich Resonant Cyphers?",
+    answer: "Resonant Cyphers können während der Operation Avalon als seltene Beute auf dem Lost Convoy-Schlachtfeld gefunden werden. Sie müssen erfolgreich mit ihnen extrahieren, um sie in EVE Online gegen Belohnungen einzutauschen."
+  }
+]} />
+
+<Callout type="tip" title="Letzter Ratschlag">
+Treten Sie dem offiziellen **EVE Vanguard Discord** bei, um Truppmitglieder zu finden. Das Solospiel in der **eve vanguard alpha** ist zwar möglich, aber deutlich schwieriger als das Spielen mit einem koordinierten Team.
+</Callout>
+
+</Section>

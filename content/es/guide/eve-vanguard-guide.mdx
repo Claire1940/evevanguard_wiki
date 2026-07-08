@@ -1,0 +1,197 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Monitor, Zap } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Guía de EVE Vanguard: Consejos y recorrido de la Operación Avalon",
+  description: "Domina EVE Vanguard con nuestra guía de la Operación Avalon. Aprende sobre armas, tácticas de extracción, especificaciones del sistema y cómo sobrevivir a la prueba de juego Alfa.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1a1a1a/00ffff?text=EVE+Vanguard+Guide",
+  date: "2026-07-08",
+  author: "Equipo de Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Guía de EVE Vanguard**: Este manual cubre el bucle central de la prueba de juego Alfa de la Operación Avalon, que se llevará a cabo del 7 al 20 de julio de 2026.
+- **Mecánicas de extracción**: La supervivencia es obligatoria; regresar con vida es la única forma de asegurar la tecnología y los recursos saqueados.
+- **Combate dinámico**: Domina el nuevo subfusil (SMG) y el cañón de metralla (Shrapnel Cannon) mientras navegas por el traicionero campo de batalla del Convoy Perdido (Lost Convoy).
+- **Vínculo con EVE Online**: Tus acciones en el terreno influyen directamente en las recompensas de los imperios y en los eventos mundiales del universo más amplio de New Eden.
+- **Preparación de la PC**: Asegúrate de que tu sistema cumpla con los requisitos de 16 GB de RAM y SSD para evitar fallos en el despliegue.
+</Callout>
+
+<Section icon={Map} title="Primeros pasos con el acceso Alfa de EVE Vanguard">
+
+Desplegarse como un clon de guerra inmortal en los entornos hostiles de New Eden requiere algo más que una puntería firme. Esta **guía de EVE Vanguard** proporciona la hoja de ruta esencial para los jugadores que ingresan a la prueba de juego Alfa de la Operación Avalon. Actualmente, el juego se encuentra en una fase de prueba activa, enfocada en refinar la experiencia de shooter en primera persona (FPS) de aventura y extracción. El acceso se otorga principalmente a través de Steam y el EVE Launcher, con la ventana de prueba actual programada del 7 al 20 de julio de 2026.
+
+<Callout type="tip" title="Consejo de acceso">
+Si juegas a través de Steam, utiliza el botón \"Solicitar acceso\" en la página oficial de la tienda. El acceso se otorga en oleadas, así que revisa tu biblioteca con frecuencia para ver si ya tienes el cliente de la prueba de juego.
+</Callout>
+
+| Método de acceso | Plataforma | Requisito | Estado |
+| :--- | :--- | :--- | :--- |
+| **Prueba de juego de Steam** | PC (Steam) | Botón Solicitar acceso | Oleadas activas |
+| **EVE Launcher** | PC (Independiente) | Pestaña Vanguard | Acceso Alfa |
+| **Acceso de fundadores** | PC | Estado Omega específico | Entrada prioritaria |
+
+El evento Operación Avalon es un hito importante, ya que introduce el campo de batalla del Convoy Perdido (Lost Convoy) y mecánicas de juego de disparos reconstruidas. A diferencia de los shooters tradicionales, EVE Vanguard es un FPS tipo \"sandbox\" donde los objetivos los dicta el apetito de riesgo del jugador. No solo estás luchando por una tabla de clasificación; estás luchando por recursos que alimentan una guerra galáctica persistente.
+
+</Section>
+
+<Section icon={Target} title="El bucle de juego principal: Desplegar, Saquear, Extraer">
+
+El ciclo fundamental de EVE Vanguard gira en torno a despliegues de alto riesgo. Cada vez que caes en un planeta, estás apostando tu equipo actual contra el potencial de obtener recompensas masivas. El bucle se divide en varias fases críticas que todo clon de guerra debe dominar para progresar.
+
+<Steps>
+  <Step num="1" title="Despliegue estratégico">
+    Selecciona tu zona de despliegue. En la Operación Avalon, los jugadores se concentran en el campo de batalla del Convoy Perdido (Lost Convoy), una zona llena de restos e instalaciones corporativas.
+  </Step>
+  <Step num="2" title="Adquisición de contratos">
+    Una vez en el terreno, acepta contratos de alto riesgo. Estos objetivos te guiarán hacia áreas peligrosas pero ofrecen los mayores rendimientos en términos de tecnología y créditos.
+  </Step>
+  <Step num="3" title="Salvamento y combate">
+    Busca en los lugares de impacto tecnología exótica y reliquias. Espera resistencia de las fuerzas de la Legión de Mordu y de clones de guerra rivales que podrían querer tu botín.
+  </Step>
+  <Step num="4" title="La decisión de extracción">
+    Monitorea los puntos de extracción. A medida que avanza la sesión, las salidas desaparecen. Decidir cuándo marcharse es la elección táctica más importante que tomarás.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Penalización por muerte">
+In EVE Vanguard, la muerte es costosa. Si no logras extraer, perderás todos los recursos y el equipo recolectados durante esa expedición específica. Solo los artículos asegurados en tu casillero permanente de la nave nodriza (Warbarge) están a salvo.
+</Callout>
+
+<CardGrid cols={3}>
+  <Card title="El carroñero">
+    - **Enfoque**: Recolección de recursos
+    - **Riesgo**: Bajo a Medio
+    - **Objetivo**: Extracción rápida con materiales de fabricación
+  </Card>
+  <Card title="El cazador">
+    - **Enfoque**: PvP y PvE de élite
+    - **Riesgo**: Muy alto
+    - **Objetivo**: Robar el botín de otros clones de guerra
+  </Card>
+  <Card title="El ejecutor de objetivos">
+    - **Enfoque**: Contratos y hackeo
+    - **Riesgo**: Medio
+    - **Objetivo**: Máxima reputación y divisas
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Swords} title="Personalización de armas y equipamiento">
+
+La Operación Avalon introduce un sofisticado arsenal diseñado para la modularidad. Los jugadores ya no están limitados a estadísticas de armas estáticas; en su lugar, puedes adaptar tu equipo para hacer frente a las amenazas específicas del Convoy Perdido. La introducción del subfusil (SMG) y el cañón de metralla (Shrapnel Cannon) proporciona la variedad que tanto se necesitaba para los enfrentamientos a corta distancia, mientras que el Laser DMR sigue siendo el rey de la precisión a larga distancia.
+
+| Tipo de arma | Rol | Alcance óptimo | Característica clave |
+| :--- | :--- | :--- | :--- |
+| **SMG** | Triturador CQC | 0–15 m | Alta cadencia de fuego, bajo retroceso |
+| **Cañón de metralla** | Daño de ráfaga | 0–10 m | Devastador contra armadura |
+| **Laser DMR** | Tirador | 40 m+ | Daño de energía de precisión |
+| **Rifle de haz** | Medio alcance | 15–40 m | Salida de energía sostenida |
+| **Hoja Nova** | Cuerpo a cuerpo | A bocajarro | Derribos silenciosos, sin munición |
+
+<Callout type="success" title="Estrategia de tipos de daño">
+Lleva siempre una combinación de daño cinético y de energía. Usa armas de energía (como el Laser DMR) para desgastar los escudos enemigos y luego cambia a armas cinéticas (como el SMG) para destrozar la salud restante.
+</Callout>
+
+La personalización de las armas se gestiona a través de **Chipsets**. Estos componentes modulares te permiten modificar los modos de disparo, los tipos de daño y las características de manejo. Entre despliegues, regresarás a tu nave nodriza (Warbarge) para fabricar estas mejoras utilizando recursos rescatados. Este sistema de progresión garantiza que el arma de un clon de guerra veterano esté significativamente más personalizada que el rifle básico de un recluta recién llegado.
+
+</Section>
+
+<Section icon={Zap} title="Operación Avalon: Nuevas características y objetivos del campo de batalla">
+
+La Operación Avalon es más que una simple prueba de juego; es un evento en vivo que acorta la distancia entre la guerra terrestre y la guerra espacial de EVE Online. La pieza central de esta actualización es el **Convoy Perdido** (Lost Convoy), un campo de batalla diseñado para empujar a los jugadores hacia el \"Bloque de Comando\" (Command Block) en el corazón del mapa.
+
+**Elementos clave del campo de batalla:**
+- **Legión de Mordu**: No son los enemigos comunes de relleno. Utilizan tácticas avanzadas, maniobras de flanqueo y artillería pesada para proteger los intereses corporativos.
+- **El Bloque de Comando**: Una zona de alto riesgo vinculada a la historia de Némesis. Solo los escuadrones más preparados deberían intentar asaltar esta área.
+- **Cifras Resonantes** (Resonant Cyphers): Objetos especiales del evento que se pueden recuperar e intercambiar con representantes del imperio por recompensas exclusivas como SKINs y puntos de habilidad.
+
+<Callout type="info" title="Recompensas del imperio">
+Intercambiar Cifras Resonantes en el espacio de un imperio específico (Amarr, Caldari, etc.) apoya la relación secreta de esa facción con Vanguard. El imperio con más intercambios se convertirá en el refugio principal de Avalon tras la conclusión del evento.
+</Callout>
+
+| Tipo de objetivo | Dificultad | Recompensa principal | Factor de riesgo |
+| :--- | :--- | :--- | :--- |
+| **Incursión en lugar de impacto** | Fácil | Materiales básicos | Bajo |
+| **Asalto a base de avanzada** | Media | Tecnología avanzada/Reliquias | Medio |
+| **Hackeo de convoys** | Difícil | Cifras Resonantes | Alto |
+| **Bloque de Comando** | Extrema | Componentes legendarios | Muy alto |
+
+</Section>
+
+<Section icon={Shield} title="Estrategias de extracción y consejos de supervivencia">
+
+En un shooter de extracción, \"ganar\" se define por salir con vida. Muchos jugadores caen en la trampa de quedarse demasiado tiempo para encontrar una pieza de botín más, solo para descubrir que su ruta de extracción ha sido bloqueada por la Legión de Mordu o por un escuadrón rival.
+
+<Checklist
+  id="extraction-prep"
+  title="Lista de verificación de preparación para la extracción:"
+  items={[
+    "Revisa el mapa en busca de balizas de extracción activas cada 5 minutos.",
+    "Asegúrate de que tu arma principal esté completamente recargada antes de solicitar la extracción.",
+    "Identifica coberturas cercanas en la zona de extracción para evitar el fuego de francotiradores.",
+    "Verifica que tu escuadrón esté dentro del radio de extracción antes de que el temporizador llegue a cero.",
+    "Prioriza asegurar Cifras Resonantes por encima de los materiales de fabricación comunes."
+  ]}
+/>
+
+<Callout type="warning" title="Salidas dinámicas">
+Ten en cuenta que los puntos de extracción en la Operación Avalon no son permanentes. Si una zona se vuelve demasiado peligrosa o el tiempo de la misión se agota, ciertas balizas se desactivarán, obligándote a cruzar territorio peligroso para llegar a la última salida restante.
+</Callout>
+
+Una extracción exitosa requiere un equilibrio entre sigilo y agresividad. Si llevas reliquias de gran valor, evita los caminos principales y utiliza la verticalidad de los restos del Convoy Perdido para mantenerte fuera de la vista. Utiliza tu escáner con frecuencia para detectar las firmas de calor de los enemigos cercanos antes de que ellos te detecten a ti.
+
+</Section>
+
+<Section icon={Monitor} title="Requisitos del sistema y optimización técnica">
+
+EVE Vanguard es un título visualmente exigente construido sobre una arquitectura moderna. Para participar en la Alfa, tu PC debe cumplir con estándares de hardware específicos. El juego requiere un sistema operativo de 64 bits y una instalación obligatoria en SSD para manejar la carga fluida de los campos de batalla planetarios.
+
+| Componente | Requisito mínimo | Especificación recomendada |
+| :--- | :--- | :--- |
+| **SO** | Windows 10/11 de 64 bits | Windows 10/11 (Última versión) |
+| **CPU** | Intel i5-8400 / Ryzen 5 1600X | Intel i5-11600K / Ryzen 5 5600X |
+| **GPU** | RTX 2060 / RX 5700 XT | RTX 3080 / RX 6900 XT |
+| **RAM** | 16 GB DDR4 | 16 GB DDR4 |
+| **Almacenamiento** | 50 GB en SSD | 50 GB en SSD NVMe |
+| **DirectX** | Versión 12 | Versión 12.1 |
+
+<Callout type="tip" title="Consejo de rendimiento">
+Si experimentas caídas de fotogramas durante combates intensos, asegúrate de que FSR o DLSS estén configurados en modo \"Calidad\" o \"Equilibrado\". El juego está optimizado para funcionar a 60 FPS en 1080p con las especificaciones mínimas utilizando estas tecnologías de escalado.
+</Callout>
+
+Ten en cuenta que EVE Vanguard utiliza **Easy Anti-Cheat (EAC)** a nivel de kernel. Asegúrate de que los controladores de tu sistema estén actualizados y de que no se esté ejecutando software conflictivo en segundo plano, ya que el cliente de la prueba de juego podría negarse a iniciar si se vulneran los protocolos de seguridad.
+
+</Section>
+
+<Section icon={Trophy} title="Conclusión y preguntas frecuentes">
+
+Dominar la guerra terrestre en New Eden es un viaje de constante adaptación. Ya seas un veterano capsulista de EVE Online o un nuevo recluta clon de guerra, la prueba de juego de la Operación Avalon ofrece una combinación única de disparos tácticos y consecuencias dentro del sandbox. Utiliza esta **guía de EVE Vanguard** para perfeccionar tus equipamientos, comprender los riesgos del Convoy Perdido y contribuir a los cambios de rumbo en el conflicto de New Eden.
+
+<FAQ items={[
+  {
+    question: "¿Cómo accedo a la prueba de juego Alfa de EVE Vanguard?",
+    answer: "Puedes solicitar acceso a través de la página de la tienda de Steam o descargar el cliente de la prueba de juego mediante la pestaña Vanguard en el EVE Launcher si cumples con el estado requerido."
+  },
+  {
+    question: "¿Pierdo mi equipo si muero en EVE Vanguard?",
+    answer: "Sí, cualquier botín o recurso recolectado durante un despliegue se perderá si no logras realizar la extracción. Sin embargo, los objetos almacenados en tu casillero permanente en la nave nodriza (Warbarge) están a salvo."
+  },
+  {
+    question: "¿Cuál es el objetivo principal de la Operación Avalon?",
+    answer: "El objetivo es desplegarse en el campo de batalla del Convoy Perdido (Lost Convoy), completar contratos, recuperar tecnología y obtener Cifras Resonantes para influir en el evento mundial más amplio de EVE Online."
+  },
+  {
+    question: "¿Está conectado EVE Vanguard con EVE Online?",
+    answer: "Sí, comparten el mismo universo. Las acciones que realizan los clones de guerra en el terreno pueden desencadenar eventos, recompensas y cambios planetarios que afectan a los capsulistas en el espacio."
+  }
+]} />
+
+</Section>

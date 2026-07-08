@@ -1,0 +1,163 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard vs Frontier: Comparación y guía de configuración",
+  description: "EVE Vanguard vs Frontier: Una comparación detallada de los juegos de disparos en primera persona y de supervivencia de CCP, con mecánicas de juego, requisitos de PC y guías alfa.",
+  category: "Guía",
+  image: "https://placeholder.co/800x400/0d1b2a/fff?text=Vanguard+vs+Frontier+Guide",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Enfoque principal**: Compara el shooter de extracción táctico **EVE Vanguard** con la simulación de supervivencia espacial **EVE Frontier**.
+- **Diferencias de motor**: Vanguard funciona con **Unreal Engine 5** para una fidelidad de FPS de primer nivel, mientras que Frontier utiliza el motor de código abierto **Carbon Engine**.
+- **Bucle principal**: Vanguard es una **guerra terrestre planetaria** basada en sesiones. Frontier es un **juego de supervivencia espacial** persistente de servidor único (single-shard).
+- **Conexión**: Ambos proyectos son desarrollados por **Fenris Creations** (anteriormente CCP Games) para expandir el universo de New Eden.
+- **Fechas de prueba**: La alfa de Operation Avalon de Vanguard se llevará a cabo del **7 al 20 de julio de 2026**.
+</Callout>
+
+<Section icon={Map} title="EVE Vanguard vs Frontier: Filosofía principal y descripción general">
+
+El universo de EVE Online se está expandiendo rápidamente en 2026 bajo Fenris Creations. Para los jugadores que intentan decidir si invertir su tiempo en **EVE Vanguard** o **EVE Frontier**, es esencial comprender sus filosofías de diseño fundamentales. Aunque ambos juegos comparten el ADN oscuro e implacable de New Eden, se dirigen a géneros, bucles de juego y arquitecturas técnicas completamente diferentes.
+
+**EVE Vanguard** es un FPS de aventura y extracción táctica de alto octanaje. Los jugadores se despliegan en la superficie del planeta como clones de guerra inmortales (Warclones), completando contratos, luchando contra fuerzas hostiles y extrayendo recursos valiosos. Por otro lado, **EVE Frontier** (anteriormente conocido como Project Awakening) es una simulación de supervivencia espacial hardcore de servidor único, donde los jugadores despiertan del éxtasis para reconstruir una región destruida del espacio.
+
+| Característica | EVE Vanguard | EVE Frontier |
+| :--- | :--- | :--- |
+| **Género** | FPS de aventura y extracción | Simulación de supervivencia espacial |
+| **Motor de juego** | Unreal Engine 5 | Carbon Engine (código abierto) |
+| **Perspectiva** | Shooter en primera persona | Simulación / Vuelo espacial en tercera persona |
+| **Estructura del mundo** | Despliegues tácticos basados en sesiones | Mundo abierto persistente de servidor único |
+| **Economía** | Materiales terrestres y fabricación en Warbarge | Activos propiedad de jugadores y Smart Assemblies |
+| **Vínculo con EVE Online** | Impacto directo en la guerra de facciones y eventos espaciales | Universo independiente con lore compartido |
+
+<Callout type="tip" title="Distinción principal">
+Si prefieres un combate terrestre táctico y cerrado con mecánicas de extracción de alto riesgo, **EVE Vanguard** es tu juego. Si buscas una experiencia de supervivencia a fuego lento centrada en pilotar naves modulares y construir infraestructura espacial, mira hacia **EVE Frontier**.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Bucle de juego: Warclones contra supervivientes espaciales">
+
+La jugabilidad momento a momento revela el contraste más marcado entre estos dos títulos. EVE Vanguard te pone directamente en las botas de un soldado en el terreno, mientras que EVE Frontier te mantiene detrás de la cabina de una nave espacial navegando por peligrosas anomalías cósmicas.
+
+### EVE Vanguard: La guerra terrestre
+En Vanguard, eres una conciencia infomorfa proyectada en un caparazón de combate biológico. Cada despliegue en zonas como el *Lost Convoy* (Convoy Perdido) es una carrera contra el tiempo. Caes, buscas tecnología avanzada, te enfrentas a brutales combates PvPvE contra Warclones rivales y la Legión de Mordu, y aseguras un punto de extracción antes de ser superado.
+
+### EVE Frontier: Reconstrucción cósmica
+Frontier elimina la seguridad del espacio civilizado. Pilotas una nave personalizable, comenzando con una vasija básica "Seed" (Semilla) y expandiéndola con piezas modulares. Tu supervivencia depende de la gestión de los efectos de estado electromagnéticos, térmicos y gravitacionales mientras luchas contra drones de IA salvajes y "Leeches" (Sanguijuelas) parásitas que agotan tus recursos.
+
+<CardGrid cols={2}>
+  <Card title="Objetivos de EVE Vanguard">
+    - **Asaltar lugares de impacto** y asegurar tecnología exótica.
+    - **Infiltrarse en bases avanzadas** controladas por PNJ de élite.
+    - **Completar contratos de alto riesgo** para influir en la guerra espacial.
+    - **Extraer con vida** o perder todo el inventario que lleves.
+  </Card>
+  <Card title="Objetivos de EVE Frontier">
+    - **Buscar en ruinas destruidas** en el espacio profundo.
+    - **Construir Smart Assemblies** (ensamblajes inteligentes) como puestos comerciales.
+    - **Sobrevivir a amenazas ambientales activas** y agujeros negros.
+    - **Formar alianzas** para controlar sectores espaciales.
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Advertencia de riesgo de botín">
+En ambos juegos, la muerte es castigadora. Vanguard cuenta con una mecánica tradicional de shooter de extracción de "perder todo al morir" para tu despliegue actual. Frontier presenta un sandbox persistente donde tu nave y tu carga son constantemente vulnerables a la piratería de los jugadores.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Comparación de requisitos técnicos y del sistema">
+
+Debido a que estos juegos funcionan con motores completamente diferentes, sus demandas de hardware varían significativamente. La integración de Unreal Engine 5 en EVE Vanguard requiere un equipo de juego moderno para mantener tasas de fotogramas estables durante tiroteos intensos. EVE Frontier funciona con el Carbon Engine, que está altamente optimizado para renderizar entornos espaciales masivos y cientos de estructuras de jugadores simultáneamente.
+
+| Componente de hardware | Requisitos de EVE Vanguard | Requisitos de EVE Frontier |
+| :--- | :--- | :--- |
+| **SO mínimo** | Windows 10/11 (64 bits) | Windows 10/11 o macOS |
+| **CPU mínima** | Intel i5-8400 / AMD Ryzen 5 1600X | Dual Core @ 2.0 GHz |
+| **CPU recomendada** | Intel i5-11600K / AMD Ryzen 5 5600X | Intel i7-7700 / AMD Ryzen 7 1700 |
+| **RAM mínima** | 16 GB DDR4 | 4 GB de RAM |
+| **RAM recomendada** | 16 GB DDR4 | 16 GB de RAM |
+| **GPU mínima** | NVIDIA RTX 2060 / AMD RX 5700 XT | NVIDIA GeForce 420 / AMD Radeon 5450 |
+| **GPU recomendada** | NVIDIA RTX 3080 / AMD RX 6900 XT | NVIDIA GTX 1060 / AMD Radeon RX 580 |
+| **Espacio de almacenamiento** | 50 GB de espacio libre (se requiere SSD) | ~20-30 GB de espacio libre |
+
+<Callout type="info" title="Nota de rendimiento">
+EVE Frontier es muy accesible y puede ejecutarse en hardware antiguo o portátiles. EVE Vanguard es un shooter exigente de próxima generación; necesitarás al menos una GPU moderna de gama media para alcanzar los 60 FPS a 1080p.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Cómo acceder y jugar a EVE Vanguard">
+
+Si estás listo para descender a la superficie del planeta y unirte a la guerra terrestre, EVE Vanguard actualmente está organizando su principal **prueba de juego alfa Operation Avalon** del **7 al 20 de julio de 2026**. Sigue estos pasos para asegurar tu acceso y desplegarte de inmediato.
+
+<Steps>
+  <Step num="1" title="Solicitar acceso a la prueba de juego en Steam">
+    Navega a la [página oficial de Steam de EVE Vanguard](https://store.steampowered.com/app/1872800/EVE_Vanguard/) y haz clic en el botón **Solicitar acceso** en la sección de la prueba de juego.
+  </Step>
+  <Step num="2" title="Descargar el iniciador de EVE">
+    Alternativamente, descarga el iniciador unificado de EVE directamente desde el sitio web oficial. Asegúrate de que tu cuenta esté activa y navega a la pestaña dedicada a **Vanguard**.
+  </Step>
+  <Step num="3" title="Preparar tu equipamiento">
+    Once instalado, configura tus ajustes. Asegúrate de tener al menos 50 GB de espacio libre en un SSD para evitar tirones de carga durante los despliegues.
+  </Step>
+  <Step num="4" title="Desplegarse en la superficie">
+    Inicia el juego durante las ventanas de prueba activas, selecciona tu contrato y desciende al campo de batalla *Lost Convoy* para comenzar a saquear.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Hito de la alfa">
+Participar en la prueba de juego de Operation Avalon ayuda a dar forma al juego final, ya que los desarrolladores utilizan activamente los comentarios de los jugadores para equilibrar las armas, los chipsets y las mecánicas de extracción antes del lanzamiento previsto para el tercer trimestre de 2026.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de verificación de progresión y objetivos">
+
+Para aprovechar al máximo tus despliegues en EVE Vanguard y comprender cómo se conecta con el universo más amplio, realiza un seguimiento de tu progreso utilizando esta lista de verificación táctica.
+
+<Checklist
+  id="vanguard-milestones"
+  title="Objetivos de Operation Avalon en Vanguard:"
+  items={[
+    "Extraer con éxito del campo de batalla Lost Convoy con el inventario lleno [1.1.1].",
+    "Adquirir y probar todos los arquetipos de armas principales, incluidos el subfusil (SMG), el DMR láser y el cañón de metralla.",
+    "Completar al menos cinco contratos de alto riesgo para ganar Resonant Cyphers (cifrados resonantes).",
+    "Intercambiar tus Resonant Cyphers extraídos en las estaciones espaciales del imperio en EVE Online por potenciadores volátiles y SKINs de naves raras.",
+    "Infiltrarse en la zona de alto riesgo del Bloque de Comando en el centro del mapa."
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Es EVE Vanguard independiente de EVE Online?",
+    answer: "Sí, EVE Vanguard es un FPS independiente que puedes jugar de forma autónoma. Sin embargo, tus victorias en el terreno generan puntos globales y activan eventos especiales, sitios de combate y recompensas dentro de EVE Online [1.1.1]."
+  },
+  {
+    question: "¿Utiliza EVE Frontier tecnología blockchain?",
+    answer: "Sí, EVE Frontier cuenta con una economía abierta que utiliza contratos inteligentes y ensamblajes descentralizados, lo que permite a los jugadores construir estructuras programables y comerciar con activos con valor en el mundo real."
+  },
+  {
+    question: "¿Cuándo es la fecha de lanzamiento oficial de EVE Vanguard?",
+    answer: "Actualmente, EVE Vanguard está programado para un lanzamiento planificado en Steam y en el iniciador en el tercer trimestre de 2026, tras la conclusión de las pruebas de juego alfa de verano."
+  },
+  {
+    question: "¿Puedo ejecutar EVE Vanguard en una Steam Deck?",
+    answer: "Aunque los desarrolladores tienen como objetivo soportar Steam Deck, EVE Vanguard utiliza Easy Anti-Cheat (EAC) a nivel de kernel, lo que puede requerir configuraciones específicas de Proton para ejecutarse en SteamOS."
+  }
+]} />
+
+</Section>

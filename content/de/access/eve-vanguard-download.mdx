@@ -1,0 +1,163 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Download: Installation & Zugang zum Alpha-Playtest",
+  description: "Erfahre, wie du EVE Vanguard herunterlädst, den Client über Steam oder den EVE Launcher installierst, die Systemanforderungen überprüfst und Zugang zum Operation Avalon Alpha-Playtest erhältst.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/121c24/00f0ff?text=EVE+Vanguard+Download+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Schnellanleitung">
+- **Primäre Aktion**: Lade den neuesten EVE Launcher herunter oder nutze Steam, um deine Client-Dateien zu sichern.
+- **Alpha-Playtest**: Der Zugang ist während geplanter Events wie Operation Avalon vom 7. bis 20. Juli 2026 aktiv.
+- **Installationsgröße**: Bereite mindestens 50 GB freien SSD-Speicherplatz für die EVE Vanguard Client-Dateien vor.
+- **Konto-Einrichtung**: Melde dich mit einem aktiven EVE Online-Konto an oder registriere ein neues, um einen Warclone zu erstellen.
+- **Wichtige Voraussetzung**: Ein 64-Bit-Windows-Betriebssystem und eine DirectX 12-kompatible Grafikkarte sind erforderlich.
+</Callout>
+
+<Section icon={Map} title="EVE Vanguard Download: Erste Schritte auf dem PC">
+
+Der Einsatz als Elite-Warclone auf den feindseligen planetaren Schlachtfeldern von New Eden erfordert eine präzise Vorbereitung. Da EVE Vanguard ein düsterer Sci-Fi-Extraction-Adventure-FPS ist, der direkt mit dem persistenten Universum von EVE Online verbunden ist, erfordern Download und Start des Spiels je nach gewählter Plattform bestimmte Schritte. Du kannst auf das Spiel entweder über den eigenständigen EVE Launcher zugreifen oder den Zugang direkt auf Steam anfordern.
+
+**Video-Highlights:**
+- Erfahre, wie der Bodenkampf in EVE Vanguard direkt mit dem Weltraumkrieg in EVE Online verknüpft ist.
+- Entdecke, wie der Abschluss von planetaren Verträgen globale Konflikte und die Marktdynamik in New Eden beeinflusst.
+- Sieh dir die überarbeitete Waffenmechanik und die Extraktions-Loops auf dem Schlachtfeld „Lost Convoy“ in Aktion an.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard – Erster Blick auf das In-Engine-Gameplay" />
+
+Egal, ob du ein erfahrener Kapselpilot bist, der den Kampf auf die Planetenoberfläche tragen möchte, oder ein neuer Söldner auf der Suche nach nervenaufreibendem Extraction-Gameplay – die Installation des Clients ist dein erster Schritt zum Überleben.
+
+| Plattform | Primäres Portal | Zugangsmethode | Download-Typ |
+|:---|:---|:---|:---|
+| **EVE Launcher** | Offizielle Website | Direkter Launcher-Tab | Eigenständige Client-Installation |
+| **Steam** | Steam-Shopseite | Schaltfläche „Zugriff anfordern“ | Integrierter Steam-Bibliotheks-Download |
+
+<Callout type="tip" title="Empfehlung zum Pre-load">
+Aktualisiere deinen EVE Launcher immer auf die neueste Version, bevor ein Playtest beginnt. Dies stellt sicher, dass der Reiter „Vanguard“ korrekt angezeigt wird, und verhindert Installationskonflikte mit deinen aktiven EVE Online-Client-Dateien.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Schritt-für-Schritt-Installationsanleitung">
+
+Um das Spiel auf deinem PC zum Laufen zu bringen, musst du den Launcher konfigurieren und den erforderlichen Speicherplatz zuweisen. Befolge diese Schritte, um eine saubere Installation durchzuführen und typische Download-Schleifen zu vermeiden.
+
+<Steps>
+  <Step num="1" title="EVE Launcher herunterladen">
+    Navigiere zur offiziellen Website und lade den EVE Online Launcher herunter. Wenn du den Launcher bereits installiert hast, stelle sicher, dass er auf die neueste Version aktualisiert ist, indem du die obere rechte Ecke überprüfst.
+  </Step>
+  <Step num="2" title="Den Vanguard-Tab finden">
+    Starte den Client und suche nach dem EVE Vanguard-Symbol oder dem entsprechenden Tab am Ende deiner Charakterliste oder in der seitlichen Navigationsleiste.
+  </Step>
+  <Step num="3" title="Speicherplatz zuweisen und installieren">
+    Klicke auf die Schaltfläche „Installieren“. Wähle deinen Verzeichnispfad und stelle sicher, dass du auf einem Solid-State-Drive (SSD) mit mindestens 50 GB freiem Speicherplatz installierst, um die hochauflösenden Assets zu verarbeiten.
+  </Step>
+  <Step num="4" title="Konto verknüpfen">
+    Melde dich mit deinen bestehenden EVE Online-Zugangsdaten an oder erstelle direkt über die Benutzeroberfläche ein neues Konto, um dein Warclone-Profil zu initialisieren.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Anti-Cheat-Warnung">
+EVE Vanguard nutzt Easy Anti-Cheat (EAC) auf Kernel-Ebene, um die Wettbewerbsintegrität zu wahren. Die Anti-Cheat-Software wird automatisch zusammen mit dem Spiel-Client installiert und muss während des Spielens aktiv bleiben.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="PC-Systemanforderungen">
+
+Überprüfe vor dem Start deines EVE Vanguard-Downloads deine Hardware-Spezifikationen. Das Spiel basiert auf der Unreal Engine 5 und benötigt moderne Rechenleistung sowie dedizierten Grafikspeicher, um bei kompetitiven Bildraten flüssig zu laufen.
+
+| Hardware-Komponente | Mindestanforderung | Empfohlene Spezifikation |
+|:---|:---|:---|
+| **Betriebssystem** | Windows 10 64-Bit (21H2) | Windows 11 64-Bit (Aktuellste) |
+| **Prozessor (CPU)** | Intel i5-8400 / AMD Ryzen 5 1600X | Intel i5-11600K / AMD Ryzen 5 5600X |
+| **Grafikkarte (GPU)** | NVIDIA RTX 2060 / AMD RX 5700 XT | NVIDIA RTX 3080 / AMD RX 6900 XT |
+| **Grafikspeicher (VRAM)** | 6 GB | 8 GB oder mehr |
+| **Arbeitsspeicher (RAM)** | 16 GB DDR4 | 16 GB DDR4 |
+| **Speichertyp** | 50 GB SSD | 50 GB NVMe-SSD |
+| **DirectX-Version** | DirectX 12 | DirectX 12.1 |
+
+<Callout type="info" title="Leistungserwartungen">
+Die Mindestanforderungen sind darauf ausgelegt, stabile 60 FPS bei einer Auflösung von 1080p mit niedrigen Qualitätseinstellungen zu liefern, wenn FSR oder DLSS auf den Qualitätsmodus eingestellt sind.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Zugang zu Alpha-Playtests & Events">
+
+EVE Vanguard befindet sich derzeit in einer aktiven Entwicklungsphase, was bedeutet, dass die Server nicht dauerhaft online sind. Der Zugang wird während großer Testfenster im Laufe des Jahres 2026 gewährt, während sich das Entwicklerteam auf die geplante Vollversion vorbereitet.
+
+<CardGrid cols={3}>
+  <Card title="Playtest-Fenster">
+    - **Operation Avalon**: Aktiv vom 7. bis 20. Juli 2026.
+    - **Alpha-Struktur**: Kurze, hochintensive Testphasen.
+    - **Feedback-orientiert**: Konzentriert sich auf Gunplay, Performance und die Extraktions-Balance.
+  </Card>
+  <Card title="Steam-Zugang">
+    - **Wunschliste verfügbar**: Verfolge Entwicklungs-Updates ganz einfach.
+    - **Playtest-Anfragen**: Melde dich direkt auf der Shopseite an.
+    - **Automatische Bereitstellung**: Keys werden während aktiver Events in Wellen vergeben.
+  </Card>
+  <Card title="EVE Online-Verknüpfung">
+    - **Gemeinsames Konto**: Nutze dein bestehendes Omega-Konto für den Zugang.
+    - **Dualer Fortschritt**: Verdiene Belohnungen, die auf EVE Online übertragen werden.
+    - **Warclone-Identität**: Passe das Loadout deines Bodensoldaten an.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Exklusive Belohnungen verdienen">
+Die Teilnahme an aktiven Playtests wie Operation Avalon ermöglicht es dir, spezielle Verträge abzuschließen und einzigartige Belohnungen zu sichern, darunter Resonanz-Chiffren, Charakterhintergründe und exklusive Schiffs-SKINs für EVE Online.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Einsatz-Checkliste">
+
+Stelle sicher, dass dein System und dein Konto vollständig auf den Einsatz vorbereitet sind, bevor sich das nächste Drop-Fenster öffnet. Nutze diese Checkliste, um dein Setup zu überprüfen:
+
+<Checklist
+  id="deployment-prep"
+  title="Schritte vor dem Einsatz:"
+  items={[
+    "Überprüfen, ob der EVE Launcher auf die neueste Version aktualisiert ist",
+    "50 GB freien Speicherplatz auf einer SSD zuweisen",
+    "Bestätigen, dass die Grafiktreiber auf die neuesten Versionen von 2026 aktualisiert sind",
+    "Sicherstellen, dass Easy Anti-Cheat in der Windows-Firewall zugelassen ist",
+    "Aktives EVE Online-Konto verknüpfen, um Event-Belohnungen zu synchronisieren"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Häufig gestellte Fragen">
+
+<FAQ items={[
+  {
+    question: "Wo kann ich EVE Vanguard sicher herunterladen?",
+    answer: "Du kannst den offiziellen Installer herunterladen, indem du die EVE Vanguard-Website besuchst und auf „How to Play“ klickst, um den einheitlichen EVE Launcher zu erhalten, oder indem du den Zugriff direkt auf der offiziellen Steam-Shopseite des Spiels anforderst."
+  },
+  {
+    question: "Muss ich EVE Online installieren, um EVE Vanguard zu spielen?",
+    answer: "Nein. Obwohl EVE Vanguard über den gemeinsamen EVE Launcher gestartet wird, werden die Spieldateien und Installationsverzeichnisse getrennt gehalten. Du musst den vollständigen EVE Online-Weltraum-MMO-Client nicht herunterladen, um den bodenbasierten Shooter zu spielen."
+  },
+  {
+    question: "Kann ich den Download im EVE Launcher stoppen oder pausieren?",
+    answer: "Der Launcher verwaltet Downloads dynamisch. Wenn du den Launcher schließt oder deinen PC herunterfährst, wird der Download pausiert und automatisch dort fortgesetzt, wo er aufgehört hat, sobald du den Client wieder startest."
+  },
+  {
+    question: "Ist EVE Vanguard auf dem Steam Deck oder unter Linux spielbar?",
+    answer: "Aufgrund der Integration von Easy Anti-Cheat (EAC) auf Kernel-Ebene ist EVE Vanguard in erster Linie für Windows 10- und Windows 11-PCs konzipiert und optimiert. Die Kompatibilität mit dem Steam Deck wird während der Alpha-Playtest-Phasen nicht offiziell unterstützt."
+  }
+]} />
+
+</Section>

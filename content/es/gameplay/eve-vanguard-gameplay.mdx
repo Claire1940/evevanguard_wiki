@@ -1,0 +1,195 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Jugabilidad de EVE Vanguard: Mecánicas Esenciales y Guía Táctica",
+  description: "Domina la jugabilidad de EVE Vanguard con nuestra guía sobre extracción, combate, equipamiento y tácticas de la Operación Avalon para la prueba alfa de 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1a1a1a/00ffff?text=EVE+Vanguard+Gameplay+Guide",
+  date: "2026-07-08",
+  author: "Equipo de Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, jugabilidad, extracción, combate, Operación Avalon, guía táctica"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Jugabilidad de EVE Vanguard**: Un shooter de extracción de ciencia ficción de alto riesgo donde te despliegas como un Warclone inmortal en superficies planetarias hostiles.
+- **Bucle Principal**: Despliégate en la superficie, completa contratos de alto riesgo, recupera tecnología avanzada y realiza la extracción antes de que el campo de batalla se intensifique.
+- **Operación Avalon**: El evento alfa actual que se lleva a cabo del 7 al 20 de julio de 2026, presentando el nuevo campo de batalla Lost Convoy.
+- **Enlace con New Eden**: Tus acciones en tierra influyen directamente en el conflicto espacial de EVE Online a través de eventos mundiales compartidos.
+- **Regla de Supervivencia**: Si no logras extraer con vida, perderás todo el botín y los recursos recolectados en ese despliegue.
+</Callout>
+
+<Section icon={Target} title="Mecánicas Core de la Jugabilidad de EVE Vanguard">
+
+La base de la **jugabilidad de EVE Vanguard** se construye sobre el bucle de "aventura de extracción". A diferencia de los shooters de arena tradicionales, cada sesión en la guerra terrestre de New Eden es una apuesta. Entras al campo de batalla con un equipamiento específico, pero tu objetivo principal es regresar con más de lo que tenías al empezar. El juego combina un intenso combate PvEvP con profundos elementos sandbox, lo que requiere que los jugadores equilibren la agresión con la retirada táctica.
+
+Como Warclone, eres un soldado inmortal cuya conciencia se transfiere entre cuerpos. Esta mecánica impulsada por el lore justifica la naturaleza "roguelike" del juego. Cuando te despliegas, te lanzas a una zona de guerra persistente donde otros jugadores y sofisticadas facciones de IA, como la Legión de Mordu, compiten por los mismos recursos limitados.
+
+<Table>
+| Fase del Juego | Objetivo Principal | Riesgo Clave |
+| :--- | :--- | :--- |
+| **Despliegue** | Inserción táctica en el Lost Convoy o zonas planetarias | Contacto inmediato con Warclones rivales |
+| **Enfrentamiento** | Completar contratos (Hackeo, Combate, Salvamento) | Agotamiento de recursos y escasez de munición |
+| **Saqueo** | Registrar zonas de impacto e instalaciones corporativas | Penalizaciones por peso de inventario y movimiento |
+| **Extracción** | Llegar a una zona designada antes de que se cierre la ventana | Campeadores y peligros ambientales en aumento |
+</Table>
+
+<Callout type="tip" title="Conciencia Táctica">
+Comprueba siempre tu entorno inmediatamente al aterrizar. Los primeros 60 segundos de cualquier despliegue son los más peligrosos, ya que los puntos de aparición pueden ser disputados por escuadrones agresivos que buscan bajas tempranas.
+</Callout>
+
+Los contratos que elijas al inicio de una incursión definen tu trayectoria. Algunos contratos se centran en el "Hackeo" de terminales corporativas, lo que requiere un enfoque más sigiloso, mientras que los contratos de "Combate" pueden encargarte la eliminación de una base avanzada de la Legión de Mordu. El "Salvamento" es quizás el más crítico para la progresión a largo plazo, ya que proporciona las materias primas necesarias para mejorar tu equipo en la Warbarge entre misiones.
+
+</Section>
+
+<Section icon={Swords} title="Sistemas de Combate y Personalización de Armas">
+
+El combate en EVE Vanguard es visceral y letal. El manejo de las armas se ha rediseñado para la actualización de la Operación Avalon de 2026, enfatizando el peso, el control del retroceso y los tipos de daño. Comprender la diferencia entre el daño cinético y el de energía es vital para derrotar a enemigos con escudos o vehículos blindados.
+
+Los jugadores tienen acceso a una variedad de armas modulares que se pueden adaptar a diferentes escenarios de combate. La introducción de los Chipsets permite una profunda personalización, permitiéndote cambiar los modos de disparo o mejorar estadísticas específicas de las armas, como la velocidad de recarga o la velocidad del proyectil.
+
+<CardGrid cols={3}>
+  <Card title="Corto Alcance">
+    - **SMG**: Alta cadencia de fuego para combate a corta distancia (CQB).
+    - **Cañón de Metralla**: Devastador a quemarropa.
+    - **Hoja Nova**: El rematador cuerpo a cuerpo definitivo.
+  </Card>
+  <Card title="Medio a Largo Alcance">
+    - **DMR Láser**: Fuego de energía de precisión para escudos.
+    - **Rifle de Haz**: Daño sostenido y confiable.
+    - **Rifle de Asalto**: La opción básica y versátil.
+  </Card>
+  <Card title="Sistemas Adaptativos">
+    - **Chipsets Modulares**: Modifica los modos de disparo sobre la marcha.
+    - **Cambio de Daño**: Alterna entre Energía y Cinético.
+    - **Ópticas**: Variantes de zoom alto o térmicas.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Sinergia de Armas">
+En el juego en escuadrón, asegúrate de que al menos un jugador lleve un DMR Láser para desgastar los escudos enemigos, mientras que otro utiliza el Cañón de Metralla o el SMG para acabar con las barras de salud expuestas.
+</Callout>
+
+La experiencia de **jugabilidad de EVE Vanguard** se profundiza aún más con la "Hoja Nova", una herramienta cuerpo a cuerpo que no es solo para mostrar. En los estrechos pasillos de un carguero estrellado o un búnker corporativo, la Hoja Nova puede traspasar ciertos escudos de energía que de otro modo desviarían las balas. Dominar la transición entre tu arma de fuego principal y el cuerpo a cuerpo es lo que separa a los Warclones veteranos de los reclutas.
+
+<Table>
+| Tipo de Arma | Mejor Caso de Uso | Perfil de Daño |
+| :--- | :--- | :--- |
+| **DMR Láser** | Desgaste de escudos a larga distancia | Alto de Energía / Bajo Cinético |
+| **SMG** | Limpieza de salas y flanqueo | Bajo de Energía / Alto Cinético |
+| **Cañón de Metralla** | Emboscada a unidades pesadas | Daño Híbrido Moderado |
+| **Rifle de Haz** | Presión sostenida a media distancia | Alto de Energía / Moderado Cinético |
+</Table>
+
+</Section>
+
+<Section icon={Map} title="Estrategia de Extracción y Saqueo">
+
+La decisión más crítica en la **jugabilidad de EVE Vanguard** es cuándo retirarse. El campo de batalla "Lost Convoy" en la Operación Avalon introduce un bucle de extracción rediseñado donde el tiempo lo es todo. A medida que avanza la sesión, el planeta "contraataca" con más fuerza. Los refuerzos de la Legión de Mordu se vuelven más de élite y los peligros ambientales aumentan en intensidad.
+
+<Steps>
+  <Step num="1" title="Asegura el Objetivo">
+    Completa tu contrato principal para desbloquear los datos iniciales de extracción. Esto te asegura una recompensa básica.
+  </Step>
+  <Step num="2" title="Saquea Zonas de Alto Valor">
+    Dirígete a las zonas de impacto o al Bloque de Comando en busca de tecnología rara y Cifrados Resonantes. Esta es la fase de mayor riesgo.
+  </Step>
+  <Step num="3" title="Monitorea las Ventanas de Extracción">
+    Los puntos de extracción no son permanentes. Vigila el mapa para ver el estado "Activo" y muévete hacia la zona más cercana con anticipación.
+  </Step>
+  <Step num="4" title="Defiende la Zona">
+    Una vez que comienza la secuencia de extracción, debes asegurar el área durante un tiempo determinado. Esto suele atraer a jugadores cercanos.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="La Trampa de la Codicia">
+Quedarse por "solo una caja más" es la causa principal de muerte de los Warclones. Si tu inventario está lleno de chatarra rara, prioriza la extracción sobre una mayor exploración.
+</Callout>
+
+Saquear no se trata solo de agarrar todo lo que ves. Debes gestionar el espacio de tu inventario y priorizar los objetos según su utilidad. Los Cifrados Resonantes son actualmente los objetos más codiciados, ya que se pueden intercambiar por enormes recompensas en EVE Online. Sin embargo, estos objetos a menudo emiten una señal que puede ser rastreada por otros jugadores, convirtiéndote en un objetivo de alto valor.
+
+<Table>
+| Categoría de Botín | Utilidad | Rareza |
+| :--- | :--- | :--- |
+| **Reliquias Tecnológicas** | Creación de chipsets de armas | Raro |
+| **Cifrados Resonantes** | Intercambio de recompensas de EVE Online | Ultra Raro |
+| **Chatarra de Metal** | Reparaciones básicas de armadura y munición | Común |
+| **Suministros Médicos** | Curación y potenciadores en el campo | Poco Común |
+</Table>
+
+</Section>
+
+<Section icon={Trophy} title="Operación Avalon: Objetivos y Recompensas">
+
+La Operación Avalon, que se lleva a cabo en julio de 2026, representa la fase más ambiciosa de la Alfa de EVE Vanguard. Introduce el "Bloque de Comando" en el corazón del mapa, un destino de alto riesgo vinculado a la emergente historia de Némesis. Llegar y asegurar el Bloque de Comando proporciona las mayores recompensas, pero requiere un escuadrón altamente coordinado.
+
+<Checklist
+  id="avalon-goals"
+  title="Tareas Prioritarias de la Operación Avalon:"
+  items={[
+    "Despliégate en el campo de batalla de Lost Convoy al menos 5 veces",
+    "Extrae con éxito 10 Cifrados Resonantes para obtener recompensas del imperio",
+    "Elimina a una unidad de Comandante de la Legión de Mordu",
+    "Desencadena una tormenta AEGIS en EVE Online a través de acciones de Vanguard",
+    "Llega al Bloque de Comando durante una sesión de alta intensidad"
+  ]}
+/>
+
+<Callout type="info" title="La Conexión con New Eden">
+Tus acciones en tierra crean "tormentas AEGIS" y sitios de combate en el espacio de EVE Online. Esta filosofía de "Un Universo, Una Guerra" significa que las tropas de tierra y los pilotos espaciales influyen constantemente en el éxito de los demás.
+</Callout>
+
+Intercambiar Cifrados Resonantes en centros del imperio como Amarr o Dodixie apoya la relación secreta de tu facción elegida con Vanguard. El imperio con más intercambios al final del evento de julio de 2026 recibirá desarrollos de lore únicos y bonificaciones localizadas. Las recompensas por participar en la Operación Avalon incluyen Puntos de Habilidad, SKINs exclusivas y drones Aralez de la Legión de Mordu.
+
+</Section>
+
+<Section icon={Shield} title="Configuración Técnica y Requisitos">
+
+Para experimentar la **jugabilidad de EVE Vanguard** en su mejor nivel, tu PC debe cumplir con los requisitos específicos para la versión Alfa de 2026. El juego utiliza física avanzada y texturas de alta fidelidad para renderizar las hostiles superficies planetarias de New Eden.
+
+<Table>
+| Componente | Requisito Mínimo | Recomendado (2026) |
+| :--- | :--- | :--- |
+| **SO** | Windows 10 de 64 bits | Windows 11 de 64 bits |
+| **CPU** | Intel i5-8400 / Ryzen 5 1600X | Intel i5-11600K / Ryzen 5 5600X |
+| **GPU** | NVIDIA RTX 2060 / RX 5700 XT | NVIDIA RTX 3080 / RX 6900 XT |
+| **RAM** | 16 GB DDR4 | 16 GB DDR4 |
+| **Almacenamiento** | 50 GB SSD | 50 GB NVMe SSD |
+| **DirectX** | Versión 12 | Versión 12.1 |
+</Table>
+
+<Callout type="warning" title="Nota de Anti-Cheat">
+EVE Vanguard utiliza Easy Anti-Cheat (EAC) a nivel de kernel. Asegúrate de que los controladores de tu sistema estén actualizados para evitar problemas de compatibilidad o fallos de inicio durante la ventana de la prueba de juego.
+</Callout>
+
+El rendimiento está optimizado para 60 FPS a 1080p utilizando los modos FSR o DLSS Quality en el hardware de especificaciones mínimas. Para aquellos que buscan 4K o tasas de refresco ultra altas, la recomendada RTX 3080 o superior es esencial para mantener la estabilidad durante intensos tiroteos que involucran a múltiples escuadrones y refuerzos de IA.
+
+</Section>
+
+<Section icon={Sparkles} title="Preguntas Frecuentes de EVE Vanguard">
+
+<FAQ items={[
+  {
+    question: "¿Cómo accedo a la prueba de juego de EVE Vanguard?",
+    answer: "Durante el evento de la Operación Avalon (del 7 al 20 de julio de 2026), puedes solicitar acceso a través de la página de Steam o descargar la pestaña de Vanguard directamente a través del Launcher de EVE."
+  },
+  {
+    question: "¿Es EVE Vanguard un juego independiente de EVE Online?",
+    answer: "Sí, es un FPS independiente, pero está profundamente conectado. Las acciones en Vanguard influyen en la guerra espacial en EVE Online, y las recompensas como los Cifrados Resonantes se pueden intercambiar por activos espaciales."
+  },
+  {
+    question: "¿Qué pasa si muero durante un despliegue?",
+    answer: "Como Warclone, tu conciencia se salva, pero pierdes todo el botín físico, equipo y recursos que llevabas en esa sesión específica."
+  },
+  {
+    question: "¿Puedo jugar a EVE Vanguard en solitario?",
+    answer: "Sí, puedes desplegarte en solitario, pero el juego está diseñado pensando en tácticas de escuadrón. Ir en solitario aumenta significativamente la dificultad, especialmente al encontrarse con equipos de jugadores coordinados."
+  }
+]} />
+
+</Section>

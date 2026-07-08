@@ -1,0 +1,192 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard y EVE Online: Guía de Conexión, Recompensas y Jugabilidad",
+  description: "Aprende cómo se conecta EVE Vanguard con EVE Online. Descubre los eventos mundiales compartidos, los Cifrados Resonantes, el impacto del planeta al espacio, las recompensas y los pasos para la prueba de juego.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/0b2545/fff?text=EVE+Vanguard+and+EVE+Online+Guide",
+  date: "2026-07-08",
+  author: "Equipo de Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Conexión Principal**: EVE Vanguard es un shooter de extracción y aventura en primera persona (FPS) conectado directamente al sandbox compartido de EVE Online.
+- **Universo Compartido**: Las acciones realizadas en tierra por los Warclones impactan directamente a los capsulistas en el espacio de New Eden.
+- **Periodo de Prueba**: La Alfa de la Operación Avalon estará activa desde el 7 de julio hasta el 20 de julio de 2026.
+- **Progresión Clave**: Extraer recursos te permite fabricar armas mediante planos, asegurando una progresión persistente.
+- **Equilibrio Económico**: En lugar de un enlace directo de ISK, los juegos se conectan a través de cadenas de eventos especializados e intercambio de objetos.
+</Callout>
+
+<Section icon={Map} title="Conexión EVE Vanguard y EVE Online: Un Universo, Dos Frentes">
+
+EVE Vanguard no es solo un shooter independiente; es la extensión terrestre del enorme universo de New Eden, que cuenta con décadas de historia. Como un Warclone inmortal, tus despliegues en superficies planetarias hostiles están vinculados a los conflictos espaciales en curso de los capsulistas de EVE Online. Comprender esta relación es fundamental para los jugadores de ambos títulos.
+
+**Puntos Destacados del Video:**
+- **Lanzamiento de la Operación Avalon**: Experimenta el sistema de juego con armas rediseñado, nuevo armamento y combate planetario.
+- **Integración con New Eden**: Observa cómo las operaciones terrestres alimentan directamente la guerra orbital.
+- **Extracción Táctica**: Aprende el bucle principal de desplegarse, luchar contra la Legión de Mordu y escapar con vida.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard - Tráiler Oficial de Lanzamiento de la Prueba de Juego Alfa de la 'Operación Avalon'" />
+
+Mientras que intentos anteriores como Dust 514 tuvieron dificultades con el equilibrio económico —donde el precio de un rifle de asalto básico en tierra podía rivalizar con el de una nave espacial orbital—, CCP Games y Fenris Creations han diseñado EVE Vanguard con una conexión más sofisticada. En lugar de una conversión directa de divisas, los juegos se influyen mutuamente a través de la corrupción planetaria compartida, eventos mundiales y vías de recompensa especializadas.
+
+| Característica | EVE Vanguard (Guerra Terrestre) | EVE Online (Guerra Espacial) |
+| :--- | :--- | :--- |
+| **Identidad del Jugador** | Warclone inmortal desplegado en planetas | Capsulista de nave espacial pilotando en órbita |
+| **Jugabilidad Principal** | FPS de extracción y aventura de ciencia ficción | MMO espacial tipo sandbox |
+| **Adversarios Principales** | Legión de Mordu, Warclones rivales | Facciones piratas, Capsulistas rivales, Drifters |
+| **Enlace Compartido** | Completar contratos activa eventos espaciales | Las batallas espaciales determinan las condiciones terrestres |
+
+<Callout type="tip" title="Nota sobre la Integración Económica">
+La integración directa de ISK falló en títulos anteriores debido a las diferencias de escala. EVE Vanguard se conecta a la economía de EVE Online a través de materiales valiosos, planos y objetos específicos relacionados con eventos, como los Cifrados Resonantes, en lugar de moneda directa.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Cómo las Acciones Terrestres Dan Forma a los Conflictos Espaciales">
+
+Durante las operaciones principales, como la prueba de juego de la Alfa de la Operación Avalon, las acciones de las tropas terrestres alteran directamente el panorama para los pilotos espaciales. Cuando los Warclones completan con éxito expediciones en EVE Vanguard, generan datos, completan contratos de alto riesgo y aseguran posiciones planetarias.
+
+<CardGrid cols={3}>
+  <Card title="Borrascas de AEGIS">
+    Suficientes despliegues terrestres provocan anomalías atmosféricas y borrascas de AEGIS en el espacio de EVE Online, alterando la navegación local y los parámetros tácticos [1.1.8].
+  </Card>
+  <Card title="Aparición de Convoyes Orbitales">
+    Como se vio en la Operación Némesis, llenar el medidor de progreso global de los Warclones obliga a convoyes asaltables a saltar al espacio de EVE Online, creando objetivos de alto valor [1.1.8].
+  </Card>
+  <Card title="Cifrados Resonantes">
+    Las extracciones terrestres otorgan Cifrados Resonantes, los cuales los capsulistas pueden interceptar, comerciar o intercambiar por planos avanzados y equipamiento de facción [1.1.8].
+  </Card>
+</CardGrid>
+
+Este diseño de doble frente significa que los jugadores de EVE Online tienen un interés directo en apoyar las operaciones de Vanguard, y viceversa. Esto crea una relación simbiótica en la que las alianzas pueden coordinar asaltos terrestres para debilitar las defensas orbitales o asegurar valiosas rutas espaciales.
+
+| Mecánica de Conexión | Objetivo Terrestre (Vanguard) | Resultado Espacial (EVE Online) |
+| :--- | :--- | :--- |
+| **Medidor de Progreso Global** | Completar contratos de despliegue | Genera convoyes asaltables en las rutas espaciales [1.1.8] |
+| **Hackeo de Datos** | Hackear repetidores de comunicación planetarios [1.1.8] | Revela sitios ocultos de hackeo y salvamento [1.1.8] |
+| **Minería de Recursos** | Extraer minerales planetarios raros | Introduce materiales en la manufactura de alto nivel |
+
+<Callout type="warning" title="Riesgo de Pérdida">
+Al igual que perder una nave en EVE Online, morir como un Warclone en EVE Vanguard significa que perderás todo el equipo y los recursos que lleves contigo en ese clon. Administra siempre tu inventario antes de adentrarte en zonas hostiles.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Operación Avalon: Recompensas y Comerciantes de Objetos">
+
+La actual prueba de juego de la Operación Avalon (que se lleva a cabo del 7 al 20 de julio de 2026) muestra la vía de recompensas entre ambos juegos. Al recuperar Cifrados Resonantes de Vanguard, los capsulistas pueden acceder a recompensas exclusivas de comerciantes de objetos especializados ubicados en los centros principales de New Eden [1.1.8].
+
+### Dónde Encontrar a los Comerciantes de Objetos de Avalon
+Los comerciantes de objetos están ubicados en sistemas estelares clave a lo largo del espacio del imperio y de baja seguridad (low-sec) [1.1.8]:
+- **Amarr** (Centro Principal del Imperio) [1.1.8]
+- **New Caldari** (Centro de Comercio del Estado) [1.1.8]
+- **Dodixie** (Centro de Comercio de la Federación) [1.1.8]
+- **Rens** (Centro de Comercio de la República) [1.1.8]
+- **Sifilar, Kinakka, Ostingele, Hadozeko, Poitot, SL-YBS** (Puestos de Avanzada en Low-Sec y Null-Sec) [1.1.8]
+
+### Estructura de Recompensas y Tabla de Botín
+El intercambio de Cifrados Resonantes desbloquea una amplia variedad de objetos valiosos, potenciadores y mejoras cosméticas [1.1.8]:
+
+| Categoría de Recompensa | Objetos Disponibles | Impacto / Caso de Uso |
+| :--- | :--- | :--- |
+| **Equipamiento y Módulos** | Estabilizador de Inercia Modificado de Lorharyth [1.1.8] | Módulo de agilidad para naves de alto rendimiento [1.1.8] |
+| **Drones de Combate** | Drones Aralez de la Legión de Mordu [1.1.8] | Drones de combate táctico y apoyo de élite [1.1.8] |
+| **Progreso de Personaje** | Puntos de Habilidad y Potenciadores Volátiles [1.1.8] | Acelera el entrenamiento y los atributos del personaje [1.1.8] |
+| **Cosméticos** | Fondos y SKINs temáticos de Vanguard [1.1.8] | Opciones exclusivas de personalización visual [1.1.8] |
+| **Cajas de Suministros** | Cajas de Recompensa Arkombine Resurgido [1.1.8] | Paquetes aleatorios que contienen recursos de alto valor [1.1.8] |
+
+<Callout type="success" title="La Conexión con el Lore">
+Intercambiar Cifrados Resonantes en el territorio de un imperio específico fortalece directamente la relación secreta de ese imperio con Vanguard [1.1.8]. La facción con la mayor cantidad de intercambios al final del evento se convertirá en el refugio principal para las fuerzas de Avalon [1.1.8].
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Cómo Empezar a Jugar a la Alfa de EVE Vanguard">
+
+Si deseas participar en la prueba de juego de la Operación Avalon y comenzar a dar forma a la guerra en New Eden, sigue estos sencillos pasos para descargar y acceder al juego.
+
+<Steps>
+  <Step num="1" title="Consigue el Launcher de EVE Online">
+    Dirígete al sitio web oficial de EVE Vanguard o a su página de Steam. Descarga e instala el Launcher unificado de EVE Online, que alberga ambos juegos.
+  </Step>
+  <Step num="2" title="Crea o Vincula tu Cuenta">
+    Inicia sesión con tu cuenta existente de EVE Online o crea una nueva directamente a través de la interfaz del launcher.
+  </Step>
+  <Step num="3" title="Instala EVE Vanguard">
+    Selecciona la pestaña de Vanguard dentro del launcher. Asegúrate de tener al menos 50 GB de espacio de almacenamiento SSD disponible y haz clic en "Instalar".
+  </Step>
+  <Step num="4" title="Solicita Acceso en Steam (Opcional)">
+    Si juegas a través de Steam, visita la página oficial de la tienda de Steam, haz clic en "Solicitar acceso" para unirte a la prueba de juego e inícialo directamente desde tu biblioteca de Steam.
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Shield} title="Requisitos del Sistema para PC y Rendimiento">
+
+Antes de desplegarte, asegúrate de que tu hardware cumpla con los objetivos de rendimiento necesarios para disfrutar de una experiencia de FPS fluida y competitiva. EVE Vanguard utiliza Unreal Engine 5 para ofrecer entornos planetarios de alta fidelidad, lo que requiere especificaciones de PC modernas.
+
+| Especificación | Requisito Mínimo | Objetivo Recomendado |
+| :--- | :--- | :--- |
+| **Sistema Operativo** | Windows 10 (64 bits, 21H2/19044) [1.1.7] | Windows 10 / 11 (64 bits, última versión) [1.1.7] |
+| **Procesador (CPU)** | Intel i5-8400 / AMD Ryzen 5 1600X [1.1.7] | Intel i5-11600K / AMD Ryzen 5 5600X [1.1.7] |
+| **Gráficos (GPU)** | NVIDIA RTX 2060 / AMD RX 5700 XT [1.1.7] | NVIDIA RTX 3080 / AMD RX 6900 XT [1.1.7] |
+| **Memoria del Sistema** | 16 GB DDR4 RAM [1.1.7] | 16 GB DDR4 RAM [1.1.7] |
+| **Tipo de Almacenamiento** | 50 GB de espacio disponible en SSD [1.1.7] | 50 GB de espacio disponible en SSD NVMe [1.1.7] |
+| **Versión de DirectX** | DirectX 12 [1.1.7] | DirectX 12.1 [1.1.7] |
+| **Anti-Cheat** | Easy Anti-Cheat (nivel de kernel) [1.1.7] | Easy Anti-Cheat (nivel de kernel) [1.1.7] |
+
+<Callout type="info" title="Consejo de Rendimiento">
+Las especificaciones mínimas apuntan a 60 FPS a una resolución de 1080p usando ajustes de calidad Baja con FSR o DLSS configurado en modo Calidad [1.1.7]. Para entornos PvP competitivos, se recomienda encarecidamente un SSD NVMe para eliminar los tirones en la carga de texturas y elementos [1.1.7].
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Objetivos y Lista de Verificación">
+
+Para aprovechar al máximo tu tiempo durante la prueba de juego de la Alfa de la Operación Avalon, utiliza esta lista de verificación para seguir tu progreso y maximizar tus recompensas.
+
+<Checklist
+  id="vanguard-avalon-goals"
+  title="Hitos de la Operación Avalon:"
+  items={[
+    "Sobrevive a tu primer despliegue en el campo de batalla del Convoy Perdido",
+    "Derrota a las fuerzas de élite de la Legión de Mordu y extrae su tecnología",
+    "Localiza y asegura un plano para habilitar la fabricación de armas",
+    "Extrae Cifrados Resonantes para desbloquear recompensas exclusivas en EVE Online [1.1.8]",
+    "Comercia con un comerciante de objetos de Avalon en Amarr, Jita o centros de baja seguridad [1.1.8]"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question"¿Necesito jugar a EVE Online para disfrutar de EVE Vanguard?",
+    answer: "No. EVE Vanguard se puede jugar por completo como un FPS de extracción y aventura independiente. Sin embargo, participar en ambos juegos te permite experimentar la historia compartida y desbloquear recompensas vinculadas en ambos frentes."
+  },
+  {
+    question: "¿Qué pasa con mi equipo cuando muero en EVE Vanguard?",
+    answer: "Al igual que perder una nave en EVE Online, morir en un despliegue significa que pierdes todo el equipo físico y los recursos que llevaba tu clon. Sin embargo, si has asegurado planos, puedes fabricar copias de tus armas de vuelta en órbita."
+  },
+  {
+    question: "¿Cómo influyen los Warclones en las batallas espaciales de EVE Online?",
+    answer: "Cuando los jugadores completan contratos planetarios en EVE Vanguard, generan puntos de progreso global. Alcanzar estos hitos activa eventos orbitales, hace aparecer convoyes asaltables y crea sitios de hackeo en EVE Online."
+  },
+  {
+    question: "¿Es EVE Vanguard compatible con Steam Deck?",
+    answer: "EVE Vanguard utiliza Easy Anti-Cheat (EAC) a nivel de kernel. Aunque el juego está disponible en Steam, EAC puede requerir configuraciones específicas de Proton, y la compatibilidad oficial con Steam Deck no está completamente garantizada durante la fase Alfa."
+  }
+]} />
+
+</Section>

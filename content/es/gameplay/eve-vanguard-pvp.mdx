@@ -1,0 +1,203 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "eve vanguard pvp: Guía de Tácticas de Combate y Equipamiento",
+  description: "Domina el pvp de eve vanguard con nuestra guía experta sobre armas, tácticas de extracción y equipamientos para la prueba de juego Alfa de la Operación Avalon en New Eden.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1a1a1a/00ffff?text=EVE+Vanguard+PvP+Guide",
+  date: "2026-07-08",
+  author: "Equipo de Wiki de eve vanguard",
+  keywords: "eve vanguard, pvp, tácticas de combate, equipamiento, extracción, guía"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **eve vanguard pvp** es una experiencia PvPvE de alto riesgo donde los Warclones luchan por recursos en los entornos hostiles de New Eden.
+- **Las mecánicas de combate** se basan en una mezcla de tipos de daño cinético y de energía, lo que requiere que los jugadores adapten sus modos de disparo a las defensas enemigas.
+- **La estrategia de extracción** es la fase más peligrosa, ya que los jugadores rivales suelen converger en los limitados puntos de extracción durante los minutos finales.
+- **La optimización del equipamiento** mediante el uso de conjuntos de chips modulares y armas especializadas como el Laser DMR es fundamental para sobrevivir a los enfrentamientos a larga distancia.
+- **La Operación Avalon** introduce el campo de batalla Lost Convoy, destacando la verticalidad y los objetivos en disputa.
+</Callout>
+
+<Section icon={Map} title="El panorama PvPvE de New Eden">
+
+En la actual prueba de juego Alfa de la Operación Avalon, el **eve vanguard pvp** representa la prueba definitiva para cualquier Warclone. A diferencia de los shooters tradicionales, EVE Vanguard funciona bajo un modelo de aventura de extracción donde el entorno es tan letal como los jugadores rivales. Te despliegas en campos de batalla planetarios, como el Lost Convoy, donde tu objetivo principal es completar contratos, recuperar tecnología y extraer con vida. Sin embargo, la presencia de otros Warclones significa que cada objetivo es un punto de conflicto potencial para combates intensos.
+
+<CardGrid cols={3}>
+  <Card title="Objetivos PvP">
+    - **Disputa de Recursos**
+    - **Sabotaje de Contratos**
+    - **Extracción Denegada**
+  </Card>
+  <Card title="Amenazas PvE">
+    - **Tropas de la Legión de Mordu**
+    - **Drones Némesis**
+    - **Torretas Automatizadas**
+  </Card>
+  <Card title="Peligros Ambientales">
+    - **Presión Atmosférica**
+    - **Zonas Restringidas**
+    - **Visibilidad Limitada**
+  </Card>
+</CardGrid>
+
+Lo que está en juego en **eve vanguard pvp** es absoluto. Si caes en combate, pierdes todo el botín y los recursos acumulados durante ese despliegue. Esta mecánica de \"perderlo todo\" obliga a un cambio en el comportamiento del jugador, donde el sigilo y el posicionamiento táctico a menudo superan a la agresión pura. Ya sea que estés cazando Warclones rivales para quitarles su equipo o simplemente intentando defender tu botín, comprender el flujo del campo de batalla es esencial.
+
+| Tipo de Enfrentamiento | Nivel de Riesgo | Recompensa Potencial | Estrategia Recomendada |
+|:--- |:--- |:--- |:--- |
+| **Defensa de Objetivo** | Medio | Alta | Usa coberturas y sensores desplegables |
+| **Emboscada de Extracción** | Extremo | Muy Alta | Explora el perímetro antes de solicitarla |
+| **Encuentro Casual** | Alto | Variable | Rompe la línea de visión si te superan en armas |
+| **Caza de Némesis** | Alto | Tecnología de Élite | Coordínate con los miembros de tu escuadrón |
+
+<Callout type="warning" title="Gestión de Riesgos">
+En **eve vanguard pvp**, el jugador más ruidoso suele ser el primero en morir. Los disparos se pueden escuchar desde distancias significativas, atrayendo tanto a refuerzos de la IA como a jugadores rivales oportunistas a tu ubicación.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mecánicas de Combate y Tipos de Daño">
+
+El éxito en **eve vanguard pvp** requiere una comprensión profunda de los sistemas de armas modulares del juego. Las armas en EVE Vanguard no son estáticas; se pueden modificar con conjuntos de chips para alterar su rendimiento. Una mecánica central consiste en alternar entre tipos de daño para desgastar eficientemente las defensas enemigas. La mayoría de los Warclones utilizan una combinación de escudos y armadura, y usar el tipo de daño incorrecto puede aumentar significativamente tu tiempo para matar (TTK).
+
+| Tipo de Daño | Objetivo Principal | Efectividad | Indicador Visual |
+|:--- |:--- |:--- |:--- |
+| **Cinético** | Armadura / Salud | Alta contra placas físicas | Chispas blancas/amarillas |
+| **Energía** | Escudos | Agota rápidamente las barras azules | Brillo azul/cian |
+| **Híbrido** | Balanceado | Moderada contra todos los tipos | Efectos mixtos |
+
+Al participar en **eve vanguard pvp**, el ciclo táctico estándar implica el uso de modos de disparo o armas basadas en energía (como el Beam Rifle) para colapsar los escudos de un oponente, para luego cambiar rápidamente a fuego cinético (como el SMG o el Shrapnel Cannon) para destrozar su armadura restante. Los jugadores que no logren dominar esta mecánica de \"barrera de escudo\" se encontrarán en una grave desventaja frente a los veteranos experimentados.
+
+<CardGrid cols={2}>
+  <Card title="Tácticas Ofensivas">
+    - **Flanqueo**: Utiliza la verticalidad del mapa Lost Convoy para situarte por encima de tu objetivo.
+    - **Supresión**: Usa armas de alta capacidad para mantener a los enemigos a cubierto mientras tus compañeros avanzan.
+  </Card>
+  <Card title="Tácticas Defensivas">
+    - **Regeneración de Escudo**: Retírate detrás de una cobertura sólida para permitir que tu escudo de energía se reinicie.
+    - **Nova Blade**: Mantén un arma cuerpo a cuerpo lista para situaciones de pánico a corta distancia.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Personalización de Armas">
+Comprueba siempre la configuración actual del conjunto de chips de tu arma antes de desplegarte. Un Laser DMR con chips enfocados en energía es devastador contra los escudos, pero tendrá dificultades para acabar con un objetivo blindado sin apoyo.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Las Mejores Armas para Enfrentamientos PvP">
+
+El arsenal disponible durante las pruebas de juego Alfa de 2026 ofrece una variedad de herramientas para diferentes roles de combate. Elegir el arma adecuada para **eve vanguard pvp** depende en gran medida de tu estilo de juego previsto y de la zona específica del mapa que planees controlar. Por ejemplo, los pasillos estrechos de las bases de avanzada favorecen al Shrapnel Cannon, mientras que las llanuras abiertas de Lost Convoy exigen el Laser DMR.
+
+<Steps>
+  <Step num="1" title="Selecciona tu Rol Principal">
+    Decide si eres el \"Punta de lanza\" (corta distancia), \"Apoyo\" (media distancia) o \"Tirador\" (larga distancia). Tu elección de arma debe reflejar este rol para asegurar la sinergia del escuadrón.
+  </Step>
+  <Step num="2" title="Analiza el Diseño del Mapa">
+    En la Operación Avalon, muchos objetivos se encuentran en cráteres o restos de naufragios. Las armas de medio alcance como el Beam Rifle ofrecen la mayor versatilidad en estos entornos variados.
+  </Step>
+  <Step num="3" title="Equipa Conjuntos de Chips Complementarios">
+    Si usas un SMG, equipa conjuntos de chips que reduzcan el retroceso o aumenten el tamaño del cargador. Para los rifles de tirador, concéntrate en el daño por disparo y la velocidad del proyectil.
+  </Step>
+</Steps>
+
+| Arma | Rol | Alcance Ideal | Fuerza en PvP |
+|:--- |:--- |:--- |:--- |
+| **SMG** | CQC / Flanqueo | 0-15m | Alta cadencia de fuego, movilidad |
+| **Shrapnel Cannon** | Brecha | 0-10m | Daño de ráfaga extremo |
+| **Laser DMR** | Precisión | 30-100m | Alta precisión, presión sobre escudos |
+| **Beam Rifle** | Propósito General | 15-50m | Modos de disparo versátiles |
+| **Nova Blade** | Remate Cuerpo a Cuerpo | 0-2m | Silencioso, ignora armaduras bajas |
+
+<Callout type="success" title="La Opción del Meta">
+A partir de la prueba de juego de julio de 2026, el **Laser DMR** combinado con un **SMG** se considera el equipamiento "todoterreno" más eficaz para el **eve vanguard pvp**, permitiéndote hostigar a los enemigos a distancia y defenderte si te presionan.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Tácticas de Extracción y Supervivencia">
+
+La fase de extracción es donde ocurren la mayoría de los encuentros de **eve vanguard pvp**. A medida que el temporizador de la misión se acerca a su fin, los puntos de extracción se convierten en zonas calientes para los Warclones desesperados. Salir con éxito del planeta requiere más que simplemente llegar a la zona; debes defenderla hasta que llegue el transporte.
+
+**Lista de Verificación para la Supervivencia en la Extracción:**
+<Checklist
+  id="extraction-safety"
+  title="Protocolo de Preextracción:"
+  items={[
+    "Explora el perímetro de extracción con una mira de largo alcance",
+    "Identifica al menos dos puntos de cobertura sólida dentro de la zona",
+    "Busca señales recientes de combate (cadáveres o casquillos gastados)",
+    "Asegúrate de que todas las armas estén completamente recargadas antes de llamar al transporte",
+    "Despliega cualquier equipo táctico restante para asegurar tus flancos"
+  ]}
+/>
+
+En la Operación Avalon, la mecánica de extracción se ha rediseñado para ser más disputada. Los jugadores rivales pueden ver cuándo se activa una extracción, marcando eficazmente tu ubicación en el mapa. Esto crea un escenario de \"rey de la colina\" donde debes repeler oleadas de IA y potencialmente a múltiples escuadrones de jugadores.
+
+<Steps>
+  <Step num="1" title="La Aproximación">
+    Nunca corras directamente al centro de una zona de extracción. Acércate desde terrenos elevados o a través de rutas ocultas para detectar posibles emboscados.
+  </Step>
+  <Step num="2" title="La Llamada">
+    Una vez que el área esté despejada, activa la extracción y muévete inmediatamente a una posición defensiva. No te quedes de pie directamente sobre la baliza.
+  </Step>
+  <Step num="3" title="La Resistencia">
+    Usa granadas y fuego de supresión para mantener a raya a los enemigos. Si llega un escuadrón rival, prioriza la supervivencia sobre las bajas: solo necesitas mantenerte con vida hasta que el temporizador llegue a cero.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Retirada Táctica">
+Si la zona de extracción se congestiona demasiado con jugadores rivales, a menudo es mejor abandonar el lugar y dirigirse a un punto de extracción secundario si el tiempo lo permite. Perder tu botín es peor que perder unos minutos de tiempo.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Progresión Avanzada y Personalización del Warclone">
+
+La progresión en **eve vanguard pvp** está ligada a tu capacidad para extraer recursos y tecnología valiosos. Estos objetos se utilizan de vuelta en tu Warbarge para fabricar conjuntos de chips avanzados y mejorar las capacidades de tu traje. Un Warclone bien optimizado puede tener significativamente más salud, una regeneración de escudo más rápida o un sigilo mejorado en comparación con un recluta recién llegado.
+
+**Elementos Clave de Progresión:**
+- **Resonant Cyphers**: Objetos raros recuperados durante los despliegues que desbloquean recompensas de alto nivel.
+- **Modular Chipsets**: La forma principal de personalizar el comportamiento de las armas y los perfiles de daño.
+- **Mejoras de Traje**: Mejoras permanentes en los atributos físicos de tu Warclone, como la resistencia y la capacidad de carga.
+
+| Categoría de Mejora | Enfoque | Beneficio en PvP |
+|:--- |:--- |:--- |
+| **Neural Links** | Precisión / Manejo | Velocidad de apuntado con la mira más rápida y oscilación reducida |
+| **Plate Reinforcement** | Armadura / Salud | Aumenta la supervivencia contra el fuego cinético |
+| **Capacitor Boosters** | Eficiencia del Escudo | Reinicio de escudo más rápido tras recibir daño |
+| **Sensor Arrays** | Detección | Incrementa el rango en el que se resaltan los enemigos |
+
+<Callout type="tip" title="Sinergia con EVE Online">
+Recuerda que tus acciones en **eve vanguard pvp** pueden influir en la guerra general en EVE Online. Completar contratos específicos contribuye a los Eventos Mundiales, lo que puede desencadenar oportunidades lucrativas para los capsulistas en el espacio, quienes a su vez pueden brindar apoyo a las operaciones de Vanguard.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Es EVE Vanguard un juego estrictamente PvP?",
+    answer: "No, es un shooter de extracción PvPvE. Aunque te encontrarás con otros jugadores (PvP), gran parte del juego consiste en luchar contra facciones de IA como la Legión de Mordu y completar objetivos PvE."
+  },
+  {
+    question: "¿Qué pasa si muero en el pvp de eve vanguard?",
+    answer: "La muerte resulta en la pérdida de todos los objetos, recursos y botines recolectados durante ese despliegue específico. Sin embargo, tu progresión permanente, como los conjuntos de chips desbloqueados y las mejoras del traje, se mantiene intacta."
+  },
+  {
+    question: "¿Puedo jugar a EVE Vanguard en solitario o necesito un escuadrón?",
+    answer: "Puedes jugar solo, pero el juego está equilibrado para el juego en escuadrón. Los jugadores en solitario deben ser mucho más cautelosos en los encuentros PvP, ya que carecen de la capacidad de ser reanimados por sus compañeros de equipo."
+  },
+  {
+    question: "¿Cómo cambio los tipos de daño durante el combate?",
+    answer: "Los tipos de daño están determinados por el modo de disparo de tu arma y los conjuntos de chips equipados. Muchas armas te permiten alternar entre diferentes modos (por ejemplo, cinético y de energía) con una tecla de acceso rápido."
+  }
+]} />
+
+</Section>

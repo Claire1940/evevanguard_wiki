@@ -1,0 +1,194 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Gameplay: Essential Mechanics & Tactical Guide",
+  description: "Master EVE Vanguard gameplay with our guide on extraction, combat, loadouts, and Operation Avalon tactics for the 2026 Alpha playtest.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1a1a1a/00ffff?text=EVE+Vanguard+Gameplay+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **EVE Vanguard Gameplay**: A high-stakes sci-fi extraction shooter where you deploy as an immortal Warclone to hostile planetary surfaces.
+- **Core Loop**: Deploy planetside, complete high-stakes contracts, salvage advanced technology, and extract before the battlefield escalates.
+- **Operation Avalon**: The current Alpha event running from July 7 to July 20, 2026, featuring the new Lost Convoy battlefield.
+- **New Eden Link**: Your ground actions directly influence the space-based conflict in EVE Online through shared world events.
+- **Survival Rule**: If you fail to extract alive, you lose all gathered loot and resources from that deployment.
+</Callout>
+
+<Section icon={Target} title="Core EVE Vanguard Gameplay Mechanics">
+
+The foundation of **EVE Vanguard gameplay** is built upon the "extraction-adventure" loop. Unlike traditional arena shooters, every session in New Eden’s ground war is a gamble. You enter the battlefield with a specific loadout, but your primary goal is to return with more than you started with. The game blends intense PvEvP combat with deep sandbox elements, requiring players to balance aggression with tactical retreat.
+
+As a Warclone, you are an immortal soldier whose consciousness is transferred between bodies. This lore-driven mechanic justifies the "roguelike" nature of the game. When you deploy, you are dropped into a persistent war zone where other players and sophisticated AI factions, like Mordu's Legion, are competing for the same limited resources.
+
+<Table>
+| Game Phase | Primary Objective | Key Risk |
+| :--- | :--- | :--- |
+| **Deployment** | Tactical insertion into the Lost Convoy or planetary zones | Immediate contact with rival Warclones |
+| **Engagement** | Completing contracts (Hacking, Combat, Salvaging) | Resource depletion and ammo scarcity |
+| **Looting** | Scavenging crash sites and corporate installations | Inventory weight and movement penalties |
+| **Extraction** | Reaching a designated zone before the window closes | Campers and escalating environmental hazards |
+</Table>
+
+<Callout type="tip" title="Tactical Awareness">
+Always check your surroundings immediately upon landfall. The first 60 seconds of any deployment are the most dangerous, as spawn points can be contested by aggressive squads looking for early kills.
+</Callout>
+
+The contracts you choose at the start of a run define your trajectory. Some contracts focus on "Hacking" corporate terminals, which requires a stealthier approach, while "Combat" contracts might task you with wiping out a Mordu's Legion forward base. "Salvaging" is perhaps the most critical for long-term progression, as it provides the raw materials needed to upgrade your gear in the Warbarge between missions.
+
+</Section>
+
+<Section icon={Swords} title="Combat Systems and Weapon Customization">
+
+Combat in EVE Vanguard is visceral and lethal. The gunplay has been rebuilt for the 2026 Operation Avalon update, emphasizing weight, recoil management, and damage types. Understanding the difference between Kinetic and Energy damage is vital for defeating shielded enemies or armored vehicles.
+
+Players have access to a variety of modular weapons that can be adapted to different combat scenarios. The introduction of Chipsets allows for deep customization, enabling you to switch fire modes or enhance specific weapon stats like reload speed or projectile velocity.
+
+<CardGrid cols={3}>
+  <Card title="Close Range">
+    - **SMG**: High fire rate for CQB.
+    - **Shrapnel Cannon**: Devastating at point-blank range.
+    - **Nova Blade**: The ultimate melee finisher.
+  </Card>
+  <Card title="Mid to Long Range">
+    - **Laser DMR**: Precision energy fire for shields.
+    - **Beam Rifle**: Reliable sustained damage.
+    - **Assault Rifle**: The versatile baseline choice.
+  </Card>
+  <Card title="Adaptive Systems">
+    - **Modular Chipsets**: Modify fire modes on the fly.
+    - **Damage Switching**: Toggle between Energy/Kinetic.
+    - **Optics**: High-zoom or thermal variants.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Weapon Synergy">
+In squad play, ensure at least one player carries a Laser DMR to strip enemy shields, while another uses the Shrapnel Cannon or SMG to finish off the exposed health bars.
+</Callout>
+
+The **EVE Vanguard gameplay** experience is further deepened by the "Nova Blade," a melee tool that isn't just for show. In the tight corridors of a crashed freighter or a corporate bunker, the Nova Blade can bypass certain energy shields that might otherwise deflect bullets. Mastering the transition between your primary firearm and melee is what separates veteran Warclones from recruits.
+
+<Table>
+| Weapon Type | Best Use Case | Damage Profile |
+| :--- | :--- | :--- |
+| **Laser DMR** | Long-range shield stripping | High Energy / Low Kinetic |
+| **SMG** | Room clearing and flanking | Low Energy / High Kinetic |
+| **Shrapnel Cannon** | Ambushing heavy units | Moderate Hybrid Damage |
+| **Beam Rifle** | Sustained mid-range pressure | High Energy / Moderate Kinetic |
+</Table>
+
+</Section>
+
+<Section icon={Map} title="Extraction and Looting Strategy">
+
+The most critical decision in **EVE Vanguard gameplay** is when to leave. The "Lost Convoy" battlefield in Operation Avalon introduces a redesigned extraction loop where timing is everything. As the session progresses, the planet "fights back" harder. Mordu's Legion reinforcements become more elite, and the environmental hazards increase in intensity.
+
+<Steps>
+  <Step num="1" title="Secure the Objective">
+    Complete your primary contract to unlock the initial extraction data. This ensures you have a baseline reward.
+  </Step>
+  <Step num="2" title="Loot High-Value Zones">
+    Target crash sites or the Command Block for rare tech and Resonant Cyphers. This is the highest risk phase.
+  </Step>
+  <Step num="3" title="Monitor Extraction Windows">
+    Extraction points are not permanent. Watch the map for "Active" status and move toward the closest zone early.
+  </Step>
+  <Step num="4" title="Defend the Zone">
+    Once the extraction sequence starts, you must hold the area for a set duration. This often attracts nearby players.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="The Greed Trap">
+Staying for "just one more crate" is the leading cause of Warclone death. If your inventory is full of rare salvage, prioritize extraction over further exploration.
+</Callout>
+
+Looting is not just about grabbing everything you see. You must manage your inventory space and prioritize items based on their utility. Resonant Cyphers are currently the most sought-after items, as they can be traded for massive rewards in EVE Online. However, these items often emit a signal that can be tracked by other players, turning you into a high-value target.
+
+<Table>
+| Loot Category | Utility | Rarity |
+| :--- | :--- | :--- |
+| **Tech Relics** | Weapon chipset crafting | Rare |
+| **Resonant Cyphers** | EVE Online reward exchange | Ultra-Rare |
+| **Scrap Metal** | Basic armor and ammo repairs | Common |
+| **Medical Supplies** | On-field healing and buffs | Uncommon |
+</Table>
+
+</Section>
+
+<Section icon={Trophy} title="Operation Avalon: Objectives and Rewards">
+
+Operation Avalon, running in July 2026, represents the most ambitious phase of the EVE Vanguard Alpha. It introduces the "Command Block" at the heart of the map, a high-stakes destination tied to the emerging Nemesis storyline. Reaching and securing the Command Block provides the greatest rewards but requires a highly coordinated squad.
+
+<Checklist
+  id="avalon-goals"
+  title="Operation Avalon Priority Tasks:"
+  items={[
+    "Deploy to the Lost Convoy battlefield at least 5 times",
+    "Successfully extract 10 Resonant Cyphers for empire rewards",
+    "Eliminate a Mordu's Legion Commander unit",
+    "Trigger an AEGIS squall in EVE Online via Vanguard actions",
+    "Reach the Command Block during a high-intensity session"
+  ]}
+/>
+
+<Callout type="info" title="The New Eden Connection">
+Your actions on the ground create "AEGIS squalls" and combat sites in EVE Online space. This "One Universe, One War" philosophy means ground troops and space pilots are constantly influencing each other's success.
+</Callout>
+
+Trading Resonant Cyphers at empire hubs like Amarr or Dodixie supports your chosen faction's secret relationship with the Vanguard. The empire with the most trades by the end of the July 2026 event will receive unique lore developments and localized bonuses. Rewards for participating in Operation Avalon include Skill Points, exclusive SKINs, and Mordu's Legion Aralez drones.
+
+</Section>
+
+<Section icon={Shield} title="Technical Setup and Requirements">
+
+To experience **EVE Vanguard gameplay** at its best, your PC must meet the specific requirements for the 2026 Alpha build. The game utilizes advanced physics and high-fidelity textures to render the hostile planetary surfaces of New Eden.
+
+<Table>
+| Component | Minimum Requirement | Recommended (2026) |
+| :--- | :--- | :--- |
+| **OS** | Windows 10 64-bit | Windows 11 64-bit |
+| **CPU** | Intel i5-8400 / Ryzen 5 1600X | Intel i5-11600K / Ryzen 5 5600X |
+| **GPU** | NVIDIA RTX 2060 / RX 5700 XT | NVIDIA RTX 3080 / RX 6900 XT |
+| **RAM** | 16 GB DDR4 | 16 GB DDR4 |
+| **Storage** | 50 GB SSD | 50 GB NVMe SSD |
+| **DirectX** | Version 12 | Version 12.1 |
+</Table>
+
+<Callout type="warning" title="Anti-Cheat Note">
+EVE Vanguard uses Kernel-level Easy Anti-Cheat (EAC). Ensure your system drivers are up to date to avoid compatibility issues or launch failures during the playtest window.
+</Callout>
+
+Performance is optimized for 60 FPS at 1080p using FSR or DLSS Quality modes on the minimum spec hardware. For those aiming for 4K or ultra-high refresh rates, the recommended RTX 3080 or higher is essential to maintain stability during intense firefights involving multiple squads and AI reinforcements.
+
+</Section>
+
+<Section icon={Sparkles} title="EVE Vanguard FAQ">
+
+<FAQ items={[
+  {
+    question: "How do I access the EVE Vanguard gameplay playtest?",
+    answer: "During the Operation Avalon event (July 7–20, 2026), you can request access via the Steam page or download the Vanguard tab directly through the EVE Launcher."
+  },
+  {
+    question: "Is EVE Vanguard a separate game from EVE Online?",
+    answer: "Yes, it is a standalone FPS, but it is deeply connected. Actions in Vanguard influence the space war in EVE Online, and rewards like Resonant Cyphers can be traded for space-based assets."
+  },
+  {
+    question: "What happens if I die during a deployment?",
+    answer: "As a Warclone, your consciousness is saved, but you lose all the physical loot, gear, and resources you were carrying in that specific session."
+  },
+  {
+    question: "Can I play EVE Vanguard solo?",
+    answer: "Yes, you can deploy solo, but the game is designed with squad tactics in mind. Going solo increases the difficulty significantly, especially when encountering coordinated player teams."
+  }
+]} />
+
+</Section>

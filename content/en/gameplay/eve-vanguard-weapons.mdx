@@ -1,0 +1,193 @@
+import { Swords, Target, Shield, Zap, Settings, Crosshair, ListChecks, HelpCircle } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "eve vanguard weapons: Best Loadouts & Combat Guide",
+  description: "Master the eve vanguard weapons system. Detailed guide on SMGs, Laser DMRs, Beam Rifles, chipsets, and damage types for the 2026 Operation Avalon playtest.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/0a0a0c/00f0ff?text=EVE+Vanguard+Weapons+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **eve vanguard weapons** focus on modularity, allowing players to adapt fire modes and damage types mid-deployment.
+- **Energy vs. Kinetic** damage switching is a core mechanic required to break shields and shred armor efficiently.
+- **Weapon Chipsets** are the primary way to customize performance, affecting stability, fire rates, and specialized functions.
+- **Operation Avalon** (July 2026) introduces the SMG and Shrapnel Cannon, broadening the close-quarters combat meta.
+- **Extraction risk** applies to your gear; always balance your high-tier weapon builds with the likelihood of a successful retreat.
+</Callout>
+
+<Section icon={Swords} title="Weapon Classification and Core Mechanics">
+
+The arsenal in EVE Vanguard is designed for versatility within a harsh extraction environment. Unlike traditional shooters where weapons are static, **eve vanguard weapons** utilize a modular framework. Every deployment as a Warclone requires a deep understanding of how your primary firearm interacts with environment hazards and enemy defenses. In the current 2026 meta, weapons are categorized by their effective range and energy delivery systems.
+
+<CardGrid cols={3}>
+  <Card title="Close Range Dominance">
+    - **SMG**: High fire rate, ideal for clearing rooms.
+    - **Shrapnel Cannon**: Massive burst damage at point-blank range.
+    - **Nova Blade**: The essential melee backup for silent takedowns.
+  </Card>
+  <Card title="Mid-to-Long Range">
+    - **Laser DMR**: Precision energy fire for picking off targets.
+    - **Beam Rifle**: Sustained energy output for mid-range suppression.
+    - **Assault Configurations**: Versatile setups for general combat.
+  </Card>
+  <Card title="Adaptive Systems">
+    - **Modular Slots**: 3-5 slots for chipset integration.
+    - **Fire Mode Toggles**: Switch between burst, auto, and semi-auto.
+    - **Damage Converters**: Shift between Kinetic and Energy outputs.
+  </Card>
+</CardGrid>
+
+Combat effectiveness depends heavily on matching your weapon's damage type to the enemy's defense profile. Mordu's Legion forces, prominent in the July 2026 Operation Avalon, often deploy with layered shielding that resists standard kinetic rounds but melts under focused energy beams.
+
+| Weapon Type | Primary Range | Damage Profile | Best For |
+| :--- | :--- | :--- | :--- |
+| **SMG** | 0-15m | Kinetic/Energy | CQC, Interior clearing |
+| **Shrapnel Cannon** | 0-10m | High Kinetic | Heavy armor, Ambushing |
+| **Laser DMR** | 30-100m+ | Pure Energy | Long-range precision, Shields |
+| **Beam Rifle** | 15-50m | Sustained Energy | Mid-range skirmishes |
+| **Nova Blade** | Melee | Thermal/Physical | Stealth, Last-resort |
+
+<Callout type="tip" title="Pro Strategy">
+Always keep your Nova Blade equipped as a secondary. It requires no ammo and is the fastest way to finish off a wounded Warclone during a chaotic reload.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Modular Customization and Chipsets">
+
+Modularity is the defining characteristic of the **eve vanguard weapons** ecosystem. Players do not just find "better" guns; they build them. Through the use of Chipsets—advanced technological components scavenged from planetary surfaces or earned through contracts—you can fundamentally alter how a weapon behaves. During the Operation Avalon playtest, the depth of this system has been expanded to allow for specific "Nemesis" builds designed to counter high-threat drone targets.
+
+<Steps>
+  <Step num="1" title="Access the Warbarge Armory">
+    Before deployment, enter the Warbarge interface to select your base chassis. The chassis determines your base recoil and weight.
+  </Step>
+  <Step num="2" title="Select Your Core Chipsets">
+    Install up to three primary chipsets. These dictate your weapon’s fire rate, magazine capacity, and recoil patterns.
+  </Step>
+  <Step num="3" title="Configure Damage Converters">
+    Decide if your weapon will lead with Kinetic or Energy damage. Advanced builds allow for a hybrid toggle, though this consumes more battery.
+  </Step>
+  <Step num="4" title="Calibrate Fire Modes">
+    Assign specific fire modes (Semi, Burst, Auto) to your toggle switch. This is crucial for managing ammo consumption during long deployments.
+  </Step>
+  <Step num="5" title="Finalize and Sync">
+    Sync the loadout to your Warclone's neural link. Ensure you have the required resources to maintain the build if you fail to extract.
+  </Step>
+</Steps>
+
+| Chipset Type | Common Effect | Rare/Epic Effect | Compatibility |
+| :--- | :--- | :--- | :--- |
+| **Cooling Unit** | +10% Heat Dissipation | Zero-overheat for 3 seconds | Laser/Beam weapons |
+| **Stabilizer** | -15% Vertical Recoil | Dynamic sway compensation | All Primary weapons |
+| **Overclocker** | +5% Fire Rate | Explosive rounds on 5th hit | SMG, Shrapnel Cannon |
+| **Battery Pack** | +20% Energy Capacity | Self-recharging cells | Energy-based weapons |
+
+<Callout type="warning" title="Resource Risk">
+High-tier chipsets are lost if you die without extracting. Always weigh the benefit of an "overpowered" build against the risk of the Lost Convoy battlefield's escalating danger.
+</Callout>
+
+</Section>
+
+<Section icon={Crosshair} title="Damage Types: Kinetic vs. Energy">
+
+Understanding the duality of **eve vanguard weapons** damage is the difference between a successful extraction and a failed deployment. The 2026 combat model emphasizes a "Shield-then-Armor" approach. Most advanced enemies, including rival Warclones and elite Mordu's Legion troops, utilize energy shields that are highly resistant to physical projectiles but vulnerable to thermal and electromagnetic energy.
+
+**Energy Damage Characteristics:**
+- **Pros**: Rapidly depletes blue shield bars; high accuracy over distance.
+- **Cons**: High heat generation; minimal impact on physical armor plates.
+- **Primary Sources**: Laser DMR, Beam Rifle, Energy-converted SMG.
+
+**Kinetic Damage Characteristics:**
+- **Pros**: Shatters yellow armor plates; causes significant stagger.
+- **Cons**: Heavily mitigated by active shielding; significant bullet drop.
+- **Primary Sources**: Shrapnel Cannon, Standard SMG, Kinetic-converted Rifles.
+
+| Defense Type | Weakness | Resistance | Visual Indicator |
+| :--- | :--- | :--- | :--- |
+| **Energy Shield** | Energy/Thermal | Kinetic/Impact | Glowing blue hexagonal mesh |
+| **Physical Armor** | Kinetic/Impact | Energy/Thermal | Matte grey or metallic plating |
+| **Structure** | High-Burst Kinetic | Sustained Energy | Exposed machinery/wiring |
+
+<Callout type="success" title="Tactical Synergy">
+In squad play, designate one player as the "Shield Breaker" using a Laser DMR and another as the "Armor Shredder" with a Shrapnel Cannon for maximum efficiency.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Best Loadouts for Operation Avalon 2026">
+
+As of July 2026, the meta for **eve vanguard weapons** has shifted toward high-mobility builds that can handle the verticality of the new Lost Convoy maps. Whether you are hunting Resonant Cyphers or assaulting forward bases, your loadout must be specialized. Below are the three most effective archetypes currently used by top-tier Warclones.
+
+| Archetype | Primary Weapon | Key Chipset | Secondary Gear |
+| :--- | :--- | :--- | :--- |
+| **The Infiltrator** | SMG (Energy Config) | Stabilizer + Silencer | Nova Blade, Cloak |
+| **The Long-Shot** | Laser DMR | Cooling Unit + Zoom | Scanner, Proximity Mines |
+| **The Breacher** | Shrapnel Cannon | Overclocker + Mag | Heavy Shield, Grenades |
+
+### Recommended Build: The Avalon Hybrid
+This build is specifically designed for solo players who need to handle both PvE Mordu's Legion and PvP Warclone encounters. It utilizes the versatility of the Beam Rifle paired with specific chipsets to allow for rapid adaptation.
+
+- **Weapon**: Beam Rifle
+- **Chipsets**: Hybrid Converter (Kinetic/Energy toggle), Heat Sink, Extended Battery.
+- **Tactics**: Use Energy mode to strip shields from a distance, then switch to Kinetic mode as the enemy closes in to shred their armor.
+
+<Callout type="info" title="Ammunition Note">
+Energy weapons do not use traditional magazines but rely on battery packs and heat management. Kinetic weapons require physical ammo crates found at crash sites or forward bases.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Weapon Progression and Extraction Strategy">
+
+In EVE Vanguard, your weapons are an extension of your persistent progression. The resources you extract—such as exotic technology and lost relics—are used to unlock higher-tier weapon chassis and more powerful chipset slots. During the 2026 Operation Avalon, the "Command Block" at the map's center has become the primary source for "Nemesis-grade" weapon components.
+
+<Checklist
+  id="weapon-prep"
+  title="Deployment Readiness Checklist:"
+  items={[
+    "Verify all chipset slots are filled and synced.",
+    "Check battery levels for energy-based primary weapons.",
+    "Ensure the Nova Blade is sharpened for melee finishers.",
+    "Match damage types to the expected enemy presence (Mordu's vs. Drones).",
+    "Confirm your extraction plan based on gear value."
+  ]}
+/>
+
+Staying longer in a deployment increases the chance of finding rare weapon parts, but it also increases the likelihood of encountering "Nemesis" threats that can easily overpower a poorly equipped Warclone. The most successful players prioritize weapon reliability over raw damage, ensuring they have the stability and heat management to survive a sustained firefight.
+
+<Callout type="tip" title="Looting Priority">
+When raiding crash sites, prioritize "Weapon Tech Fragments." These are the only way to permanently upgrade your base weapon stats back on the Warbarge.
+</Callout>
+
+</Section>
+
+<Section icon={HelpCircle} title="FAQ">
+
+<FAQ items={[
+  {
+    question: "Can I change my weapon loadout during a mission?",
+    answer: "No, your base weapon and chipsets are locked once you deploy. However, you can toggle fire modes and damage types if your weapon is equipped with the necessary modular components."
+  },
+  {
+    question: "What happens to my eve vanguard weapons if I fail to extract?",
+    answer: "If you die and fail to extract, you lose the specific weapon instance and any chipsets attached to it. You will need to procure new equipment or use a basic 'starter' loadout for your next run."
+  },
+  {
+    question: "Is the Nova Blade better than a gun for stealth?",
+    answer: "Yes. The Nova Blade is completely silent and bypasses energy shields if you strike an unaware target from behind, making it the superior choice for stealthy contract completions."
+  },
+  {
+    question: "How do I unlock the new SMG in Operation Avalon?",
+    answer: "The SMG is available through the Warbarge armory during the July 7–20, 2026 playtest. Advanced variants can be unlocked by completing specific Mordu's Legion combat contracts."
+  }
+]} />
+
+</Section>

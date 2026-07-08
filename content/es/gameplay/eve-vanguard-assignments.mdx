@@ -1,0 +1,206 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Asignaciones de EVE Vanguard: Guía de Contratos y Recompensas de Misión",
+  description: "Domina las asignaciones de EVE Vanguard con nuestra guía de contratos, objetivos y recompensas en la Operación Avalon. Aprende a completar misiones y extraer a salvo.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1a1a2e/00ffff?text=Vanguard+Assignments+Guide",
+  date: "2026-07-08",
+  author: "Equipo de Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, asignaciones, contratos, Operación Avalon, recompensas, extracción"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Las asignaciones de EVE Vanguard** son contratos de alto riesgo que impulsan el ciclo principal de juego: despliegue, cumplimiento de objetivos y extracción.
+- **La Operación Avalon** introduce el campo de batalla del Convoy Perdido (Lost Convoy), que presenta mecánicas de botín rediseñadas y una IA de la Legión de Mordu más inteligente.
+- **La variedad de contratos** incluye misiones de combate, hackeo y salvamento que influyen en el conflicto general de New Eden en EVE Online.
+- **El momento de la extracción** es crítico; quedarse más tiempo aumenta las recompensas potenciales, pero eleva significativamente el riesgo de perder todo el progreso.
+- **Las recompensas compartidas** permiten a los jugadores obtener Cifrados Resonantes (Resonant Cyphers) y Puntos de Habilidad que conectan la guerra terrestre y espacial.
+</Callout>
+
+<Section icon={Target} title="Comprendiendo las Asignaciones y Contratos de EVE Vanguard">
+
+En el oscuro universo de ciencia ficción de New Eden, las **asignaciones de EVE Vanguard** representan el método principal para que los Warclones ganen reputación, recursos e influencia. Estas asignaciones no son meras misiones secundarias; son el corazón mecánico de la experiencia de aventura y extracción. Cuando te despliegas en la superficie de un planeta, tu éxito se mide por tu capacidad para navegar en entornos hostiles, cumplir con los parámetros del contrato y asegurar tecnología valiosa antes de que se cierre la ventana de extracción.
+
+La fase actual de desarrollo, específicamente la Operación Avalon, ha ampliado significativamente la profundidad de estas misiones. Ahora, las asignaciones cuentan con objetivos dinámicos que pueden cambiar según la interacción del jugador y los factores ambientales. Ya sea que estés asaltando el lugar de un accidente o defendiendo una base de avanzada, comprender la jerarquía de estas tareas es esencial para sobrevivir.
+
+| Categoría de Asignación | Objetivo Principal | Recompensa Típica | Nivel de Riesgo |
+| :--- | :--- | :--- | :--- |
+| Contratos de Combate | Eliminar fuerzas de la Legión de Mordu | Componentes de armas, Munición | Alto |
+| Misiones de Hackeo | Vulnerar instalaciones corporativas | Cifrados Resonantes, Datos | Medio |
+| Operaciones de Salvamento | Recuperar tecnología de restos | Materias primas, Créditos | Bajo-Medio |
+| Asignaciones de Élite | Asegurar el Bloque de Comando | Planos raros, PE alto | Extremo |
+
+<Callout type="tip" title="Prioridad Estratégica">
+Prioriza siempre las asignaciones que se adapten a tu equipamiento actual. Si llevas un DMR Láser, concéntrate en contratos de combate a larga distancia para mantener una ventaja táctica mientras completas los objetivos.
+</Callout>
+
+Las asignaciones se entregan a través de la interfaz de la Warbarge antes del despliegue. Los jugadores deben elegir su camino con cuidado, ya que el entorno en la superficie del planeta es implacable. La introducción del campo de batalla del Convoy Perdido en 2026 ha añadido niveles de verticalidad y peligros ambientales que convierten incluso las asignaciones de salvamento más sencillas en una prueba de paciencia táctica.
+
+</Section>
+
+<Section icon={Map} title="Operación Avalon: Estructura de Misión y Tácticas">
+
+La Operación Avalon representa un cambio fundamental en la ejecución de las **asignaciones de EVE Vanguard**. Activo del 7 al 20 de julio de 2026, esta prueba de juego Alfa se centra en los "despliegues basados en el riesgo". A diferencia de los shooters tradicionales donde el objetivo es simplemente ganar una partida, Vanguard requiere que equilibres tu codicia con la realidad del temporizador de extracción.
+
+El campo de batalla es una zona persistente donde varios Warclones pueden estar persiguiendo las mismas asignaciones o contratos en conflicto. Esto crea un entorno PvPvE donde la mayor amenaza para completar tu misión podría no ser la Legión de Mordu controlada por la IA, sino un jugador rival que busca interceptar tu botín.
+
+**Características Clave de las Misiones en la Operación Avalon:**
+- **El Convoy Perdido:** Un enorme campo de batalla repleto de escombros que sirve como zona principal para las asignaciones de alto nivel.
+- **Extracción Dinámica:** Los puntos de extracción ya no son estáticos; aparecen y desaparecen según la progresión de la sesión.
+- **El Bloque de Comando:** Un objetivo central vinculado a la historia de Nemesis que ofrece las mayores recompensas pero atrae a las amenazas más peligrosas.
+
+<CardGrid cols={2}>
+  <Card title="Enfoque PvE">
+    - Cazar soldados de la Legión de Mordu
+    - Despejar defensas automatizadas
+    - **Progresión segura** para jugadores en solitario
+    - Recolección constante de recursos
+  </Card>
+  <Card title="Enfoque PvP">
+    - Interceptar extracciones de Warclones rivales
+    - Disputar zonas de salvamento de alto valor
+    - Jugabilidad de **alto riesgo y gran recompensa**
+    - Potencial para conseguir botines masivos
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Alerta de Peligro">
+El planeta contraataca con más fuerza cuanto más tiempo te quedes. En la Operación Avalon, el peligro ambiental se dispara tras la marca de los 15 minutos, lo que dificulta significativamente la extracción para quienes decidan demorarse.
+</Callout>
+
+Para navegar con éxito por estas asignaciones, los jugadores deben utilizar las mecánicas de disparo rediseñadas. La incorporación del subfusil (SMG) y el Cañón de Metralla ofrece más opciones para enfrentamientos a corta distancia, comunes al defender puntos de objetivo o hackear terminales.
+
+</Section>
+
+<Section icon={Swords} title="Guía Paso a Paso para Completar Asignaciones">
+
+Completar las **asignaciones de EVE Vanguard** requiere un enfoque disciplinado. Lanzarse de cabeza a un objetivo sin un plan es una forma garantizada de perder tu equipo y tu progreso. Sigue este flujo de trabajo táctico para maximizar tu eficiencia durante la prueba de juego de 2026.
+
+<Steps>
+  <Step num="1" title="Preparación en la Warbarge">
+    Antes de lanzar, visita la pestaña Vanguard en el Launcher de EVE. Revisa los contratos disponibles y selecciona uno que se alinee con tu equipo actual. Asegúrate de que los chipsets de tus armas estén configurados para los tipos de daño (Energía o Kinético) más efectivos contra las fuerzas enemigas previstas.
+  </Step>
+  <Step num="2" title="Despliegue Planetario">
+    Al aterrizar, revisa inmediatamente tu mapa táctico. Identifica el punto de objetivo más cercano y localiza las posibles zonas de extracción. No te dirijas directamente al centro del mapa; en su lugar, muévete por la periferia para recolectar recursos iniciales y explorar en busca de Warclones rivales.
+  </Step>
+  <Step num="3" title="Enfrentamiento con el Objetivo">
+    Cuando llegues a la ubicación de la asignación, despeja el área inmediata de las fuerzas de la Legión de Mordu. Si la asignación implica hackeo, establece perímetros defensivos. Utiliza la Hoja Nova (Nova Blade) para eliminaciones silenciosas y evitar alertar a las patrullas cercanas de tu presencia.
+  </Step>
+  <Step num="4" title="Consolidación de Recursos">
+    Una vez completado el objetivo, saquea la zona a fondo. En la Operación Avalon, los restos y las instalaciones contienen "tecnología exótica" que es esencial para la progresión a largo plazo. Prioriza los objetos de alto valor como los Cifrados Resonantes sobre los materiales comunes.
+  </Step>
+  <Step num="5" title="Extracción Táctica">
+    Tan pronto como cumplas tu objetivo principal, evalúa tu salud y munición. Si te quedan pocos suministros, dirígete al punto de extracción más cercano. Recuerda, una asignación no extraída no otorga ninguna recompensa. Asegura tu botín y regresa a la Warbarge.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Misión Cumplida">
+Una extracción exitosa no solo salva tu botín, sino que también contribuye al medidor de "Puntos Globales", influyendo en el conflicto general en EVE Online.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="La Conexión con EVE Online: Asignaciones Globales">
+
+Uno de los aspectos más singulares de las **asignaciones de EVE Vanguard** es su impacto directo en el universo de EVE Online. Este concepto, descrito como "Un Universo, Una Guerra", significa que tus acciones en tierra como Warclone pueden desencadenar eventos en el espacio para los capsulistas de EVE Online.
+
+Durante la Operación Avalon y eventos anteriores como la Operación Nemesis, completar asignaciones de expedición específicas contribuyó a objetivos de todo el imperio. Cuando la comunidad llena la barra de progreso mediante misiones terrestres, aparecen convoyes asaltables y tormentas AEGIS en el espacio de EVE Online. Esta sinergia permite a los jugadores terrestres "abrir puertas" para los jugadores espaciales, creando un ecosistema verdaderamente interconectado.
+
+| Tipo de Recompensa | Origen | Uso en EVE Online |
+| :--- | :--- | :--- |
+| Cifrados Resonantes | Asignaciones de Hackeo/Salvamento | Se canjean por SKINs y componentes |
+| Puntos Globales | Completar Misiones | Desencadena Eventos Mundiales y Convoyes |
+| Puntos de Habilidad | Asignaciones Diarias | Progresión de personaje para ambos juegos |
+| Control de Brechas | Asignaciones de Élite | Módulos especializados para combate espacial |
+
+<CardGrid cols={3}>
+  <Card title="Apoyo al Imperio">
+    Intercambiar Cifrados Resonantes con los comerciantes del imperio apoya a facciones específicas como Amarr o Caldari.
+  </Card>
+  <Card title="Impacto en el Mercado">
+    Los recursos extraídos de Vanguard pueden influir en la fabricación de componentes avanzados en el mercado de New Eden.
+  </Card>
+  <Card title="Progresión de la Historia">
+    El imperio con las asignaciones más exitosas determina el resultado narrativo del evento Avalon.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Recompensas Interconectadas">
+Muchas recompensas, como las cajas Arkombine Arisen y los Drops de Twitch, están disponibles tanto en EVE Vanguard como en EVE Online, recompensando a los jugadores que participan en ambos frentes del conflicto.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Optimización del Equipamiento para la Eficiencia en Asignaciones">
+
+Para maximizar tu tasa de éxito en las **asignaciones de EVE Vanguard**, tu equipamiento debe ser adaptable. La Operación Avalon ha introducido sistemas de armas modulares que permiten cambiar el tipo de daño y múltiples modos de disparo. Comprender cómo utilizar estas herramientas marca la diferencia entre una extracción exitosa y un despliegue fallido.
+
+**Componentes Recomendados del Equipamiento:**
+- **Arma Principal:** Rifle de Haz (Beam Rifle) o DMR Láser para rangos de enfrentamiento versátiles.
+- **Arma Secundaria:** Subfusil (SMG) para despejar pasillos estrechos dentro de las instalaciones.
+- **Cuerpo a Cuerpo:** Hoja Nova (Nova Blade) para bajas eficientes en recursos.
+- **Chipsets:** Concéntrate en la estabilidad y la velocidad de recarga para mantener un alto tiempo de actividad de daño durante tiroteos intensos.
+
+| Componente | Beneficio | Mejor Tipo de Asignación |
+| :--- | :--- | :--- |
+| Chipset Kinético | Mayor daño a la armadura | Combate contra la Legión de Mordu |
+| Chipset de Energía | Efectivo contra escudos | Asaltos a Bases de Avanzada |
+| Módulo de Sigilo | Perfil de ruido reducido | Hackeo/Infiltración |
+| Soporte de Munición Extra | Mayor resistencia | Salvamento de larga duración |
+
+<Checklist
+  id="deployment-checklist"
+  title="Lista de Verificación Previa al Despliegue:"
+  items={[
+    "Verificar la selección del contrato en la Warbarge",
+    "Comprobar los modos de disparo de las armas (Ráfaga vs. Automático)",
+    "Equipar al menos un chipset de Energía y uno Kinético",
+    "Confirmar que las especificaciones de la PC cumplen con el requisito de 16 GB de RAM",
+    "Asegurar que haya 50 GB de almacenamiento disponible para las actualizaciones de la prueba de juego"
+  ]}
+/>
+
+<Callout type="tip" title="Personalización de Armas">
+No olvides usar los recursos que extrajiste en incursiones anteriores para mejorar tu traje y tus armas. La progresión en EVE Vanguard es persistente, lo que significa que una asignación exitosa hoy facilitará la misión de mañana.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Conclusión y Preguntas Frecuentes">
+
+Dominar las **asignaciones de EVE Vanguard** es un viaje de perfeccionamiento táctico. A medida que el juego avanza hacia su lanzamiento previsto para el tercer trimestre de 2026, la complejidad de estas misiones no hará más que aumentar. Al concentrarte en el ciclo básico de preparación, cumplimiento de objetivos y extracción disciplinada, te convertirás en un Warclone formidable al servicio de los imperios de New Eden.
+
+Ya sea que juegues en solitario o te coordines con un escuadrón, recuerda que cada despliegue cuenta una historia diferente. Las decisiones que tomes en la superficie del planeta resonarán en las estrellas, dando forma al futuro del sandbox MMO más grande de la historia.
+
+<FAQ items={[
+  {
+    question: "¿Cómo accedo a las asignaciones de EVE Vanguard?",
+    answer: "Puedes acceder a las asignaciones a través del Launcher de EVE durante las ventanas de prueba de juego activas, como la Operación Avalon. Debes solicitar acceso en la página de Steam o tener una suscripción activa de EVE Online para unirte a la pestaña Vanguard."
+  },
+  {
+    question: "¿Qué pasa si muero durante una asignación?",
+    answer: "Si mueres antes de extraer, perderás todos los recursos, tecnología y botín recolectados durante ese despliegue. Sin embargo, la progresión de tu personaje y las mejoras persistentes de tu equipo se conservarán."
+  },
+  {
+    question: "¿Las asignaciones de EVE Vanguard afectan a mi personaje de EVE Online?",
+    answer: "Sí. Completar asignaciones puede otorgarte Puntos de Habilidad, Cifrados Resonantes y otras recompensas que se comparten con tu cuenta de EVE Online, lo que te permite progresar en ambos juegos simultáneamente."
+  },
+  {
+    question: "¿Cuál es el tipo de asignación más difícil?",
+    answer: "Las asignaciones de Élite que involucran el Bloque de Comando o jefes de alto nivel de la Legión de Mordu son las más difíciles. Estas requieren equipamientos avanzados y a menudo exigen la cooperación con otros Warclones."
+  }
+]} />
+
+<Callout type="info" title="Nota Final">
+La Operación Avalon está activa del 7 al 20 de julio de 2026. Asegúrate de participar durante este período para ayudar a dar forma al futuro de las asignaciones de EVE Vanguard y ganar recompensas Alfa exclusivas.
+</Callout>
+
+</Section>

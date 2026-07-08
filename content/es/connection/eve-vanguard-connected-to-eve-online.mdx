@@ -1,0 +1,168 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard conectado a EVE Online: Guía de Sistemas Interjuego",
+  description: "Descubre cómo EVE Vanguard se conecta con EVE Online. Aprende sobre los eventos mundiales compartidos de New Eden, la tecnología backend Quasar, los Resonant Cyphers y las recompensas de Warclone.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/121c24/00f0ff?text=EVE+Vanguard+Connection+Guide",
+  date: "2026-07-08",
+  author: "Equipo de Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, EVE Online, conexión, Quasar, Warclone, Resonant Cyphers, New Eden"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Conexión Principal**: El juego utiliza un backend compartido para vincular los despliegues de Warclones en la superficie planetaria directamente con las acciones de los Capsuleers en el espacio de EVE Online.
+- **Arquitectura Técnica**: La integración en tiempo real es impulsada por el **backend Quasar** de CCP, utilizando una Arquitectura Orientada a Eventos (EDA) para unir ambos juegos.
+- **Bucle Principal**: Completar contratos planetarios en EVE Vanguard influye directamente en la corrupción del sistema, la supresión y los eventos mundiales espaciales.
+- **Economía Compartida**: Los jugadores pueden adquirir **Resonant Cyphers** y valiosos planos en la superficie para comerciar o fabricar activos en órbita.
+- **Lanzamiento Previsto**: Los desarrolladores aspiran a establecer un **vínculo persistente 24/7** entre ambos juegos para finales de 2026.
+</Callout>
+
+<Section icon={Map} title="Cómo la conexión de EVE Vanguard con EVE Online moldea New Eden">
+
+Los campos de batalla planetarios de New Eden ya no están aislados de la masiva economía espacial superior. El diseño central de EVE Vanguard se basa en una conexión directa con EVE Online, creando un frente de guerra unificado donde las acciones en el suelo resuenan directamente a través de las estrellas. Los jugadores se despliegan en la superficie como Warclones inmortales para completar contratos de alto riesgo, recolectar recursos y extraer tecnología valiosa. 
+
+En lugar de ser un spin-off genérico, EVE Vanguard sirve como la extensión táctica en el terreno del MMO principal. Esta conexión garantiza que cada expedición planetaria contribuya a las luchas territoriales y políticas en curso de las principales facciones de New Eden.
+
+**Puntos destacados del video:**
+- **Universo Compartido**: Cómo las victorias en tierra impactan la soberanía orbital y la guerra de facciones.
+- **Warclones Inmortales**: El trasfondo del grupo mercenario Arkombine y la tecnología Sleeper.
+- **Datos en Tiempo Real**: Una breve mirada a cómo se comunican los servidores backend entre ambos clientes.
+
+<YouTubeEmbed videoId="BTHEAhA3Moc" title="EVE Vanguard - Conectado a EVE Online" />
+
+<Callout type="tip" title="Alineación Estratégica">
+Alinear tus despliegues planetarios con los sistemas activos de Guerra de Facciones en EVE Online maximiza tu impacto en el esfuerzo bélico, generando recursos valiosos para tus corporaciones aliadas.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="El Backend Quasar: Cómo funciona la conexión">
+
+El vínculo entre EVE Vanguard y EVE Online es posible gracias a la infraestructura de backend personalizada de CCP Games, conocida como **Quasar**. Aunque ambos juegos funcionan con motores completamente diferentes —EVE Online en su código base heredado y EVE Vanguard en Unreal Engine 5—, se comunican casi en tiempo real mediante una Arquitectura Orientada a Eventos (EDA).
+
+Cuando un Warclone completa un objetivo en un planeta hostil, el backend de Vanguard actúa como un publicador de confianza. Envía paquetes de datos estructurados directamente a Quasar a través de una red privada altamente segura utilizando gRPC y protocol buffers. 
+
+| Componente Backend | Función Principal | Impacto en los Jugadores |
+| :--- | :--- | :--- |
+| **Cliente de Vanguard** | Envía datos de combate y eventos de contrato en tiempo real | Rastrea las acciones del jugador en el suelo |
+| **Pasarela Quasar** | Procesa eventos entrantes y verifica de forma segura los estados del juego | Une los dos motores de juego independientes |
+| **Servicios de EVE Online** | Agrega datos a los sistemas activos de Guerra de Facciones | Modifica los niveles de corrupción o supresión en todo el sistema |
+
+<CardGrid cols={2}>
+  <Card title="Arquitectura Orientada a Eventos">
+    - **Diseño Escalable**: Permite que ambos juegos escalen de forma independiente sin afectar la estabilidad del servidor.
+    - **Sistemas Desacoplados**: Los cambios de estado (como el desacoplamiento de un personaje o la finalización de un contrato) se publican en un bus de mensajes central.
+    - **Actualizaciones en Tiempo Real**: Las acciones en tierra actualizan las estadísticas de Guerra de Facciones en el espacio en milisegundos.
+  </Card>
+  <Card title="Integración Segura gRPC">
+    - **Publicador de Confianza**: Los servidores de Vanguard se validan dentro de la red privada de CCP mediante certificados PKI.
+    - **Comunicación Rápida**: Minimiza la latencia entre las extracciones planetarias y los cambios en el mercado orbital.
+    - **Preparado para el Futuro**: Sienta las bases técnicas para eventos interactivos bidireccionales en tiempo real.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Nota Técnica">
+Esta conexión en tiempo real significa que un escuadrón de jugadores que completa un contrato de hackeo en EVE Vanguard puede alterar inmediatamente la firma de radar de una estación espacial o desbloquear opciones de ataque orbital para flotas aliadas en EVE Online.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Operación Avalon: Eventos Mundiales Compartidos y Recompensas">
+
+La **prueba de juego Alfa de la Operación Avalon** (del 7 al 20 de julio de 2026) muestra la conexión directa de jugabilidad entre ambos títulos. Durante este evento, las acciones de los Warclones en el suelo activan directamente oportunidades únicas para los Capsuleers que vuelan en el espacio.
+
+Cuando los jugadores de Vanguard completan con éxito expediciones planetarias, generan **Puntos Globales** que contribuyen a una barra de progreso compartida en todo el universo. Una vez que este indicador se llena, aparecen anomalías únicas y convoyes de alto valor en el espacio de EVE Online, creando oportunidades inmediatas de PvE y PvP para los pilotos espaciales.
+
+<Steps>
+  <Step num="1" title="Completar Contratos en Tierra">
+    Los jugadores de Vanguard se despliegan en el **campo de batalla del Convoy Perdido**, completando objetivos de hackeo, salvamento y combate.
+  </Step>
+  <Step num="2" title="Generar Resonant Cyphers">
+    Las extracciones exitosas otorgan a los jugadores planetarios y a los pilotos espaciales **Vanguard Resonant Cyphers**.
+  </Step>
+  <Step num="3" title="Activar Anomalías Espaciales">
+    Los puntos acumulados activan borrascas AEGIS especiales y convoyes asaltables en sistemas solares designados en EVE Online.
+  </Step>
+  <Step num="4" title="Canjear en Comerciantes del Imperio">
+    Los Capsuleers recolectan Resonant Cyphers y los intercambian en los principales centros comerciales por recompensas exclusivas de facción.
+  </Step>
+</Steps>
+
+| Tipo de Sistema Objetivo | Actividad Conectada | Recompensa de Evento Compartido |
+| :--- | :--- | :--- |
+| **Zonas Terrestres de Vanguard** | Recolección de recursos y combate de la Legión de Mordu | Planos, chipsets de armas y minerales en bruto |
+| **Sitios Espaciales de EVE Online** | Asalto a convoyes, hackeo de bóvedas de datos y salvamento | Puntos de Habilidad, potenciadores volátiles y SKINs personalizadas |
+| **Centros de Comercio del Imperio** | Intercambio de Resonant Cyphers con agentes de facción | Estabilizadores inerciales modificados de Lorharyth, drones de facción |
+
+<Callout type="warning" title="Reglas de Botín">
+Al igual que en EVE Online, EVE Vanguard presenta una mecánica de muerte con pérdida total. Si tu Warclone es eliminado antes de llegar a la zona de extracción, todos los recursos recolectados, chipsets de armas y planos no canjeados se pierden permanentemente.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Interoperabilidad Industrial y Económica">
+
+La conexión entre EVE Vanguard y EVE Online se extiende profundamente en las economías de los juegos. En New Eden, todo es impulsado por los jugadores, y los desarrolladores están integrando activamente a Vanguard en este legendario ecosistema económico. 
+
+Aunque te arriesgas a perder tu equipamiento activo al morir, una extracción exitosa te permite asegurar **planos**. Estos planos son muy valiosos porque te permiten fabricar copias de armas y equipo en órbita utilizando materiales recolectados de la minería planetaria y el saqueo de contenedores.
+
+<Checklist
+  id="economic-integration"
+  title="Vínculos Económicos Clave para Dominar:"
+  items={[
+    "Asegura planos de armas durante las extracciones planetarias para fabricar copias en órbita [1.2.4].",
+    "Extrae minerales planetarios raros que solo se encuentran en los campos de batalla disputados de Vanguard.",
+    "Comercia con salvamento de alta tecnología extraído en el mercado regional de EVE Online para ganar ISK.",
+    "Apoya las líneas de fabricación de tu corporación suministrando núcleos de datos planetarios."
+  ]}
+/>
+
+<Callout type="success" title="Consejo de Fabricación">
+Prioriza siempre la extracción de planos sobre los recursos comunes. Los planos te permiten evitar el alto costo de comprar armas prefabricadas a los comerciantes del mercado, asegurando tus esfuerzos bélicos a largo plazo.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Conectar tus Cuentas y Comenzar">
+
+Para experimentar el universo conectado de New Eden, los jugadores deben vincular sus perfiles a través de un iniciador unificado. Debido a que los juegos están profundamente integrados, no necesitas gestionar cuentas separadas para disfrutar de ambas experiencias.
+
+| Paso | Acción Requerida | Detalles |
+| :--- | :--- | :--- |
+| **1** | Descargar el Iniciador de EVE | Instala el iniciador oficial desde el sitio web de EVE Vanguard. |
+| **2** | Iniciar Sesión o Registrarse | Usa tu cuenta existente de EVE Online o crea una nueva. |
+| **3** | Instalar EVE Vanguard | Selecciona la pestaña Vanguard en el iniciador y asigna 50 GB de espacio en SSD. |
+| **4** | Desplegarse en la Superficie | Inicia el cliente del juego y comienza a completar contratos conectados. |
+
+<Callout type="info" title="Compatibilidad del Iniciador">
+Durante las ventanas de prueba Alfa activas, puedes iniciar EVE Vanguard directamente desde el Iniciador de EVE Online. El progreso de tu personaje y la reputación de facción se sincronizarán automáticamente entre ambos títulos.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Está EVE Vanguard conectado a EVE Online de forma permanente?",
+    answer: "Sí. Aunque los jugadores pueden participar en cualquiera de los dos juegos de forma independiente, los desarrolladores están construyendo EVE Vanguard para que esté directamente conectado a EVE Online, con planes para un vínculo persistente 24/7 para finales de 2026."
+  },
+  {
+    question: "¿Afectan las acciones en EVE Vanguard a la economía de EVE Online?",
+    answer: "Sí. Los jugadores de Vanguard pueden extraer planos y recursos planetarios raros que alimentan directamente las redes de fabricación y comercio de los mercados regionales de EVE Online."
+  },
+  {
+    question: "¿Qué pasa con mi equipo en EVE Vanguard cuando muero?",
+    answer: "EVE Vanguard presenta una mecánica de muerte con pérdida total similar a la de EVE Online. Si mueres antes de la extracción, pierdes todo el equipo físico que llevaba tu Warclone, aunque los planos asegurados permanecen a salvo en órbita."
+  },
+  {
+    question: "¿Cómo vincula el backend Quasar los dos juegos?",
+    answer: "El backend Quasar utiliza una Arquitectura Orientada a Eventos (EDA) para traducir los logros en tierra en EVE Vanguard en actualizaciones en tiempo real de corrupción y supresión de la guerra de facciones en EVE Online."
+  }
+]} />
+
+</Section>

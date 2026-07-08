@@ -1,0 +1,156 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Tipps: Die besten Überlebens- & Extraktionsstrategien",
+  description: "Meistern Sie EVE Vanguard mit essenziellen Tipps zu Kampf, Ressourcensammlung, Loadouts und dem Überleben auf den unerbittlichen Schlachtfeldern von New Eden.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/121b2d/00f0ff?text=Vanguard+Survival+Tips",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team",
+  keywords: "EVE Vanguard, Tipps, Überlebensstrategie, Extraktion, Guide, New Eden, Combat Meta"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- **Hauptziel**: Landen Sie als unsterblicher Warclone auf der Planetenoberfläche, schließen Sie riskante Verträge ab, sammeln Sie seltene Ressourcen und extrahieren Sie sicher [base-info].
+- **Kampf-Meta**: Beherrschen Sie den starken Waffenrückstoß durch kurze Feuerstöße, nutzen Sie Nahkampf-Finisher in engen Räumen und verwenden Sie die korrekten Munitionstypen.
+- **Überlebenspriorität**: Bauen Sie sofort nach der Landung einen platzierbaren Schild, um Ihren Trupp vor plötzlichen Feuergefechten zu schützen.
+- **Extraktionswahl**: Behalten Sie den Map-Timer genau im Auge; Orbitalbombardements zerstören im Verlauf des Matches systematisch die Extraktionspunkte.
+- **Fortschrittsschleife**: Nutzen Sie extrahierte Technologie, um Blaupausen zu kaufen und Waffen-Upgrades in Ihrem Warbarge-Hangar herzustellen.
+</Callout>
+
+<Section icon={Map} title="EVE Vanguard Tipps für Anfänger">
+
+Das Betreten der planetaren Schlachtfelder von New Eden erfordert einen scharfen Verstand und schnelle Reflexe. Um in diesem Sandbox-Extraction-Shooter erfolgreich zu sein, müssen Sie den grundlegenden Zyklus aus Einsatz, Plündern, Kämpfen und Extrahieren verstehen [base-info]. Erfolg hängt nicht nur vom besten Aiming ab; es geht darum, unter extremem Druck kluge, kalkulierte Entscheidungen zu treffen.
+
+| Tipp-Kategorie | Schlüsselaktion | Taktischer Vorteil | Priorität |
+| :--- | :--- | :--- | :--- |
+| **Audio-Wahrnehmung** | Hochwertige Kopfhörer nutzen | Lokalisiert feindliche Schritte und Schüsse in mehrstöckigen Gebäuden | ★★★★★ |
+| **Munitionsvorbereitung** | Munition sofort vorbauen (Buffer-Craft) | Verhindert, dass Ihnen in plötzlichen PvP-Begegnungen die Kugeln ausgehen | ★★★★★ |
+| **Karten-Infos** | Tab für Minimap gedrückt halten | Verfolgt Points of Interest, feindliche Ziele und Verbündeten-Pings in Echtzeit | ★★★★☆ |
+| **Teamarbeit** | Push-to-Talk-Mikro nutzen | Koordiniert Flankierungsrouten und das Teilen von Ressourcen im Trupp | ★★★★☆ |
+
+<Callout type="tip" title="Profi-Tipp: Stille bedeutet Überleben">
+Vermeiden Sie es, auf Nicht-Spieler-Charaktere (NPCs) oder automatisierte Geschütztürme zu schießen, sofern es nicht absolut notwendig ist. Das Echo der Schüsse verrät rivalisierenden Spielern Ihren genauen Standort und macht Sie anfällig für sofortige Flankenangriffe.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Kampf und Waffenanpassung">
+
+Das Gunplay in diesem Extraction-Shooter ist hochgradig taktisch und zeichnet sich durch signifikanten Rückstoß und modulare Waffensysteme aus. Zu wissen, wie man seine Waffen-Chipsätze konfiguriert und Schadenstypen im laufenden Betrieb wechselt, entscheidet darüber, ob Sie ein Feuergefecht gewinnen oder verlieren [base-info]. 
+
+<CardGrid cols={3}>
+  <Card title="Kinetische Munition">
+    - **Günstig herzustellen** aus Basisressourcen
+    - Hochwirksam gegen Standard-**NPC-Ziele**
+    - Standard-Munitionstyp bei der Landung
+  </Card>
+  <Card title="Energie-Munition">
+    - Benötigt **abgebaute Ressourcen** zur Herstellung
+    - Extrem effektiv gegen **rivalisierende Spieler**
+    - Durchschlägt Schilde und Missionsziele
+  </Card>
+  <Card title="Nova-Klinge (Nahkampf)">
+    - Handgeschmiedete Nahkampfwaffe [homepage-modules-1]
+    - Verursacht sofort **massiven Schaden**
+    - Perfekt für lautlose CQB-Finisher
+  </Card>
+</CardGrid>
+
+Um Ihre Kampeffizienz zu maximieren, zielen Sie über Visier (ADS) auf ein Ziel. Das intelligente Fadenkreuz analysiert den Feind und zeigt dessen spezifische Schadensanfälligkeiten an.
+
+| Waffensystem | Feuermodus | Beste Reichweite | Optimaler Chipsatz |
+| :--- | :--- | :--- | :--- |
+| **SMG** | Vollautomatisch | Nahbereich | Schadensverstärker, Feuerrate |
+| **Laser DMR** | Halbautomatisch | Große Distanz | Präzisionsoptik, Bedrohungssensor |
+| **Beam Rifle** | Kontinuierlich | Mittlere Distanz | Energieeffizienz, Kühlkörper [homepage-modules-1] |
+
+<Callout type="warning" title="Rückstoß-Warnung">
+Dauerfeuer ohne Kontrolle führt dazu, dass Sie die meisten Schüsse verfehlen. Nutzen Sie immer kurze, kontrollierte Feuerstöße oder den Einzelschuss-Modus, um die Genauigkeit zu wahren.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Schritt-für-Schritt Überlebens- und Fortschrittsguide">
+
+Um einen erfolgreichen Zyklus aus Einsätzen und Upgrades zu etablieren, müssen Sie bei jedem Match einem strukturierten Ansatz folgen. Nutzen Sie diesen Leitfaden, um Ihre Beute zu sichern und ein mächtiges Arsenal aufzubauen.
+
+<Steps>
+  <Step num="1" title="Landung absichern">
+    Öffnen Sie sofort nach der Landung Ihr Handwerksmenü (standardmäßig 'Z') und bauen Sie einen **platzierbaren Schild**. Dies bietet Ihrem Trupp sofortige Deckung.
+  </Step>
+  <Step num="2" title="Vertrag auswählen">
+    Öffnen Sie Ihr Vertragsmenü (Feststelltaste) und wählen Sie ein aktives Ziel aus. Konzentrieren Sie sich auf das Finden elektronischer Bauteile in Bodenkisten, da diese am einfachsten zu sichern sind.
+  </Step>
+  <Step num="3" title="Plündern und Bergbau">
+    Erkunden Sie Absturzstellen und Installationen, um Technologie, Relikte und Ressourcen zu bergen [base-info]. Sammeln Sie **Biomasse** von besiegten Feinden; dies ist die einzige Ressource, mit der Sie Ihre Basis-Gesundheit heilen können.
+  </Step>
+  <Step num="4" title="Upgrade am Warbarge">
+    Kehren Sie nach einem erfolgreichen Run zu Ihrem Hangar zurück, um Blaupausen zu kaufen. Die Herstellung von Waffen aus Blaupausen ist wesentlich kosteneffizienter als der Direktkauf von Waffen, besonders da man ausgerüstete Ausrüstung bei Tod verliert.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Heilungsmechanik">
+Während sich Ihre kinetischen Schilde automatisch regenerieren, wenn Sie einige Sekunden in Deckung gehen, tut dies Ihre Basis-Gesundheit nicht. Sie müssen die Heilungstaste gedrückt halten (standardmäßig 3), um gesammelte Biomasse zu verbrauchen und Ihren Gesundheitsbalken wieder aufzufüllen.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Extraktionstaktiken und Risikomanagement">
+
+Die Extraktion ist der ultimative Überlebinstest. Je länger Sie auf dem Planeten bleiben, desto besser wird die Beute – aber die Umgebung und feindliche Spieler werden deutlich aggressiver [base-info].
+
+| Extraktionsphase | Umweltgefahr | Taktische Reaktion |
+| :--- | :--- | :--- |
+| **Frühe Phase** | Geringe Spielerdichte, 5 aktive Extraktionspunkte | Fokus auf Abschluss von Verträgen und Sammeln von Ressourcen |
+| **Mittlere Phase** | Bombardements beginnen, Extraktionspunkte zu schließen | Behalten Sie den Map-Timer im Auge und lokalisieren Sie verbleibende Punkte |
+| **Späte Phase** | Nur noch 1 Extraktionspunkt ist aktiv | Rechnen Sie mit schwerem PvP-Camping; koordinieren Sie den Push mit Ihrem Trupp |
+
+<Callout type="danger" title="Orbitalbombardements">
+Lassen Sie sich nicht in den roten Bombardierungszonen erwischen. Diese Orbitalschläge zerstören systematisch die Extraktionspunkte (Harmonic Bridges) nacheinander und töten Ihren Warclone sofort.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Checkliste für Einsatzziele">
+
+Nutzen Sie diese Checkliste, um Ihren Fortschritt zu verfolgen und sicherzustellen, dass Sie den Wert jedes einzelnen Planeten-Einsatzes maximieren.
+
+<Checklist
+  id="vanguard-goals"
+  title="Essenzielle Einsatz-Meilensteine:"
+  items={[
+    "Defensivschild innerhalb von 10 Sekunden nach der Landung aufstellen [1.1.2]",
+    "Genug Rohressourcen sammeln, um 60 Schuss Energiemunition herzustellen",
+    "Mindestens ein hochwertiges elektronisches Bauteil oder Relikt sichern",
+    "Biomasse von einem gefallenen Feind bergen, um die Gesundheit aufzufüllen",
+    "Erfolgreich über eine Harmonic Bridge extrahieren, bevor das finale Bombardement beginnt"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Häufig gestellte Fragen (FAQ)">
+
+<FAQ items={[
+  {
+    question: "Wie heile ich meinen Charakter während einer Mission?",
+    answer: "Ihr Energieschild regeneriert sich nach einigen Sekunden außerhalb des Kampfes automatisch, aber Ihre Basis-Gesundheit benötigt Biomasse. Sie müssen Biomasse von toten Spielern oder NPCs plündern und die Heilungstaste gedrückt halten, um die Gesundheit wiederherzustellen."
+  },
+  {
+    question: "Was passiert mit meiner Beute, wenn die Extraktion fehlschlägt?",
+    answer: "Wenn Sie sterben oder es nicht rechtzeitig zu einer aktiven Harmonic Bridge schaffen, bevor die Orbitalbombardements diese zerstören, wird Ihr physischer Warclone vernichtet und Sie verlieren alle mitgeführten Ressourcen und Ausrüstungsgegenstände."
+  },
+  {
+    question: "Warum sollte ich Waffen-Blaupausen statt fertiger Waffen kaufen?",
+    answer: "Blaupausen ermöglichen es Ihnen, Waffen wiederholt unter Verwendung von Rohressourcen herzustellen. Da der Tod zum Verlust Ihrer Ausrüstung führt, bieten Blaupausen eine sehr kosteneffiziente Methode, um Ihre Loadouts wieder aufzubauen."
+  }
+]} />
+
+</Section>
