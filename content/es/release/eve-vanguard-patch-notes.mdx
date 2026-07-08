@@ -1,0 +1,168 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Notas del parche de EVE Vanguard: Operación Avalon y hoja de ruta futura",
+  description: "Explora las últimas notas del parche de EVE Vanguard, incluyendo la Operación Avalon v0.71, el sistema de disparo mejorado y el próximo puente económico con EVE Online.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Operation+Avalon+Patch+Notes",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Notas del parche de EVE Vanguard**: Destaca la transición desde las pruebas pre-alfa hasta la versión pulida de la Operación Avalon v0.71 [16, 17].
+- **Operación Avalon**: Introduce el nuevo mapa Lost Convoy, un sistema de disparo renovado y vendedores del mercado [15].
+- **Conexión con EVE Online**: Próximas campañas planetarias y el innovador puente económico de saqueo de cementerios de naves [1].
+- **Adiciones clave al combate**: Fuerzas de la Legión de Mordu más resistentes, francotiradores (Marksman) y opresores pesados [1, 15].
+</Callout>
+
+<Section icon={Map} title="Notas del parche de EVE Vanguard: Resumen de la Operación Avalon">
+
+Las últimas **notas del parche de EVE Vanguard** marcan un paso gigante para este shooter sandbox persistente, pasando de pruebas pre-alfa preliminares a fases operativas altamente pulidas [15, 17]. La Operación Avalon representa la culminación de un intenso desarrollo, ofreciendo mejoras importantes en el combate principal, la exploración planetaria y la economía general del juego [1, 15]. 
+
+**Puntos destacados del video:**
+- **La visión de Vanguard**: Por qué CCP está construyendo un shooter eterno conectado directamente con el universo de EVE Online [1].
+- **Lore de los clones (Walk Clone)**: Los orígenes narrativos de los Deathless, el Graft y la huida del Fulcrum [1].
+- **El puente económico**: Cómo el próximo ciclo de "cementerios" conecta a las tropas terrestres en los planetas con los capsulistas en el espacio [1].
+
+<YouTubeEmbed videoId="PXCqjwt5y_Q" title="EVE Fanfest | Conferencia de EVE Vanguard" />
+
+La actualización v0.71 actual se basa directamente en los cimientos establecidos en fases de prueba anteriores como la Operación Nemesis y la Operación Groundbreak [16, 17]. Al perfeccionar el ciclo de disparo del momento a momento, los desarrolladores han asegurado que el juego esté a la altura de los shooters competitivos AAA modernos [1].
+
+<Callout type="success" title="Hito importante de progresión">
+La Operación Avalon establece el bucle de juego esencial: desplegarse mediante puentes armónicos, asaltar activos planetarios de gran valor, recolectar recursos y extraer antes de que las fuerzas de defensa planetaria abrumen a tu escuadrón [1, 15].
+</Callout>
+
+| Versión de la actualización | Enfoque principal | Características clave introducidas |
+|---|---|---|
+| **v0.71 (Avalon)** | Jugabilidad y estabilidad | Correcciones de emparejamiento, pulido de inventario, mejoras de IU y audio [14]. |
+| **v0.70 (Avalon)** | Expansión de contenido | Mapa Lost Convoy, 5 armas nuevas, vendedores de mercado, fabricación [15]. |
+| **v0.70 (Nemesis)** | Combate e IA | Refuerzos de PNJ, correcciones en el comportamiento de los drones, manejo de armas [16]. |
+| **v0.30 (Groundbreak)** | Sistemas sandbox | Mapa estelar, PvP de insurgencia vinculado a EVE, fabricación del mercado negro [17]. |
+
+</Section>
+
+<Section icon={Swords} title="Nuevo mapa, armas y facciones enemigas">
+
+La joya de la corona de las notas recientes del parche es el **mapa Lost Convoy**, un entorno visualmente distintivo repleto de lore auténtico de EVE, balizas orbitales y restos masivos de puestos de avanzada [1]. A diferencia de los terrenos genéricos de ciencia ficción, este mapa cuenta con siete puntos de interés únicos diseñados para desafiar las tácticas de escuadrón [1].
+
+Para sobrevivir a estos entornos, los jugadores tienen acceso a un arsenal ampliado de armas específicas de cada facción, junto con amenazas planetarias más difíciles [1, 15].
+
+<CardGrid cols={3}>
+  <Card title="Subfusil Minmatar">
+    - **Estética rústica**: Presenta un aspecto desgastado y ensamblado con pernos [1].
+    - **Combate cercano**: Alta cadencia de fuego perfecta para los pasillos estrechos de los puestos de avanzada [1].
+    - **Fiabilidad**: Excelente manejo en escaramuzas caóticas [1].
+  </Card>
+  <Card title="Rifle láser Amarr">
+    - **Diseño elegante**: Arquitectura cerrada que recuerda a la tecnología de consumo de alta gama [1].
+    - **Variaciones**: Cuenta con modos DMR de pulso y DMR de haz completo [1].
+    - **Mecánica de sobrecalentamiento**: Requiere una gestión cuidadosa del calor y recargas de cristales [1].
+  </Card>
+  <Card title="Legión de Mordu">
+    - **Opresores pesados**: Enemigos blindados que se despliegan para intensificar los tiroteos [1, 15].
+    - **Unidades de tiradores**: Francotiradores que toman posiciones elevadas en los edificios [1].
+    - **Líderes de escuadrón**: Objetivos de élite que llevan códigos de acceso para asegurar cámaras acorazadas [1].
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Objetivos de alto valor">
+Para entrar en la torre de combustible de Upwell, debes localizar a un líder de escuadrón de reserva de la Legión de Mordu, eliminarlo, asegurar su código de descifrado y eludir los sistemas de seguridad automatizados [1].
+</Callout>
+
+| Característica | Detalles | Recomendación táctica |
+|---|---|---|
+| **Torre de combustible de Upwell** | Zona de alto riesgo junto al bloque de mando principal [1]. | Forma equipo con otros escuadrones para eliminar a los defensores pesados [1]. |
+| **Bloque de mando de Upwell** | Edificio totalmente explorable que alberga botín de primer nivel [1]. | Ten cuidado con los escuadrones de terceros que esperan para emboscar [1]. |
+| **Puente armónico** | Dispositivo de teletransporte improvisado utilizado para la extracción [1]. | Defiende el puente de las fuerzas de Aegis durante la extracción [1]. |
+
+</Section>
+
+<Section icon={Target} title="Guía de despliegue y extracción paso a paso">
+
+Tener éxito en la Operación Avalon requiere comprender el ciclo de extracción principal [1]. Ya sea que busques planos de fabricación raros o información táctica, seguir un plan de despliegue estructurado es clave para la supervivencia [1].
+
+<Steps>
+  <Step num="1" title="Despliegue orbital">
+    Despliégate en el mapa Lost Convoy a través de puentes armónicos, eligiendo tus coordenadas de caída según los objetivos de tu escuadrón [1].
+  </Step>
+  <Step num="2" title="Adquirir información">
+    Infiltrate en complejos militares o en el bloque de mando de Upwell para recopilar datos críticos sobre el protocolo Aegis Nemesis [1].
+  </Step>
+  <Step num="3" title="Eliminar líderes de escuadrón">
+    Rastrea objetivos de élite de la Legión de Mordu para asegurar códigos de acceso para cámaras de botín de alto nivel bloqueadas [1].
+  </Step>
+  <Step num="4" title="Asegurar y extraer">
+    Inicia la secuencia de extracción del puente armónico y defiende la zona contra las oleadas de fuerzas de Aegis que se aproximan hasta el teletransporte [1].
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Asalto cooperativo">
+Los opresores pesados que defienden la torre de combustible son increíblemente resistentes [1]. Considera alianzas temporales con escuadrones rivales para limpiar las defensas antes de repartirse el botín [1].
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="La conexión con EVE Online: Campañas y contrabando">
+
+EVE Vanguard está diseñado para ser un compañero permanente de EVE Online [1]. Esta conexión pronto se manifestará a través de dos sistemas innovadores: campañas militares compartidas y un puente económico físico [1].
+
+Los jugadores de Vanguard se desplegarán para resolver objetivos planetarios que impactan directamente en la guerra de facciones en curso y los estados de control del sistema en EVE Online [1]. Además, un ciclo de comercio dinámico que involucra módulos de naves perdidos pronto vinculará ambas economías [1].
+
+<Checklist
+  id="campaign-rewards"
+  title="Recompensas de campaña e hitos de progresión:"
+  items={[
+    "Planos de armas específicos de facción y diseños de variantes [1]",
+    "Paquetes de recursos para acelerar la fabricación del mercado negro [1]",
+    "Llaves de acceso a salas y vendedores de facciones restringidas [1]",
+    "Títulos de personaje exclusivos y cosméticos militares [1]"
+  ]}
+/>
+
+<Callout type="info" title="El sistema de saqueo de cementerios de naves">
+Cuando las naves son destruidas en EVE Online, sus módulos entran en un cementerio específico del sistema [1]. Los jugadores de Vanguard pueden desplegarse en esos mismos sistemas, recuperar los restos como contrabando y venderlos de vuelta a los capsulistas [1].
+</Callout>
+
+| Activo económico | Origen | Público objetivo | Propósito |
+|---|---|---|---|
+| **Contrabando** | Recuperado por jugadores de Vanguard de los cementerios de naves [1]. | Comercializado con jugadores de EVE Online [1]. | Proporciona materiales y módulos raros [1]. |
+| **Mutaplásmidos** | Obtenidos por jugadores de EVE Online [1]. | Comercializados con jugadores de Vanguard [1]. | Se utilizan para generar estadísticas aleatorias en las armas [1]. |
+
+</Section>
+
+<Section icon={Shield} title="Preguntas frecuentes y recursos de la comunidad de EVE Vanguard">
+
+A medida que EVE Vanguard continúa evolucionando, mantenerse al día con las últimas notas del parche es esencial para mantener una ventaja competitiva [14, 15]. Únete a los canales oficiales de la comunidad para participar en pruebas de juego periódicas y proporcionar comentarios directos al equipo de desarrollo [1].
+
+<Callout type="success" title="Únete a Vanguard">
+Regístrate para las próximas pruebas de juego o solicita unirte al programa VIP para obtener acceso entre bastidores a las versiones de desarrollo y dar forma al futuro de New Eden [1].
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Dónde puedo encontrar las notas oficiales del parche de EVE Vanguard?",
+    answer: "Las notas oficiales del parche y las actualizaciones de lanzamiento se publican periódicamente en el sitio web de EVE Vanguard y en el servidor oficial de Discord."
+  },
+  {
+    question: "¿Cómo funciona la conexión entre EVE Vanguard and EVE Online?",
+    answer: "La conexión tiene dos niveles: los jugadores de Vanguard completan objetivos terrestres que influyen en las campañas de EVE Online, y un próximo sistema de comercio permitirá a los jugadores saquear cementerios de naves para obtener contrabando."
+  },
+  {
+    question: "¿Cuáles son las adiciones principales en la Operación Avalon?",
+    answer: "La Operación Avalon introduce el mapa Lost Convoy, un sistema de disparo renovado, cinco armas nuevas, vendedores de mercado, fabricación y enemigos de la Legión de Mordu más difíciles."
+  },
+  {
+    question: "¿Puedo jugar a EVE Vanguard en solitario o necesito un escuadrón?",
+    answer: "Aunque puedes desplegarte en solitario, se recomienda encarecidamente el juego cooperativo en escuadrón para el contenido de alto nivel, como asaltar la torre de combustible de Upwell o luchar contra opresores pesados."
+  }
+]} />
+
+</Section>

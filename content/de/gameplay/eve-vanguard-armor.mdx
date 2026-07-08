@@ -1,0 +1,183 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Rüstung: Anzug-Verbesserungen & Warclone-Anpassungs-Leitfaden",
+  description: "Meistern Sie das EVE Vanguard Rüstungssystem. Erfahren Sie, wie Sie Warclone-Anzüge verbessern, Ressourcen sammeln und in den rauen Umgebungen von New Eden überleben.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Armor+and+Suit+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Schnellstart-Anleitung">
+- **Primäres Keyword**: Das Verständnis des **eve vanguard armor**-Systems ist überlebenswichtig im extraktionsbasierten Gameplay von New Eden.
+- **Hauptmechanik**: Die Rüstung wird primär durch **Warclone-Anzüge** dargestellt, die mit Ressourcen verbessert und angepasst werden können, die bei planetaren Einsätzen gesammelt werden.
+- **Beste Strategie**: Konzentrieren Sie sich auf die Extraktion von **Schmuggelware** (Contraband), die gegen spezialisierte Währungen eingetauscht werden kann, um die Anzugwerte zu verbessern.
+- **Kritischer Tipp**: Überprüfen Sie vor dem Einsatz immer die Umgebung (Sümpfe vs. Dschungel), da verschiedene Rüstungsmodule Resistenzen gegen bestimmte Gefahren bieten.
+- **Beste Wahl**: Für Anfänger bietet der **Standard-Assault-Anzug** die beste Balance zwischen Mobilität und kinetischem Schutz.
+</Callout>
+
+<Section icon={Shield} title="Einführung in die Warclone-Rüstungssysteme">
+
+In der unbarmherzigen Landschaft von New Eden ist Ihre **eve vanguard armor** – fachsprachlich als Warclone-Anzug bekannt – das Einzige, was zwischen Ihnen und der endgültigen Eliminierung steht. Im Gegensatz zu herkömmlichen Shootern nutzt EVE Vanguard ein persistentes Ausrüstungssystem, bei dem jeder Einsatz erhebliche Risiken birgt. Ihr Anzug ist nicht nur eine kosmetische Entscheidung; er ist eine modulare Plattform, die über Ihr Überleben, Ihre Tragekapazität und Ihren taktischen Nutzen am Boden entscheidet.
+
+**Video-Highlights:**
+- **Persistentes Universum**: EVE Vanguard ist direkt mit der 20-jährigen Geschichte des MMOs EVE Online verknüpft.
+- **Schmuggelware-Mechanik**: Spieler können auf der Planetenoberfläche „verlorene Beute“ aus den Schiffsschlachten von EVE Online finden.
+- **Risiko bei der Extraktion**: Wenn die Extraktion fehlschlägt, verlieren Sie einen Teil Ihrer gesammelten Ressourcen und Ihres Anzugsfortschritts.
+- **Das Erbe der Warclones**: Als Vanguard sind Sie die verlängerte Hand der Kapselpiloten am Boden.
+
+<YouTubeEmbed videoId="yfWKUT5n7gs" title="EVE Vanguard Gameplay und Anzugs-Übersicht" />
+
+Das Rüstungssystem ist auf ständige Weiterentwicklung ausgelegt. Während Ihrer Teilnahme an **Operation Avalon** (vom 7. bis 20. Juli 2026) werden Sie feststellen, dass die Umgebung selbst Ihr größter Feind ist. Egal, ob Sie durch giftige Sümpfe oder gefährliche Dschungel navigieren – die Integrität Ihres Anzugs bestimmt, wie lange Sie in der „Todeszone“ bleiben können, bevor Sie extrahieren müssen.
+
+<Callout type="tip" title="Profi-Tipp">
+Konzentrieren Sie sich zu Beginn der Alpha zuerst auf die Verbesserung Ihrer **Schild-Ladegeräte** (Shield Rechargers). Kinetischer Schaden durch NPC-Gegner ist zwar häufig, aber Umweltgefahren nagen an Ihrer Gesundheit, wenn Ihre Schilde zu lange unten bleiben.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Rüstungstypen und taktische Rollen">
+
+EVE Vanguard bietet verschiedene Anzugkonfigurationen, die auf bestimmte Spielstile zugeschnitten sind. Während sich die aktuelle Alpha auf ein Kernset von Modulen konzentriert, ermöglicht Ihnen der Fortschrittspfad, Ihre **eve vanguard armor** für verschiedene Kampfszenarien zu spezialisieren. Die Wahl der richtigen Rolle entscheidet über eine erfolgreiche Extraktion oder den totalen Verlust der Ausrüstung.
+
+| Anzugsrolle | Hauptstärke | Mobilitätsbewertung | Schutzstufe | Bester Einsatzzweck |
+| :--- | :--- | :--- | :--- | :--- |
+| **Assault** | Ausgewogener Kampf | Hoch | Moderat | Allzweck / PvP |
+| **Recon** | Tarnung & Geschwindigkeit | Exzellent | Niedrig | Ressourcensammeln |
+| **Heavy** | Schadensabsorption | Niedrig | Maximal | Bossbegegnungen / Verteidigung |
+| **Support** | Technischer Nutzen | Moderat | Moderat | Teambasierte Einsätze |
+
+<CardGrid cols={3}>
+  <Card title="Frontlinien-Kämpfer">
+    - **Hohe kinetische Resistenz**
+    - Schnelleres Nachladen
+    - Ideal für aggressive Spielstile
+  </Card>
+  <Card title="Extraktions-Spezialist">
+    - **Mehr Inventarplätze**
+    - Verbesserte Ausdauerregeneration
+    - Fokus auf schnelles Plündern und Verschwinden
+  </Card>
+  <Card title="Umwelt-Spezialist">
+    - **Toxinresistenz-Module**
+    - Thermische Abschirmung
+    - Überleben in extremen Biomen
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Anzuganpassung">
+Die Anpassung in EVE Vanguard erfolgt vor dem Einsatz über das „Fitting“-Menü. Sie müssen Ihr Energienetz (Powergrid) und Ihre CPU-Auslastung ausbalancieren – eine Mechanik, die EVE Online-Spielern vertraut ist –, um sicherzustellen, dass alle Rüstungsmodule ordnungsgemäß funktionieren.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Herstellung und Verbesserung Ihrer Rüstung">
+
+Die Verbesserung Ihrer **eve vanguard armor** erfordert einen stetigen Nachschub an Ressourcen, die Sie an verschiedenen Points of Interest (POIs) in New Eden finden. Das Herstellungssystem ist gestuft, was bedeutet, dass Sie zuerst das grundlegende Überleben meistern müssen, bevor Sie hochwertige militärische Panzerung ausrüsten können.
+
+<Steps>
+  <Step num="1" title="Ressourcenbeschaffung">
+    Durchsuchen Sie Wracks von Kriegsschiffen und erkunden Sie giftige Sümpfe, um Rohstoffe wie Polykarbonate und reaktive Metalle zu finden.
+  </Step>
+  <Step num="2" title="Blaupausen-Forschung">
+    Erwerben Sie Anzugsblaupausen, indem Sie Verträge abschließen oder seltene Datenfragmente in Nemesis-Begegnungen finden.
+  </Step>
+  <Step num="3" title="Modulfertigung">
+    Nutzen Sie das Fertigungsterminal auf Ihrem Heimatschiff, um Rohstoffe in funktionale Rüstungsmodule umzuwandeln.
+  </Step>
+  <Step num="4" title="Anzug-Integration">
+    Rüsten Sie die neuen Module in Ihrem Warclone-Anzug aus und achten Sie darauf, die Energiekapazität des Anzugs nicht zu überschreiten.
+  </Step>
+</Steps>
+
+| Materialtyp | Seltenheit | Fundort | Hauptverwendungszweck |
+| :--- | :--- | :--- | :--- |
+| **Einfacher Schrott** | Häufig | Kriegsschiffwracks | Grundlegende Reparaturen |
+| **Reaktive Metalle** | Ungewöhnlich | Industriegebiete | Kinetische Panzerung |
+| **Giftige Flora** | Selten | Giftige Sümpfe | Biogefahren-Resistenz |
+| **Schmuggelware** | Exotisch | EVE-Schlachtfelder | Hochwertige Augmentierungen |
+
+<Callout type="warning" title="Verlustrisiko">
+Denken Sie daran, dass hochwertige Rüstungsmodule nicht dauerhaft sind. Wenn Sie besiegt werden und die Extraktion fehlschlägt, besteht eine hohe Wahrscheinlichkeit, dass Ihre wertvollsten Anzugkomponenten verloren gehen oder irreparabel beschädigt werden.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Die Schmuggelware-Verbindung">
+
+Eines der einzigartigsten Merkmale des Fortschritts der **eve vanguard armor** ist die Verbindung zum MMO EVE Online. Wenn im Weltraum über den Planeten gewaltige Schlachten zwischen Spielern stattfinden, gehen technisch gesehen 30 % der zerstörten Beute „verloren“. In EVE Vanguard manifestiert sich diese verlorene Ausrüstung als **Schmuggelware** (Contraband).
+
+Das Finden und Extrahieren dieser Schmuggelware ermöglicht es Ihnen, über einen spezialisierten Markt mit Kapselpiloten (EVE Online-Spielern) zu handeln. Dadurch entsteht eine Kreislaufwirtschaft, in der Ihre Aktionen am Boden durch die Zerstörung in den Sternen angeheizt werden.
+
+| Beutequelle | Potenzielle Belohnung | Risikostufe | Marktwert |
+| :--- | :--- | :--- | :--- |
+| **NPC-Konvois** | Standardmaterialien | Moderat | Niedrig |
+| **Nemesis-Begegnungen** | Fortgeschrittene Blaupausen | Hoch | Moderat |
+| **Schiffswracks** | Schmuggelware-Kisten | Extrem | Hoch |
+| **Versteckte Lager** | Seltene Tech-Module | Niedrig | Variabel |
+
+<Callout type="success" title="Wirtschaftlicher Vorteil">
+Der Rückverkauf von Schmuggelware an die ursprünglichen Besitzer oder auf dem freien Markt verschafft Ihnen eine spezialisierte Währung. Diese Währung ist die einzige Möglichkeit, **Prototyp-Rüstungen** zu erwerben, die nicht auf normalem Weg hergestellt werden können.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Checkliste für Rüstungswartung und Überleben">
+
+Um sicherzustellen, dass Ihre **eve vanguard armor** über mehrere Einsätze hinweg effektiv bleibt, müssen Sie einen strengen Wartungsplan einhalten. Während einer Mission erlittener Schaden verringert die maximale Haltbarkeit Ihres Anzugs, bis er in Ihrer Heimatbasis repariert wird.
+
+<Checklist
+  id="armor-maintenance"
+  title="Checkliste vor dem Einsatz:"
+  items={[
+    "Haltbarkeit des Anzugs überprüfen und notwendige Reparaturen durchführen",
+    "Energienetz (Powergrid) und CPU-Auslastung für alle Module überprüfen",
+    "Umgebungsspezifische Resistenzplatten ausrüsten",
+    "Sicherstellen, dass das Inventar Platz für wertvolle Schmuggelware bietet",
+    "Schildladeraten für maximale Effizienz kalibrieren"
+  ]}
+/>
+
+| Schadensart | Visueller Indikator | Schadensminderungsstrategie |
+| :--- | :--- | :--- |
+| **Kinetisch** | Blaue Funken | Physische Panzerung |
+| **Thermisch** | Rotes Leuchten | Kühlkörper |
+| **Chemisch** | Grüne Wolke | Biofilter |
+| **Elektrisch** | Gelbe Lichtbögen | Geerdete Isolierung |
+
+<Callout type="tip" title="Fortgeschrittene Taktik">
+Wenn Sie Teil eines Trupps sind, lassen Sie einen Spieler sich auf **Schildprojektions-Rüstung** spezialisieren. Dies ermöglicht es ihm, die Rüstung der Teammitglieder bei intensiven Gefechten aufzuladen, was die Überlebensrate der gesamten Gruppe erheblich steigert.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="EVE Vanguard Rüstung FAQ">
+
+<FAQ items={[
+  {
+    question: "Wie schalte ich neue Stufen der EVE Vanguard Rüstung frei?",
+    answer: "Neue Rüstungsstufen werden freigeschaltet, indem Sie bestimmte Ressourcen wie reaktive Metalle und giftige Flora sammeln und diese zusammen mit gefundenen Blaupausen am Fertigungsterminal verwenden."
+  },
+  {
+    question: "Verliere ich meine Rüstung, wenn ich in EVE Vanguard sterbe?",
+    answer: "Ja, EVE Vanguard ist ein Extraction-Shooter. Wenn Sie sterben und Ihr Trupp Sie nicht wiederbeleben kann oder Sie die Extraktion nicht abschließen, verlieren Sie die Ausrüstung und Ressourcen, die Sie bei diesem Einsatz dabei hatten."
+  },
+  {
+    question: "Was ist der Unterschied zwischen Schilden und Rüstung?",
+    answer: "Schilde sind Ihre erste Verteidigungslinie und regenerieren sich mit der Zeit. Die Rüstung ist Ihr physischer Gesundheitspool; sobald er null erreicht, ist Ihr Warclone zerstört. Das Verbessern der Rüstung erhöht Ihre Gesamtgesundheit."
+  },
+  {
+    question: "Kann ich das Aussehen meines Anzugs anpassen?",
+    answer: "Während sich die Alpha auf funktionale Module konzentriert, hat CCP Games angedeutet, dass kosmetische Anpassungen und Skins in die endgültige Version integriert werden, möglicherweise verknüpft mit EVE Online-Corporations."
+  }
+]} />
+
+</Section>

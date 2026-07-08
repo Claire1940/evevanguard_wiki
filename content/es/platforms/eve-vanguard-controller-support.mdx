@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Settings, Terminal } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Soporte para mando en EVE Vanguard: Guía de configuración y correcciones",
+  description: "Guía completa sobre el soporte para mando en EVE Vanguard, incluyendo la resolución del error 'cannot look', configuración de Xbox y actualizaciones de la prueba VIP de 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Controller+Support+Guide",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, mando, controlador, configuración, error de cámara, Xbox, PlayStation, Steam Input"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Estado actual**: El **soporte para mando en EVE Vanguard** parcial está disponible, pero sigue presentando errores durante las pruebas VIP de 2026.
+- **Error crítico**: Muchos jugadores informan que pueden moverse y disparar, pero **no pueden mirar a su alrededor** usando el stick analógico derecho.
+- **Hardware recomendado**: Los **mandos inalámbricos estándar de Xbox** son los más compatibles, aunque puede ser necesario Steam Input para los mandos de PlayStation.
+- **Mejor solución**: Revisa tu **configuración de Steam Input** y asegúrate de que no haya controladores de joystick virtuales en conflicto activos.
+- **Limitación de la interfaz**: El menú de ajustes actual carece de una columna dedicada a **Mando** para reasignar botones.
+</Callout>
+
+<Section icon={Settings} title="Estado actual del soporte para mando en EVE Vanguard">
+
+La implementación del **soporte para mando en EVE Vanguard** es actualmente un trabajo en progreso a partir de la fase de pruebas VIP de marzo de 2026. Aunque el juego reconoce los dispositivos XInput, la experiencia dista mucho de ser fluida en comparación con las configuraciones tradicionales de ratón y teclado. Los jugadores que participan en las últimas expediciones han notado que, si bien la locomoción básica y los gatillos de combate funcionan, los controles de cámara suelen no responder.
+
+**Puntos destacados del vídeo:**
+- Vistazo detallado al **Legion Compound** y los nuevos diseños de mapas en la prueba VIP de 2026.
+- Descripción general del **Sistema de Armas Modular** y cómo los chipsets afectan el manejo del arma.
+- Demostración de la **Mecánica de Extracción** en el Puente Armónico.
+- Información sobre el sistema de **Banco de Clones** y los requisitos de datos de Nexus.
+
+<YouTubeEmbed videoId="WTWWSb9uYfw" title="Resumen de la prueba VIP de EVE Vanguard (Marzo de 2026)" />
+
+Para los jugadores que intentan usar un mando, la versión actual presenta una funcionalidad desigual. La siguiente tabla detalla qué funciona actualmente y qué sigue roto en la última versión.
+
+| Característica | Estado del soporte | Notas |
+| :--- | :--- | :--- |
+| **Movimiento** | **Funcional** | El stick izquierdo maneja correctamente el caminar y correr. |
+| **Disparo principal** | **Funcional** | El gatillo derecho se asigna al disparo; la vibración es inconsistente. |
+| **Apuntado (ADS)** | **Funcional** | El gatillo izquierdo alterna o mantiene la mira. |
+| **Cámara (Mirar)** | **Roto** | Un error común impide que el stick derecho gire la vista. |
+| **Navegación de menús** | **Parcial** | El D-pad funciona en algunos menús pero carece de un cursor visible. |
+| **Reasignación** | **Ninguna** | No hay una columna dedicada al mando en el menú de opciones. |
+
+<Callout type="warning" title="Limitación de la prueba VIP">
+Durante las pruebas de marzo de 2026, los jugadores han confirmado que el menú de opciones solo muestra una única columna para la entrada de Ratón y Teclado. Actualmente no hay forma de ver o cambiar las asignaciones de teclas específicas del mando dentro del cliente del juego.
+</Callout>
+
+</Section>
+
+<Section icon={Terminal} title="Solución del error 'Cannot Look' (No se puede mirar)">
+
+El problema más frecuente con el **soporte para mando en EVE Vanguard** es la incapacidad de mirar a su alrededor. Los usuarios informan que, aunque pueden moverse, recargar y disparar, el stick analógico derecho no proporciona ninguna entrada para la rotación de la cámara. Esto parece ser un conflicto de software donde el juego no asigna el eje "Mirar" al hardware del mando.
+
+<CardGrid cols={2}>
+  <Card title="Problemas con mando de Xbox">
+    - Los mandos estándar de Xbox se mueven pero no pueden apuntar.
+    - Causado por la falta de asignación de ejes en la versión actual.
+    - Requiere forzar la anulación de **Steam Input**.
+  </Card>
+  <Card title="PlayStation/Terceros">
+    - A menudo no se reconocen sin software externo.
+    - Las funciones de DualSense (hápticos) aún no son compatibles.
+    - Puede requerir **DS4Windows** o emulación de Steam.
+  </Card>
+</CardGrid>
+
+Para resolver estos problemas, los jugadores deben seguir una secuencia específica de pasos de configuración a través del cliente de Steam, ya que los menús del juego aún no proporcionan las herramientas necesarias.
+
+<Steps>
+  <Step num="1" title="Habilitar Steam Input">
+    Haz clic derecho en EVE Vanguard en tu biblioteca de Steam, selecciona **Propiedades**, luego **Mando** y establece la anulación en **Habilitar Steam Input**.
+  </Step>
+  <Step num="2" title="Seleccionar una configuración de la comunidad">
+    Entra en el configurador de **Disposición de mando** y busca plantillas creadas por la comunidad diseñadas específicamente para corregir el eje "Mirar" en Vanguard.
+  </Step>
+  <Step num="3" title="Calibrar zonas muertas">
+    Debido a que el juego carece de ajustes de zona muerta internos, usa la herramienta de calibración de Steam para evitar el "stick drift" (deriva), que es común en la versión actual.
+  </Step>
+  <Step num="4" title="Verificar el mapeo de ejes">
+    Asegúrate de que el joystick derecho esté mapeado como **Ratón de joystick** en lugar de **Movimiento de joystick** para omitir el error de mirada interno.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Consejo profesional: Dispositivos virtuales">
+Si tienes instalado software como vJoy u otros controladores de joystick virtuales, desactívalos. EVE Vanguard a menudo prioriza estos mandos "fantasma" sobre tu hardware real de Xbox o PlayStation.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Optimización del combate con mando">
+
+Incluso con un **soporte para mando en EVE Vanguard** funcional, el combate en Vanguard es de alto riesgo e implacable. El juego utiliza un sistema de armas modular donde se pueden instalar "chipsets" para modificar el rendimiento. Para los usuarios de mando, seleccionar chipsets que gestionen el retroceso y la estabilidad es esencial para compensar la falta de precisión del ratón.
+
+| Tipo de Chipset | Beneficio para usuarios de mando | Prioridad |
+| :--- | :--- | :--- |
+| **Recoil Rating** | Reduce el retroceso vertical, facilitando mantener el objetivo. | **Alta** |
+| **Stability** | Minimiza el balanceo horizontal durante el fuego sostenido. | **Alta** |
+| **Threat Visor** | Resalta a los enemigos en rojo, ayudando a la adquisición de objetivos. | **Media** |
+| **Skull Cracker** | Aumenta el daño por disparo a la cabeza; recompensa el apuntado firme. | **Media** |
+| **Hip Fire** | Útil para distancias cortas cuando el apuntado (ADS) es demasiado lento. | **Baja** |
+
+Al asaltar el **Legion Compound**, los jugadores con mando deben centrarse en un equipamiento de "precisión primero". Dado que la versión actual no cuenta con una asistencia de apuntado agresiva, debes confiar en la estabilidad mecánica del arma.
+
+<Callout type="info" title="Comportamiento de las armas">
+Las variantes de **Lancer** y **SMG** tienen patrones de retroceso distintos. Sin asistencia de apuntado, la alta cadencia de fuego de la SMG puede ser difícil de controlar en un stick analógico. Recomendamos el chipset de disparo único **Kinetic Hammer** para enfrentamientos controlados de alto daño.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Lista de verificación de compatibilidad de hardware">
+
+Antes de lanzarte a una prueba VIP o al próximo acceso anticipado de Steam, asegúrate de que tu entorno de hardware esté optimizado para el **soporte para mando en EVE Vanguard**. La siguiente lista cubre los pasos esenciales para minimizar la latencia y los errores de entrada.
+
+<Checklist
+  id="hardware-prep"
+  title="Lista de preparación del mando:"
+  items={[
+    "Actualiza el firmware del mando a través de Accesorios de Xbox o el software de Sony.",
+    "Desactiva el 'Soporte de funciones extendidas de Steam' si experimentas entradas dobles.",
+    "Conéctalo mediante USB-C para reducir la latencia de entrada en zonas competitivas.",
+    "Comprueba si hay aplicaciones en segundo plano (Discord/Overwolf) que puedan interceptar las entradas.",
+    "Establece el Plan de energía de Windows en 'Alto rendimiento' para evitar el modo de suspensión de USB."
+  ]}
+/>
+
+<Callout type="success" title="Comentarios de los desarrolladores">
+Los desarrolladores han reconocido los comentarios sobre el mando en los foros oficiales. Aunque la versión de marzo de 2026 es limitada, se espera una interfaz de ajustes de mando dedicada en el periodo previo al lanzamiento completo del acceso anticipado.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Comparativa: Mando vs. Ratón y Teclado">
+
+Elegir entre los métodos de entrada en EVE Vanguard depende de tu estilo de juego. Mientras que el ratón y el teclado (M&K) ofrecen una precisión superior para el francotirador de largo alcance, un mando puede proporcionar una experiencia más cómoda para sesiones largas de farmeo en las áreas de **Minería Upwell**.
+
+| Categoría | Ratón y Teclado | Mando (vía Steam Input) |
+| :--- | :--- | :--- |
+| **Precisión** | **Excelente** - Lo mejor para disparos a la cabeza. | **Aceptable** - Requiere mods de retroceso. |
+| **Movimiento** | **Bueno** - Entrada digital (WASD). | **Excelente** - Movimiento analógico de 360°. |
+| **Accesibilidad** | **Estándar** - Mayor curva de aprendizaje. | **Alta** - Más ergonómico para juego prolongado. |
+| **Facilidad de ajuste** | **Plug & Play** - Sin configuración necesaria. | **Complejo** - Requiere solución de problemas. |
+| **Saqueo (Looting)** | **Rápido** - Control preciso del cursor. | **Lento** - La navegación por menús es tosca. |
+
+<Callout type="tip" title="Juego híbrido">
+Algunos jugadores recomiendan usar M&K para encuentros de combate intensos en la **Planta de Tratamiento** y cambiar al mando para las fases de travesía y extracción para reducir la fatiga de las manos.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Resumen y Preguntas Frecuentes">
+
+El camino hacia un **soporte para mando en EVE Vanguard** completo aún está en construcción. Aunque las pruebas VIP de 2026 muestran potencial, los jugadores deben estar preparados para usar herramientas externas como Steam Input para evitar los errores actuales de cámara. A medida que el juego avance hacia el acceso anticipado de Steam, esperamos que CCP Games implemente ajustes nativos de zona muerta, interruptores de asistencia de apuntado y una interfaz de mapeo de mando dedicada.
+
+<FAQ items={[
+  {
+    question: "¿Por qué no puedo mirar a mi alrededor con mi mando en EVE Vanguard?",
+    answer: "Este es un error conocido en las pruebas VIP de 2026. El juego no logra mapear los ejes Y y X al stick derecho. Puedes solucionar esto habilitando Steam Input y usando una disposición hecha por la comunidad que mapee el stick como 'Ratón de joystick'."
+  },
+  {
+    question: "¿Tiene EVE Vanguard asistencia de apuntado para mandos?",
+    answer: "Actualmente, no hay una asistencia de apuntado notable en las versiones VIP. Los jugadores deben confiar en los chipsets de armas que mejoran la estabilidad y el índice de retroceso para mantener la precisión durante los tiroteos."
+  },
+  {
+    question: "¿Puedo usar un mando DualSense de PS5?",
+    answer: "Sí, pero solo a través de Steam Input o un software de terceros como DS4Windows. El juego espera nativamente señales XInput (Xbox), por lo que los mandos de PlayStation no funcionarán directamente sin emulación."
+  },
+  {
+    question: "¿Hay alguna forma de cambiar los indicadores de botones del mando?",
+    answer: "No. La interfaz de usuario actual está codificada para indicadores de Ratón y Teclado. Incluso si tu mando funciona, seguirás viendo 'Presiona E' o 'Clic izquierdo' en tu pantalla."
+  }
+]} />
+
+</Section>

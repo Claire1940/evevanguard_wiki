@@ -1,0 +1,173 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard GeForce Now: Setup-Guide & Performance-Optimierung",
+  description: "Erfahren Sie in unserem Setup-Guide 2026, wie Sie EVE Vanguard auf GeForce Now spielen. Optimieren Sie Einstellungen, beheben Sie Launcher-Fehler und reduzieren Sie Latenzen für das beste Cloud-Gaming-Erlebnis.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1a1a1a/ffffff?text=EVE+Vanguard+GFN+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team",
+  keywords: "eve vanguard, geforce now, cloud gaming, setup guide, performance, launcher fix"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- Die Kompatibilität von **EVE Vanguard GeForce Now** erfordert die Integration des EVE Online Launchers und eine stabile Verbindung von mindestens 25 Mbit/s.
+- **Launcher-Probleme**: Nutzer stoßen oft auf eine unbeschriftete rote Schaltfläche; dies deutet meist auf einen Sitzungssynchronisierungsfehler oder einen fehlenden Omega-Status hin.
+- **Performance-Stufe**: Die Ultimate-Stufe von GFN wird dringend empfohlen, um den Input-Lag in diesem hochriskanten FPS zu minimieren.
+- **Kontoverknüpfung**: Stellen Sie sicher, dass Ihr Steam- oder EVE-Konto in den GFN-Einstellungen korrekt verknüpft ist, bevor Sie das Modul starten.
+</Callout>
+
+<Section icon={Shield} title="EVE Vanguard GeForce Now: Aktueller Status und Anforderungen">
+
+Das Spielen von **EVE Vanguard GeForce Now** stellt für Mac-Nutzer und Besitzer von PCs mit geringer Leistung den einfachsten Weg dar, am Kampf um New Eden teilzunehmen. Da EVE Vanguard ein Modul innerhalb des EVE Online Launchers ist, ist seine Verfügbarkeit auf der Cloud-Plattform von NVIDIA direkt an die Präsenz des Hauptspiels gebunden. Bis zum Jahr 2026 wurde die Integration verfeinert, um einen nahtlosen Wechsel zwischen dem MMO und dem FPS-Modul zu ermöglichen, obwohl für Cloud-Nutzer weiterhin spezifische technische Hürden bestehen.
+
+Um ein reibungsloses Erlebnis zu gewährleisten, müssen Sie bestimmte Abonnement- und Hardwarekriterien erfüllen. Im Gegensatz zum Basisspiel EVE Online erfordert Vanguard oft einen aktiven Omega-Status, um an „First Strike“-Events oder spezifischen Fronteinsätzen teilzunehmen.
+
+| Anforderung | Mindestanforderung | Empfohlene Spezifikation |
+|-|-|-|
+| **Internetgeschwindigkeit** | 15 Mbit/s für 720p 60fps | 50 Mbit/s für 4K 120fps |
+| **GFN-Stufe** | Priority | Ultimate (RTX 4080/5080) |
+| **Kontostatus** | EVE Omega-Konto | EVE Omega-Konto |
+| **Eingabemethode** | Maus und Tastatur | Gaming-Maus mit geringer Latenz |
+| **Datenverbrauch** | 10 GB pro Stunde | 20+ GB pro Stunde |
+
+<Callout type="warning" title="Regionale Verfügbarkeit">
+Überprüfen Sie den Status Ihres lokalen GFN-Servers. Da EVE Vanguard ein reaktionsschneller Shooter ist, wird Sie jede Latenz über 40 ms während der planetaren Extraktionsphasen erheblich benachteiligen.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Schritt-für-Schritt Setup-Guide">
+
+Die Einrichtung von **EVE Vanguard GeForce Now** erfordert das Navigieren im EVE Launcher innerhalb der virtuellen Umgebung. Viele Spieler sind verwirrt, wenn der Launcher standardmäßig den Standard-Charakterauswahlbildschirm des MMOs anzeigt.
+
+<Steps>
+  <Step num="1" title="GeForce Now initialisieren">
+    Öffnen Sie Ihre GFN-Anwendung und suchen Sie nach „EVE Online“. Fügen Sie es Ihrer Bibliothek hinzu und klicken Sie auf „Spielen“. Stellen Sie sicher, dass Ihr Store-Anbieter (Steam oder Epic) mit dem Ort übereinstimmt, an dem Ihr Konto registriert ist.
+  </Step>
+  <Step num="2" title="Navigieren im EVE Launcher">
+    Sobald die virtuelle Maschine startet, erscheint der EVE Launcher. Suchen Sie nach dem Reiter „Vanguard“ in der linken Seitenleiste. Im Jahr 2026 ist dieser normalerweise durch ein markantes rotes oder metallisches Symbol hervorgehoben.
+  </Step>
+  <Step num="3" title="Vanguard-Modul verifizieren">
+    Klicken Sie auf das „Vanguard“-Symbol. Falls das Modul nicht sichtbar ist, überprüfen Sie den Bereich „Neuigkeiten“ oder „Einstellungen“ des Launchers, um die Sichtbarkeit des FPS-Moduls manuell zu aktivieren.
+  </Step>
+  <Step num="4" title="Lösung für die Startschaltfläche">
+    Wenn die Schaltfläche unten links unbeschriftet oder rot ist, warten Sie, bis der Launcher die Hintergrundsynchronisierung abgeschlossen hat. Wenn sie weiterhin nicht anklickbar ist, starten Sie die GFN-Sitzung neu, um das Token zu aktualisieren.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Sitzungs-Timeout">
+Cloud-Sitzungen können während langer Vanguard-Einsätze ablaufen. Interagieren Sie alle 10-15 Minuten mit dem GFN-Overlay, wenn Sie in einer langen Warteschlange stehen, um einen Verbindungsabbruch zu verhindern.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Optimierung der Cloud-Performance">
+
+Um das Beste aus **EVE Vanguard GeForce Now** herauszuholen, müssen Sie die visuelle Qualität mit den Anforderungen an niedrige Latenzen eines kompetitiven Shooters in Einklang bringen. Cloud-Streaming führt naturgemäß zu einer Verzögerung, die durch die Wahl der richtigen Streaming-Einstellungen und In-Game-Konfigurationen minimiert werden kann.
+
+<CardGrid cols={3}>
+  <Card title="Kompetitiver Modus">
+    - **Auflösung**: 1080p
+    - **Bildrate**: 120 FPS
+    - **Reflex**: Aktiviert + Boost
+    - Fokus auf minimalen Input-Lag.
+  </Card>
+  <Card title="Kinomodus">
+    - **Auflösung**: 4K
+    - **Bildrate**: 60 FPS
+    - **Raytracing**: Ein
+    - Ideal zum Erkunden von Planetenoberflächen.
+  </Card>
+  <Card title="Datensparmodus">
+    - **Bitrate**: 15 Mbit/s
+    - **V-Sync**: Aus
+    - **Auflösung**: 720p
+    - Ideal für instabile Verbindungen.
+  </Card>
+</CardGrid>
+
+| Einstellung | Empfohlener Wert | Auswirkung |
+|-|-|-|
+| **NVIDIA Reflex** | Aktiviert + Boost | Reduziert die Systemlatenz erheblich |
+| **Bitrate-Steuerung** | Manuell (Max 75 Mbit/s) | Verhindert plötzliche Unschärfe |
+| **VSync (GFN)** | Aus | Entfernt zusätzliche Frame-Pufferung |
+| **Upscaling** | DLSS Qualität | Erhöht die FPS ohne Klarheitsverlust |
+| **Bewegungsunschärfe** | Aus | Essenziell für das Verfolgen von Zielen |
+
+<Callout type="success" title="Vorteil der Ultimate-Stufe">
+Abonnenten der Ultimate-Stufe erhalten Zugriff auf die „Cloud G-Sync“-Funktion, die hilft, Mikroruckler während intensiver Feuergefechte in EVE Vanguard auszugleichen.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Fehlerbehebung bekannter Probleme">
+
+Das Zusammenspiel zwischen **EVE Vanguard GeForce Now** und dem EVE Launcher kann gelegentlich zu technischen Fehlern führen. Basierend auf Community-Berichten ist das häufigste Problem, dass der Launcher das Vanguard-Modul nicht als „bereit“ erkennt.
+
+**Lösungen für häufige Fehler:**
+
+| Problem | Mögliche Ursache | Lösung |
+|-|-|-|
+| **Unbeschriftete rote Schaltfläche** | Fehlender Omega-Status | Abonnement auf der EVE-Website verifizieren |
+| **Spiel startet nicht** | Launcher-Sync-Fehler | Launcher schließen, GFN-Sitzung neu starten |
+| **Niedrige Auflösung** | Bandbreiteneinbruch | Auf Ethernet wechseln, VPNs deaktivieren |
+| **Eingabeverzögerung** | Hoher Server-Ping | GFN-Serverstandort in den Einstellungen ändern |
+| **Vanguard fehlt** | Modul nicht aktiviert | „Beta/Vanguard“ in den Launcher-Einstellungen umschalten |
+
+<Callout type="info" title="Externer Support">
+Falls der Launcher innerhalb von GFN weiterhin fehlschlägt, liegt das Problem oft serverseitig bei CCP Games. Überprüfen Sie den offiziellen EVE Vanguard Discord oder die GFN-Statusseite auf Wartungs-Updates.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Einsatz-Checkliste">
+
+Bevor Sie in eine Kampfzone abspringen, stellen Sie sicher, dass Ihre Cloud-Umgebung vollständig für die bevorstehende Mission optimiert ist. Nutzen Sie diese Checkliste, um Ihr Setup zu überprüfen.
+
+<Checklist
+  id="vanguard-deployment"
+  title="Voraussetzungen vor dem Abflug:"
+  items={[
+    "Überprüfen, ob das EVE Omega-Abonnement aktiv ist",
+    "GFN-Streaming-Qualität für maximale Bitrate auf ‚Benutzerdefiniert‘ stellen",
+    "Verbindung über Ethernet herstellen (WLAN für Shooter vermeiden)",
+    "Alle Hintergrund-Streaming-Apps deaktivieren (Netflix/Twitch)",
+    "EVE-Konto in den GFN-Einstellungen mit Steam/Epic verknüpfen"
+  ]}
+/>
+
+<Callout type="tip" title="Peripherie-Tipp">
+Deaktivieren Sie die „Zeigerbeschleunigung“ (Enhance Pointer Precision) in Ihren lokalen Windows/Mac-Einstellungen, da dies die von GeForce Now verwendete Maus-Übersetzungsebene stören kann.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="FAQ">
+
+<FAQ items={[
+  {
+    question: "Ist EVE Vanguard auf GeForce Now kostenlos spielbar?",
+    answer: "Während EVE Online kostenlos ist, erfordert EVE Vanguard in der Regel ein aktives Omega-Abonnement oder einen speziellen Event-Zugangsschlüssel, um über die Cloud zu spielen."
+  },
+  {
+    question: "Wie behebe ich die unbeschriftete Schaltfläche im Launcher?",
+    answer: "Dies wird meist durch einen Synchronisierungsfehler verursacht. Melden Sie sich innerhalb von GFN vom EVE Launcher ab, starten Sie die Sitzung neu und stellen Sie sicher, dass Ihr Konto die erforderlichen Berechtigungen für Vanguard besitzt."
+  },
+  {
+    question: "Kann ich einen Controller für EVE Vanguard auf GeForce Now verwenden?",
+    answer: "EVE Vanguard ist primär für Maus und Tastatur konzipiert. Obwohl GFN Controller unterstützt, könnten Sie in PvP-Begegnungen im Nachteil sein."
+  },
+  {
+    question: "Welche GFN-Stufe ist am besten für EVE Vanguard?",
+    answer: "Die Ultimate-Stufe ist am besten, da sie die niedrigste Latenz und die höchsten Bildraten bietet, was für die rasanten Kämpfe in Vanguard entscheidend ist."
+  }
+]} />
+
+</Section>

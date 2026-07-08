@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Guns: Weapon Crafting & Loadout Guide",
+  description: "Master EVE Vanguard guns. Learn weapon crafting, upgrade paths, and the best loadouts for the Operation Avalon playtest in July 2026.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Vanguard+Guns+Guide",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Core Arsenal**: Master the handling of customizable **eve vanguard guns** to survive high-stakes planetary extraction contracts.
+- **Crafting Priority**: Prioritize gathering nanite polymers and alloy scraps during deployments to craft high-tier weapon receivers.
+- **Loadout Strategy**: Match your weapon configuration to the environmental hazards of the sector, balancing range and fire rate.
+- **Risk Mitigation**: Secure rare weapon blueprints in your clone suit container to prevent losing them upon death.
+</Callout>
+
+<Section icon={Shield} title="EVE Vanguard Guns: Weapon System Overview">
+
+In the hostile planetary environments of New Eden, mastering **eve vanguard guns** is the difference between successful extraction and permanent clone termination. As a warclone deployed during the Operation Avalon playtest on Steam (running from July 7 to July 20, 2026), your primary objective is to salvage wreckage, fight off hostile squads, and extract valuable resources. The weapons you bring into these hazardous zones dictate your tactical flexibility and overall survival rate.
+
+The weapon system in EVE Vanguard relies on modular construction and realistic ballistic behaviors. Unlike traditional shooters, weapons are investment pieces; losing a high-tier rifle in a poisoned swamp or hazardous jungle means losing the resources spent to fabricate it. Understanding the base statistics of each weapon class allows you to make informed decisions before deploying from your orbital clone station.
+
+| Weapon Class | Optimal Range | Fire Rate | Primary Use Case |
+|---|---|---|---|
+| Assault Rifle | Medium (25-100m) | Moderate-High | Versatile frontline combat |
+| Precision Rifle | Long (100m+) | Low (Semi-Auto) | Reconnaissance and long-range picks |
+| Submachine Gun | Close (0-25m) | Very High | Close-quarters combat and swamp clearing |
+| Heavy Blaster | Medium (15-50m) | High | Suppression and armored target elimination |
+
+<Callout type="info" title="System Integration">
+Every weapon in EVE Vanguard directly impacts your suit power consumption. High-tier energy weapons offer superior armor penetration but drain your suit battery faster, requiring careful balance of your active modules. Refer to the official [EVE Vanguard Website](https://evevanguard.com/) for ongoing updates to weapon tuning and suit compatibility.
+</Callout>
+
+Each weapon class features unique recoil patterns, reload speeds, and ammunition requirements. Projectile-based weapons rely on physical magazines that occupy inventory slots, whereas energy-based weapons utilize rechargeable power cells that generate heat. Balancing your ammunition reserves against salvaged loot space is a constant challenge during long deployments.
+
+</Section>
+
+<Section icon={Sparkles} title="How to Craft and Upgrade Your Arsenal">
+
+Fabrication is the cornerstone of progression in EVE Vanguard. You do not simply buy the best weapons from a market; you must earn them by gathering resources from fallen enemies, crashed warships, and planetary containers. Upgrading your weapons improves stability, increases magazine capacity, and unlocks specialized ammo types that bypass enemy shield configurations.
+
+The crafting loop requires you to balance risk and reward. Venturing deeper into high-threat zones yields higher-quality materials, but increases the likelihood of encountering hostile warclones. Blueprints secured during deployments must be brought back to your orbital fabricator to unlock permanent crafting options.
+
+<Steps>
+  <Step num="1" title="Secure Blueprints">
+    Locate weapon blueprints inside crashed warship debris or purchase basic templates from faction representatives in the orbital hub.
+  </Step>
+  <Step num="2" title="Harvest Planetary Resources">
+    Deploy to planetary surfaces to gather nanites, alloy fragments, and energy cores from swamps, jungles, and industrial ruins.
+  </Step>
+  <Step num="3" title="Fabricate Components">
+    Use the orbital fabricator to convert raw materials into weapon components, such as barrels, receivers, and optics.
+  </Step>
+  <Step num="4" title="Assemble and Modify">
+    Combine components to assemble your custom weapon, then apply modifications to adjust handling, recoil, and damage types.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Blueprint Safety">
+Always place newly acquired weapon blueprints into your secure clone suit inventory slots. Items in secure slots are preserved even if your clone is destroyed during the deployment phase.
+</Callout>
+
+To help you plan your gathering runs, the table below outlines the primary crafting materials required for weapon assembly and where to find them during the Operation Avalon playtest.
+
+| Resource Name | Rarity | Primary Source | Gun Component Usage |
+|---|---|---|---|
+| Nanite Polymer | Common | Swamps & Jungles | Weapon stocks and grips |
+| Alloy Scrap | Common | Warship Wreckage | Barrels and receiver frames |
+| Charged Core | Rare | Elite Hostile Drops | Energy weapon batteries |
+| Optic Lens | Uncommon | Industrial Crates | Scopes and targeting lasers |
+
+</Section>
+
+<Section icon={Target} title="Top Weapon Loadouts for Operation Avalon">
+
+Choosing the right combination of weapons and suit modules determines your effectiveness in combat. During the July 2026 playtest, three distinct playstyles have emerged as highly effective for navigating the planetary surface. Your loadout should reflect whether you are playing solo or coordinating with a squad.
+
+A balanced squad typically features a mix of long-range reconnaissance and high-damage close-quarters combatants. Solo players, however, should lean toward versatile configurations that allow them to engage at multiple distances while maintaining high mobility for quick extractions.
+
+<CardGrid cols={3}>
+  <Card title="Assault Vanguard">
+    - **Primary**: Standard Assault Rifle
+    - **Secondary**: Light Pistol
+    - **Key Benefit**: High versatility, reliable damage at medium ranges, and low resource upkeep.
+  </Card>
+  <Card title="Recon Sniper">
+    - **Primary**: Precision Marksman Rifle
+    - **Secondary**: Compact SMG
+    - **Key Benefit**: High single-shot damage, excellent scouting potential, and strong self-defense.
+  </Card>
+  <Card title="Heavy Breacher">
+    - **Primary**: Heavy Blaster
+    - **Secondary**: Shotgun
+    - **Key Benefit**: Devastating close-range damage, high suppression, and armor-shredding capability.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Loadout Synergy">
+When running with a team, ensure at least one squad member carries a Precision Rifle to spot and tag enemy warclones before committing to a firefight. This tactical advantage prevents ambush situations in dense jungle biomes.
+</Callout>
+
+The performance metrics of these loadouts vary based on engagement distance and target armor. Review the operational data below to select the configuration that matches your tactical preferences.
+
+| Loadout Name | Effective Range | Damage Output | Recoil Control | Resource Cost |
+|---|---|---|---|---|
+| Assault Vanguard | Medium | Moderate-High | Good | Low-Medium |
+| Recon Sniper | Long | Very High | Moderate | High |
+| Heavy Breacher | Close | Extreme | Low | High |
+
+</Section>
+
+<Section icon={Map} title="Tactical Extraction and Gear Preservation">
+
+Acquiring powerful **eve vanguard guns** is only half the battle; keeping them requires successful extraction. When you call for extraction, your location is broadcast to nearby warclones, making you a prime target for ambush. Setting up defensive perimeters and utilizing the environment is critical to securing your gear.
+
+Swamps and jungles offer excellent natural cover, but they also limit your line of sight, making it easier for enemies to close the distance. Use directional audio and motion sensors to track incoming threats while waiting for your extraction vessel to arrive.
+
+<Checklist
+  id="extraction-prep"
+  title="Pre-Extraction Checklist:"
+  items={[
+    "Secure high-value blueprints in your protected clone slots",
+    "Reload all weapons and distribute ammunition reserves",
+    "Scan the extraction zone perimeter for hostile signatures",
+    "Deploy defensive shields or utility traps around the landing pad",
+    "Coordinate extraction timing with your squad members"
+  ]}
+/>
+
+<Callout type="warning" title="Loss Prevention">
+Uninsured weapons are permanently lost upon death. If you are carrying a high-tier crafted weapon, ensure you have sufficient faction standing or credits to cover insurance costs before deploying.
+</Callout>
+
+Different sectors on the planetary surface present varying levels of risk during extraction. Adjust your weapon choices based on the specific threats associated with your deployment zone.
+
+| Sector Type | Threat Level | Primary Hazards | Recommended Weapon |
+|---|---|---|---|
+| Warship Wreckage | High | Open sightlines, snipers | Precision Rifle |
+| Poisoned Swamps | Medium | Low visibility, toxic gas | Submachine Gun |
+| Hazardous Jungles | Medium | Dense foliage, close ambushes | Shotgun / SMG |
+| Industrial Ruins | Extreme | Verticality, elite hostiles | Assault Rifle |
+
+</Section>
+
+<Section icon={Trophy} title="Frequently Asked Questions">
+
+To help you get the most out of your arsenal, here are answers to common questions regarding weapon mechanics and customization in EVE Vanguard.
+
+<FAQ items={[
+  {
+    question: "How do I unlock new EVE Vanguard guns during the playtest?",
+    answer: "You must find blueprints in planetary containers or salvage them from fallen enemies. Once secured, bring the blueprints to your orbital fabricator and craft the weapon using salvaged resources."
+  },
+  {
+    question: "Do I lose my crafted guns if I die during a deployment?",
+    answer: "Yes, any weapons equipped in your active slots are dropped upon death and can be looted by other players. However, blueprints and materials stored in your secure clone container are preserved."
+  },
+  {
+    question: "Can I customize the attachments on my weapons?",
+    answer: "Yes, you can modify your weapons at the orbital fabricator. Modifying allows you to change optics, barrels, and stocks to adjust range, stability, and handling characteristics."
+  },
+  {
+    question: "What is the difference between projectle and energy weapons?",
+    answer: "Projectile weapons use physical ammunition that occupies inventory space but offers consistent fire rates. Energy weapons use rechargeable batteries that generate heat, requiring heat management during sustained fire."
+  }
+]} />
+
+<Callout type="tip" title="Community Feedback">
+EVE Vanguard is in active development. Join the official Discord server to share your feedback on gunplay, weapon balance, and crafting systems directly with the development team.
+</Callout>
+
+</Section>

@@ -1,0 +1,184 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Tutorial de EVE Vanguard: Guía de Configuración y Consejos Esenciales",
+  description: "Domina EVE Vanguard con nuestro tutorial sobre instalación, mecánicas de extracción y actualizaciones en tiempo real para la prueba de juego Operation Avalon de 2026.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/1e293b/fff?text=EVE+Vanguard+Tutorial",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, tutorial, guía de configuración, mecánicas de extracción, Operation Avalon, FPS"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Tutorial de EVE Vanguard**: Se centra en las mecánicas de FPS de extracción y aventura ambientadas en el universo de EVE Online.
+- **Métodos de Acceso**: Disponible a través del **Iniciador de EVE Online** o directamente a través de **Steam** durante los periodos de prueba.
+- **Ciclo Principal**: Despliégate en planetas, completa objetivos y extráete antes de que los Drones Némesis o escuadrones rivales te eliminen.
+- **Ventaja Técnica**: El juego utiliza **Actualizaciones de Datos Estáticos Remotos** para aplicar cambios de equilibrio sin necesidad de reiniciar el cliente.
+- **Juego en Escuadrón**: Aunque es posible jugar en solitario, los escuadrones de 3 jugadores ofrecen la mejor supervivencia en los entornos hostiles de New Eden.
+</Callout>
+
+<Section icon={Map} title="Primeros pasos: Instalación y Acceso">
+
+EVE Vanguard representa un cambio masivo en el ecosistema de New Eden, llevando el combate a pie al legendario MMO espacial. Como FPS de extracción y aventura, tu objetivo principal es descender a planetas despiadados, asegurar tecnología exótica y sobrevivir lo suficiente para llegar al punto de extracción. Para la prueba de juego Operation Avalon de 2026, los jugadores deben asegurarse de que sus cuentas estén correctamente vinculadas al iniciador nativo o a Steam para participar en el esfuerzo de guerra continuo.
+
+**Puntos destacados del video:**
+- Resumen del sistema de **Actualización de Datos Estáticos Remotos**.
+- Demostración de cambios de equilibrio en tiempo real (multiplicadores de daño).
+- Perspectiva sobre cómo los archivos JSON del back-end modifican las sesiones en vivo.
+- Vista previa del entorno del mapa de prueba de combate e interacciones con NPCs.
+
+<YouTubeEmbed videoId="M7NIOHO3qmo" title="Inside EVE Vanguard: Real-Time Updates" />
+
+Para comenzar tu viaje, primero debes asegurar el acceso al cliente del juego. El proceso varía ligeramente según tu plataforma preferida, pero ambos requieren una cuenta activa de EVE.
+
+| Método de Instalación | Beneficio Principal | Pasos Necesarios |
+| :--- | :--- | :--- |
+| **Iniciador de EVE** | Integración fluida con EVE Online | Descargar instalador, instalar EVE Online, seleccionar pestaña Vanguard |
+| **Página de Steam** | Actualizaciones automáticas y funciones de la comunidad | Solicitar acceso en Steam, descargar a través de la Biblioteca |
+| **Epic Games Store** | Opción de plataforma de PC alternativa | Buscar EVE Vanguard, añadir a la biblioteca, instalar |
+
+<Callout type="tip" title="Consejo Pro">
+Si ya eres jugador de EVE Online, se recomienda encarecidamente usar el iniciador oficial, ya que mantiene todas tus credenciales de New Eden en un solo lugar y simplifica el proceso de inicio de sesión.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Jugabilidad Principal y Mecánicas de Extracción">
+
+En este **tutorial de EVE Vanguard**, comprender el flujo de una partida es fundamental. A diferencia de los shooters de arena tradicionales, Vanguard trata sobre la gestión de riesgos. Cada pieza de botín que encuentres se perderá si no logras extraerte. Te enfrentarás tanto a NPCs controlados por la IA como a otros escuadrones de jugadores (PvPvE), convirtiendo cada encuentro en un posible punto de inflexión para tu misión.
+
+<Steps>
+  <Step num="1" title="Despliegue e Infiltración">
+    Selecciona tu equipamiento y desciende a la zona planetaria. Tu prioridad inicial es explorar el área inmediata en busca de recursos mientras te mantienes oculto para evitar la detección temprana por parte de los Drones Némesis.
+  </Step>
+  <Step num="2" title="Cumplimiento de Objetivos">
+    Navega hacia los puntos de control marcados para asaltar sitios de accidentes o atacar bases de avanzada. Estas ubicaciones contienen la tecnología exótica necesaria para progresar en tu reputación y dar forma a la guerra interestelar a gran escala.
+  </Step>
+  <Step num="3" title="Fase de Extracción">
+    Una vez cumplidos los objetivos, dirígete a la zona de extracción. Esta es la parte más peligrosa del tutorial, ya que los escuadrones rivales suelen vigilar estas áreas para robar tu botín ganado con tanto esfuerzo.
+  </Step>
+</Steps>
+
+| Estilo de Juego | Tamaño de Escuadrón Recomendado | Clasificación de Dificultad | Área de Enfoque |
+| :--- | :--- | :--- | :--- |
+| **Operativo Solitario** | 1 Jugador | ★★★★★ | Sigilo y Evasión |
+| **Dúo Táctico** | 2 Jugadores | ★★★★☆ | Flanqueo y Apoyo |
+| **Escuadrón Completo** | 3 Jugadores | ★★★☆☆ | Combate Pesado y Objetivos |
+
+<Callout type="info" title="Nota Táctica">
+El límite de escuadrón de 3 jugadores está diseñado para fomentar una coordinación estrecha. La comunicación es tu arma más valiosa al navegar por el denso terreno de los planetas de New Eden.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Operation Avalon: Objetivos y Amenazas">
+
+Operation Avalon es el punto focal actual para los jugadores de Vanguard en 2026. Durante esta fase, la superficie planetaria es más volátil que nunca. No solo estás luchando por chatarra; estás luchando por el futuro de tu facción. El entorno mismo es una amenaza, con colosales Drones Némesis cazando a cualquiera que se demore demasiado.
+
+<CardGrid cols={3}>
+  <Card title="Sitios de Incursión">
+    - **Alto Rendimiento de Recursos**
+    - Gran presencia de NPCs
+    - Clave para tecnología exótica
+  </Card>
+  <Card title="Bases de Avanzada">
+    - **Control Estratégico**
+    - Muchos objetivos
+    - Encuentros PvP frecuentes
+  </Card>
+  <Card title="Zonas de Extracción">
+    - **Meta Final de Supervivencia**
+    - Ventanas de tiempo limitado
+    - Nivel de peligro máximo
+  </Card>
+</CardGrid>
+
+| Tipo de Objetivo | Recompensa Principal | Nivel de Riesgo | Tiempo Requerido |
+| :--- | :--- | :--- | :--- |
+| **Salvamento Técnico** | Materiales de fabricación | Medio | 5-10 Minutos |
+| **Asalto a Base** | Reputación de Facción | Alto | 15-20 Minutos |
+| **Caza de Drones** | Planos raros | Muy Alto | 10-15 Minutos |
+
+<Callout type="warning" title="Alerta de Peligro">
+Los Drones Némesis no son los típicos NPCs. Utilizan rastreo avanzado y pueden eliminar fácilmente a un escuadrón desprevenido. Si escuchas la sirena atmosférica, es hora de moverte hacia la extracción.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="El Servicio en Vivo: Actualizaciones en Tiempo Real">
+
+Una de las características más innovadoras analizadas en este **tutorial de EVE Vanguard** es el sistema de "Actualización de Datos Estáticos Remotos". Esto permite a los desarrolladores ajustar el equilibrio del juego sobre la marcha. Como se vio en las demostraciones técnicas, los desarrolladores pueden modificar los multiplicadores de daño de las armas o actualizar las descripciones de los objetos mediante archivos JSON sin obligar a los jugadores a reiniciar sus clientes.
+
+<Checklist
+  id="system-features"
+  title="Ventajas Técnicas:"
+  items={[
+    "Parches de equilibrio sin tiempo de inactividad",
+    "Ajustes instantáneos de estadísticas de armas",
+    "Actualizaciones de texto y descripción en tiempo de ejecución",
+    "Transiciones fluidas de lobby a sesión",
+    "Impacto mínimo en la experiencia del jugador"
+  ]}
+/>
+
+| Tipo de Actualización | Nivel de Impacto | Implementación | ¿Reinicio del Cliente? |
+| :--- | :--- | :--- | :--- |
+| **Ajustes de Equilibrio** | Menor | Sobrescritura JSON | No |
+| **Corrección de Errores** | Medio | Parche en tiempo de ejecución | No |
+| **Nuevos Contenidos** | Mayor | Actualización binaria | Sí |
+| **Mantenimiento del Servidor** | Alto | Sincronización del backend | Sí |
+
+<Callout type="success" title="Visión del Desarrollador">
+Al usar sobrescrituras basadas en JSON, CCP Games puede responder a los cambios en el meta en tiempo real. Si un arma específica se vuelve demasiado poderosa, se puede implementar una solución a mitad de la prueba de juego para garantizar una competencia justa para todos.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Configuración Técnica y Optimización">
+
+Para garantizar una experiencia fluida en EVE Vanguard, tu hardware debe cumplir con las demandas del entorno Unreal Engine 5. El juego cuenta con texturas de alta fidelidad y simulaciones físicas complejas que requieren especificaciones modernas.
+
+| Componente | Requisito Mínimo | Recomendado (2026) |
+| :--- | :--- | :--- |
+| **SO** | Windows 10 (64-bit) | Windows 11 |
+| **CPU** | Intel i5-9600K | Intel i7-12700K |
+| **RAM** | 16 GB | 32 GB |
+| **GPU** | NVIDIA RTX 2060 | NVIDIA RTX 4070 |
+| **Almacenamiento** | 50 GB SSD | 50 GB NVMe SSD |
+
+<Callout type="info" title="Consejo del Sistema">
+Instala siempre EVE Vanguard en un SSD. La tecnología de streaming utilizada para las superficies planetarias depende en gran medida de velocidades rápidas de acceso a datos para evitar tirones durante el combate a alta velocidad.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Cómo accedo a la prueba de juego del tutorial de EVE Vanguard?",
+    answer: "Puedes solicitar acceso a través de la página de Steam de EVE Vanguard o descargar el cliente a través del iniciador de EVE Online si tienes una suscripción Omega activa o una invitación para la prueba de juego."
+  },
+  {
+    question: "¿Puedo jugar a EVE Vanguard en solitario?",
+    answer: "Sí, el juego en solitario es compatible. Sin embargo, el juego está equilibrado para escuadrones de 3 jugadores, por lo que los jugadores solitarios deben confiar más en el sigilo y una planificación cuidadosa para sobrevivir a las extracciones."
+  },
+  {
+    question: "¿Qué pasa si muero antes de extraerme?",
+    answer: "Si eres eliminado antes de llegar a un punto de extracción, perderás toda la tecnología exótica y los recursos recolectados durante esa sesión específica."
+  },
+  {
+    question: "¿Cómo afectan las actualizaciones en tiempo real a mi juego?",
+    answer: "Las actualizaciones en tiempo real permiten a los desarrolladores corregir errores o equilibrar armas sin expulsarte del juego, garantizando una experiencia más estable y justa durante los eventos en vivo."
+  }
+]} />
+
+</Section>

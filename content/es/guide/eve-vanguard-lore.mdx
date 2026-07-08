@@ -1,0 +1,181 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, BookOpen, Fingerprint, Zap } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Lore de EVE Vanguard: Evolución, clones de guerra y The Deathless",
+  description: "Explora el profundo lore de EVE Vanguard, que abarca los orígenes de los clones de guerra, el misterio del Jardín Resonante y la brutal realidad de la extracción en Nuevo Edén.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=EVE+Vanguard+Lore+Guide",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía rápida">
+- El **lore de EVE Vanguard** se centra en la evolución de los clones de guerra, desde supersoldados del Imperio hasta mercenarios independientes bajo el mando de The Deathless.
+- Los **infomorfos** son conciencias digitales almacenadas en el Jardín Resonante y proyectadas en receptáculos jovianos vacíos.
+- **El Fulcro** sirve como el centro neurálgico en Zarzakh, albergando el entorno virtual donde residen las mentes de los Vanguard entre despliegues.
+- La **extracción** es un proceso violento que destruye la materia biológica mientras preserva el equipo y las huellas digitales.
+- La **narrativa ambiental** revela la indiferencia de megacorporaciones como Upwell hacia sus trabajadores planetarios.
+</Callout>
+
+<Section icon={BookOpen} title="La evolución de los clones de guerra de Nuevo Edén">
+
+El **lore de EVE Vanguard** representa un cambio fundamental en el panorama narrativo de Nuevo Edén. Durante décadas, los cielos estuvieron dominados por los capsulistas: pilotos inmortales de enormes naves espaciales. Sin embargo, ha surgido un nuevo tipo de inmortalidad en las superficies planetarias. Los clones de guerra Vanguard no son simples soldados; son la "próxima evolución" de los combatientes terrestres, alejándose del control rígido de los cuatro grandes Imperios y dirigiéndose hacia un futuro definido por la misteriosa figura conocida como The Deathless.
+
+**Aspectos destacados del video:**
+- Información sobre la estructura narrativa al estilo de "Rogue One" de la formación Vanguard.
+- Explicación del Jardín Resonante como el almacenamiento de la conciencia de los Vanguard.
+- Detalles sobre el método de "migas de pan" utilizado por los desarrolladores para lanzar actualizaciones de la historia.
+- Análisis profundo de la relación entre el Círculo de The Deathless y los Vanguard.
+
+<YouTubeEmbed videoId="rEsIzwoZAd0" title="EVE Vanguard Uplink Podcast | Cómo la historia finalmente está tomando forma" />
+
+La transición de los clones de guerra tradicionales a los Vanguard implica un cambio fundamental en la tecnología y la filosofía. Mientras que las generaciones anteriores a menudo eran vistas como recursos prescindibles de los Imperios, los Vanguard se están convirtiendo en "personas libres" que asaltan los lugares de impacto de Nuevo Edén para su propia progresión.
+
+| Característica | Clones de guerra tradicionales | Clones de guerra Vanguard |
+| :--- | :--- | :--- |
+| **Afiliación** | Leales al Imperio/SARO | El Círculo de The Deathless |
+| **Tipo de clon** | Supersoldado estándar | Receptáculos jovianos modificados |
+| **Base de operaciones** | Guarniciones militares | El Fulcro (Zarzakh) |
+| **Conciencia** | Enlace biológico/neural | Sincronización digital de infomorfos |
+| **Objetivo principal** | Defensa del Imperio | Libertad independiente |
+
+<Callout type="warning" title="Conexión con el lore">
+The Deathless no es una entidad neutral. Aliarse con los Vanguard significa convertirse en parte de una insurgencia afiliada a los piratas, lo que complica las relaciones con los leales al Imperio tradicionales.
+</Callout>
+
+</Section>
+
+<Section icon={Fingerprint} title="El Fulcro y la tecnología joviana">
+
+En el corazón del **lore de EVE Vanguard** se encuentra El Fulcro, un puesto de avanzada joviano abandonado situado en el sistema Zarzakh. Esta megaestructura es más que una simple base; alberga el "Jardín Resonante", una virtualidad donde residen los infomorfos de los clones de guerra. Un infomorfo es un análogo digital de una mente biológica, lo que permite una transferencia casi instantánea entre el mundo virtual y un cuerpo físico en el campo de batalla.
+
+La tecnología que impulsa esta transición es una mezcla de biotecnología joviana FTL (más rápida que la luz) y arquitectura de implantes de los Sleepers. Esto permite un enlace de banda ancha que mantiene al infomorfo sincronizado con su impronta en la RV del Fulcro, incluso a través de vastas distancias interestelares.
+
+| Componente | Descripción | Significado en el lore |
+| :--- | :--- | :--- |
+| **Infomorfo** | Conciencia digital | Permite la inmortalidad real |
+| **Receptáculos jovianos** | Plataformas de combate adaptativas | Superior a los diseños del Imperio |
+| **Implantes FTL** | Biotecnología nano-adaptada | Mantiene la sincronización en tiempo real |
+| **El Intendente** | Desarrollador principal de la tecnología | Vínculo con el I+D robado de la Legión de Mordu |
+| **Zarzakh** | Ubicación del sistema | Santuario para The Deathless |
+
+<CardGrid cols={2}>
+  <Card title="El Jardín Resonante">
+    Un entorno virtual oscuro y tranquilo donde se almacena la conciencia de los Vanguard. Sirve como refugio para aquellos recuperados de los Archivos de Confinamiento de SARO.
+  </Card>
+  <Card title="El Círculo de The Deathless">
+    La organización que proporciona santuario y recursos a los Vanguard, con el objetivo de lograr la independencia total de los cuatro Imperios.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Perspectiva del desarrollador">
+Los desarrolladores utilizan la "narrativa ambiental" para mostrar la historia de estos lugares, centrándose en la sensación de "habitado" de las instalaciones industriales y la dureza de los entornos.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Conflictos de facciones: The Deathless contra Upwell">
+
+Las superficies planetarias de Nuevo Edén no están vacías. Son zonas en disputa donde el **lore de EVE Vanguard** se desarrolla a través del conflicto. Uno de los principales antagonistas es el Consorcio Upwell. Upwell se especializa en operaciones de salvamento a gran escala, recuperando materiales valiosos de naufragios de naves que se han estrellado en lunas y planetas.
+
+La presencia de Upwell se define por una eficiencia brutal y una total falta de preocupación por sus trabajadores. Sus estructuras son edificios industriales prefabricados lanzados desde el espacio sobre cimientos de hormigón. Estos lugares suelen estar custodiados por la Legión de Mordu, mercenarios de élite contratados para eliminar cualquier interferencia de los Vanguard.
+
+| Facción | Rol en Vanguard | Filosofía |
+| :--- | :--- | :--- |
+| **The Deathless** | Proveedor/Líder | Supervivencia e independencia |
+| **Upwell** | Objetivo/Industrial | Beneficio corporativo/Salvamento |
+| **Legión de Mordu** | Enemigo/Guardián | Seguridad contratada |
+| **The Arkombine** | Reclutador | Facilitar el traslado de los Vanguard |
+| **SARO** | Opresor | Contención de los clones de guerra |
+
+<Callout type="info" title="Construcción del mundo">
+A menudo se retrata a los trabajadores de Upwell como aterrorizados por los Vanguard. Para ellos, la aparición de los Vanguard es el "peor resultado posible", ya que los Vanguard son vistos como espectros de guerra imparables que se derriten.
+</Callout>
+
+</Section>
+
+<Section icon={Zap} title="Mecánicas de extracción: El precio de la inmortalidad">
+
+Uno de los aspectos más singulares del **lore de EVE Vanguard** es el proceso de extracción. A diferencia de otros juegos de disparos donde la extracción podría implicar un simple viaje en helicóptero, la extracción de los Vanguard es un asunto "brutal" y "melancólico". Los Vanguard han improvisado tecnología de teletransporte industrial de Upwell para sus propios fines.
+
+Dado que esta tecnología fue diseñada para transportar carga y no materia biológica, es increíblemente violenta cuando se usa en humanos. Esto crea una narrativa donde "incluso si ganas, pierdes", reforzando la sombría realidad de ser un clon de guerra inmortal.
+
+<Steps>
+  <Step num="1" title="Despliegue de balizas">
+    Las fuerzas Vanguard lanzan balizas de extracción sobre la superficie antes de asaltar un lugar, alertando a todos de su presencia.
+  </Step>
+  <Step num="2" title="Sincronización de conciencia">
+    El enlace FTL asegura que los datos del infomorfo se encuentren constantemente actualizados en el Jardín Resonante durante el fragor de la batalla.
+  </Step>
+  <Step num="3" title="Desgarro molecular">
+    Al activarse, el teletransportador desgarra el cuerpo biológico, derritiendo eficazmente la forma física del clon de guerra.
+  </Step>
+  <Step num="4" title="Recuperación de equipo">
+    El traje y los objetos físicos se transportan con éxito de regreso a la barcaza de guerra, ya que son recursos industriales no biológicos.
+  </Step>
+</Steps>
+
+| Elemento de extracción | Resultado | Razón en el lore |
+| :--- | :--- | :--- |
+| **Materia biológica** | Destruida/Derretida | Tecnología no diseñada para humanos |
+| **Equipo físico** | Recuperado a salvo | Enfoque en el transporte industrial |
+| **Conciencia** | Devuelta a la RV | Tecnología de infomorfo FTL |
+| **Efecto visual** | Disolución molecular | Teletransporte de alta energía |
+
+<Callout type="success" title="Condición de victoria">
+En Vanguard, tu cuerpo es prescindible, pero tu equipo y tu "mente" son los verdaderos activos. Esto define la "melancolía del clon de guerra inmortal".
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Investigación del lore e hitos">
+
+Para los jugadores que buscan sumergirse por completo en el **lore de EVE Vanguard**, existen varias áreas clave que investigar dentro del mundo del juego. Los desarrolladores han escondido detalles en el entorno que sugieren una narrativa más amplia que involucra a los jovianos y a los Sleepers.
+
+<Checklist
+  id="lore-milestones"
+  title="Objetivos del lore de Vanguard:"
+  items={[
+    "Investigar los cimientos prefabricados de Upwell en busca de registros de trabajadores",
+    "Identificar los patrones de patrulla y el equipo de la Legión de Mordu",
+    "Localizar pistas sobre el 'Dador de vida' (Lifegiver) y el 'Intendente' (Quartermaster)",
+    "Explorar la interfaz de RV del Fulcro en busca de archivos ocultos",
+    "Analizar la tecnología de las balizas de extracción para buscar orígenes jovianos"
+  ]}
+/>
+
+<Callout type="tip" title="Contenido futuro">
+El lore se está lanzando en "pequeñas dosis". Mantente atento al Discord oficial y a los cambios ambientales en el juego, ya que estos reflejan la historia en evolución de la lucha de los Vanguard por la libertad.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Preguntas frecuentes sobre el lore de Vanguard">
+
+<FAQ items={[
+  {
+    question: "¿Qué es exactamente un infomorfo en el lore de EVE Vanguard?",
+    answer: "Un infomorfo es una versión digital de la conciencia de una persona. Se almacena en el Jardín Resonante y se puede proyectar en múltiples cuerpos clon a lo largo del tiempo."
+  },
+  {
+    question: "¿Por qué se derriten los clones de Vanguard durante la extracción?",
+    answer: "La tecnología de extracción es equipo de teletransporte industrial reutilizado de Upwell. Nunca fue diseñado para la vida biológica, por lo que destruye el cuerpo mientras salva el equipo."
+  },
+  {
+    question: "¿Quiénes son los jovianos y por qué son importantes?",
+    answer: "Los jovianos son una raza antigua y muy avanzada. Los cuerpos de los Vanguard son 'receptáculos' jovianos modificados, que son más adaptables y económicos que los clones estándar del Imperio."
+  },
+  {
+    question: "¿Es The Deathless un héroe o un villano?",
+    answer: "En Nuevo Edén, la moralidad es gris. The Deathless proporciona libertad y un hogar para los clones de guerra, pero es un líder pirata que se opone a los Imperios establecidos."
+  }
+]} />
+
+</Section>

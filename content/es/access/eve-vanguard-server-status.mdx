@@ -1,0 +1,197 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Estado del servidor de EVE Vanguard: Actualizaciones en vivo y solución de problemas",
+  description: "Consulta el estado del servidor de EVE Vanguard en vivo, monitorea el tiempo de inactividad de Tranquility, sigue los horarios de mantenimiento y soluciona errores de conexión en 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Server+Status+Guide",
+  date: "2026-07-08",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, estado del servidor, mantenimiento, solución de problemas, Tranquility, errores de conexión"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **El estado del servidor de EVE Vanguard** depende directamente del clúster Tranquility y de la API de backend Quasar.
+- **El mantenimiento diario programado** deja los servidores fuera de línea temporalmente para sincronizar los datos con EVE Online.
+- **La infraestructura de nube moderna** que utiliza AWS y Cloudflare garantiza un alto tiempo de actividad y un enrutamiento de baja latencia.
+- **Los pasos para solucionar problemas de conexión**, como vaciar el DNS y verificar los archivos, resuelven la mayoría de los errores del launcher.
+</Callout>
+
+<Section icon={Map} title="Estado del servidor de EVE Vanguard: Monitoreo en vivo">
+
+Monitorear la infraestructura en vivo es esencial para los jugadores que buscan desplegarse en las zonas de guerra de New Eden. Debido a que este módulo de disparos en primera persona está integrado directamente con el universo principal de EVE Online, cualquier interrupción en la base de datos principal afecta tu capacidad de despliegue. Cuando los servidores están totalmente operativos, tus acciones sobre el terreno se escriben directamente en la economía persistente del clúster Tranquility.
+
+Durante las pruebas de juego públicas y los eventos en vivo, la carga del servidor puede aumentar drásticamente. Hacer un seguimiento del estado operativo de los componentes individuales ayuda a aislar si los problemas de conectividad residen en tu red local o en los servidores del juego.
+
+**Puntos destacados del video:**
+- **La conexión persistente** vincula el combate terrestre directamente con la economía más amplia de EVE Online.
+- **La infraestructura del servidor** debe manejar altas cargas concurrentes durante las pruebas de juego públicas.
+- **La retroalimentación en tiempo real** muestra cómo el combate planetario impacta el control regional en el espacio.
+
+<YouTubeEmbed videoId="mBD9T3pBl5Q" title="3 Reasons EVE Vanguard Will FAIL" />
+
+La siguiente tabla describe los componentes principales que impulsan la experiencia en línea. Si alguno de estos servicios experimenta un rendimiento degradado, es posible que encuentres problemas al iniciar sesión o en el emparejamiento.
+
+| Servicio | Estado | Tiempo de actividad (90 días) |
+| :--- | :--- | :--- |
+| Tranquility | Operativo | 99.99% |
+| Servidor de Juego | Operativo | 99.99% |
+| API Quasar | Operativo | 100.0% |
+| EVE Vanguard | Operativo | 100.0% |
+
+<Callout type="success" title="Estado Actual">
+Todos los servicios principales, incluidos el clúster Tranquility y la API Quasar, funcionan con normalidad y un rendimiento óptimo.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Horarios de mantenimiento e incidentes recientes">
+
+Se requiere un mantenimiento regular para mantener la base de datos sincronizada entre la simulación espacial y la zona de combate terrestre. CCP Games realiza mantenimientos diarios programados para implementar correcciones rápidas (hotfixes), optimizar las tablas de la base de datos y garantizar que la conexión entre EVE Online y Vanguard sea fluida. Estas ventanas de mantenimiento suelen ser breves, pero desconectarán temporalmente a los jugadores activos.
+
+El seguimiento de los incidentes históricos proporciona información sobre las tendencias de estabilidad del servidor. Por ejemplo, durante el despliegue de actualizaciones importantes, pueden ocurrir tiempos de inactividad prolongados mientras se actualizan los esquemas de la base de datos.
+
+| Fecha | Estado | Detalles |
+| :--- | :--- | :--- |
+| Jul 08, 2026 | Operativo | Sistema totalmente funcional sin tiempo de inactividad. |
+| Jul 07, 2026 | Operativo | No se informaron incidentes durante el mantenimiento diario. |
+| Jun 25, 2026 | Resuelto | Tranquility experimentó un tiempo de inactividad prolongado inesperado. |
+| Jun 24, 2026 | Operativo | Mantenimiento diario completado dentro de la ventana estándar. |
+
+Durante el incidente del 25 de junio de 2026, los desarrolladores investigaron un bloqueo inesperado de la base de datos que retrasó la secuencia de inicio del servidor. El problema se resolvió en pocas horas, restaurando el acceso tanto a los pilotos espaciales como a los mercenarios terrestres.
+
+<Callout type="warning" title="Aviso de Mantenimiento">
+Evita comenzar partidas dentro de los 15 minutos anteriores a la ventana de mantenimiento diario para evitar la pérdida de progreso o desconexiones repentinas.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Solución de problemas de conexión">
+
+Si la página de estado del servidor indica que todos los sistemas están operativos, pero aún no puedes conectarte, es probable que el cuello de botella se encuentre en tu red local o en la configuración del launcher. Los síntomas comunes de problemas de conectividad local incluyen pantallas de carga infinitas, fallos de autenticación o ser devuelto al menú principal inmediatamente después de que comience el emparejamiento.
+
+Sigue estos pasos estructurados para diagnosticar y reparar problemas de red comunes que te impiden unirte a la batalla.
+
+<Steps>
+  <Step num="1" title="Verificar el estado de la red">
+    Consulta la página de estado oficial para confirmar que el clúster Tranquility y la API Quasar están totalmente operativos antes de cambiar la configuración local.
+  </Step>
+  <Step num="2" title="Reiniciar el EVE Launcher">
+    Cierra el launcher completamente desde la bandeja del sistema y reinícialo para forzar una comprobación de actualizaciones del cliente y refrescar tu sesión de inicio de sesión.
+  </Step>
+  <Step num="3" title="Vaciar la caché de DNS local">
+    Abre el símbolo del sistema como administrador y ejecuta el comando para borrar las rutas de enrutamiento desactualizadas hacia los servidores de emparejamiento de AWS.
+  </Step>
+  <Step num="4" title="Verificar la integridad de los archivos del juego">
+    Usa la configuración del launcher para escanear y verificar los archivos del juego instalados, reparando cualquier activo dañado que cause cierres inesperados durante la carga.
+  </Step>
+</Steps>
+
+Si encuentras errores específicos durante estos pasos, consulta la tabla a continuación para identificar la causa raíz y aplicar la resolución adecuada.
+
+| Código de error | Causa potencial | Solución recomendada |
+| :--- | :--- | :--- |
+| Tiempo de espera agotado | Pérdida de paquetes local o problemas de ruta | Cambia a una conexión por cable y reinicia el router |
+| Discordancia de versión | Archivos del cliente desactualizados en tu disco | Fuerza una comprobación manual de actualizaciones en el launcher |
+| Fallo de autenticación | Token de seguridad de la cuenta caducado | Cierra la sesión en el launcher por completo y vuelve a entrar |
+
+<Callout type="tip" title="Consejo Pro">
+Ejecutar el EVE Launcher con privilegios de administrador evita que Windows Defender bloquee actualizaciones esenciales en segundo plano.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Infraestructura de red y regiones de servidores">
+
+Para ofrecer una experiencia de FPS de alta fidelidad dentro de un universo multijugador masivo, el juego utiliza una arquitectura de nube híbrida. El emparejamiento dinámico y los cálculos físicos son gestionados por servidores de alto rendimiento, mientras que las actualizaciones del estado del juego se sincronizan con la base de datos principal a través de capas de API personalizadas. Esta configuración minimiza la latencia y garantiza que las acciones en el terreno se registren instantáneamente.
+
+La red de entrega global utiliza varios servicios de nube especializados para enrutar los datos de los jugadores de manera eficiente.
+
+<CardGrid cols={3}>
+  <Card title="Cómputo Quasar">
+    - **Instancias AWS EC2** alojan instancias de partidas dinámicas.
+    - Emparejamiento de baja latencia.
+    - Escalado automático durante las horas pico.
+  </Card>
+  <Card title="Acelerador Global">
+    - **Enrutamiento de red de AWS** evita rutas congestionadas de la internet pública.
+    - Reduce el jitter y la pérdida de paquetes.
+    - Dirige el tráfico al centro de datos más cercano.
+  </Card>
+  <Card title="Cloudflare R2">
+    - **Entrega rápida de activos** para parches y actualizaciones del cliente.
+    - Reduce los tiempos de descarga del launcher.
+    - Evita la sobrecarga del servidor de origen durante los lanzamientos.
+  </Card>
+</CardGrid>
+
+Comprender el papel de cada proveedor de infraestructura ayuda a los jugadores a diagnosticar dónde podrían ocurrir retrasos de enrutamiento durante las pruebas de juego regionales en horas pico.
+
+| Proveedor | Componente de servicio | Función principal |
+| :--- | :--- | :--- |
+| AWS | Cómputo Quasar (EC2) | Impulsa la lógica del juego y las salas de emparejamiento |
+| AWS | Acelerador Global | Optimiza la ruta de enrutamiento para reducir el ping del jugador |
+| Cloudflare | Cloudflare R2 | Aloja paquetes de actualización y activos estáticos del juego |
+
+<Callout type="info" title="Nota de Infraestructura">
+La API Quasar actúa como el puente entre Vanguard y EVE Online, traduciendo las acciones del tirador en puntos de guerra de facciones.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de verificación de conexión previa al vuelo">
+
+Antes de desplegarte en una prueba de juego en vivo, verifica tu configuración con esta lista para asegurar una conexión estable. La estabilidad de la red es crucial porque desconectarse a mitad de una partida puede resultar en la pérdida de valiosos clones y equipo.
+
+<Checklist
+  id="pre-flight-checklist"
+  title="Lista de verificación para el despliegue:"
+  items={[
+    "Verificar que el estado del servidor de EVE Vanguard en vivo sea operativo",
+    "Comprobar si hay actualizaciones pendientes de Windows y de los controladores gráficos",
+    "Configurar excepciones en el firewall para el launcher y el cliente del juego",
+    "Confirmar que las descargas en segundo plano estén pausadas para preservar el ancho de banda"
+  ]}
+/>
+
+<Callout type="success" title="Listo para el Despliegue">
+Una vez que todos los elementos de la lista de verificación estén marcados como completados, tu sistema estará optimizado para una conexión estable al clúster de servidores.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Preguntas frecuentes">
+
+Revisa estas preguntas comunes sobre la disponibilidad del servidor, las rutinas de mantenimiento y la solución de problemas de conexión.
+
+<FAQ items={[
+  {
+    question: "¿Cómo puedo comprobar el estado del servidor de EVE Vanguard en vivo?",
+    answer: "Puedes comprobar el estado operativo de los servidores directamente a través del portal oficial de estado, la interfaz del EVE Launcher o revisando la matriz de estado del sistema en esta guía."
+  },
+  {
+    question: "¿Se cae EVE Vanguard cuando EVE Online está en mantenimiento?",
+    answer: "Sí. Debido a que Vanguard está integrado con el clúster Tranquility, cualquier tiempo de inactividad programado o no programado en EVE Online también dejará fuera de línea los servidores de Vanguard."
+  },
+  {
+    question: "¿Qué debo hacer si recibo un error de autenticación en el launcher?",
+    answer: "Cierra la sesión de tu cuenta dentro del EVE Launcher, cierra el programa por completo, reinícialo y vuelve a iniciar sesión para actualizar tus credenciales de seguridad."
+  },
+  {
+    question: "¿Por qué mi ping es alto a pesar de que los servidores están operativos?",
+    answer: "El ping alto suele ser causado por problemas de enrutamiento local. Asegúrate de estar conectado a través de Ethernet y de que tu tráfico esté utilizando la red del Acelerador Global de AWS."
+  }
+]} />
+
+<Callout type="tip" title="Consejo de Soporte">
+Si los servidores están operativos pero aún no puedes conectarte después de solucionar problemas, envía un ticket de soporte que contenga los registros de tu launcher al equipo técnico.
+</Callout>
+
+</Section>

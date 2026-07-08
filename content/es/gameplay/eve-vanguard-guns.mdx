@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Armas de EVE Vanguard: Guía de creación de armas y equipamiento",
+  description: "Domina las armas de EVE Vanguard. Aprende sobre la creación de armas, rutas de mejora y los mejores equipamientos para la prueba de juego de la Operación Avalon en julio de 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Vanguard+Guns+Guide",
+  date: "2026-07-08",
+  author: "Equipo de Wiki de EVE Vanguard"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Arsenal principal**: Domina el manejo de las **armas personalizables de EVE Vanguard** para sobrevivir a los contratos de extracción planetaria de alto riesgo.
+- **Prioridad de creación**: Prioriza la recolección de polímeros de nanitas y restos de aleación durante los despliegues para fabricar receptores de armas de nivel alto.
+- **Estrategia de equipamiento**: Adapta la configuración de tu arma a los peligros ambientales del sector, equilibrando el alcance y la cadencia de fuego.
+- **Mitigación de riesgos**: Asegura los planos de armas raras en el contenedor de tu traje de clon para evitar perderlos al morir.
+</Callout>
+
+<Section icon={Shield} title="Armas de EVE Vanguard: Resumen del sistema de armas">
+
+En los hostiles entornos planetarios de New Eden, dominar las **armas de EVE Vanguard** es la diferencia entre una extracción exitosa y la terminación permanente del clon. Como clon de guerra desplegado durante la prueba de juego de la Operación Avalon en Steam (que se lleva a cabo del 7 al 20 de julio de 2026), tu objetivo principal es recuperar restos de naufragios, combatir escuadrones hostiles y extraer recursos valiosos. Las armas que lleves a estas zonas peligrosas dictarán tu flexibilidad táctica y tu tasa de supervivencia general.
+
+El sistema de armas en EVE Vanguard se basa en una construcción modular y comportamientos balísticos realistas. A diferencia de los shooters tradicionales, las armas son piezas de inversión; perder un rifle de nivel alto en un pantano envenenado o en una jungla peligrosa significa perder los recursos gastados para fabricarlo. Comprender las estadísticas básicas de cada clase de arma te permite tomar decisiones informadas antes de desplegarte desde tu estación de clones orbital.
+
+| Clase de arma | Alcance óptimo | Cadencia de fuego | Caso de uso principal |
+|---|---|---|---|
+| Rifle de asalto | Medio (25-100 m) | Moderada-Alta | Combate versátil en primera línea |
+| Rifle de precisión | Largo (100 m+) | Baja (Semiautomático) | Reconocimiento y bajas a larga distancia |
+| Subfusil | Corto (0-25 m) | Muy alta | Combate a corta distancia y limpieza de pantanos |
+| Bláster pesado | Medio (15-50 m) | Alta | Supresión y eliminación de objetivos blindados |
+
+<Callout type="info" title="Integración del sistema">
+Cada arma en EVE Vanguard afecta directamente al consumo de energía de tu traje. Las armas de energía de nivel alto ofrecen una penetración de armadura superior, pero agotan la batería de tu traje más rápido, lo que requiere un equilibrio cuidadoso de tus módulos activos. Consulta el [sitio web oficial de EVE Vanguard](https://evevanguard.com/) para obtener actualizaciones continuas sobre el ajuste de armas y la compatibilidad con los trajes.
+</Callout>
+
+Cada clase de arma cuenta con patrones de retroceso, velocidades de recarga y requisitos de munición únicos. Las armas basadas en proyectiles dependen de cargadores físicos que ocupan ranuras de inventario, mientras que las armas basadas en energía utilizan celdas de energía recargables que generan calor. Equilibrar tus reservas de munición con el espacio para el botín recuperado es un desafío constante durante los despliegues prolongados.
+
+</Section>
+
+<Section icon={Sparkles} title="Cómo crear y mejorar tu arsenal">
+
+La fabricación es la piedra angular del progreso en EVE Vanguard. No te limitas a comprar las mejores armas en un mercado; debes ganártelas recolectando recursos de enemigos caídos, naves de guerra estrelladas y contenedores planetarios. Mejorar tus armas mejora la estabilidad, aumenta la capacidad del cargador y desbloquea tipos de munición especializados que evitan las configuraciones de escudos enemigos.
+
+El ciclo de creación requiere que equilibres el riesgo y la recompensa. Aventurarse más profundamente en zonas de alta amenaza produce materiales de mayor calidad, pero aumenta la probabilidad de encontrar clones de guerra hostiles. Los planos asegurados durante los despliegues deben llevarse de vuelta a tu fabricador orbital para desbloquear opciones de creación permanentes.
+
+<Steps>
+  <Step num="1" title="Asegurar planos">
+    Localiza planos de armas dentro de los restos de naves de guerra estrelladas o compra plantillas básicas a los representantes de las facciones en el nexo orbital.
+  </Step>
+  <Step num="2" title="Recolectar recursos planetarios">
+    Despliégate en las superficies planetarias para recolectar nanitas, fragmentos de aleación y núcleos de energía en pantanos, junglas y ruinas industriales.
+  </Step>
+  <Step num="3" title="Fabricar componentes">
+    Utiliza el fabricador orbital para convertir las materias primas en componentes de armas, como cañones, receptores y miras ópticas.
+  </Step>
+  <Step num="4" title="Ensamblar y modificar">
+    Combina los componentes para ensamblar tu arma personalizada, luego aplica modificaciones para ajustar el manejo, el retroceso y los tipos de daño.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Seguridad de los planos">
+Coloca siempre los planos de armas recién adquiridos en las ranuras de inventario seguras de tu traje de clon. Los objetos en las ranuras seguras se conservan incluso si tu clon es destruido durante la fase de despliegue.
+</Callout>
+
+Para ayudarte a planificar tus rutas de recolección, la siguiente tabla detalla los materiales de creación principales requeridos para el ensamblaje de armas y dónde encontrarlos durante la prueba de juego de la Operación Avalon.
+
+| Nombre del recurso | Rareza | Fuente principal | Uso en componentes de armas |
+|---|---|---|---|
+| Polímero de nanitas | Común | Pantanos y junglas | Culatas y empuñaduras de armas |
+| Restos de aleación | Común | Restos de naves de guerra | Cañones y armazones de receptores |
+| Núcleo cargado | Raro | Botín de enemigos de élite | Baterías de armas de energía |
+| Lente óptica | Poco común | Cajas industriales | Miras y láseres de puntería |
+
+</Section>
+
+<Section icon={Target} title="Mejores equipamientos de armas para la Operación Avalon">
+
+Elegir la combinación adecuada de armas y módulos de traje determina tu efectividad en el combate. Durante la prueba de juego de julio de 2026, han surgido tres estilos de juego distintos como altamente efectivos para navegar por la superficie planetaria. Tu equipamiento debe reflejar si juegas en solitario o si te coordinas con un escuadrón.
+
+Un escuadrón equilibrado suele presentar una mezcla de reconocimiento a larga distancia y combatientes de corta distancia con alto daño. Los jugadores en solitario, sin embargo, deberían inclinarse por configuraciones versátiles que les permitan entablar combate a múltiples distancias mientras mantienen una alta movilidad para extracciones rápidas.
+
+<CardGrid cols={3}>
+  <Card title="Vanguardia de asalto">
+    - **Principal**: Rifle de asalto estándar
+    - **Secundaria**: Pistola ligera
+    - **Beneficio clave**: Gran versatilidad, daño confiable a distancias medias y bajo mantenimiento de recursos.
+  </Card>
+  <Card title="Francotirador de reconocimiento">
+    - **Principal**: Rifle de tirador de precisión
+    - **Secundaria**: Subfusil compacto
+    - **Beneficio clave**: Alto daño de un solo disparo, excelente potencial de exploración y fuerte autodefensa.
+  </Card>
+  <Card title="Brechador pesado">
+    - **Principal**: Bláster pesado
+    - **Secundaria**: Escopeta
+    - **Beneficio clave**: Daño devastador a corta distancia, alta supresión y capacidad para destrozar armaduras.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Sinergia de equipamiento">
+Cuando juegues en equipo, asegúrate de que al menos un miembro del escuadrón lleve un rifle de precisión para avistar y marcar a los clones de guerra enemigos antes de iniciar un tiroteo. Esta ventaja táctica evita situaciones de emboscada en biomas de jungla densa.
+</Callout>
+
+Las métricas de rendimiento de estos equipamientos varían según la distancia de combate y el blindaje del objetivo. Revisa los datos operativos a continuación para seleccionar la configuración que mejor se adapte a tus preferencias tácticas.
+
+| Nombre del equipamiento | Alcance efectivo | Capacidad de daño | Control de retroceso | Coste de recursos |
+|---|---|---|---|---|
+| Vanguardia de asalto | Medio | Moderado-Alto | Bueno | Bajo-Medio |
+| Francotirador de reconocimiento | Largo | Muy alto | Moderado | Alto |
+| Brechador pesado | Corto | Extremo | Bajo | Alto |
+
+</Section>
+
+<Section icon={Map} title="Extracción táctica y preservación del equipo">
+
+Adquirir poderosas **armas de EVE Vanguard** es solo la mitad de la batalla; conservarlas requiere una extracción exitosa. Cuando solicitas la extracción, tu ubicación se transmite a los clones de guerra cercanos, lo que te convierte en un objetivo principal para una emboscada. Establecer perímetros defensivos y utilizar el entorno es fundamental para asegurar tu equipo.
+
+Los pantanos y las junglas ofrecen una excelente cobertura natural, pero también limitan tu línea de visión, lo que facilita que los enemigos recorten distancias. Utiliza el audio direccional y los sensores de movimiento para rastrear las amenazas entrantes mientras esperas a que llegue tu nave de extracción.
+
+<Checklist
+  id="extraction-prep"
+  title="Lista de verificación previa a la extracción:"
+  items={[
+    "Asegura los planos de alto valor en tus ranuras de clon protegidas",
+    "Recarga todas las armas y distribuye las reservas de munición",
+    "Escanea el perímetro de la zona de extracción en busca de firmas hostiles",
+    "Despliega escudos defensivos o trampas de utilidad alrededor de la plataforma de aterrizaje",
+    "Coordina el tiempo de extracción con los miembros de tu escuadrón"
+  ]}
+/>
+
+<Callout type="warning" title="Prevención de pérdidas">
+Las armas no aseguradas se pierden permanentemente al morir. Si llevas un arma fabricada de nivel alto, asegúrate de tener suficiente reputación de facción o créditos para cubrir los costes del seguro antes de desplegarte.
+</Callout>
+
+Los diferentes sectores de la superficie planetaria presentan distintos niveles de riesgo durante la extracción. Ajusta tus elecciones de armas en función de las amenazas específicas asociadas a tu zona de despliegue.
+
+| Tipo de sector | Nivel de amenaza | Peligros principales | Arma recomendada |
+|---|---|---|---|
+| Restos de naves de guerra | Alto | Líneas de visión despejadas, francotiradores | Rifle de precisión |
+| Pantanos envenenados | Medio | Baja visibilidad, gas tóxico | Subfusil |
+| Junglas peligrosas | Medio | Follaje denso, emboscadas cercanas | Escopeta / Subfusil |
+| Ruinas industriales | Extremo | Verticalidad, enemigos de élite | Rifle de asalto |
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas frecuentes">
+
+Para ayudarte a sacar el máximo provecho de tu arsenal, aquí tienes respuestas a preguntas comunes sobre las mecánicas de las armas y la personalización en EVE Vanguard.
+
+<FAQ items={[
+  {
+    question: "¿Cómo desbloqueo nuevas armas de EVE Vanguard durante la prueba de juego?",
+    answer: "Debes encontrar planos en contenedores planetarios o recuperarlos de enemigos caídos. Una vez asegurados, lleva los planos a tu fabricador orbital y crea el arma utilizando los recursos recuperados."
+  },
+  {
+    question: "¿Pierdo mis armas fabricadas si muero durante un despliegue?",
+    answer: "Sí, cualquier arma equipada en tus ranuras activas se soltará al morir y podrá ser desvalijada por otros jugadores. Sin embargo, los planos y materiales almacenados en tu contenedor de clon seguro se conservan."
+  },
+  {
+    question: "¿Puedo personalizar los accesorios de mis armas?",
+    answer: "Sí, puedes modificar tus armas en el fabricador orbital. La modificación te permite cambiar miras, cañones y culatas para ajustar el alcance, la estabilidad y las características de manejo."
+  },
+  {
+    question: "¿Cuál es la diferencia entre las armas de proyectiles y las de energía?",
+    answer: "Las armas de proyectiles utilizan munición física que ocupa espacio en el inventario, pero ofrecen cadencias de fuego constantes. Las armas de energía utilizan baterías recargables que generan calor, lo que requiere gestionar el calor durante el fuego sostenido."
+  }
+]} />
+
+<Callout type="tip" title="Comentarios de la comunidad">
+EVE Vanguard se encuentra en desarrollo activo. Únete al servidor oficial de Discord para compartir tus comentarios sobre el juego de armas, el equilibrio de las armas y los sistemas de creación directamente con el equipo de desarrollo.
+</Callout>
+
+</Section>

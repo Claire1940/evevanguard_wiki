@@ -1,0 +1,183 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Tutorial: Setup Guide & Essential Gameplay Tips",
+  description: "Master EVE Vanguard with our tutorial on installation, extraction mechanics, and real-time updates for the 2026 Operation Avalon playtest.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/1e293b/fff?text=EVE+Vanguard+Tutorial",
+  date: "2026-07-08",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **EVE Vanguard Tutorial**: Focuses on the extraction-adventure FPS mechanics set within the EVE Online universe.
+- **Access Methods**: Available via the **EVE Online Launcher** or directly through **Steam** during playtest windows.
+- **Core Loop**: Deploy to planets, complete objectives, and extract before Nemesis Drones or rival squads eliminate you.
+- **Technical Edge**: The game utilizes **Remote Static Data Updates** to apply balance changes without requiring client restarts.
+- **Squad Play**: While solo play is possible, 3-player squads offer the best survivability in the hostile environments of New Eden.
+</Callout>
+
+<Section icon={Map} title="Getting Started: Installation and Access">
+
+EVE Vanguard represents a massive shift in the New Eden ecosystem, bringing boots-on-the-ground combat to the legendary space MMO. As an extraction-adventure FPS, your primary goal is to drop onto ruthless planets, secure exotic technology, and survive long enough to reach the extraction point. For the 2026 Operation Avalon playtest, players must ensure their accounts are properly linked to either the native launcher or Steam to participate in the ongoing war effort.
+
+**Video Highlights:**
+- Overview of the **Remote Static Data Update** system.
+- Demonstration of real-time balance changes (damage multipliers).
+- Insight into how the back-end JSON files modify live sessions.
+- Preview of the combat test map environment and NPC interactions.
+
+<YouTubeEmbed videoId="M7NIOHO3qmo" title="Inside EVE Vanguard: Real-Time Updates" />
+
+To begin your journey, you must first secure access to the game client. The process varies slightly depending on your preferred platform, but both require an active EVE account.
+
+| Installation Method | Primary Benefit | Steps Required |
+| :--- | :--- | :--- |
+| **EVE Launcher** | Seamless integration with EVE Online | Download setup, install EVE Online, select Vanguard tab |
+| **Steam Page** | Automatic updates and Steam community features | Request access on Steam, download via Library |
+| **Epic Games Store** | Alternative PC platform choice | Search for EVE Vanguard, add to library, install |
+
+<Callout type="tip" title="Pro Tip">
+If you are already an EVE Online player, using the official launcher is highly recommended as it keeps all your New Eden credentials in one place and simplifies the login process.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Core Gameplay and Extraction Mechanics">
+
+In this **EVE Vanguard tutorial**, understanding the flow of a match is critical. Unlike traditional arena shooters, Vanguard is about risk management. Every piece of loot you find is lost if you fail to extract. You will face both AI-controlled NPCs and other player squads (PvPvE), making every encounter a potential turning point for your mission.
+
+<Steps>
+  <Step num="1" title="Deployment & Infiltration">
+    Select your loadout and drop into the planetary zone. Your initial priority is to scout the immediate area for resources while staying low to avoid early detection by Nemesis Drones.
+  </Step>
+  <Step num="2" title="Objective Completion">
+    Navigate to marked waypoints to raid crash sites or assault forward bases. These locations hold the exotic tech required to progress your standing and shape the larger interstellar war.
+  </Step>
+  <Step num="3" title="Extraction Phase">
+    Once objectives are met, head to the extraction zone. This is the most dangerous part of the tutorial, as rival squads often camp these areas to steal your hard-earned loot.
+  </Step>
+</Steps>
+
+| Playstyle | Recommended Squad Size | Difficulty Rating | Focus Area |
+| :--- | :--- | :--- | :--- |
+| **Solo Operative** | 1 Player | ★★★★★ | Stealth and Avoidance |
+| **Tactical Duo** | 2 Players | ★★★★☆ | Flanking and Support |
+| **Full Squad** | 3 Players | ★★★☆☆ | Heavy Combat and Objectives |
+
+<Callout type="info" title="Tactical Note">
+The 3-player squad limit is designed to encourage tight-knit coordination. Communication is your most valuable weapon when navigating the dense terrain of New Eden's planets.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Operation Avalon: Objectives and Threats">
+
+Operation Avalon is the current focal point for Vanguard players in 2026. During this phase, the planetary surface is more volatile than ever. You aren't just fighting for scrap; you are fighting for the future of your faction. The environment itself is a threat, with colossal Nemesis Drones hunting down anyone who lingers too long.
+
+<CardGrid cols={3}>
+  <Card title="Raid Sites">
+    - **High Resource Yield**
+    - High NPC presence
+    - Key for exotic tech
+  </Card>
+  <Card title="Forward Bases">
+    - **Strategic Control**
+    - Objective-heavy
+    - Frequent PvP encounters
+  </Card>
+  <Card title="Extraction Zones">
+    - **Final Survival Goal**
+    - Time-limited windows
+    - Maximum danger level
+  </Card>
+</CardGrid>
+
+| Objective Type | Primary Reward | Risk Level | Time Required |
+| :--- | :--- | :--- | :--- |
+| **Tech Salvage** | Crafting Materials | Medium | 5-10 Minutes |
+| **Base Assault** | Faction Standing | High | 15-20 Minutes |
+| **Drone Hunt** | Rare Blueprints | Very High | 10-15 Minutes |
+
+<Callout type="warning" title="Danger Alert">
+Nemesis Drones are not typical NPCs. They utilize advanced tracking and can easily wipe an unprepared squad. If you hear the atmospheric siren, it is time to move toward extraction.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="The Live Service: Real-Time Updates">
+
+One of the most innovative features discussed in this **EVE Vanguard tutorial** is the "Remote Static Data Update" system. This allows the developers to tweak the game's balance on the fly. As seen in the technical demonstrations, developers can modify weapon damage multipliers or update item descriptions via JSON files without forcing players to restart their clients.
+
+<Checklist
+  id="system-features"
+  title="Technical Advantages:"
+  items={[
+    "Zero-downtime balance patches",
+    "Instant weapon stat adjustments",
+    "Runtime text and description updates",
+    "Seamless lobby-to-session transitions",
+    "Minimal impact on player experience"
+  ]}
+/>
+
+| Update Type | Impact Level | Implementation | Client Restart? |
+| :--- | :--- | :--- | :--- |
+| **Balance Tweaks** | Minor | JSON Override | No |
+| **Bug Fixes** | Medium | Runtime Patch | No |
+| **Content Drops** | Major | Binary Update | Yes |
+| **Server Maintenance** | High | Backend Sync | Yes |
+
+<Callout type="success" title="Developer Insight">
+By using JSON-based overrides, CCP Games can respond to meta shifts in real-time. If a specific weapon becomes over-tuned, a fix can be deployed mid-playtest to ensure fair competition for everyone.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Technical Setup and Optimization">
+
+To ensure a smooth experience in EVE Vanguard, your hardware must meet the demands of the Unreal Engine 5 environment. The game features high-fidelity textures and complex physics simulations that require modern specifications.
+
+| Component | Minimum Requirement | Recommended (2026) |
+| :--- | :--- | :--- |
+| **OS** | Windows 10 (64-bit) | Windows 11 |
+| **CPU** | Intel i5-9600K | Intel i7-12700K |
+| **RAM** | 16 GB | 32 GB |
+| **GPU** | NVIDIA RTX 2060 | NVIDIA RTX 4070 |
+| **Storage** | 50 GB SSD | 50 GB NVMe SSD |
+
+<Callout type="info" title="System Tip">
+Always install EVE Vanguard on an SSD. The streaming technology used for the planetary surfaces relies heavily on fast data access speeds to prevent stuttering during high-speed combat.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "How do I access the EVE Vanguard tutorial playtest?",
+    answer: "You can request access via the EVE Vanguard Steam page or download the client through the EVE Online launcher if you have an active Omega subscription or a playtest invite."
+  },
+  {
+    question: "Can I play EVE Vanguard solo?",
+    answer: "Yes, solo play is supported. However, the game is balanced for 3-player squads, so solo players must rely more on stealth and careful planning to survive extractions."
+  },
+  {
+    question: "What happens if I die before extracting?",
+    answer: "If you are eliminated before reaching an extraction point, you will lose all the exotic tech and resources gathered during that specific session."
+  },
+  {
+    question: "How do real-time updates affect my gameplay?",
+    answer: "Real-time updates allow developers to fix bugs or balance weapons without kicking you out of the game, ensuring a more stable and fair experience during live events."
+  }
+]} />
+
+</Section>

@@ -1,0 +1,150 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Steam Deck: Optimierungs- & Start-Leitfaden",
+  description: "Erfahren Sie, wie Sie EVE Vanguard auf dem Steam Deck ausführen. Erhalten Sie Schritt-für-Schritt-Anleitungen zur Einrichtung, Proton-Konfiguration, Performance-Optimierung und Fehlerbehebung.",
+  category: "Einrichtungs-Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/fff?text=EVE+Vanguard+Steam+Deck",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- **Haupt-Keyword**: Führen Sie **EVE Vanguard Steam Deck**-Setups mithilfe der Proton-Kompatibilität aus und optimieren Sie diese.
+- **Kernmechanik**: Die Gamepad-Unterstützung ist vollständig integriert, was das Spielen im Handheld-Modus sehr praktikabel macht.
+- **Beste Strategie**: Verwenden Sie GE-Proton (Version 10-9 oder neuer), um Start- und Authentifizierungsprobleme zu lösen.
+- **Wichtiger Tipp**: Die Token-Verarbeitung kann unter Linux fehlschlagen; das manuelle Übergeben von Startparametern ist oft erforderlich.
+- **Top-Empfehlung**: Ein Dual-Boot mit Windows auf dem Steam Deck bietet die stabilste Out-of-the-box-Erfahrung.
+</Callout>
+
+<Section icon={Shield} title="EVE Vanguard Steam Deck Kompatibilitätsübersicht">
+
+Der Übergang des EVE Online-Universums zu einem bodenbasierten Extraktions-Shooter führt intensive, von der Unreal Engine 5 angetriebene Kämpfe ein. Das Spielen von **EVE Vanguard Steam Deck**-Konfigurationen erfordert jedoch ein Verständnis des aktuellen Stands der Linux- und SteamOS-Kompatibilität. Während die Entwickler eine vollständige Gamepad-Unterstützung integriert haben, bleibt die Launcher-Authentifizierung die größte Hürde für Handheld-Spieler.
+
+**Video-Highlights:**
+- **EVE FPS Evolution**: Wie Vanguard dort erfolgreich sein will, wo Dust 514 scheiterte.
+- **Extraktions-Mechaniken**: Einsatz als Infomorph, um wertvolle Beute zu sichern und sicher zu extrahieren.
+- **Gemeinsames Universum**: Die langfristige Vision, Bodenkämpfe mit weltraumgebundenen Kapselpiloten zu verbinden.
+
+<YouTubeEmbed videoId="NemR_hgsP60" title="EVE Vanguard Aims to Be the EVE FPS That Dust 514 Wasn’t" />
+
+Während die Performance auf der Hardware des Steam Decks solide ist, erfordert das Erreichen einer stabilen Bildrate sorgfältiges Tuning. Das Spiel nutzt die Unreal Engine 5, was bedeutet, dass die Einstellungen herunterskaliert werden müssen, um ein flüssiges Ziel von 30 bis 40 FPS zu halten.
+
+| Metrik | SteamOS / Proton Performance | Windows auf dem Deck Performance |
+| --- | --- | --- |
+| **Stabilität** | Moderat (Erfordert manuellen Token-Bypass) | Hoch (Standardmäßige Windows-Ausführung) |
+| **Bildrate** | 25-35 FPS (Niedrige/Mittlere Einst.) | 30-40 FPS (Niedrige/Mittlere Einst.) |
+| **Controller-Unterstützung** | Native Gamepad-Unterstützung | Native Gamepad-Unterstützung |
+| **Anti-Cheat** | Konfigurationsabhängig / Proton GE nötig | Voll funktionsfähig |
+
+<Callout type="warning" title="Anti-Cheat & Launcher-Status">
+EVE Vanguard verzichtet auf traditionelle Anti-Cheat-Blocker auf Kernel-Ebene und setzt stattdessen auf "digitale Physik". Dennoch scheitert die Token-Authentifizierung des EVE Online Launchers unter Standard-Proton-Konfigurationen oft daran, die Anmeldedaten an den Spiel-Client zu übergeben.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="So führen Sie EVE Vanguard unter SteamOS aus">
+
+Um EVE Vanguard auf SteamOS ohne Dual-Boot mit Windows zu spielen, müssen Sie den Fehler bei der Token-Authentifizierung des Launchers umgehen. Dies beinhaltet das Extrahieren der aktiven Sitzungsargumente aus einer laufenden Instanz und das Konfigurieren von EVE Vanguard als Verknüpfung.
+
+<CardGrid cols={3}>
+  <Card title="GE-Proton Anforderung">
+    Standard-Proton-Versionen schlagen oft fehl. Sie müssen **GE-Proton10-9** oder neuer verwenden, um die Abhängigkeiten des Spiels zu bewältigen.
+  </Card>
+  <Card title="Token-Extraktion">
+    Authentifizierungs-Token müssen aus den aktiven Systemprozessen kopiert und direkt in Steam eingefügt werden.
+  </Card>
+  <Card title="Performance-Profil">
+    Das Ausführen des Spiels mit benutzerdefinierten Startargumenten gewährleistet eine stabile Performance und verhindert zufällige Abstürze.
+  </Card>
+</CardGrid>
+
+<Steps>
+  <Step num="1" title="Steam-fremdes Spiel hinzufügen">
+    Suchen Sie Ihre lokalen Dateien und fügen Sie die folgende ausführbare Datei als Steam-fremdes Spiel zu Ihrer Steam-Bibliothek hinzu: `/path/to/steam/steamapps/compatdata/8500/pfx/drive_c/CCP/EVE/eve-vanguard/live/WindowsClient/start_protected_game.exe`.
+  </Step>
+  <Step num="2" title="Kompatibilität konfigurieren">
+    Klicken Sie mit der rechten Maustaste auf die neu erstellte Verknüpfung, gehen Sie zu **Eigenschaften**, dann zu **Kompatibilität** und erzwingen Sie die Verwendung von **GE-Proton10-9** oder einer neueren Version.
+  </Step>
+  <Step num="3" title="Sitzungs-Token extrahieren">
+    Starten Sie EVE Online und rufen Sie EVE Vanguard über den Standard-Launcher auf. Während der Anmeldebildschirm lädt, öffnen Sie Ihr Terminal und führen Sie `ps aux | grep vanguard` aus, um den aktiven Shipping-Client zu finden.
+  </Step>
+  <Step num="4" title="Startoptionen anwenden">
+    Kopieren Sie alle Parameter nach `EVEVanguardClient-Win64-Shipping.exe`. Kehren Sie zu den **Eigenschaften** Ihrer Steam-Verknüpfung zurück und fügen Sie diese Zeichenfolge in die **Startoptionen** ein.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Warnung zum Token-Ablauf">
+Diese Sitzungs-Token sind temporär. Wenn Ihr Spiel die Authentifizierung verweigert oder Sie wiederholt zur Anmeldung auffordert, müssen Sie den Token-Extraktionsprozess wiederholen, um Ihre Startoptionen zu aktualisieren.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Steam Deck Performance-Optimierung">
+
+Das Ausführen eines Unreal Engine 5-Titels auf einem Handheld-Gerät erfordert eine aggressive grafische Skalierung. Um ein stabiles Ziel von 30 FPS zu halten, sollten Spieler ihre In-Game-Einstellungen anpassen, um die Performance gegenüber der visuellen Qualität zu priorisieren.
+
+| Einstellung | Empfohlener Wert | Performance-Auswirkung |
+| --- | --- | --- |
+| **Auflösung** | 1280x800 (Nativ) oder 720p | Hoch |
+| **Upscaling** | FSR (Balanced / Performance) | Hoch |
+| **Schattenqualität** | Niedrig | Mittel |
+| **Texturqualität** | Mittel | Niedrig |
+| **Nachbearbeitung** | Niedrig | Mittel |
+| **Effektqualität** | Niedrig | Hoch |
+
+Die Verwendung einer Dual-Boot-Konfiguration mit Windows 11 auf dem Steam Deck wird für Spieler dringend empfohlen, die einen einfacheren Einrichtungsprozess wünschen. Unter Windows funktioniert der Launcher nativ, wodurch das manuelle Extrahieren von Befehlszeilen-Token entfällt.
+
+<Callout type="success" title="Ideale Hardware-Ziele">
+Streben Sie stabile **30 FPS** mit einer Bildwiederholfrequenz von **60Hz** oder **90Hz** (bei OLED-Modellen) an. Dies gewährleistet ein flüssiges Frame-Pacing während intensiver Extraktions-Gefechte.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Steam Deck Setup-Checkliste">
+
+Bevor Sie in die Kriegsgebiete von New Eden auf Ihrem Handheld aufbrechen, stellen Sie sicher, dass Ihr System vollständig vorbereitet ist.
+
+<Checklist
+  id="steam-deck-vanguard-prep"
+  title="Einsatzvoraussetzungen:"
+  items={[
+    "Installieren Sie ProtonUp-Qt aus dem Discover Store, um GE-Proton herunterzuladen",
+    "Reservieren Sie mindestens 50 GB schnellen SSD-Speicherplatz",
+    "Konfigurieren Sie den Steam Deck GPU VRAM im BIOS auf 4GB",
+    "Aktivieren Sie den Entwicklermodus, um Terminalzugriff für die Token-Extraktion zu ermöglichen",
+    "Belegen Sie die hinteren Grifftasten mit wichtigen taktischen Eingaben (Springen, Interagieren)"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Häufig gestellte Fragen (FAQ)">
+
+<FAQ items={[
+  {
+    question: "Kann ich EVE Vanguard Steam Deck-Setups nativ auf SteamOS spielen?",
+    answer: "Ja, aber es ist keine Plug-and-Play-Erfahrung. Sie müssen GE-Proton verwenden und Authentifizierungs-Token manuell aus dem aktiven Launcher-Prozess in Ihre Steam-Startoptionen kopieren, um Anmeldefehler zu umgehen."
+  },
+  {
+    question: "Unterstützt EVE Vanguard Controller?",
+    answer: "Ja. Die Entwickler haben eine vollständige native Gamepad-Unterstützung in EVE Vanguard eingebaut, wodurch es nach dem Start des Spiels hervorragend mit den integrierten Bedienelementen des Steam Decks kompatibel ist."
+  },
+  {
+    question: "Warum bleibe ich am Anmeldebildschirm hängen?",
+    answer: "Dies wird dadurch verursacht, dass der Launcher unter Proton die Authentifizierungs-Token nicht an den Spiel-Client übergibt. Sie müssen den aktiven Token mit einem Terminal-Befehl extrahieren und in die Startoptionen von Steam einfügen."
+  },
+  {
+    question: "Ist Windows 11 besser für EVE Vanguard auf dem Steam Deck geeignet?",
+    answer: "Ja. Ein Dual-Boot mit Windows auf Ihrem Steam Deck umgeht alle Linux-spezifischen Launcher-Probleme, sodass EVE Vanguard normal gestartet werden kann, ohne dass Token manuell extrahiert werden müssen."
+  }
+]} />
+
+</Section>

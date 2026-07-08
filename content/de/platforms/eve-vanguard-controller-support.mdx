@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Settings, Terminal } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Controller-Unterstützung: Setup-Anleitung & Fehlerbehebungen",
+  description: "Umfassender Leitfaden zur Controller-Unterstützung in EVE Vanguard, einschließlich Fehlerbehebung für den 'Kamera lässt sich nicht bewegen'-Bug, Xbox-Setup und Updates zum VIP-Test 2026.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Controller+Support+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team",
+  keywords: "EVE Vanguard, Controller, Gamepad, Steam Input, Fehlerbehebung, Einstellungen"
+}
+
+<Callout type="info" title="Schnellanleitung">
+- **Aktueller Status**: Eine teilweise **EVE Vanguard Controller-Unterstützung** ist verfügbar, befindet sich jedoch während der VIP-Tests 2026 noch in einem fehlerhaften Zustand.
+- **Kritischer Bug**: Viele Spieler berichten, dass sie sich zwar bewegen und schießen können, sich aber mit dem rechten Analogstick **nicht umsehen können**.
+- **Empfohlene Hardware**: Standardmäßige **Xbox Wireless Controller** weisen die beste Kompatibilität auf, obwohl für PlayStation-Pads möglicherweise Steam Input erforderlich ist.
+- **Beste Lösung**: Überprüfen Sie Ihre **Steam Input-Einstellungen** und stellen Sie sicher, dass keine kollidierenden virtuellen Joystick-Treiber aktiv sind.
+- **UI-Einschränkung**: Im aktuellen Einstellungsmenü fehlt eine eigene **Controller**-Spalte für die Tastenbelegung.
+</Callout>
+
+<Section icon={Settings} title="Aktueller Status der EVE Vanguard Controller-Unterstützung">
+
+Die Implementierung der **EVE Vanguard Controller-Unterstützung** ist seit der VIP-Testphase im März 2026 noch in Arbeit. Obwohl das Spiel XInput-Geräte erkennt, ist das Spielerlebnis im Vergleich zu traditionellen Maus- und Tastatur-Setups noch weit von einer reibungslosen Nutzung entfernt. Spieler, die an den neuesten Expeditionen teilnehmen, haben festgestellt, dass grundlegende Bewegungen und Kampfauslöser zwar funktionieren, die Kamerasteuerung jedoch häufig nicht reagiert.
+
+**Video-Highlights:**
+- Detaillierter Blick auf das **Legion Compound** und neue Kartenlayouts im VIP-Test 2026.
+- Übersicht über das **Modulare Waffensystem** und wie Chipsätze das Waffenhandling beeinflussen.
+- Demonstration der **Extraktionsmechanik** an der Harmonic Bridge.
+- Einblick in das **Klonbank-System** und die Nexus-Datenanforderungen.
+
+<YouTubeEmbed videoId="WTWWSb9uYfw" title="Eve Vanguard VIP Test Overview (March 2026)" />
+
+Für Spieler, die versuchen, mit einem Controller zu spielen, bietet der aktuelle Build eine gemischte Funktionalität. Die folgende Tabelle zeigt auf, was in der neuesten Version funktioniert und was weiterhin fehlerhaft ist.
+
+| Funktion | Unterstützungsstatus | Hinweise |
+| :--- | :--- | :--- |
+| **Bewegung** | **Funktionstüchtig** | Der linke Stick steuert Gehen und Sprinten korrekt. |
+| **Primärfeuer** | **Funktionstüchtig** | Der rechte Trigger ist dem Schießen zugewiesen; die Vibration ist jedoch unbeständig. |
+| **Zielen (ADS)** | **Funktionstüchtig** | Der linke Trigger dient zum Umschalten oder Halten für das Visier. |
+| **Kamera (Umsehen)** | **Fehlerhaft** | Ein häufiger Fehler verhindert, dass der rechte Stick die Ansicht dreht. |
+| **Menü-Navigation** | **Teilweise** | Das Steuerkreuz funktioniert in einigen Menüs, es fehlt jedoch ein sichtbarer Cursor. |
+| **Tastenbelegung** | **Keine** | Keine eigene Controller-Spalte im Optionsmenü vorhanden. |
+
+<Callout type="warning" title="Einschränkung des VIP-Tests">
+Während der Tests im März 2026 haben Spieler bestätigt, dass das Optionsmenü nur eine einzige Spalte für Maus- und Tastatureingaben anzeigt. Es gibt derzeit keine Möglichkeit, controller-spezifische Tastaturbelegungen innerhalb des Spiel-Clients anzuzeigen oder zu ändern.
+</Callout>
+
+</Section>
+
+<Section icon={Terminal} title="Fehlerbehebung für den 'Kamera lässt sich nicht bewegen'-Bug">
+
+Das am häufigsten auftretende Problem mit der **EVE Vanguard Controller-Unterstützung** ist die Unfähigkeit, sich umzusehen. Benutzer berichten, dass sie sich zwar bewegen, nachladen und schießen können, der rechte Analogstick jedoch keinerlei Eingabe für die Kamerarotation liefert. Dies scheint ein Softwarekonflikt zu sein, bei dem das Spiel es versäumt, die „Look“-Achse der Controller-Hardware zuzuweisen.
+
+<CardGrid cols={2}>
+  <Card title="Xbox Controller Probleme">
+    - Standard-Xbox-Controller ermöglichen Bewegung, aber kein Zielen.
+    - Verursacht durch fehlende Achsenbelegungen im Build.
+    - Erfordert das Erzwingen von **Steam Input**.
+  </Card>
+  <Card title="PlayStation/Drittanbieter">
+    - Werden ohne externe Wrapper oft gar nicht erkannt.
+    - DualSense-Funktionen (Haptik) werden noch nicht unterstützt.
+    - Erfordern möglicherweise **DS4Windows** oder Steam-Emulation.
+  </Card>
+</CardGrid>
+
+Um diese Probleme zu lösen, sollten Spieler eine bestimmte Abfolge von Konfigurationsschritten über den Steam-Client befolgen, da die Menüs im Spiel noch nicht die erforderlichen Werkzeuge bereitstellen.
+
+<Steps>
+  <Step num="1" title="Steam Input aktivieren">
+    Klicken Sie mit der rechten Maustaste auf EVE Vanguard in Ihrer Steam-Bibliothek, wählen Sie **Eigenschaften**, dann **Controller** und stellen Sie die Überschreibung auf **Steam Input aktivieren**.
+  </Step>
+  <Step num="2" title="Community-Layout auswählen">
+    Öffnen Sie den **Controller-Layout**-Konfigurator und suchen Sie nach von der Community erstellten Vorlagen, die speziell zur Behebung der „Look“-Achse für Vanguard entwickelt wurden.
+  </Step>
+  <Step num="3" title="Deadzenes kalibrieren">
+    Da das Spiel keine In-Game-Einstellungen für die Totzone besitzt, nutzen Sie das Steam-Kalibrierungstool, um Stick-Drift zu verhindern, der im aktuellen Build häufig auftritt.
+  </Step>
+  <Step num="4" title="Achsenbelegung überprüfen">
+    Stellen Sie sicher, dass der rechte Joystick auf **Joystick-Maus** statt auf **Joystick-Bewegung** eingestellt ist, um den internen Kamera-Bug zu umgehen.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Profi-Tipp: Virtuelle Geräte">
+Wenn Sie Software wie vJoy oder andere virtuelle Joystick-Treiber installiert haben, deaktivieren Sie diese. EVE Vanguard priorisiert diese „Geister-Controller“ oft gegenüber Ihrer tatsächlichen Xbox- oder PlayStation-Hardware.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Kampfoptimierung mit dem Controller">
+
+Selbst mit funktionierender **EVE Vanguard Controller-Unterstützung** ist der Kampf in Vanguard gnadenlos und anspruchsvoll. Das Spiel nutzt ein modulares Waffensystem, bei dem „Chipsätze“ installiert werden können, um die Leistung zu modifizieren. Für Controller-Spieler ist die Auswahl von Chipsätzen, die den Rückstoß und die Stabilität verbessern, unerlässlich, um die fehlende Präzision einer Maus auszugleichen.
+
+| Chipsatz-Typ | Vorteil für Controller-Spieler | Priorität |
+| :--- | :--- | :--- |
+| **Rückstoß-Wertung** | Reduziert den vertikalen Rückstoß, was das Halten des Ziels erleichtert. | **Hoch** |
+| **Stabilität** | Minimiert das horizontale Schwanken bei Dauerfeuer. | **Hoch** |
+| **Bedrohungsvisier** | Markiert Gegner rot und erleichtert so die Zielerfassung. | **Mittel** |
+| **Schädelsplitter** | Erhöht den Kopfschussschaden; belohnt ruhiges Zielen. | **Mittel** |
+| **Aus der Hüfte feuern** | Nützlich für den Nahkampf, wenn das Zielen über Visier (ADS) zu langsam ist. | **Niedrig** |
+
+Bei Überfällen auf das **Legion Compound** sollten sich Controller-Spieler auf ein „Präzision-Zuerst“-Loadout konzentrieren. Da der aktuelle Build keine aggressive Zielhilfe (Aim Assist) bietet, müssen Sie sich auf die mechanische Stabilität der Waffe verlassen.
+
+<Callout type="info" title="Waffenverhalten">
+Die Varianten der **Lancer** und **SMG** haben unterschiedliche Rückstoßmuster. Ohne Zielhilfe kann die hohe Feuerrate der SMG mit einem Analogstick nur schwer kontrolliert werden. Wir empfehlen den Einzelschuss-Chipsatz **Kinetic Hammer** für kontrollierte Gefechte mit hohem Schaden.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Checkliste für Hardware-Kompatibilität">
+
+Bevor Sie sich in einen VIP-Test oder den kommenden Steam Early Access stürzen, stellen Sie sicher, dass Ihre Hardware-Umgebung für die **EVE Vanguard Controller-Unterstützung** optimiert ist. Die folgende Checkliste umfasst die wesentlichen Schritte zur Minimierung von Latenzzeiten und Eingabefehlern.
+
+<Checklist
+  id="hardware-prep"
+  title="Checkliste für Controller-Bereitschaft:"
+  items={[
+    "Aktualisieren Sie die Controller-Firmware über das Xbox-Zubehör oder die Sony-Software.",
+    "Deaktivieren Sie die 'Erweiterte Steam-Funktionsunterstützung', falls doppelte Eingaben auftreten.",
+    "Verbinden Sie den Controller über USB-C, um die Eingabelatenz in kompetitiven Zonen zu verringern.",
+    "Suchen Sie nach Hintergrundanwendungen (Discord/Overwolf), die Eingaben abfangen könnten.",
+    "Stellen Sie den Windows-Energiesparplan auf 'Höchstleistung', um den USB-Energiesparmodus zu verhindern."
+  ]}
+/>
+
+<Callout type="success" title="Entwickler-Feedback">
+Die Entwickler haben das Controller-Feedback in den offiziellen Foren zur Kenntnis genommen. Obwohl der Build vom März 2026 noch eingeschränkt ist, wird im Vorfeld des vollständigen Early-Access-Starts eine dedizierte Benutzeroberfläche für Controller-Einstellungen erwartet.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Vergleich: Controller vs. Maus & Tastatur">
+
+Die Wahl der Eingabemethode in EVE Vanguard hängt von Ihrem Spielstil ab. Während Maus und Tastatur (M&K) eine überragende Präzision für das Scharfschützen auf große Distanz bieten, kann ein Controller ein komfortableres Erlebnis für lange Farming-Sessions in den **Upwell-Bergbaugebieten** bieten.
+
+| Kategorie | Maus & Tastatur | Controller (über Steam Input) |
+| :--- | :--- | :--- |
+| **Präzision** | **Hervorragend** - Bestens geeignet für Kopfschüsse. | **Akzeptabel** - Erfordert Rückstoß-Mods. |
+| **Bewegung** | **Gut** - Digitale (WASD) Eingabe. | **Hervorragend** - Analoge 360-Grad-Bewegung. |
+| **Zugänglichkeit** | **Standard** - Höhere Einstiegshürde. | **Hoch** - Ergonomischer bei langen Spielesitzungen. |
+| **Einrichtung** | **Plug & Play** - Keine Konfiguration nötig. | **Komplex** - Erfordert Fehlerbehebung. |
+| **Plündern** | **Schnell** - Präzise Cursorsteuerung. | **Langsam** - Die Menünavigation ist schwerfällig. |
+
+<Callout type="tip" title="Hybrides Spielen">
+Einige Spieler empfehlen, Maus und Tastatur für intensive Kämpfe in der **Aufbereitungsanlage** zu nutzen und für die Fortbewegungs- und Extraktionsphasen auf einen Controller zu wechseln, um die Ermüdung der Hände zu verringern.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Zusammenfassung und FAQ">
+
+Der Weg zu einer vollständigen **EVE Vanguard Controller-Unterstützung** befindet sich noch in der Entwicklung. Obwohl die VIP-Tests 2026 vielversprechend sind, müssen Spieler darauf vorbereitet sein, externe Tools wie Steam Input zu verwenden, um aktuelle Kamerabugs zu umgehen. Mit dem Übergang des Spiels in den Steam Early Access erwarten wir, dass CCP Games native Deadzone-Einstellungen, Optionen für Zielhilfen und eine dedizierte Benutzeroberfläche für die Controller-Belegung implementiert.
+
+<FAQ items={[
+  {
+    question: "Warum kann ich mich mit meinem Controller in EVE Vanguard nicht umsehen?",
+    answer: "Dies ist ein bekannter Fehler in den VIP-Tests 2026. Das Spiel verfehlt es, die Y- und X-Achse auf den rechten Stick zu mappen. Sie können dies beheben, indem Sie Steam Input aktivieren und ein von der Community erstelltes Layout verwenden, das den Stick als 'Joystick-Maus' zuweist."
+  },
+  {
+    question: "Gibt es in EVE Vanguard eine Zielhilfe für Controller?",
+    answer: "Derzeit gibt es in den VIP-Builds keine spürbare Zielhilfe. Spieler müssen sich auf Waffen-Chipsätze verlassen, die die Stabilität und den Rückstoß verbessern, um im Gefecht die Präzision zu wahren."
+  },
+  {
+    question: "Kann ich einen PS5 DualSense-Controller verwenden?",
+    answer: "Ja, aber nur über Steam Input oder einen Drittanbieter-Wrapper wie DS4Windows. Das Spiel erwartet nativ XInput-Signale (Xbox), sodass PlayStation-Controller ohne Emulation nicht direkt einsatzbereit sind."
+  },
+  {
+    question: "Gibt es eine Möglichkeit, die Tastenanzeigen für Controller zu ändern?",
+    answer: "Nein. Die aktuelle Benutzeroberfläche ist fest auf Maus- und Tastatur-Anzeigen eingestellt. Selbst wenn Ihr Controller funktioniert, werden Ihnen auf dem Bildschirm weiterhin Aufforderungen wie 'Drücke E' oder 'Linksklick' angezeigt."
+  }
+]} />
+
+</Section>

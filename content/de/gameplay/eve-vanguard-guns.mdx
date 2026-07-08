@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "EVE Vanguard Waffen: Leitfaden für Waffen-Crafting & Loadouts",
+  description: "Meistere die Waffen in EVE Vanguard. Erfahre alles über Waffen-Crafting, Upgrade-Pfade und die besten Loadouts für den Operation Avalon Playtest im Juli 2026.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Vanguard+Guns+Guide",
+  date: "2026-07-08",
+  author: "EVE Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Schnellanleitung">
+- **Kern-Arsenal**: Meistere den Umgang mit anpassbaren **EVE Vanguard Waffen**, um risikoreiche planetare Extraktionsverträge zu überleben.
+- **Crafting-Priorität**: Priorisiere das Sammeln von Nanitenpolymeren und Legierungsschrott während deiner Einsätze, um hochrangige Waffengehäuse herzustellen.
+- **Loadout-Strategie**: Passe deine Waffenkonfiguration an die Umweltgefahren des jeweiligen Sektors an und finde die richtige Balance zwischen Reichweite und Feuerrate.
+- **Risikominimierung**: Sichere seltene Waffenblaupausen in deinem Klonanzug-Behälter, um deren Verlust bei deinem Tod zu verhindern.
+</Callout>
+
+<Section icon={Shield} title="EVE Vanguard Waffen: Übersicht über das Waffensystem">
+
+In den feindseligen planetaren Umgebungen von New Eden entscheidet die Beherrschung der **EVE Vanguard Waffen** über eine erfolgreiche Extraktion oder die dauerhafte Terminierung deines Klons. Als Kriegs-Klon (Warclone), der während des Operation Avalon Playtests auf Steam (vom 7. bis 20. Juli 2026) eingesetzt wird, besteht dein Hauptziel darin, Wrackteile zu bergen, feindliche Trupps zu bekämpfen und wertvolle Ressourcen zu extrahieren. Die Waffen, die du in diese Gefahrenzonen mitnimmst, bestimmen deine taktische Flexibilität und deine gesamte Überlebensrate.
+
+Das Waffensystem in EVE Vanguard basiert auf modularer Konstruktion und realistischem ballistischem Verhalten. Im Gegensatz zu traditionellen Shootern sind Waffen hier Investitionsobjekte: Der Verlust eines hochrangigen Gewehrs in einem vergifteten Sumpf oder einem gefährlichen Dschungel bedeutet auch den Verlust der Ressourcen, die für seine Herstellung aufgewendet wurden. Das Verständnis der Basisstatistiken jeder Waffenklasse ermöglicht es dir, fundierte Entscheidungen zu treffen, bevor du von deiner orbitalen Klonstation aus startest.
+
+| Waffenklasse | Optimale Reichweite | Feuerrate | Primärer Einsatzzweck |
+|---|---|---|---|
+| Sturmgewehr | Mittel (25-100m) | Moderat-Hoch | Vielseitiger Frontkampf |
+| Präzisionsgewehr | Lang (100m+) | Niedrig (Halbautomatisch) | Aufklärung und Fernkampf-Abschüsse |
+| Maschinenpistole | Nah (0-25m) | Sehr Hoch | Nahkampf und Sumpfbereinigung |
+| Schwerer Blaster | Mittel (15-50m) | Hoch | Unterdrückungsfeuer und Ausschaltung gepanzerter Ziele |
+
+<Callout type="info" title="Systemintegration">
+Jede Waffe in EVE Vanguard wirkt sich direkt auf den Energieverbrauch deines Anzugs aus. Hochwertige Energiewaffen bieten eine hervorragende Panzerungsdurchdringung, entladen jedoch die Batterie deines Anzugs schneller, was eine sorgfältige Balance deiner aktiven Module erfordert. Besuche die offizielle [EVE Vanguard Website](https://evevanguard.com/) für laufende Updates zur Waffenabstimmung und Anzugkompatibilität.
+</Callout>
+
+Jede Waffenklasse weist einzigartige Rückschlagmuster, Nachladegeschwindigkeiten und Munitionsanforderungen auf. Projektilbasierte Waffen benötigen physische Magazine, die Inventarplätze belegen, während Energiewaffen wiederaufladbare Energiezellen nutzen, die Hitze erzeugen. Das Abwägen deiner Munitionsreserven gegen den Platz für geborgene Beute ist bei langen Einsätzen eine ständige Herausforderung.
+
+</Section>
+
+<Section icon={Sparkles} title="So stellst du dein Arsenal her und verbesserst es">
+
+Die Fertigung ist der Eckpfeiler des Fortschritts in EVE Vanguard. Du kaufst die besten Waffen nicht einfach auf einem Markt; du musst sie dir verdienen, indem du Ressourcen von gefallenen Feinden, abgestürzten Kriegsschiffen und planetaren Behältern sammelst. Das Verbessern deiner Waffen erhöht die Stabilität, vergrößert die Magazinkapazität und schaltet spezialisierte Munitionstypen frei, die feindliche Schildkonfigurationen umgehen.
+
+Die Crafting-Schleife erfordert ein ausgewogenes Verhältnis zwischen Risiko und Belohnung. Das Vordringen in Zonen mit hoher Bedrohung bringt zwar hochwertigere Materialien, erhöht aber auch die Wahrscheinlichkeit, auf feindliche Kriegs-Klone zu treffen. Blaupausen, die während der Einsätze gesichert wurden, müssen zu deinem orbitalen Fabrikator zurückgebracht werden, um dauerhafte Crafting-Optionen freizuschalten.
+
+<Steps>
+  <Step num="1" title="Blaupausen sichern">
+    Finde Waffenblaupausen in den Trümmern abgestürzter Kriegsschiffe oder kaufe Basisentwürfe von Fraktionsvertretern im orbitalen Hub.
+  </Step>
+  <Step num="2" title="Planetare Ressourcen ernten">
+    Begib dich auf die Planetenoberflächen, um Naniten, Legierungsfragmente und Energiekerne in Sümpfen, Dschungeln und Industrieruinen zu sammeln.
+  </Step>
+  <Step num="3" title="Komponenten fertigen">
+    Nutze den orbitalen Fabrikator, um Rohmaterialien in Waffenkomponenten wie Läufe, Gehäuse und Optiken umzuwandeln.
+  </Step>
+  <Step num="4" title="Montieren und Modifizieren">
+    Kombiniere die Komponenten, um deine maßgeschneiderte Waffe zusammenzubauen, und wende Modifikationen an, um Handhabung, Rückstoß und Schadensarten anzupassen.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Sicherheit von Blaupausen">
+Lege neu erworbene Waffenblaupausen immer in die sicheren Inventarplätze deines Klonanzugs. Gegenstände in sicheren Plätzen bleiben erhalten, selbst wenn dein Klon während des Einsatzes zerstört wird.
+</Callout>
+
+Um dir bei der Planung deiner Sammelrunden zu helfen, listet die folgende Tabelle die primären Crafting-Materialien auf, die für den Zusammenbau von Waffen benötigt werden, sowie deren Fundorte während des Operation Avalon Playtests.
+
+| Ressourcenname | Seltenheit | Primäre Quelle | Verwendung für Waffenkomponenten |
+|---|---|---|---|
+| Nanitenpolymer | Häufig | Sümpfe & Dschungel | Schäfte und Griffe |
+| Legierungsschrott | Häufig | Kriegsschiff-Wracks | Läufe und Gehäuserahmen |
+| Geladener Kern | Selten | Beute von Elite-Gegnern | Batterien für Energiewaffen |
+| Optische Linse | Ungewöhnlich | Industrie-Kisten | Visiere und Zielerfassungslaser |
+
+</Section>
+
+<Section icon={Target} title="Die besten Waffen-Loadouts für Operation Avalon">
+
+Die Wahl der richtigen Kombination aus Waffen und Anzugsmodulen bestimmt deine Effektivität im Kampf. Während des Playtests im Juli 2026 haben sich drei verschiedene Spielstile als äußerst effektiv für das Navigieren auf der Planetenoberfläche herauskristallisiert. Dein Loadout sollte widerspiegeln, ob du solo spielst oder dich mit einem Trupp koordinierst.
+
+Ein ausgewogener Trupp verfügt typischerweise über eine Mischung aus Aufklärern für große Distanzen und kampfstarken Nahkämpfern. Solospieler sollten sich jedoch für vielseitige Konfigurationen entscheiden, die es ihnen ermöglichen, Kämpfe auf unterschiedliche Entfernungen auszutragen, während sie gleichzeitig eine hohe Mobilität für schnelle Extraktionen beibehalten.
+
+<CardGrid cols={3}>
+  <Card title="Sturm-Vanguard">
+    - **Primär**: Standard-Sturmgewehr
+    - **Sekundär**: Leichte Pistole
+    - **Hauptvorteil**: Hohe Vielseitigkeit, zuverlässiger Schaden auf mittlere Distanz und geringer Ressourcenaufwand.
+  </Card>
+  <Card title="Aufklärungs-Scharfschütze">
+    - **Primär**: Präzisions-Scharfschützengewehr
+    - **Sekundär**: Kompakte MP
+    - **Hauptvorteil**: Hoher Einzelschuss-Schaden, hervorragendes Aufklärungspotenzial und starke Selbstverteidigung.
+  </Card>
+  <Card title="Schwerer Brecher">
+    - **Primär**: Schwerer Blaster
+    - **Sekundär**: Schrotflinte
+    - **Hauptvorteil**: Verheerender Nahkampfschaden, hohe Unterdrückungswirkung und panzerungsbrechende Fähigkeiten.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Loadout-Synergie">
+Wenn du im Team spielst, stelle sicher, dass mindestens ein Truppmitglied ein Präzisionsgewehr bei sich trägt, um feindliche Kriegs-Klone zu sichten und zu markieren, bevor ihr euch auf ein Gefecht einlasst. Dieser taktische Vorteil verhindert Hinterhalte in dichten Dschungelbiomen.
+</Callout>
+
+Die Leistungsdaten dieser Loadouts variieren je nach Kampfdistanz und gegnerischer Panzerung. Überprüfe die folgenden operativen Daten, um die Konfiguration auszuwählen, die deinen taktischen Vorlieben entspricht.
+
+| Loadout-Name | Effektive Reichweite | Schadensausstoß | Rückstoßkontrolle | Ressourcenkosten |
+|---|---|---|---|---|
+| Sturm-Vanguard | Mittel | Moderat-Hoch | Gut | Niedrig-Mittel |
+| Aufklärungs-Scharfschütze | Lang | Sehr Hoch | Moderat | Hoch |
+| Schwerer Brecher | Nah | Extrem | Niedrig | Hoch |
+
+</Section>
+
+<Section icon={Map} title="Taktische Extraktion und Ausrüstungssicherung">
+
+Der Erwerb mächtiger **EVE Vanguard Waffen** ist nur die halbe Miete; um sie zu behalten, ist eine erfolgreiche Extraktion erforderlich. Wenn du eine Extraktion anforderst, wird deine Position an nahegelegene Kriegs-Klone übertragen, was dich zu einem Hauptziel für Hinterhalte macht. Das Errichten von Verteidigungslinien und das Nutzen der Umgebung sind entscheidend für die Sicherung deiner Ausrüstung.
+
+Sümpfe und Dschungel bieten hervorragende natürliche Deckung, schränken aber auch deine Sichtlinie ein, was es Feinden erleichtert, die Distanz zu verkürzen. Nutze direktionales Audio und Bewegungssensoren, um ankommende Bedrohungen zu orten, während du auf das Eintreffen deines Extraktionsschiffs wartest.
+
+<Checklist
+  id="extraction-prep"
+  title="Checkliste vor der Extraktion:"
+  items={[
+    "Sichere wertvolle Blaupausen in deinen geschützten Klon-Plätzen",
+    "Lade alle Waffen nach und verteile die Munitionsreserven",
+    "Scanne die Umgebung der Extraktionszone nach feindlichen Signaturen",
+    "Errichte Verteidigungsschilde oder taktische Fallen um die Landeplattform",
+    "Koordiniere den Zeitpunkt der Extraktion mit deinen Truppmitgliedern"
+  ]}
+/>
+
+<Callout type="warning" title="Verlustprävention">
+Unversicherte Waffen gehen bei deinem Tod dauerhaft verloren. Wenn du eine hochwertige, selbst hergestellte Waffe bei dir trägst, stelle sicher, dass du über ausreichend Fraktionsruf oder Credits für die Versicherungskosten verfügst, bevor du startest.
+</Callout>
+
+Verschiedene Sektoren auf der Planetenoberfläche bergen bei der Extraktion unterschiedliche Risiken. Passe deine Waffenwahl an die spezifischen Bedrohungen deines Einsatzgebiets an.
+
+| Sektortyp | Bedrohungsstufe | Hauptgefahren | Empfohlene Waffe |
+|---|---|---|---|
+| Kriegsschiff-Wracks | Hoch | Offene Sichtlinien, Scharfschützen | Präzisionsgewehr |
+| Vergiftete Sümpfe | Mittel | Geringe Sicht, giftiges Gas | Maschinenpistole |
+| Gefährliche Dschungel | Mittel | Dichte Vegetation, Hinterhalte auf kurze Distanz | Schrotflinte / MP |
+| Industrieruinen | Extrem | Vertikalität, Elite-Feinde | Sturmgewehr |
+
+</Section>
+
+<Section icon={Trophy} title="Häufig gestellte Fragen (FAQ)">
+
+Um das Beste aus deinem Arsenal herauszuholen, findest du hier Antworten auf häufige Fragen zu Waffenmechaniken und Anpassungen in EVE Vanguard.
+
+<FAQ items={[
+  {
+    question: "Wie schalte ich während des Playtests neue EVE Vanguard Waffen frei?",
+    answer: "Du musst Blaupausen in planetaren Behältern finden oder sie von gefallenen Feinden bergen. Sobald du sie gesichert hast, bringe die Blaupausen zu deinem orbitalen Fabrikator und stelle die Waffe mit den gesammelten Ressourcen her."
+  },
+  {
+    question: "Verliere ich meine hergestellten Waffen, wenn ich während eines Einsatzes sterbe?",
+    answer: "Ja, alle in deinen aktiven Plätzen ausgerüsteten Waffen werden bei deinem Tod fallengelassen und können von anderen Spielern geplündert werden. Blaupausen und Materialien, die in deinem sicheren Klon-Behälter aufbewahrt werden, bleiben jedoch erhalten."
+  },
+  {
+    question: "Kann ich die Aufsätze meiner Waffen anpassen?",
+    answer: "Ja, du kannst deine Waffen am orbitalen Fabrikator modifizieren. Durch Modifikationen kannst du Optiken, Läufe und Schäfte austauschen, um Reichweite, Stabilität und Handhabungseigenschaften anzupassen."
+  },
+  {
+    question: "Was ist der Unterschied zwischen Projektil- und Energiewaffen?",
+    answer: "Projektilwaffen verwenden physische Munition, die Inventarplatz belegt, aber konstante Feuerraten bietet. Energiewaffen nutzen wiederaufladbare Batterien, die Hitze erzeugen, was ein entsprechendes Hitzemanagement bei Dauerfeuer erfordert."
+  }
+]} />
+
+<Callout type="tip" title="Community-Feedback">
+EVE Vanguard befindet sich in der aktiven Entwicklung. Tritt dem offiziellen Discord-Server bei, um dein Feedback zu Gunplay, Waffenbalance und Crafting-Systemen direkt mit dem Entwicklerteam zu teilen.
+</Callout>
+
+</Section>
