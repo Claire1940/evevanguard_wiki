@@ -52,696 +52,402 @@
 		}
 	},
 	"gameFeature": {
-		"title": "Lucid Blocks Gameplay",
-		"description": "Explore surreal biomes, fuse items with Apotheosis, and survive strange creatures in this dreamlike voxel sandbox on Steam."
+		"title": "EVE Vanguard Gameplay",
+		"description": "Drop planetside as a Warclone, loot hostile battlefields, outgun Mordu's Legion and rival operators, and extract before New Eden pushes back."
 	},
 	"tools": {
-		"title": "Lucid Blocks",
-		"titleHighlight": "Resources",
-		"subtitle": "Everything you need to explore, craft, and survive in Lucid Blocks",
+		"title": "EVE Vanguard",
+		"titleHighlight": "Guides",
+		"subtitle": "Everything you need to play EVE Vanguard, from Alpha access and beginner basics to weapons, extraction, and PC specs.",
 		"cards": [
 			{
+				"icon": "Download",
+				"title": "EVE Vanguard Alpha Access",
+				"description": "How to download EVE Vanguard and join the Operation Avalon playtest"
+			},
+			{
 				"icon": "BookOpen",
-				"title": "Beginner Guide",
-				"description": "First steps, exploration, and early progression"
+				"title": "EVE Vanguard Beginner Guide",
+				"description": "Deploy, loot, fight, and extract in your first EVE Vanguard run"
 			},
 			{
-				"icon": "Sparkles",
-				"title": "Apotheosis Crafting",
-				"description": "Freeform fusion system and early recipes"
+				"icon": "Target",
+				"title": "EVE Vanguard Operation Avalon",
+				"description": "The current EVE Vanguard Alpha event, battlefield, and timeline"
 			},
 			{
-				"icon": "Hammer",
-				"title": "Tools and Weapons",
-				"description": "Frost Pick, Azrael, Hookshot, and more"
+				"icon": "Swords",
+				"title": "EVE Vanguard Weapons",
+				"description": "Weapon roles, chipsets, and loadout planning for EVE Vanguard"
 			},
 			{
 				"icon": "Package",
-				"title": "Storage and Inventory",
-				"description": "Cache Cubes, Cabinets, and Qualia storage"
+				"title": "EVE Vanguard Extraction",
+				"description": "When to leave, what to carry, and how to survive extraction"
 			},
 			{
-				"icon": "Home",
-				"title": "Qualia and Base Building",
-				"description": "Personal Qualia and home base setup"
+				"icon": "ScrollText",
+				"title": "EVE Vanguard Contracts",
+				"description": "Objectives, salvaging, and battlefield choices in EVE Vanguard"
 			},
 			{
-				"icon": "Eye",
-				"title": "World Regions",
-				"description": "Fog Meadow, Essence Morass, and more"
+				"icon": "MonitorSmartphone",
+				"title": "EVE Vanguard PC Specs",
+				"description": "System requirements, Steam release timing, and anti-cheat"
 			},
 			{
-				"icon": "AlertTriangle",
-				"title": "Creatures and Enemies",
-				"description": "Manikins, spiders, and how to survive"
-			},
-			{
-				"icon": "ArrowRight",
-				"title": "Mobility Gear",
-				"description": "Hookshot, Glider Glove, Bee Glider"
-			},
-			{
-				"icon": "TrendingUp",
-				"title": "Farming and Growth",
-				"description": "Seed progression and material farming"
-			},
-			{
-				"icon": "Star",
-				"title": "Best Early Unlocks",
-				"description": "Priority upgrades for the first hour"
-			},
-			{
-				"icon": "ClipboardCheck",
-				"title": "Achievement Tracker",
-				"description": "All 19 Steam achievements and conditions"
-			},
-			{
-				"icon": "MessageCircle",
-				"title": "Singleplayer FAQ",
-				"description": "Platform, price, co-op, and language questions"
-			},
-			{
-				"icon": "Gamepad2",
-				"title": "Steam Deck and Controller",
-				"description": "Proton 9.0.4 setup and controller tips"
-			},
-			{
-				"icon": "Settings",
-				"title": "Settings and Accessibility",
-				"description": "Hide hands, Vulkan, and display options"
-			},
-			{
-				"icon": "Clock",
-				"title": "Updates and Patch Notes",
-				"description": "Recent fixes and roadmap notes"
-			},
-			{
-				"icon": "Shield",
-				"title": "Crash Fix",
-				"description": "Vulkan check, logs path, and bug reporting"
+				"icon": "Globe",
+				"title": "EVE Vanguard and EVE Online",
+				"description": "How EVE Vanguard connects to the wider New Eden conflict"
 			}
 		]
 	},
 	"modules": {
-		"lucidBlocksBeginnerGuide": {
-			"title": "Lucid Blocks Beginner Guide",
-			"displayType": "steps",
-			"intro": "Start by learning how exploration, fusion, and progression connect. Lucid Blocks rewards experimentation, so early progress comes from gathering unusual materials, testing combinations, and unlocking your personal Qualia.",
+		"eveVanguardDownloadAndAlphaAccess": {
+			"title": "EVE Vanguard Download and Alpha Access",
+			"eyebrow": "Play Access",
+			"intro": "EVE Vanguard is playable right now through the Operation Avalon Alpha playtest, with access available through Steam and the EVE Launcher. Operation Avalon is the first Alpha playtest for EVE Vanguard, running from July 7 to July 20, 2026, letting players deploy planetside, test rebuilt combat, try new weapons, and help shape the future of the game.",
+			"cards": [
+				{
+					"title": "Operation Avalon Alpha",
+					"status": "Live July 7–20, 2026",
+					"description": "The current Alpha playtest is live for EVE Vanguard and focuses on risk-based deployments, looting, combat, extraction, and player feedback."
+				},
+				{
+					"title": "Steam Playtest",
+					"status": "Request Access",
+					"description": "The Steam page lets players request access to the EVE Vanguard playtest. The game is listed with a planned Q3 2026 release window."
+				},
+				{
+					"title": "EVE Launcher",
+					"status": "Vanguard tab",
+					"description": "Players can access Operation Avalon through the EVE Launcher during the EVE Vanguard Alpha window."
+				},
+				{
+					"title": "PC Requirements",
+					"status": "Windows PC",
+					"description": "EVE Vanguard lists Windows 10 or Windows 11, broadband internet, 16 GB RAM, and 50 GB of available storage."
+				}
+			]
+		},
+		"eveVanguardBeginnerGuide": {
+			"title": "EVE Vanguard Beginner Guide",
+			"eyebrow": "Beginner Guide",
+			"intro": "Learn the core loop of EVE Vanguard before your first deployment into New Eden's hostile planets. EVE Vanguard is an extraction-adventure FPS where each deployment is a timed risk: players enter hostile battlefields as Warclones, pursue objectives, collect valuable resources, fight PvE and PvP threats, then decide when to extract before losing what they carry.",
 			"steps": [
 				{
-					"title": "Explore Before You Commit",
-					"description": "Walk outward, mine common blocks, and keep any strange drops you find. Early progress is less about fixed quests and more about discovering what materials can become."
+					"title": "Deploy planetside",
+					"description": "Start each EVE Vanguard run by deploying into a hostile planetary battlefield shaped by New Eden's wider war."
 				},
 				{
-					"title": "Unlock Your Personal Qualia Early",
-					"description": "Your personal Qualia is one of the most important early milestones. It gives you a reliable place to regroup and build around."
+					"title": "Choose your objective",
+					"description": "Early choices can include gathering resources, taking contracts, hunting rival Warclones, or working with other players."
 				},
 				{
-					"title": "Use Osmium for Fast Early Progress",
-					"description": "Osmium is one of the most useful early materials. A popular early route is combining Osmium with sticks to make a Frost Pick for fast mining."
+					"title": "Raid and salvage",
+					"description": "Search crash sites, enemy-held areas, wreckage, and installations for advanced technology, relics, and valuable resources."
 				},
 				{
-					"title": "Record Good Fusions",
-					"description": "Keep track of successful combinations in your journal. Lucid Blocks has many possible fusion paths, so writing down useful results saves a lot of time."
+					"title": "Adapt your gear",
+					"description": "Use salvaged resources and extracted items to craft weapons, upgrade your suit, and prepare stronger loadouts for future deployments."
+				},
+				{
+					"title": "Survive the pressure",
+					"description": "Expect PvE enemies, rival Warclones, escalating battlefield danger, and Nemesis threats that make every EVE Vanguard mission a race against time."
+				},
+				{
+					"title": "Extract before it is too late",
+					"description": "Extraction is the key decision in EVE Vanguard. Leave with what you earned, or stay longer for better rewards while the danger increases."
 				}
 			],
 			"quickTips": [
-				"Apotheosis does not require a fixed recipe list.",
-				"Infinite world generation means moving higher or deeper can reveal completely different materials.",
-				"Movement tools and utility gear become a major quality-of-life boost once you start unlocking them.",
-				"Getting lost early is normal, but useful tools, storage, and movement options snowball fast once your first good fusions start working."
+				"Treat every EVE Vanguard deployment as a timed risk, not a fixed quest line.",
+				"Loot value rises the deeper you push, but so does the danger from enemies and rival Warclones.",
+				"Salvaged resources carry between runs, so early extraction still moves your progression forward.",
+				"Extraction opportunities can disappear, so plan your exit before the battlefield turns against you."
 			]
 		},
-		"lucidBlocksApotheosisCrafting": {
-			"title": "Lucid Blocks Apotheosis Crafting",
-			"displayType": "cards",
-			"intro": "Apotheosis is the game's unrestricted fusion system. Instead of memorizing a traditional recipe book, you combine materials, watch the result, and build your own crafting knowledge over time.",
-			"cards": [
-				{
-					"name": "Freeform Fusion",
-					"description": "Apotheosis lets you fuse together different items without needing to follow a fixed recipe list."
-				},
-				{
-					"name": "Multiple Useful Outcomes",
-					"description": "Different materials often push toward certain results. Community discoveries show that similar inputs can still lead to practical tools, storage, or combat upgrades."
-				},
-				{
-					"name": "Journal-First Crafting",
-					"description": "The best way to learn Apotheosis is to track your successful combinations. Your journal quickly becomes your own crafting reference."
-				},
-				{
-					"name": "Community-Tested Early Fusions",
-					"description": "Popular early examples include Osmium plus Stick for a Frost Pick, Stick plus Tungsten Appendage for Azrael, and Azrael plus Magnetite for the Tendril Rapier."
-				}
-			],
-			"milestones": [
-				"Fuse an item",
-				"Fuse a vermin",
-				"Fuse a divine artifact"
-			]
-		},
-		"lucidBlocksToolsAndWeapons": {
-			"title": "Lucid Blocks Tools and Weapons",
-			"displayType": "itemCards",
-			"intro": "Lucid Blocks mixes official utility gear with community-discovered early weapons. The best setup is usually a blend of fast mining, safe traversal, and one dependable combat option.",
-			"items": [
-				{
-					"name": "Frost Pick",
-					"type": "Mining Tool",
-					"description": "A fast and affordable early pick made from Osmium and Stick. Players use it to speed up early material gathering."
-				},
-				{
-					"name": "Azrael",
-					"type": "Starter Weapon",
-					"description": "A practical early weapon route crafted from Stick and Tungsten Appendage."
-				},
-				{
-					"name": "Tendril Rapier",
-					"type": "Upgraded Weapon",
-					"description": "A stronger follow-up made by combining Azrael with Magnetite. It is one of the most useful early-mid combat paths shared by players."
-				},
-				{
-					"name": "Hookshot",
-					"type": "Mobility Tool",
-					"description": "An official traversal item that greatly improves movement and vertical exploration."
-				},
-				{
-					"name": "Bee Glider",
-					"type": "Mobility Tool",
-					"description": "An official movement item that helps cover space more safely and efficiently."
-				},
-				{
-					"name": "Ball Wand",
-					"type": "Utility Weapon",
-					"description": "An official ranged utility item that expands your combat and puzzle options."
-				},
-				{
-					"name": "Scuba Diving Gear",
-					"type": "Traversal Gear",
-					"description": "An official utility item for reaching areas that would otherwise slow down exploration."
-				},
-				{
-					"name": "Explosives",
-					"type": "Utility Damage",
-					"description": "Officially highlighted as part of the core toolset and useful for breaking through threats or obstacles."
-				}
-			]
-		},
-		"lucidBlocksStorageAndInventory": {
-			"title": "Lucid Blocks Storage and Inventory",
-			"displayType": "solutionCards",
-			"intro": "Inventory pressure starts early in Lucid Blocks, so building storage should be one of your first goals. Several real player-tested solutions already stand out.",
-			"solutions": [
-				{
-					"name": "Cache Cube",
-					"role": "Chest-Like Storage",
-					"description": "Cache Cubes are one of the earliest practical storage answers and are treated by players as the game's main chest-style container."
-				},
-				{
-					"name": "Cabinet",
-					"role": "Simple Base Storage",
-					"description": "Cabinets are another confirmed storage option. A shared early recipe uses 1 Cut Wood and 1 String."
-				},
-				{
-					"name": "Personal Qualia",
-					"role": "Long-Term Storage Hub",
-					"description": "Once unlocked, your personal Qualia becomes a natural place to organize materials, craft in peace, and expand your base setup."
-				},
-				{
-					"name": "Journal Tracking",
-					"role": "Inventory Efficiency",
-					"description": "Recording useful combinations in your journal reduces wasted materials and makes inventory management much easier."
-				}
-			],
-			"managementTips": [
-				"Prioritize one dependable storage option before hoarding rare drops.",
-				"Build around your personal Qualia once it becomes available.",
-				"Keep crafting materials, combat tools, and movement gear separated so upgrades are easier to plan.",
-				"Use your journal as part of inventory management, not just crafting discovery."
-			]
-		},
-		"lucidBlocksQualiaAndBaseBuilding": {
-			"title": "Lucid Blocks Qualia and Base Building",
-			"displayType": "cards",
-			"intro": "Qualia is one of the most important progression milestones in Lucid Blocks. It gives you a personal space to regroup, store materials, and gradually turn exploration progress into a real home base.",
-			"cards": [
-				{
-					"name": "Personal Qualia",
-					"description": "Unlocking a Qualia is an early milestone that gives you a more reliable place to return to while exploring the wider world."
-				},
-				{
-					"name": "Storage-First Building",
-					"description": "Many players start using their Qualia as a storage hub before turning it into a larger base with organized crafting and building space."
-				},
-				{
-					"name": "Creative Home Building",
-					"description": "Lucid Blocks supports creative building, and players are already using Qualia spaces to make houses and personalized layouts."
-				},
-				{
-					"name": "Progression Hub",
-					"description": "A strong base helps you separate exploration loot, crafting materials, seeds, tools, and mobility gear so your next upgrades are easier to plan."
-				}
-			],
-			"highlights": [
-				"Enter a qualia",
-				"Store materials safely",
-				"Expand from utility to decoration",
-				"Use base space to support crafting and farming"
-			]
-		},
-		"lucidBlocksWorldRegions": {
-			"title": "Lucid Blocks World Regions",
-			"displayType": "regionCards",
-			"intro": "Lucid Blocks uses infinite world generation, so players keep discovering new environments and structures. A few named places are already showing up in achievements and community discussions.",
-			"regions": [
-				{
-					"name": "Fog Meadow",
-					"type": "Community-Noted Area",
-					"description": "Fog Meadow is already known among players as a tense area associated with hidden threats and dangerous encounters."
-				},
-				{
-					"name": "Tiamana Leyline",
-					"type": "Discovery Landmark",
-					"description": "The tiamana leyline is important enough to have its own achievement milestone, making it one of the clearest named world discoveries so far."
-				},
-				{
-					"name": "Clonaqualia",
-					"type": "Build Space",
-					"description": "Players are already using Clonaqualia as a place to build houses, store materials, and experiment with more permanent layouts."
-				},
-				{
-					"name": "Essence Morass",
-					"type": "Farming Area",
-					"description": "Essence Morass is being shared by players as a useful farming location, especially for fighting slimes and gaining experience."
-				}
-			]
-		},
-		"lucidBlocksCreaturesAndEnemies": {
-			"title": "Lucid Blocks Creatures and Enemies",
-			"displayType": "creatureCards",
-			"intro": "Lucid Blocks mixes surreal creatures with real danger. Official descriptions and community posts point to a world full of strange life, hostile threats, and a few standout encounters players remember quickly.",
-			"creatures": [
-				{
-					"name": "Manikins",
-					"role": "Hostile Enemy",
-					"description": "Manikins are one of the officially named foes in the world and part of the game's surreal threat roster."
-				},
-				{
-					"name": "Squishy Gels",
-					"role": "Hostile Enemy",
-					"description": "Squishy gels are another officially named enemy type and help define the game's strange biological style."
-				},
-				{
-					"name": "Higher-Dimensional Beings",
-					"role": "Hostile Enemy",
-					"description": "These beings are presented as part of the world's more abstract and unsettling enemy lineup."
-				},
-				{
-					"name": "Colossal Spiders",
-					"role": "Major Threat",
-					"description": "Spiders are one of the most immediately feared enemies in community discussions and are clearly a memorable danger."
-				},
-				{
-					"name": "Bubblebear",
-					"role": "Named Creature",
-					"description": "Bubblebear is notable enough to have its own achievement, which makes it one of the clearest named creature encounters in the game."
-				},
-				{
-					"name": "Cute Vermin",
-					"role": "Interactable Creature",
-					"description": "Vermin are not only part of fusion progression, they can also be renamed, giving them a more personal role than standard enemies."
-				},
-				{
-					"name": "Blasphemous Creature",
-					"role": "Elite Threat",
-					"description": "The blasphemous creature is tied to a dedicated combat achievement, marking it as a significant enemy encounter."
-				}
-			]
-		},
-		"lucidBlocksMobilityGear": {
-			"title": "Lucid Blocks Mobility Gear",
-			"displayType": "itemCards",
-			"intro": "Movement upgrades are one of the biggest quality-of-life jumps in Lucid Blocks. Once you unlock your first traversal tools, exploration becomes faster, safer, and much more rewarding.",
-			"items": [
-				{
-					"name": "Hookshot",
-					"type": "Traversal Tool",
-					"description": "The hookshot is one of the clearest movement milestones in the game and has its own dedicated achievement."
-				},
-				{
-					"name": "Glider Glove",
-					"type": "Air Mobility",
-					"description": "The glider glove opens up much smoother travel and is another major progression milestone with its own achievement."
-				},
-				{
-					"name": "Bee Glider",
-					"type": "Traversal Tool",
-					"description": "Bee gliders are officially highlighted as part of the game's movement toolkit for covering space more efficiently."
-				},
-				{
-					"name": "Ball Wand",
-					"type": "Utility Gear",
-					"description": "Ball wands are one of the officially highlighted special tools and expand how you move through or interact with the world."
-				},
-				{
-					"name": "Scuba Diving Gear",
-					"type": "Exploration Gear",
-					"description": "Scuba diving gear is officially listed as part of the core utility set for reaching areas that would otherwise be harder to explore."
-				},
-				{
-					"name": "Explosives",
-					"type": "Utility Damage",
-					"description": "Explosives are both officially highlighted and linked to an achievement milestone, making them part of the game's core utility progression."
-				}
-			],
-			"unlockMilestones": [
-				"Command a hookshot",
-				"Fly with the glider glove",
-				"Brandish a projectile wand",
-				"Brandish an explosive"
-			]
-		},
-		"lucidBlocksFarmingAndGrowth": {
-			"title": "Lucid Blocks Farming and Growth",
-			"displayType": "mixedCards",
-			"intro": "Growth is part of real progression in Lucid Blocks. Farming is not only about planting and harvesting, but also about setting up repeatable material routes that keep your tools, weapons, and crafting options flowing.",
-			"sections": [
-				{
-					"name": "Seed Progression",
-					"description": "Planting and fertilizing seeds is a real milestone in the game, and harvesting a fully-grown nut is part of the same growth path."
-				},
-				{
-					"name": "Material Farming",
-					"description": "A practical early farming loop is creating Mercury Capsules, which spawn small slimes that drop Tendrils and goo for repeatable crafting materials."
-				},
-				{
-					"name": "Tool Sustain",
-					"description": "Resource farming becomes much stronger once you can consistently gather Osmium, glass shards, plants, and slime materials for follow-up crafts."
-				},
-				{
-					"name": "Base Routine",
-					"description": "The best farming setup supports more than food. It should feed your storage, movement tools, weapon upgrades, and future fusion experiments."
-				}
-			],
-			"growthMilestones": [
-				"Fertilize a seed",
-				"Harvest a fully-grown nut",
-				"Create repeatable material loops",
-				"Turn farming into long-term progression"
-			]
-		},
-		"lucidBlocksBestEarlyUnlocks": {
-			"title": "Lucid Blocks Best Early Unlocks",
-			"displayType": "priorityCards",
-			"intro": "The strongest early unlocks are the ones that improve safety, storage, and movement. In Lucid Blocks, a few practical upgrades can make the entire rest of the game much smoother.",
-			"priorities": [
-				{
-					"name": "Personal Qualia",
-					"priority": "Essential",
-					"description": "As soon as you get access to your personal Qualia, your run becomes much more stable. It acts as a reliable hub for storage, building, and regrouping."
-				},
-				{
-					"name": "Frost Pick",
-					"priority": "Very High",
-					"description": "A fast and cheap early mining tool made from Osmium and Stick. It is one of the most useful upgrades for accelerating early resource collection."
-				},
-				{
-					"name": "Cache Cube",
-					"priority": "Very High",
-					"description": "Storage pressure starts early, so getting your first dependable chest-style container is a major quality-of-life upgrade."
-				},
-				{
-					"name": "Hookshot",
-					"priority": "High",
-					"description": "The hookshot is one of the clearest movement milestones in the game and quickly makes exploration faster and safer."
-				},
-				{
-					"name": "Glider Glove",
-					"priority": "High",
-					"description": "The glider glove adds another major mobility boost and makes long-distance movement far more efficient."
-				},
-				{
-					"name": "Projectile Wand or Bombs",
-					"priority": "High",
-					"description": "A ranged tool or explosive option gives you a safer answer to dangerous enemies and trial-style encounters."
-				}
-			]
-		},
-		"lucidBlocksAchievementTracker": {
-			"title": "Lucid Blocks Achievement Tracker",
-			"displayType": "achievementGrid",
-			"intro": "Lucid Blocks currently has 19 Steam achievements, and they naturally split into exploration, crafting, mobility, combat, and growth progression.",
-			"groups": [
-				{
-					"name": "Exploration",
-					"achievements": [
-						{
-							"title": "Angel α",
-							"description": "Enter a qualia."
-						},
-						{
-							"title": "Angel γ",
-							"description": "Discover a tiamana leyline."
-						},
-						{
-							"title": "Angel δ",
-							"description": "Overcome a tiamana challenge."
-						},
-						{
-							"title": "Angel ε",
-							"description": "Hidden achievement."
-						}
-					]
-				},
-				{
-					"name": "Crafting and Summoning",
-					"achievements": [
-						{
-							"title": "Apotheosis α",
-							"description": "Fuse an item."
-						},
-						{
-							"title": "Apotheosis β",
-							"description": "Fuse a vermin."
-						},
-						{
-							"title": "Apotheosis γ",
-							"description": "Fuse a divine artifact."
-						},
-						{
-							"title": "Archangel β",
-							"description": "Summon your faith."
-						}
-					]
-				},
-				{
-					"name": "Mobility and Utility",
-					"achievements": [
-						{
-							"title": "Virtue α",
-							"description": "Fly with the glider glove."
-						},
-						{
-							"title": "Virtue β",
-							"description": "Command a hookshot."
-						},
-						{
-							"title": "Archangel α",
-							"description": "Brandish a projectile wand."
-						},
-						{
-							"title": "Archangel γ",
-							"description": "Brandish an explosive."
-						}
-					]
-				},
-				{
-					"name": "Combat and Creatures",
-					"achievements": [
-						{
-							"title": "Bubblebear Massacre",
-							"description": "Defeat innocent bubblebears."
-						},
-						{
-							"title": "Archangel δ",
-							"description": "Eliminate a blasphemous creature."
-						},
-						{
-							"title": "Angel β",
-							"description": "Die."
-						},
-						{
-							"title": "Dominion γ",
-							"description": "Rename a cute vermin."
-						}
-					]
-				},
-				{
-					"name": "Growth and Farming",
-					"achievements": [
-						{
-							"title": "Dominion α",
-							"description": "Fertilize a seed."
-						},
-						{
-							"title": "Dominion β",
-							"description": "Harvest a fully-grown nut."
-						},
-						{
-							"title": "Dominion δ",
-							"description": "Hidden achievement."
-						}
-					]
-				}
-			]
-		},
-		"lucidBlocksSingleplayerAndPlatformFAQ": {
-			"title": "Lucid Blocks Singleplayer and Platform FAQ",
-			"displayType": "accordion",
-			"intro": "These are the core platform and access questions players keep asking before buying Lucid Blocks.",
+		"eveVanguardOperationAvalonGuide": {
+			"title": "EVE Vanguard Operation Avalon Guide",
+			"eyebrow": "Current Alpha Event",
+			"intro": "Operation Avalon is the current major EVE Vanguard Alpha event, bringing a new battlefield, rebuilt gunplay, new weapons, redesigned extraction, and wider EVE Online links. It is built around difficult decisions, contested extraction, and the mystery surrounding the Command Block, and it is the first Alpha playtest step toward EVE Vanguard's planned always-on Alpha through the EVE Launcher in November 2026.",
 			"faqs": [
 				{
-					"question": "Is Lucid Blocks singleplayer?",
-					"answer": "Yes. Lucid Blocks is a singleplayer game."
+					"question": "When is Operation Avalon live in EVE Vanguard?",
+					"answer": "Operation Avalon runs from July 7 to July 20, 2026, and EVE Vanguard is accessible through Steam and the EVE Launcher during that window."
 				},
 				{
-					"question": "Is multiplayer or co-op planned?",
-					"answer": "No. Multiplayer is not planned for release or future updates."
+					"question": "Who can play EVE Vanguard during Operation Avalon?",
+					"answer": "The Operation Avalon FAQ says EVE Vanguard is open to all players during this Open Alpha, with access through the EVE Launcher or the Steam playtest request."
 				},
 				{
-					"question": "Where can I play Lucid Blocks?",
-					"answer": "It is currently available on Steam for Windows."
+					"question": "What is the main new battlefield in EVE Vanguard?",
+					"answer": "Operation Avalon introduces the Lost Convoy battlefield to EVE Vanguard, a new deployment zone where players push deeper for better rewards while extraction opportunities become more limited."
 				},
 				{
-					"question": "How much does Lucid Blocks cost?",
-					"answer": "$9.99 on Steam."
+					"question": "What changed in EVE Vanguard combat?",
+					"answer": "Operation Avalon brings rebuilt gunplay, expanded weapons, deadlier Mordu's Legion forces, and a redesigned looting and extraction experience to EVE Vanguard."
 				},
 				{
-					"question": "Does Lucid Blocks support controllers?",
-					"answer": "Yes, but controller play is not recommended because the menus are not designed around it."
+					"question": "What is the Command Block in EVE Vanguard?",
+					"answer": "The Command Block sits at the heart of the EVE Vanguard map and is tied to the emerging Nemesis storyline. Official notes describe it as a destination for prepared Warclones ready to push deeper into Avalon."
 				},
 				{
-					"question": "Does Lucid Blocks work on Steam Deck?",
-					"answer": "Yes. Proton 9.0 or 9.0.4 is the commonly recommended setup for Steam Deck."
-				},
-				{
-					"question": "Does Lucid Blocks work on Linux?",
-					"answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
-				},
-				{
-					"question": "Will Mac or Android be supported?",
-					"answer": "They may be supported in the future, but they are not current launch platforms."
-				},
-				{
-					"question": "Does Lucid Blocks have translations?",
-					"answer": "No. There are currently no translations planned."
-				},
-				{
-					"question": "Will Lucid Blocks keep getting updates?",
-					"answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+					"question": "How does Operation Avalon connect EVE Vanguard to EVE Online?",
+					"answer": "Warclone activity in EVE Vanguard can influence the wider Operation Avalon event in EVE Online, including linked battlefield activity and New Eden world-building."
 				}
 			]
 		},
-		"lucidBlocksSteamDeckAndController": {
-			"title": "Lucid Blocks Steam Deck and Controller",
-			"displayType": "accordion",
-			"intro": "Lucid Blocks can run on Steam Deck, but the default setup may need adjustment. Keyboard and mouse remains the smoother option for menus and general play.",
-			"faqs": [
+		"eveVanguardWeaponsAndLoadoutGuide": {
+			"title": "EVE Vanguard Weapons and Loadout Guide",
+			"eyebrow": "Weapons & Loadouts",
+			"intro": "See the key weapon and loadout systems players should understand before entering Operation Avalon in EVE Vanguard. EVE Vanguard does not publish a fixed weapon tier list, so this module groups official weapons and systems by role. Operation Avalon highlights new advanced weapons, modular guns, multiple fire modes, damage-type switching, chipsets, and the Nova Blade for close-range finishes.",
+			"tiers": [
 				{
-					"question": "Does Lucid Blocks work on Steam Deck?",
-					"answer": "Yes. Proton 9.0 works well, and Proton 9.0.4 is a commonly shared fix for Steam Deck issues."
+					"tier": "Close Range",
+					"items": [
+						{
+							"name": "SMG",
+							"role": "Fast close-range firearm introduced for EVE Vanguard's Operation Avalon."
+						},
+						{
+							"name": "Shrapnel Cannon",
+							"role": "Heavy short-range option highlighted as part of EVE Vanguard's expanded arsenal."
+						},
+						{
+							"name": "Nova Blade",
+							"role": "Hand-forged melee weapon used when closing distance on enemies in EVE Vanguard."
+						}
+					]
 				},
 				{
-					"question": "What should I do if Steam Deck controls are not working?",
-					"answer": "Force compatibility and switch the game to Proton 9.0.4. The default configuration may not accept controller input correctly."
+					"tier": "Mid to Long Range",
+					"items": [
+						{
+							"name": "Laser DMR",
+							"role": "Precision-focused weapon added to the EVE Vanguard advanced weapon lineup."
+						},
+						{
+							"name": "Beam Rifle",
+							"role": "Energy-style rifle highlighted in EVE Vanguard weapon updates."
+						}
+					]
 				},
 				{
-					"question": "Does Lucid Blocks support controllers?",
-					"answer": "Yes, but controller play is not recommended because the game's menus are not designed around it."
+					"tier": "Adaptive Weapon Systems",
+					"items": [
+						{
+							"name": "Chipsets",
+							"role": "Advanced customization parts used to modify EVE Vanguard weapons and carry configurations between deployments."
+						},
+						{
+							"name": "Multiple Fire Modes",
+							"role": "EVE Vanguard weapons can switch configurations such as burst and full-auto depending on the setup."
+						},
+						{
+							"name": "Damage Type Switching",
+							"role": "EVE Vanguard details switching between damage setups such as energy and kinetic."
+						}
+					]
 				},
 				{
-					"question": "Is Linux support possible?",
-					"answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
-				},
-				{
-					"question": "What is the best input setup?",
-					"answer": "Keyboard and mouse is the smoothest option for menu navigation and general moment-to-moment play."
+					"tier": "Loadout Planning",
+					"items": [
+						{
+							"name": "Warbarge Preparation",
+							"role": "Between EVE Vanguard deployments, Warclones craft, procure equipment, and prepare loadouts before launching expeditions."
+						},
+						{
+							"name": "Extraction-Based Progression",
+							"role": "Extracted resources and gear decisions shape what players can bring into the next EVE Vanguard run."
+						}
+					]
 				}
 			]
 		},
-		"lucidBlocksSettingsAndAccessibility": {
-			"title": "Lucid Blocks Settings and Accessibility",
-			"displayType": "settingCards",
-			"intro": "Lucid Blocks already has a few practical settings and compatibility notes that matter immediately when players first launch the game.",
-			"settings": [
-				{
-					"name": "Display Settings",
-					"type": "Comfort Option",
-					"description": "Display Settings includes an option that lets players hide the on-screen hands."
-				},
-				{
-					"name": "Graphics Compatibility",
-					"type": "System Requirement",
-					"description": "Vulkan support is required for the graphics to render properly. Systems without Vulkan can run into crashes and severe graphical glitches."
-				},
-				{
-					"name": "Input Preference",
-					"type": "Control Setup",
-					"description": "Controller support exists, but keyboard and mouse gives a smoother experience because menus are not built around controller use."
-				},
-				{
-					"name": "Language Support",
-					"type": "Localization",
-					"description": "The current setup is English-only, and no translations are planned right now."
-				}
-			]
-		},
-		"lucidBlocksUpdatesAndPatchNotes": {
-			"title": "Lucid Blocks Updates and Patch Notes",
-			"displayType": "timeline",
-			"intro": "Lucid Blocks is already receiving quick post-launch fixes and small usability updates.",
-			"entries": [
-				{
-					"title": "Update 2.8.2",
-					"type": "UI Update",
-					"description": "Renamed \"awaken\" to \"exit\" in the main menu."
-				},
-				{
-					"title": "Small Patch for Start-Up Crashes",
-					"type": "Hotfix",
-					"description": "A dedicated patch was released for players whose game was crashing on launch."
-				},
-				{
-					"title": "Post-Launch Content Support",
-					"type": "Roadmap Note",
-					"description": "Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
-				}
-			]
-		},
-		"lucidBlocksCrashFixAndTroubleshooting": {
-			"title": "Lucid Blocks Crash Fix and Troubleshooting",
-			"displayType": "steps",
-			"intro": "Most immediate launch and crash issues should be checked in a simple order: patch level, graphics support, platform compatibility, and logs.",
+		"eveVanguardExtractionAndLootingGuide": {
+			"title": "EVE Vanguard Extraction and Looting Guide",
+			"eyebrow": "Extraction Guide",
+			"intro": "Every deployment in EVE Vanguard is built around one core choice: leave with what you have, or stay longer for better rewards and higher danger. EVE Vanguard is an extraction-adventure FPS where Warclones deploy planetside, fight through hostile zones, steal valuable resources, and try to extract before the battlefield turns against them. Operation Avalon adds a redesigned looting and extraction loop where timing matters as much as aim.",
 			"steps": [
 				{
-					"title": "Install the Latest Crash Hotfix",
-					"description": "If the game is crashing on start, update first and test again with the latest start-up crash patch."
+					"title": "Deploy into the battlefield",
+					"description": "Operation Avalon sends EVE Vanguard players into the Lost Convoy battlefield. From the moment you arrive, the session is about finding value, surviving fights, and deciding how deep to push."
 				},
 				{
-					"title": "Check Vulkan Support",
-					"description": "Lucid Blocks requires Vulkan support. Systems without Vulkan can suffer from crashes or major rendering problems."
+					"title": "Choose what to chase first",
+					"description": "Early choices in EVE Vanguard can include gathering resources, pursuing contracts, hunting other Warclones, or working alongside them. There is no single correct route because each deployment shifts based on risk, enemies, and other players."
 				},
 				{
-					"title": "Use Proton 9.0.4 on Steam Deck",
-					"description": "If Steam Deck input or launch behavior is broken, force compatibility and switch to Proton 9.0.4."
+					"title": "Loot before the danger spikes",
+					"description": "Valuable resources, advanced technology, and lost relics can be found around wreckage and corporate-controlled installations. Staying longer can mean better rewards, but the pressure increases as the EVE Vanguard mission continues."
 				},
 				{
-					"title": "Collect Crash Logs",
-					"description": "Open Windows Run, paste %APPDATA%, go to lucid blocks/logs, and gather the .txt files for troubleshooting."
+					"title": "Watch extraction timing",
+					"description": "Extraction points in EVE Vanguard are not guaranteed forever. As opportunities disappear across the battlefield, leaving becomes a strategic decision rather than a simple exit button."
 				},
 				{
-					"title": "Report the Issue Properly",
-					"description": "Share the logs and device details through the official Discord bug-reports forum or on the Steam community page."
+					"title": "Leave alive or lose everything",
+					"description": "Operation Avalon highlights the EVE Vanguard rule clearly: return alive or lose everything. The longer you stay, the greater the rewards become, but the planet fights back harder."
+				},
+				{
+					"title": "Push deeper only when prepared",
+					"description": "The Command Block sits near the heart of the EVE Vanguard map and is positioned as a high-risk destination tied to the Nemesis storyline, designed for Warclones ready to push deeper than most players."
+				}
+			]
+		},
+		"eveVanguardContractsAndObjectivesGuide": {
+			"title": "EVE Vanguard Contracts and Objectives Guide",
+			"eyebrow": "Objectives",
+			"intro": "EVE Vanguard deployments revolve around contracts, combat, salvaging, resources, and battlefield choices that can change the rest of the run. The basic loop is simple: deploy to hostile planets, take high-stakes contracts, fight through danger, salvage resources, modify your gear, and extract what you can. Operation Avalon also connects EVE Vanguard activity to wider New Eden events, where combat, hacking, and salvaging objectives shape the war above and below.",
+			"cards": [
+				{
+					"title": "Take high-stakes contracts",
+					"description": "Contracts give structure to an EVE Vanguard deployment and push players toward dangerous goals on hostile planets."
+				},
+				{
+					"title": "Salvage resources",
+					"description": "Resources are used to modify EVE Vanguard gear and improve your chances in later fights, making salvaging a key part of outmatching rivals."
+				},
+				{
+					"title": "Raid crash sites",
+					"description": "EVE Vanguard's gameplay loop is built around raiding crash sites and seizing exotic technology before the situation escalates."
+				},
+				{
+					"title": "Assault forward bases",
+					"description": "Forward bases and corporate-controlled installations in EVE Vanguard contain valuable resources, advanced technology, and lost relics, but they are protected by elite ground troops."
+				},
+				{
+					"title": "Fight Mordu's Legion",
+					"description": "Operation Avalon introduces smarter and deadlier Mordu's Legion forces to EVE Vanguard. Players need to survive both PvE pressure and possible Warclone encounters."
+				},
+				{
+					"title": "Adapt to other Warclones",
+					"description": "EVE Vanguard players can hunt other Warclones, cooperate with them, or betray them. Trust is part of the deployment risk, especially when rewards and extraction routes are limited."
+				},
+				{
+					"title": "Use combat, hacking, and salvaging event paths",
+					"description": "In Operation Avalon, EVE Online event sites include combat, hacking, and salvaging opportunities that connect to EVE Vanguard activity and the wider World Event."
+				},
+				{
+					"title": "Push objectives before extraction closes",
+					"description": "The safest EVE Vanguard play is not always the most profitable one. Players must decide whether to finish another objective or extract before opportunities disappear."
+				}
+			]
+		},
+		"eveVanguardSystemRequirementsAndReleaseDate": {
+			"title": "EVE Vanguard System Requirements and Release Date",
+			"eyebrow": "PC Specs",
+			"intro": "Check the current PC requirements, Steam release timing, language support, and anti-cheat details for EVE Vanguard before downloading or wishlisting the game. EVE Vanguard is listed for PC through Steam and the EVE Launcher. The official Steam page shows a planned Q3 2026 release, while the official EVE Vanguard site highlights 16 September as the next major date and lists detailed minimum and recommended PC specs.",
+			"tableColumns": {
+				"category": "Specification",
+				"minimum": "Minimum",
+				"recommended": "Recommended"
+			},
+			"rows": [
+				{
+					"category": "Release timing",
+					"minimum": "Operation Avalon Alpha: July 7–20, 2026 on Steam and the EVE Launcher",
+					"recommended": "Planned Steam release: Q3 2026; official site highlights 16 September"
+				},
+				{
+					"category": "Platform",
+					"minimum": "PC via Steam and the EVE Launcher",
+					"recommended": "Steam lists MMO, Online PvP, Online Co-op, Single-player, and Family Sharing features"
+				},
+				{
+					"category": "Operating system",
+					"minimum": "Windows 10 64-bit 21H2/19044 or Windows 11 64-bit",
+					"recommended": "Windows 10 64-bit latest or Windows 11 64-bit latest"
+				},
+				{
+					"category": "CPU",
+					"minimum": "Intel i5-8400 or AMD Ryzen 5 1600X",
+					"recommended": "Intel i5-11600K or AMD Ryzen 5 5600X"
+				},
+				{
+					"category": "GPU",
+					"minimum": "NVIDIA RTX 2060 or AMD Radeon RX 5700 XT",
+					"recommended": "NVIDIA RTX 3080 or AMD Radeon RX 6900 XT"
+				},
+				{
+					"category": "VRAM",
+					"minimum": "6 GB",
+					"recommended": "8 GB+"
+				},
+				{
+					"category": "RAM",
+					"minimum": "16 GB DDR4",
+					"recommended": "16 GB DDR4"
+				},
+				{
+					"category": "Storage",
+					"minimum": "50 GB free space on SSD",
+					"recommended": "50 GB free space on NVMe"
+				},
+				{
+					"category": "Network",
+					"minimum": "Broadband Internet",
+					"recommended": "Broadband Internet"
+				},
+				{
+					"category": "DirectX",
+					"minimum": "DirectX 12.1 on the official site; Steam lists DirectX 12",
+					"recommended": "DirectX 12.1 on the official site; Steam lists DirectX 12"
+				},
+				{
+					"category": "Expected performance",
+					"minimum": "60 FPS at Low quality, 1080p, FSR/DLSS Quality mode",
+					"recommended": "60+ FPS at High/Ultra quality, 1080p"
+				},
+				{
+					"category": "Anti-cheat",
+					"minimum": "Kernel-level Easy Anti-Cheat",
+					"recommended": "Easy Anti-Cheat is listed by Steam and may require manual removal after uninstall"
+				},
+				{
+					"category": "Language",
+					"minimum": "English listed on Steam",
+					"recommended": "English support shown in the Steam language table"
+				}
+			]
+		},
+		"eveVanguardEveOnlineConnectionAndRewards": {
+			"title": "EVE Vanguard EVE Online Connection and Rewards",
+			"eyebrow": "New Eden Link",
+			"intro": "EVE Vanguard is playable as its own ground-combat experience, but World Events can connect Warclone actions to EVE Online activity in space. Operation Avalon is described as one universe, one war, and two ways to fight: EVE Vanguard Warclones fight planetside, while EVE Online capsuleers can respond to linked events in space through convoys, combat sites, hacking, salvaging, Resonant Cyphers, and empire reward tracks.",
+			"faqs": [
+				{
+					"question": "Is EVE Vanguard separate from EVE Online?",
+					"answer": "Players can participate in either game independently. Operation Avalon offers content in both EVE Online and EVE Vanguard, but playing both fronts gives more ways to experience the shared story between capsuleers and Vanguard Warclones."
+				},
+				{
+					"question": "How do EVE Vanguard actions affect EVE Online?",
+					"answer": "During Operation Avalon, Warclones completing enough expeditions in EVE Vanguard can trigger AEGIS squalls and valuable sites in EVE Online. These sites create combat, hacking, and salvaging opportunities for capsuleers."
+				},
+				{
+					"question": "What did Operation Nemesis show about the EVE Vanguard connection?",
+					"answer": "Operation Nemesis used a shared World Event structure where EVE Vanguard expedition assignments contributed Global Points. When the progress gauge filled, raidable convoys appeared in EVE Online space."
+				},
+				{
+					"question": "What are EVE Vanguard Resonant Cyphers?",
+					"answer": "EVE Vanguard Resonant Cyphers are special Operation Avalon event items. Capsuleers can recover them during the event and exchange them at designated item traders for valuable loot, powerful components, and other rewards."
+				},
+				{
+					"question": "Where are the Operation Avalon item traders for EVE Vanguard?",
+					"answer": "Item traders are available across empire space, including Amarr, New Caldari, Dodixie, Rens, Sifilar, Kinakka, Ostingele, Hadozeko, Poitot, and SL-YBS, where EVE Vanguard Resonant Cyphers can be exchanged."
+				},
+				{
+					"question": "What EVE Online rewards are tied to EVE Vanguard?",
+					"answer": "Rewards include Breach Control, Lorharyth's Modified Inertial Stabilizer, volatile boosters, Mordu's Legion Aralez drones, Skill Points, implants, a Vanguard-themed character background, new SKINs, SKINR components, Arkombine Arisen reward crates, daily login rewards, and Twitch Drops."
+				},
+				{
+					"question": "How does EVE Vanguard affect the Operation Avalon story?",
+					"answer": "Exchanging EVE Vanguard Resonant Cyphers in an empire's space supports that empire's secret relationship with the Vanguard. The empire with the most trades becomes the first place where Avalon takes refuge after the event."
+				},
+				{
+					"question": "What is the simple way to understand the EVE Vanguard connection?",
+					"answer": "EVE Vanguard is the ground war and EVE Online is the space war. World Events connect both sides so EVE Vanguard deployments can influence what capsuleers see, fight, loot, and unlock in New Eden."
 				}
 			]
 		}
@@ -749,31 +455,31 @@
 	"faq": {
 		"title": "Frequently Asked",
 		"titleHighlight": "Questions",
-		"subtitle": "Everything you need to know about Lucid Blocks",
+		"subtitle": "Everything you need to know about EVE Vanguard",
 		"questions": [
 			{
-				"question": "Is Lucid Blocks a singleplayer game?",
-				"answer": "Yes. Lucid Blocks is a singleplayer-only game with no multiplayer or co-op planned."
+				"question": "What is EVE Vanguard?",
+				"answer": "EVE Vanguard is a sci-fi extraction-adventure FPS set in the New Eden universe. You deploy as an immortal Warclone, raid hostile planets, scavenge advanced tech, fight PvE and PvP threats, and extract before the battlefield overwhelms you."
 			},
 			{
-				"question": "What is the Apotheosis system in Lucid Blocks?",
-				"answer": "Apotheosis is Lucid Blocks' freeform fusion crafting system. Instead of following fixed recipes, you combine materials and discover your own crafting paths."
+				"question": "When is the EVE Vanguard release date?",
+				"answer": "EVE Vanguard has a planned Q3 2026 release on Steam, and the official site highlights 16 September as the next major date. Before that, EVE Vanguard is playable through the Operation Avalon Alpha playtest."
 			},
 			{
-				"question": "Where can I play Lucid Blocks?",
-				"answer": "Lucid Blocks is currently available on Steam for Windows. Linux and Steam Deck support is available through Proton 9.0."
+				"question": "How do I access the EVE Vanguard playtest?",
+				"answer": "You can access EVE Vanguard by requesting playtest access on the Steam page or by opening Operation Avalon through the EVE Launcher during the Alpha window from July 7 to July 20, 2026."
 			},
 			{
-				"question": "How much does Lucid Blocks cost?",
-				"answer": "Lucid Blocks costs $9.99 on Steam."
+				"question": "What platforms is EVE Vanguard on?",
+				"answer": "EVE Vanguard is a PC game available through Steam and the EVE Launcher. Steam lists Online PvP, Online Co-op, Single-player, and Family Sharing features for EVE Vanguard."
 			},
 			{
-				"question": "Does Lucid Blocks support controllers?",
-				"answer": "Yes, but controller play is not recommended because the menus are not designed around it. Keyboard and mouse is the smoother option."
+				"question": "Is EVE Vanguard connected to EVE Online?",
+				"answer": "Yes. EVE Vanguard is the ground war and EVE Online is the space war. During Operation Avalon, EVE Vanguard deployments can trigger linked events, sites, and rewards that capsuleers experience in EVE Online."
 			},
 			{
-				"question": "Will Lucid Blocks receive updates?",
-				"answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+				"question": "What kind of game is EVE Vanguard?",
+				"answer": "EVE Vanguard is an extraction-adventure FPS with modular weapons, chipsets, salvaging, contracts, and risk-based extraction. Every EVE Vanguard deployment forces a choice between leaving with your loot or staying longer for greater rewards and greater danger."
 			}
 		]
 	},
@@ -800,126 +506,5 @@
 		"copyright": "© 2026 EVE Vanguard Wiki. Not affiliated with the developers of EVE Vanguard.",
 		"disclaimer": "Unofficial fan-made resource website."
 	},
-	"pages": {
-		"guides": {
-			"title": "Lucid Blocks Guides",
-			"description": "Complete gameplay guides from beginner basics to advanced Apotheosis strategies. Master survival and crafting.",
-			"metaTitle": "Lucid Blocks Guides - Beginner to Advanced Strategies",
-			"metaDescription": "Complete Lucid Blocks guides covering beginner tips, Apotheosis system, survival strategies, and expert tactics for mastering the surreal sandbox.",
-			"categoryLabel": "GAME GUIDES",
-			"whatIs": "What are Guides?",
-			"whatIsDescription": "Comprehensive guides covering gameplay mechanics, survival strategies, and the Apotheosis crafting system. Learn everything from first steps to advanced techniques.",
-			"why": "Why read guides?",
-			"whySteps": {
-				"step1Title": "Learn Core Mechanics",
-				"step1Description": "Understand the Apotheosis system and avoid common beginner mistakes",
-				"step2Title": "Fast Progression",
-				"step2Description": "Follow proven paths to survive and thrive in the surreal world",
-				"step3Title": "Master Strategies",
-				"step3Description": "Develop advanced tactics for exploration and crafting"
-			},
-			"featured": "Featured & Essential",
-			"all": "All Guides"
-		},
-		"crafting": {
-			"title": "Lucid Blocks Crafting",
-			"description": "Master the Apotheosis fusion system with essence mechanics, recipes, and crafting strategies for powerful items.",
-			"metaTitle": "Lucid Blocks Crafting - Apotheosis System & Recipes",
-			"metaDescription": "Master Lucid Blocks Apotheosis crafting system. Learn essence mechanics, fusion recipes, and strategies for creating powerful tools and weapons.",
-			"categoryLabel": "CRAFTING SYSTEM",
-			"whatIs": "What is Crafting?",
-			"whatIsDescription": "The Apotheosis system is a unique essence-driven fusion mechanic where you combine up to six items to discover new recipes. No fixed crafting menus—experimentation is key.",
-			"why": "Why master crafting?",
-			"whySteps": {
-				"step1Title": "Unlock Powerful Items",
-				"step1Description": "Discover essential tools, weapons, and mobility gear through fusion",
-				"step2Title": "Understand Essences",
-				"step2Description": "Learn how item essences combine to create predictable results",
-				"step3Title": "Optimize Resources",
-				"step3Description": "Use dilution mechanics to maximize output from cheap materials"
-			},
-			"featured": "Featured & Essential",
-			"all": "All Crafting Guides"
-		},
-		"items": {
-			"title": "Lucid Blocks Items",
-			"description": "Detailed item guides covering tools, weapons, mobility gear, and storage solutions with crafting recipes and usage tips.",
-			"metaTitle": "Lucid Blocks Items - Tools, Weapons & Gear Guide",
-			"metaDescription": "Complete item database for Lucid Blocks including tools, weapons, mobility gear, and storage. Learn how to craft and use every item effectively.",
-			"categoryLabel": "ITEMS & EQUIPMENT",
-			"whatIs": "What are Items?",
-			"whatIsDescription": "Comprehensive guides for tools, weapons, mobility gear, and functional items. Learn crafting recipes, usage strategies, and optimal combinations.",
-			"why": "Why check item guides?",
-			"whySteps": {
-				"step1Title": "Learn Crafting Recipes",
-				"step1Description": "Discover how to craft essential tools and weapons using Apotheosis",
-				"step2Title": "Optimize Equipment",
-				"step2Description": "Choose the best items for your playstyle and progression stage",
-				"step3Title": "Improve Survival",
-				"step3Description": "Equip mobility gear and weapons to navigate the dangerous world"
-			},
-			"featured": "Featured & Essential",
-			"all": "All Items"
-		},
-		"biomes": {
-			"title": "Lucid Blocks Biomes",
-			"description": "Explore world regions, environmental features, resource locations, and survival tips for each biome.",
-			"metaTitle": "Lucid Blocks Biomes - World Regions & Exploration",
-			"metaDescription": "Explore Lucid Blocks biomes including Tiamana Leylines, Fog Meadow, and surreal regions. Find resources, avoid dangers, and navigate the infinite world.",
-			"categoryLabel": "WORLD REGIONS",
-			"whatIs": "What are Biomes?",
-			"whatIsDescription": "Guides to different world regions, environmental features, resource distribution, and danger zones. Learn what to expect and how to prepare for each area.",
-			"why": "Why explore biomes?",
-			"whySteps": {
-				"step1Title": "Find Resources",
-				"step1Description": "Locate rare materials and essences specific to each region",
-				"step2Title": "Avoid Dangers",
-				"step2Description": "Understand environmental hazards and hostile creatures",
-				"step3Title": "Plan Exploration",
-				"step3Description": "Prepare the right tools and gear for each biome type"
-			},
-			"featured": "Featured & Essential",
-			"all": "All Biomes"
-		},
-		"building": {
-			"title": "Lucid Blocks Building",
-			"description": "Master Qualia personal dimensions, base building, storage management, and creative construction techniques.",
-			"metaTitle": "Lucid Blocks Building - Qualia & Base Construction",
-			"metaDescription": "Master Lucid Blocks building with Qualia personal dimensions, base construction, storage solutions, and creative building techniques.",
-			"categoryLabel": "BUILDING & BASES",
-			"whatIs": "What is Building?",
-			"whatIsDescription": "Guides to the Qualia personal dimension system, base construction, storage management, and creative building. Learn to create your safe haven in the surreal world.",
-			"why": "Why build bases?",
-			"whySteps": {
-				"step1Title": "Create Safe Spaces",
-				"step1Description": "Establish secure bases for storage and crafting operations",
-				"step2Title": "Manage Resources",
-				"step2Description": "Organize materials efficiently with storage solutions",
-				"step3Title": "Unlock Qualia",
-				"step3Description": "Access personal pocket dimensions for ultimate convenience"
-			},
-			"featured": "Featured & Essential",
-			"all": "All Building Guides"
-		},
-		"support": {
-			"title": "Lucid Blocks Support",
-			"description": "Technical support, platform compatibility, performance optimization, and troubleshooting for common issues.",
-			"metaTitle": "Lucid Blocks Support - Technical Help & Fixes",
-			"metaDescription": "Get technical support for Lucid Blocks including Steam Deck setup, crash fixes, performance optimization, and platform compatibility guides.",
-			"categoryLabel": "TECHNICAL SUPPORT",
-			"whatIs": "What is Support?",
-			"whatIsDescription": "Technical guides covering platform compatibility, performance optimization, crash fixes, and common issues. Get help with Steam Deck, multiplayer questions, and settings.",
-			"why": "Why check support?",
-			"whySteps": {
-				"step1Title": "Fix Technical Issues",
-				"step1Description": "Resolve crashes, performance problems, and compatibility issues",
-				"step2Title": "Optimize Performance",
-				"step2Description": "Configure settings for best experience on your platform",
-				"step3Title": "Platform Compatibility",
-				"step3Description": "Learn about Steam Deck, controller support, and system requirements"
-			},
-			"featured": "Featured & Essential",
-			"all": "All Support Articles"
-		}
-	}
+	"pages": {}
 }

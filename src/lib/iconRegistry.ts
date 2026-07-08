@@ -28,6 +28,13 @@ export const iconRegistry: Record<string, LucideIcon> = {
   Gamepad2: LucideIcons.Gamepad2,
   TrendingUp: LucideIcons.TrendingUp,
 
+  // EVE Vanguard 模块导航图标
+  Target: LucideIcons.Target,
+  Swords: LucideIcons.Swords,
+  ScrollText: LucideIcons.ScrollText,
+  MonitorSmartphone: LucideIcons.MonitorSmartphone,
+  Globe: LucideIcons.Globe,
+
   // UI 交互图标
   Sparkles: LucideIcons.Sparkles,
   ChevronDown: LucideIcons.ChevronDown,
