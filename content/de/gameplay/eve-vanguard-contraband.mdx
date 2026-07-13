@@ -1,0 +1,152 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Schmuggelware: Ökonomische Brücke & Vernetztes Gameplay",
+  description: "Entdecken Sie, wie das Schmuggelware-System von EVE Vanguard eine direkte wirtschaftliche Brücke zu EVE Online schlägt, einschließlich Updates zum Fraktionskrieg und Fortschrittsschritten.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Contraband+Economic+Bridge",
+  date: "2026-07-13",
+  author: "eve vanguard Wiki-Team",
+  keywords: "EVE Vanguard, Schmuggelware, EVE Online, Wirtschaft, Fraktionskrieg, Operation Avalon, Guide"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- **Schmuggelware-Brücke**: Dieses System fungiert als direkte wirtschaftliche Verbindung, die es Vanguard-Soldaten ermöglicht, wertvolle Güter zu sichern und diese direkt mit EVE Online-Kapselpiloten zu handeln.
+- **Fraktionskrieg**: Geplant für November 2026; Spieler können sich bei den großen Imperien verpflichten, um ein gemeinsames galaktisches Tauziehen zu beeinflussen.
+- **Launcher-Zugriff**: Spielen Sie direkt über den nativen EVE Launcher oder nutzen Sie Steam, ohne ein separates Konto erstellen zu müssen.
+- **Matchmaking-Anpassung**: Die Entwickler testen aktiv ein aggressionsbasiertes Matchmaking, um die Präferenzen von PvE- und PvP-Spielern auszubalancieren.
+</Callout>
+
+<Section icon={Map} title="Das EVE Vanguard Schmuggelware-System verstehen">
+
+Die Einführung von **EVE Vanguard Schmuggelware** markiert einen gewaltigen Meilenstein in der Sandbox-Verbindung zwischen dem bodenbasierten Shooter und dem weitläufigen Weltraum-MMO. Soldaten am Boden können während planetarer Einsätze wertvolle illegale Güter sichern und diese an EVE Online-Spieler zurückverkaufen, wodurch eine spielergesteuerte wirtschaftliche Brücke in Echtzeit entsteht.
+
+**Video-Highlights:**
+- **Wirtschaftliche Integration**: Entwickler erklären, wie Bodenressourcen die Weltraumwirtschaft direkt beeinflussen.
+- **Zeitplan für den Start**: Wichtige Meilensteine, die festlegen, wann der Fraktionskrieg und der Schmuggelmarkt live gehen.
+- **Launcher-Flexibilität**: Wie Steam-Konten und der native EVE Launcher nahtlos interagieren.
+
+<YouTubeEmbed videoId="GQUIrAGWv64" title="EVE Vanguard Devs Finally Explained How The Two Games Connect" />
+
+Diese Verbindung stellt sicher, dass Bodenkämpfe nicht nur eine isolierte Lobby-Erfahrung sind. Stattdessen repräsentiert jedes Stück extrahierte Schmuggelware potenzielles ISK, Ressourcen oder politischen Einfluss für Kapselpiloten, die in den Sternen operieren.
+
+| Wirtschaftliches Feature | Auswirkungen für Bodentruppen | Auswirkungen für Weltraum-Kapselpiloten |
+|---|---|---|
+| **Schmuggelware-Handel** | Wertvolle physische Güter extrahieren | Rohstoffe für die Fertigung kaufen |
+| **Fraktionskrieg** | Taktische Bodenziele abschließen | Systemkontrolle und LP-Boni erhalten |
+| **Konvoi-Spawning** | Ziele sichern, um Weltraum-Konvois auszulösen | Gespawnte NPC-Frachter überfallen oder schützen |
+
+<Callout type="tip" title="Einblick der Entwickler">
+Das Schmuggelware-System ist als langfristige wirtschaftliche Brücke konzipiert. Während sich die ersten Tests auf eventbasierte Verbindungen konzentrieren, soll der vollständig integrierte Spieler-zu-Spieler-Markt nach November 2026 eingeführt werden.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Fraktionskrieg und planetare Verbindungen">
+
+Bevor die vollständige Wirtschaft für **EVE Vanguard Schmuggelware** live geht, stützt sich die grundlegende Verbindung zwischen den beiden Spielen auf den Fraktionskrieg. Dieses System, das im November 2026 startet, ermöglicht es Bodentruppen, sich bei einem der großen Imperien zu verpflichten. Ihre Siege am Boden fließen direkt in die Mechaniken der Territorialkontrolle von EVE Online ein.
+
+| Kampagnenphase | Hauptziel | Gemeinsame Belohnung |
+|---|---|---|
+| **Operation Avalon** | Planetare Extraktionsverträge abschließen | Spawnt wertvolle Weltraum-Konvois |
+| **Imperiale Rekrutierung** | Sich Amarr, Minmatar, Caldari oder Gallente anschließen | Fraktions-Loyalitätspunkte verdienen |
+| **Territoriales Tauziehen** | Strategische planetare Infrastruktur sichern | Verändert die Systemanfälligkeit im Weltraum |
+
+Dieses gemeinsame Kampagnensystem schafft eine dynamische Umgebung, in der Shooter-Spieler und Weltraumpiloten ihre Bemühungen koordinieren müssen, um strategische Dominanz zu erlangen.
+
+<CardGrid cols={3}>
+  <Card title="High-Sec-Sektoren">
+    - **Geringere PvP-Aggression**
+    - Sicherere Extraktionsrouten
+    - Moderater Wert der Schmuggelware
+  </Card>
+  <Card title="Low-Sec-Sektoren">
+    - **Ausgewogenes PvE & PvP**
+    - Taktische Hochrisikozonen
+    - Überlegene Ressourcenausbeute
+  </Card>
+  <Card title="Null-Sec-Sektoren">
+    - **Reine PvP-Kriegsgebiete**
+    - Uneingeschränkte Kampfregeln
+    - Maximale wirtschaftliche Belohnungen
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Aggressions-basiertes Matchmaking">
+Die Vanguard-Entwickler experimentieren mit einem "Soft-Bucket"-Aggressions-Matchmaking. Dieses System gruppiert Spieler basierend auf ihren Kampftendenzen und hilft PvE-orientierten Spielern, Hardcore-PvP-Lobbys zu vermeiden, während die Sandbox intakt bleibt.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Schritt-für-Schritt-Anleitung für den Zugriff auf Operation Avalon">
+
+Die Teilnahme am planetaren Ökosystem ist unkompliziert, egal ob Sie ein erfahrener Kapselpilot oder ein neuer Bodenrekrut sind. Befolgen Sie diese Schritte, um Ihr Konto auf die kommenden Einsatzphasen vorzubereiten.
+
+<Steps>
+  <Step num="1" title="Kontoeinrichtung">
+    Starten Sie das Spiel direkt über den nativen EVE Launcher. Wenn Sie Steam bevorzugen, können Sie Ihr bestehendes Konto verknüpfen, ohne ein neues Profil erstellen zu müssen.
+  </Step>
+  <Step num="2" title="Imperiale Ausrichtung">
+    Verpflichten Sie sich bei Ihrer gewählten Imperiums-Fraktion, um sich auf die gemeinsamen Fraktionskriegs-Kampagnen vorzubereiten, die im November 2026 starten.
+  </Step>
+  <Step num="3" title="Ziele sichern">
+    Rücken Sie in die ausgewiesenen planetaren Sektoren vor, um taktische Ziele zu sichern, was das Spawnen von physischen Frachtkonvois im Weltraum auslöst.
+  </Step>
+  <Step num="4" title="Schmuggelware extrahieren">
+    Lokalisieren, sichern und extrahieren Sie erfolgreich illegale Güter, um sich auf den kommenden spielergesteuerten Schmuggelmarkt vorzubereiten.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Cross-Play-Kompatibilität">
+Alle Fortschritte, Inventare und Fraktionsrufe bleiben identisch, unabhängig davon, ob Sie EVE Vanguard über Steam oder den eigenständigen EVE Online Launcher starten.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Einsatzziele & Meilensteine">
+
+Um Ihre Effizienz während der Alpha-Phasen zu maximieren und sich auf den vollständigen Start der wirtschaftlichen Brücke vorzubereiten, sollten Sie diese wesentlichen Meilensteine anstreben.
+
+<Checklist
+  id="vanguard-milestones"
+  title="Checkliste für die Einsatzbereitschaft:"
+  items={[
+    "Festlegung Ihrer bevorzugten Launcher-Konfiguration (Nativ oder Steam)",
+    "Teilnahme an aktiven Operation Avalon-Einsatzfenstern",
+    "Vertrautmachen mit High-Sec-, Low-Sec- und Null-Sec-Einsatzsektoren",
+    "Ausrichtung auf eine Imperiums-Fraktion vor dem Kampagnen-Update im November",
+    "Meistern der Extraktionsmechaniken, um eine sichere Bergung der Schmuggelware zu garantieren"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Shield} title="Häufig gestellte Fragen (FAQ)">
+
+<FAQ items={[
+  {
+    question: "Was genau ist das Schmuggelware-System von EVE Vanguard?",
+    answer: "Es handelt sich um eine in der Entwicklung befindliche wirtschaftliche Brücke, die es Bodenspielern in Vanguard ermöglicht, während Missionen wertvolle Güter zu finden und diese direkt an Spieler in EVE Online gegen ISK zu verkaufen."
+  },
+  {
+    question: "Benötige ich ein separates Steam-Konto, um EVE Vanguard zu spielen?",
+    answer: "Nein. Sie können direkt über den bestehenden EVE Launcher spielen. Wenn Sie sich entscheiden, auf Steam zu spielen, können Sie Ihr aktuelles EVE Online-Konto nahtlos verknüpfen."
+  },
+  {
+    question: "Wie verbindet der Fraktionskrieg die beiden Spiele?",
+    answer: "Ab November 2026 können sich Bodentruppen den großen Imperien anschließen. Siege am Boden beeinflussen direkt die Fortschrittsanzeige des territorialen Tauziehens, was die Systemkontrolle in EVE Online beeinflusst."
+  },
+  {
+    question: "Was ist aggressionsbasiertes Matchmaking?",
+    answer: "Es ist ein experimentelles Matchmaking-System, das 'Soft Bucketing' verwendet, um Spieler, die PvE-Aktivitäten bevorzugen, von denen zu trennen, die intensive PvP-Kämpfe suchen."
+  }
+]} />
+
+</Section>

@@ -1,0 +1,182 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Mining: Ultimate Laser Guide & Crafting Meta",
+  description: "Master the new EVE Vanguard mining laser. Learn how to extract alloys, craft energy ammo, bypass security locks, and survive the high-risk extraction zones.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e1b4b/fff?text=Mining+Laser+Guide",
+  date: "2026-07-13",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **EVE Vanguard mining** introduces a dual-purpose laser tool for harvesting resource nodes and completing mission objectives.
+- **Resource extraction** yields inert and reactive alloys used to craft high-tier energy ammunition on the fly.
+- **Energy rounds** deal superior damage to enemy shields, creating a powerful shield-stripping meta.
+- **High sound profile** means the mining laser is extremely loud and will easily give away your position to nearby hostiles.
+- **Tactical utility** allows players to use the laser to bypass electronic locks on intact tech vaults.
+</Callout>
+
+<Section icon={Map} title="EVE Vanguard Mining: System Overview">
+
+The introduction of **eve vanguard mining** mechanics brings a multi-tool utility that expands your tactical options. Rather than relying solely on kinetic firearms, squad members can now deploy a dedicated mining tool to extract valuable alloys directly from planetary surfaces. This tool occupies your secondary equipment slot and features a distinct, early-stage prototype aesthetic designed for rapid deployment.
+
+**Video Highlights:**
+- **Dual-Purpose Utility**: Learn how the laser transitions from a resource harvester to an objective bypass tool.
+- **Alloy Extraction**: See the visual feedback of harvesting raw planetary nodes.
+- **Combat Crafting**: Watch the step-by-step process of crafting energy rounds in real-time.
+- **Audio Danger**: Listen to the loud sonic signature that alerts nearby players.
+
+<YouTubeEmbed videoId="G1yUR_QWAE4" title="They FORGOT To Finish The Laser?? 🪖 EVE Vanguard Mining Update" />
+
+This system bridges the gap between survival harvesting and active combat. Players must balance the immediate need for advanced ammunition against the extreme vulnerability of exposing their location while operating noisy machinery.
+
+| Feature | Specification | Tactical Impact |
+| --- | --- | --- |
+| **Slot Allocation** | Equipment Slot 2 | Replaces secondary weapon or utility |
+| **Primary Function** | Ore Node Extraction | Yields raw alloys for immediate crafting |
+| **Secondary Function** | Tech Vault Decryption | Bypasses mechanical and electronic locks |
+| **Audio Signature** | High Decibel Range | Alerts nearby clones within a wide radius |
+| **Effective Range** | Close Proximity | Requires players to stand near the target |
+
+<Callout type="warning" title="Acoustic Hazard">
+The mining laser emits a highly distinct, high-volume audio frequency when active. Enemy squads can easily track this sound to pinpoint your exact coordinates. Always secure the immediate perimeter before mining.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Alloy Types and Energy Ammo Crafting">
+
+Harvesting planetary nodes yields two primary resources: inert alloys and reactive alloys. These materials are stored directly in your inventory and serve as the foundational components for on-the-fly ammunition assembly. 
+
+The primary incentive for participating in **eve vanguard mining** is the creation of energy ammunition. Unlike standard kinetic rounds, energy rounds deal massive damage to shields, allowing squads to rapidly strip enemy defenses before swapping to kinetic weapons for the final kill.
+
+| Alloy Type | Primary Source | Crafting Utility |
+| --- | --- | --- |
+| **Inert Alloy** | Standard planetary ore veins | Base component for energy ammunition |
+| **Reactive Alloy** | Rich planetary ore veins | Catalyst for advanced energy rounds |
+
+To optimize your squad loadout, distribute your harvested alloys among your teammates. This ensures that designated marksmen always have access to energy rounds during intense firefights.
+
+| Ammo Type | Material Cost | Damage Profile | Optimal Range |
+| --- | --- | --- | --- |
+| **Kinetic Rounds** | Standard Loadout | High armor damage, low shield damage | Medium to long |
+| **Energy Rounds** | 10x Mixed Alloys | High shield damage, low armor damage | Close to medium |
+
+<CardGrid cols={3}>
+  <Card title="Kinetic Specialty">
+    - **High armor penetration**
+    - Default ammo type
+    - Best for unshielded targets
+  </Card>
+  <Card title="Energy Specialty">
+    - **Rapid shield stripping**
+    - Crafted via alloys
+    - Best for opening engagements
+  </Card>
+  <Card title="Hybrid Strategy">
+    - **Shield swap meta**
+    - Strip with energy laser/ammo
+    - Finish with kinetic rifle
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Shield Strip Meta">
+Initiate engagements by firing energy rounds to melt the target's shields. Once the shield bar drops, quickly swap to your kinetic weapon to tear through their remaining health.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Step-by-Step Mining and Crafting Process">
+
+To successfully harvest resources and craft ammunition without getting ambushed, follow this structured operational loop.
+
+<Steps>
+  <Step num="1" title="Locate Planetary Ore Nodes">
+    Scan the environment for glowing, pre-textured rock formations. These nodes typically appear in rocky crevasses or near extraction points.
+  </Step>
+  <Step num="2" title="Clear the Surrounding Area">
+    Establish a defensive perimeter. Have at least one squad member watch the flanks, as the sound of the laser will attract hostile clones.
+  </Step>
+  <Step num="3" title="Deploy the Mining Tool">
+    Equip the mining laser from your secondary slot. Move within close range of the node, aim at the glowing core, and hold the fire button.
+  </Step>
+  <Step num="4" title="Harvest the Entire Node">
+    Continue firing the laser until the node completely ruptures. Ensure you collect all shattered fragments to maximize your alloy yield.
+  </Step>
+  <Step num="5" title="Craft Energy Ammunition">
+    Open your tactical inventory interface, navigate to the equipment tab, select Energy Rounds, and confirm the craft using your harvested alloys.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Maximum Yield">
+Always mine a node until it is fully depleted. Partial mining yields significantly fewer resources and leaves valuable alloys on the field for rival squads.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Mission Utility: Bypassing Tech Vaults">
+
+The mining laser is not merely a resource harvester; it also functions as an essential utility tool for completing contract objectives. Throughout the battlefield, players will encounter sealed tech vaults and locked terminals that cannot be opened with standard firearms.
+
+By equipping the mining laser, you can focus the high-energy beam on vault lock mechanisms to melt the security systems. This dual-purpose design ensures that the tool remains valuable even if your squad does not require extra ammunition.
+
+| Vault Type | Lock Strength | Required Tool | Potential Loot |
+| --- | --- | --- | --- |
+| **Standard Tech Vault** | Low | Mining Laser | Basic supplies, nanites |
+| **Intact Security Vault** | Medium | Mining Laser (Sustained) | Rare weaponry, high-tier alloys |
+| **Encrypted Terminal** | High | Mining Laser + Keycard | Mission critical data, extraction keys |
+
+<Callout type="info" title="Objective Progression">
+Using the mining laser on mission objectives often triggers local alarms. Be prepared for sudden defensive reinforcements or roaming NPC patrols to converge on your position.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Tactical Checklist for Extraction Zones">
+
+Before deploying into your next contract, review this checklist to ensure your squad is fully prepared to utilize the mining mechanics.
+
+<Checklist
+  id="vanguard-mining-checklist"
+  title="Pre-Deployment Preparation:"
+  items={[
+    "Verify at least two squad members have the mining tool equipped",
+    "Establish clear roles for who will mine and who will provide cover fire",
+    "Locate the nearest tech vaults on your tactical map immediately after drop-in",
+    "Monitor inventory space to avoid leaving valuable reactive alloys behind",
+    "Coordinate ammo swapping to maximize shield-stripping potential during combat"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Does eve vanguard mining carry over between matches?",
+    answer: "No. The alloys you harvest and the energy ammunition you craft are match-specific resources designed to help you survive and succeed during your current deployment."
+  },
+  {
+    question: "Can I use the mining laser as an offensive weapon against enemies?",
+    answer: "While the laser can deal minor damage to shields at extremely close range, it is not an effective weapon. You will easily be outgunned by kinetic rifles."
+  },
+  {
+    question: "How do I know if an ore node is fully mined?",
+    answer: "The node will visually shatter and disappear from the environment, leaving loose alloy fragments on the ground for you to collect."
+  },
+  {
+    question: "Why can't I mine an ore node from a distance?",
+    answer: "The mining laser has a highly restricted effective range. You must stand within close proximity of the target node for the beam to successfully extract alloys."
+  }
+]} />
+
+</Section>

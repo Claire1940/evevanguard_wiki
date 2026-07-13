@@ -1,0 +1,183 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Minería en EVE Vanguard: Guía definitiva del láser y meta de fabricación",
+  description: "Domina el nuevo láser de minería de EVE Vanguard. Aprende a extraer aleaciones, fabricar munición de energía, eludir bloqueos de seguridad y sobrevivir en las zonas de extracción de alto riesgo.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e1b4b/fff?text=Mining+Laser+Guide",
+  date: "2026-07-13",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, minería, láser de minería, fabricación, aleaciones, munición de energía"
+}
+
+<Callout type="info" title="Guía rápida">
+- **La minería en EVE Vanguard** introduce una herramienta láser de doble propósito para recolectar nodos de recursos y completar objetivos de misión.
+- **La extracción de recursos** produce aleaciones inertes y reactivas que se utilizan para fabricar munición de energía de nivel alto sobre la marcha.
+- **Los proyectiles de energía** infligen un daño superior a los escudos enemigos, lo que crea un poderoso meta para destruir escudos.
+- **El alto perfil de sonido** significa que el láser de minería es extremadamente ruidoso y revelará fácilmente tu posición a los hostiles cercanos.
+- **La utilidad táctica** permite a los jugadores usar el láser para eludir bloqueos electrónicos en bóvedas tecnológicas intactas.
+</Callout>
+
+<Section icon={Map} title="Minería en EVE Vanguard: Descripción general del sistema">
+
+La introducción de las mecánicas de **minería en EVE Vanguard** aporta una utilidad multiherramienta que amplía tus opciones tácticas. En lugar de depender únicamente de armas de fuego cinéticas, los miembros del escuadrón ahora pueden desplegar una herramienta de minería dedicada para extraer aleaciones valiosas directamente de las superficies planetarias. Esta herramienta ocupa tu ranura de equipo secundario y presenta una estética distintiva de prototipo en etapa inicial diseñada para un despliegue rápido.
+
+**Puntos destacados del video:**
+- **Utilidad de doble propósito**: Aprende cómo el láser pasa de ser un recolector de recursos a una herramienta para eludir objetivos.
+- **Extracción de aleaciones**: Observa la respuesta visual al recolectar nodos planetarios sin procesar.
+- **Fabricación en combate**: Mira el proceso paso a paso para fabricar proyectiles de energía en tiempo real.
+- **Peligro de audio**: Escucha la fuerte firma sonora que alerta a los jugadores cercanos.
+
+<YouTubeEmbed videoId="G1yUR_QWAE4" title="¿¿Se OLVIDARON de terminar el láser?? 🪖 Actualización de minería de EVE Vanguard" />
+
+Este sistema cierra la brecha entre la recolección de supervivencia y el combate activo. Los jugadores deben equilibrar la necesidad inmediata de munición avanzada con la extrema vulnerabilidad de exponer su ubicación mientras operan maquinaria ruidosa.
+
+| Característica | Especificación | Impacto táctico |
+| --- | --- | --- |
+| **Asignación de ranura** | Ranura de equipo 2 | Reemplaza el arma secundaria o utilidad |
+| **Función primaria** | Extracción de nodos de mineral | Produce aleaciones sin procesar para fabricación inmediata |
+| **Función secundaria** | Descifrado de bóvedas tecnológicas | Elude bloqueos mecánicos y electrónicos |
+| **Firma de audio** | Rango de decibelios alto | Alerta a los clones cercanos en un radio amplio |
+| **Alcance efectivo** | Proximidad cercana | Requiere que los jugadores se paren cerca del objetivo |
+
+<Callout type="warning" title="Peligro acústico">
+El láser de minería emite una frecuencia de audio muy distinta y de alto volumen cuando está activo. Los escuadrones enemigos pueden rastrear fácilmente este sonido para localizar tus coordenadas exactas. Asegura siempre el perímetro inmediato antes de minar.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Tipos de aleaciones y fabricación de munición de energía">
+
+La recolección de nodos planetarios produce dos recursos principales: aleaciones inertes y aleaciones reactivas. Estos materiales se almacenan directamente en tu inventario y sirven como componentes fundamentales para el ensamblaje de munición sobre la marcha. 
+
+El incentivo principal para participar en la **minería de EVE Vanguard** es la creación de munición de energía. A diferencia de los proyectiles cinéticos estándar, los proyectiles de energía infligen un daño masivo a los escudos, lo que permite a los escuadrones destruir rápidamente las defensas enemigas antes de cambiar a armas cinéticas para la eliminación final.
+
+| Tipo de aleación | Fuente primaria | Utilidad de fabricación |
+| --- | --- | --- |
+| **Aleación inerte** | Vetas de mineral planetario estándar | Componente base para munición de energía |
+| **Aleación reactiva** | Vetas de mineral planetario ricas | Catalizador para proyectiles de energía avanzados |
+
+Para optimizar el equipamiento de tu escuadrón, distribuye las aleaciones recolectadas entre tus compañeros de equipo. Esto asegura que los tiradores designados siempre tengan acceso a proyectiles de energía durante los tiroteos intensos.
+
+| Tipo de munición | Costo de material | Perfil de daño | Alcance óptimo |
+| --- | --- | --- | --- |
+| **Proyectiles cinéticos** | Equipamiento estándar | Alto daño a la armadura, bajo daño al escudo | Medio a largo |
+| **Proyectiles de energía** | 10 aleaciones mixtas | Alto daño al escudo, bajo daño a la armadura | Corto a medio |
+
+<CardGrid cols={3}>
+  <Card title="Especialidad cinética">
+    - **Alta penetración de armadura**
+    - Tipo de munición por defecto
+    - Ideal para objetivos sin escudo
+  </Card>
+  <Card title="Especialidad de energía">
+    - **Destrucción rápida de escudos**
+    - Fabricada mediante aleaciones
+    - Ideal para iniciar enfrentamientos
+  </Card>
+  <Card title="Estrategia híbrida">
+    - **Meta de cambio de escudo**
+    - Destruye con láser/munición de energía
+    - Remata con rifle cinético
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Meta de destrucción de escudos">
+Inicia los enfrentamientos disparando proyectiles de energía para derretir los escudos del objetivo. Once el escudo baje, cambia rápidamente a tu arma cinética para destrozar la salud restante.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Proceso de minería y fabricación paso a paso">
+
+Para recolectar recursos y fabricar munición con éxito sin sufrir una emboscada, sigue este ciclo operativo estructurado.
+
+<Steps>
+  <Step num="1" title="Localiza nodos de mineral planetario">
+    Escanea el entorno en busca de formaciones rocosas brillantes y pre-texturizadas. Estos nodos suelen aparecer en grietas rocosas o cerca de los puntos de extracción.
+  </Step>
+  <Step num="2" title="Despeja el área circundante">
+    Establece un perímetro defensivo. Haz que al menos un miembro del escuadrón vigile los flancos, ya que el sonido del láser atraerá a clones hostiles.
+  </Step>
+  <Step num="3" title="Despliega la herramienta de minería">
+    Equipa el láser de minería desde tu ranura secundaria. Muévete a una distancia cercana del nodo, apunta al núcleo brillante y mantén presionado el botón de disparo.
+  </Step>
+  <Step num="4" title="Recolecta todo el nodo">
+    Continúa disparando el láser hasta que el nodo se rompa por completo. Asegúrate de recoger todos los fragmentos dispersos para maximizar tu rendimiento de aleación.
+  </Step>
+  <Step num="5" title="Fabrica munición de energía">
+    Abre la interfaz de tu inventario táctico, navega hasta la pestaña de equipo, selecciona Proyectiles de energía y confirma la fabricación usando tus aleaciones recolectadas.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Rendimiento máximo">
+Mina siempre un nodo hasta que se agote por completo. La minería parcial produce significativamente menos recursos y deja aleaciones valiosas en el campo para los escuadrones rivales.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Utilidad de misión: Eludir bóvedas tecnológicas">
+
+El láser de minería no es simplemente un recolector de recursos; también funciona como una herramienta de utilidad esencial para completar los objetivos del contrato. A lo largo del campo de batalla, los jugadores encontrarán bóvedas tecnológicas selladas y terminales bloqueadas que no se pueden abrir con armas de fuego estándar.
+
+Al equipar el láser de minería, puedes enfocar el haz de alta energía en los mecanismos de bloqueo de las bóvedas para derretir los sistemas de seguridad. Este diseño de doble propósito asegura que la herramienta siga siendo valiosa incluso si tu escuadrón no requiere munición adicional.
+
+| Tipo de bóveda | Resistencia del bloqueo | Herramienta requerida | Botín potencial |
+| --- | --- | --- | --- |
+| **Bóveda tecnológica estándar** | Baja | Láser de minería | Suministros básicos, nanites |
+| **Bóveda de seguridad intacta** | Media | Láser de minería (sostenido) | Armamento raro, aleaciones de alto nivel |
+| **Terminal encriptada** | Alta | Láser de minería + Tarjeta de acceso | Datos críticos de la misión, llaves de extracción |
+
+<Callout type="info" title="Progresión del objetivo">
+El uso del láser de minería en los objetivos de la misión a menudo activa alarmas locales. Prepárate para que refuerzos defensivos repentinos o patrullas de PNJ errantes converjan en tu posición.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de verificación táctica para zonas de extracción">
+
+Antes de desplegarte en tu próximo contrato, revisa esta lista de verificación para asegurarte de que tu escuadrón esté completamente preparado para utilizar las mecánicas de minería.
+
+<Checklist
+  id="vanguard-mining-checklist"
+  title="Preparación previa al despliegue:"
+  items={[
+    "Verificar que al menos dos miembros del escuadrón tengan equipada la herramienta de minería",
+    "Establecer roles claros sobre quién minará y quién proporcionará fuego de cobertura",
+    "Localizar las bóvedas tecnológicas más cercanas en tu mapa táctico inmediatamente después de la inserción",
+    "Monitorear el espacio del inventario para evitar dejar atrás valiosas aleaciones reactivas",
+    "Coordinar el cambio de munición para maximizar el potencial de destrucción de escudos durante el combate"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Se conserva la minería de EVE Vanguard entre partidas?",
+    answer: "No. Las aleaciones que recolectas y la munición de energía que fabricas son recursos específicos de cada partida, diseñados para ayudarte a sobrevivir y tener éxito durante tu despliegue actual."
+  },
+  {
+    question: "¿Puedo usar el láser de minería como arma ofensiva contra los enemigos?",
+    answer: "Aunque el láser puede infligir un daño menor a los escudos a muy corta distancia, no es un arma efectiva. Serás superado fácilmente por los rifles cinéticos."
+  },
+  {
+    question: "¿Cómo sé si un nodo de mineral está completamente minado?",
+    answer: "El nodo se romperá visualmente y desaparecerá del entorno, dejando fragmentos sueltos de aleación en el suelo para que los recojas."
+  },
+  {
+    question: "¿Por qué no puedo minar un nodo de mineral desde la distancia?",
+    answer: "El láser de minería tiene un alcance efectivo muy limitado. Debes pararte muy cerca del nodo objetivo para que el haz extraiga las aleaciones con éxito."
+  }
+]} />
+
+</Section>

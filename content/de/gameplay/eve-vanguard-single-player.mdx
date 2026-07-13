@@ -1,0 +1,168 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Einzelspieler: Solo-Überlebens- & PvE-Extraktions-Guide",
+  description: "Meistere die EVE Vanguard Einzelspieler-Taktiken. Erfahre, wie Solo-Kriegsklone PvE-Begegnungen überleben, Ressourcen farmen und in Operation Avalon sicher extrahieren können.",
+  category: "Leitfaden",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Solo+Survival+Guide",
+  date: "2026-07-13",
+  author: "EVE Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Kurz-Guide">
+- **EVE Vanguard Einzelspieler**: Obwohl das Spiel keine eigene Offline-Kampagne hat, können Solo-Spieler erfolgreich spawnen, farmen und extrahieren, indem sie sich auf risikoarme Randgebiete konzentrieren.
+- **Risikominimierung**: Vermeide hochstufige Points of Interest (POIs), in denen koordinierte Squads und Elite-NPCs das Schlachtfeld dominieren.
+- **Industrie & Blaupausen**: Sichere dir bei Solo-Runs Blaupausen, um verlorene Ausrüstung im Orbit herzustellen und so die Strafe des Klontods abzumildern.
+- **Kampfgewicht**: Die Bewegung fühlt sich bodenständig und dennoch agil an, stark inspiriert vom Gameplay von Battlefield 6 und Unreal Tournament.
+</Callout>
+
+<Section icon={Map} title="EVE Vanguard Einzelspieler: Solo-Machbarkeit in Operation Avalon">
+
+EVE Vanguard bietet ein hartes, persistentes Extraction-Shooter-Erlebnis, das direkt mit dem riesigen Universum von EVE Online verknüpft ist. Eine häufige Frage unter Söldnern ist, ob der **EVE Vanguard Einzelspieler**-Modus ein praktikabler Spielstil ist. Obwohl das Spiel keine traditionelle Offline-Story-Kampagne bietet, können Solo-Spieler als einsame Kriegsklone auf die trümmerübersäten Planetenoberflächen aufbrechen. Um als Solo-Operator erfolgreich zu sein, ist ein grundlegender Mentalitätswechsel erforderlich: Stealth, taktische Wegfindung und das Plündern an den Rändern müssen Vorrang vor direkten Konfrontationen haben.
+
+**Video-Highlights:**
+- **Persistentes Universum**: Kriegsklone starten aus dem Orbit, wobei ihr Bewusstsein bei Tod in den Resident Garden zurückkehrt.
+- **Überarbeitete Bewegung**: Das Gunplay fühlt sich schwerfällig, aber agil an, stark beeinflusst von der Mechanik aus Battlefield 6.
+- **Risiko vs. Belohnung**: Handgefertigte Karten enthalten markierte Zonen, die den NPC-Schwierigkeitsgrad und die Beutestufen anzeigen.
+
+<YouTubeEmbed videoId="TA2Y2jLRRYg" title="EVE Vanguard erfindet sein Gameplay neu mit Einflüssen aus Battlefield 6 | Hands-On Preview" />
+
+<Callout type="warning" title="Immer auf der Hut">
+Die gesamte Karte in Operation Avalon is PvP-aktiviert. Selbst wenn du dich ausschließlich auf PvE-Ziele konzentrierst, können dich andere Spieler-Squads jederzeit angreifen. Solo-Spieler müssen stets eine hohe Wachsamkeit an den Tag legen.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Solo- vs. Squad-Dynamik & Risikobewertung">
+
+Wer alleine loszieht, muss sich sowohl feindlichen NPC-Fraktionen wie Mordus Legion als auch koordinierten Spieler-Squads stellen. Um als Solo-Kriegsklon zu überleben, musst du die regionale Schwierigkeitsskalierung der Karte verstehen. Hochstufige Zonen wie der Command Block im Nordwesten sind wie High-Level-Raids konzipiert und für einen einzelnen Spieler ohne Top-Ausrüstung und fehlerfreie Ausführung praktisch unmöglich zu bewältigen.
+
+Die folgende Tabelle zeigt die Risikoprofile für verschiedene Kartenregionen aus der Solo-Perspektive:
+
+| Regionstyp | NPC-Schwierigkeit | Spieleraktivität | Solo-Machbarkeit | Empfohlene Aktion |
+| :--- | :--- | :--- | :--- | :--- |
+| **Randgebiete** | Niedrig | Sehr niedrig | Hervorragend | Basisressourcen farmen & entkommen |
+| **Mittlere POIs** | Mittel | Mäßig | Mäßig | Hineinschleichen, Beute schnappen, Kämpfe vermeiden |
+| **Command Blocks** | Elite | Hoch | Niedrig | Meiden, außer bei extrem guter Ausrüstung |
+
+<CardGrid cols={3}>
+  <Card title="Plündern am Rand">
+    - Konzentration auf risikoarme Bereiche
+    - Geringes Risiko, auf Squads zu treffen
+    - Ideal zum Farmen von Basis-Handwerksmaterialien
+  </Card>
+  <Card title="Stealth-Navigation">
+    - Nutze Strukturen, um Sichtlinien zu unterbrechen
+    - Vermeide offene Felder, in denen Scharfschützen lauern
+    - Achte auf entfernte Schüsse, um Spielerpositionen zu lokalisieren
+  </Card>
+  <Card title="Taktische Extraktion">
+    - Harmonische Brücken frühzeitig lokalisieren
+    - Extrahieren, sobald das Inventar voll ist
+    - Fordere dein Glück nicht für einen zusätzlichen Behälter heraus
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Verletzlichkeit beim Plündern">
+Das Öffnen von Behältern löst eine kurze Wartezeit aus, in der die Beute Gegenstand für Gegenstand enthüllt wird. Sichere immer die unmittelbare Umgebung und suche Deckung, bevor du mit einem Behälter interagierst.
+</Callout>
+
+</Section>
+
+<Section icon={Steps} title="Schritt-für-Schritt-Solo-Überlebensschleife">
+
+Um eine nachhaltige Gameplay-Schleife im **EVE Vanguard Einzelspieler**-Modus zu etablieren, folge diesem strukturierten Fortschrittspfad, um Verluste zu minimieren und dein Orbital-Inventar aufzubauen.
+
+<Steps>
+  <Step num="1" title="Ausrüstung vorbereiten">
+    Rüste Basisausrüstung und Chipsätze aus. Nimm deine seltensten Waffen nicht mit auf Solo-Runs, bevor du sichere Blaupausen hast.
+  </Step>
+  <Step num="2" title="Landen & Aufklären">
+    Beame dich auf die Oberfläche hinab. Überprüfe sofort deine Karte, identifiziere den nächsten POI mit geringer Bedrohung und lokalisiere aktive Harmonische Brücken.
+  </Step>
+  <Step num="3" title="Ernten & Plündern">
+    Nutze dein Bergbauwerkzeug, um planetare Ressourcen abzubauen. Durchsuche gewöhnliche Behälter nach Handwerkskomponenten und Waffenblaupausen.
+  </Step>
+  <Step num="4" title="Sichere Extraktion">
+    Bewege dich vorsichtig zu einem Extraktionspunkt. Aktiviere die Harmonische Brücke, um deine physische Beute in den Orbit zu transportieren und dein Bewusstsein hochzuladen.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Blaupausen-Versicherung">
+Wenn du stirbst, verlierst du alle physische Ausrüstung deines Klons. Sobald du jedoch erfolgreich eine Waffenblaupause extrahiert hast, kannst du mit abgebauten Materialien unendlich viele Kopien dieser Waffe herstellen.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Fortschritt, Industrie und Crafting für Solo-Spieler">
+
+Die Industrie spielt in EVE Vanguard eine entscheidende Rolle, insbesondere für Solo-Spieler, die sich nicht darauf verlassen können, dass Teammitglieder Ausrüstung teilen. Indem du Ressourcen auf der Oberfläche sammelst, kannst du in den Orbit zurückkehren und die Herstellungssysteme nutzen, um maßgeschneiderte Setups zu bauen.
+
+Die folgende Tabelle listet die wichtigsten Ressourcen und ihre industrielle Nutzung auf:
+
+| Ressourcentyp | Erwerbsmethode | Primäre industrielle Nutzung | Solo-Priorität |
+| :--- | :--- | :--- | :--- |
+| **Erzvorkommen** | Bergbauwerkzeug | Waffenherstellung, Basiskomponenten | Hoch |
+| **Blaupausen** | Behälter plündern | Freischalten von Waffen- & Ausrüstungscrafting | Kritisch |
+| **Chipsätze** | Spezielle POIs | Crafting von Vorteilen (Nachladegeschwindigkeit, Optik) | Mittel |
+| **Gewöhnliche Teile** | Industriekisten | Grundlegende Wartung & Montage von Ausrüstung | Hoch |
+
+| Waffenklasse | Inspiriert von | Optimale Reichweite | Solo-Kampfbewertung |
+| :--- | :--- | :--- | :--- |
+| **Sturmgewehr** | Battlefield 6 | Mittel | ★★★★☆ |
+| **Flakkonone** | Unreal Tournament | Nahbereich | ★★★☆☆ |
+| **Präzisionsgewehr** | Halo | Weitbereich | ★★★★★ |
+
+<Callout type="info" title="Chipsätze anpassen">
+Chipsätze ermöglichen es Solo-Spielern, ein Pseudo-Klassensystem aufzubauen. Das Ausrüsten von Perks, die die Nachladegeschwindigkeit erhöhen oder fortschrittliche Optiken hinzufügen, kann die Chancen gegen größere Gruppen erheblich verbessern.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Solo-Fortschrittsmeilensteine">
+
+Setze dir klare, realistische Ziele für deine Solo-Einsätze, um einen stetigen Fortschritt ohne unnötige Rückschläge zu gewährleisten.
+
+<Checklist
+  id="solo-vanguard-goals"
+  title="Solo-Kriegsklon-Meilensteine:"
+  items={[
+    "Erfolgreich aus 5 Einsätzen mit geringem Risiko extrahieren",
+    "Finde und extrahiere 3 einzigartige Waffenblaupausen",
+    "Baue genug Erz ab, um eine komplette Backup-Ausrüstung herzustellen",
+    "Schalte ein komplettes Set überlebensorientierter Chipsätze frei und rüste es aus",
+    "Erfolgreich navigieren und aus einem POI mittlerer Stufe extrahieren"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Häufig gestellte Fragen">
+
+<FAQ items={[
+  {
+    question: "Gibt es eine echte Offline-Kampagne für den EVE Vanguard Einzelspieler?",
+    answer: "Nein. EVE Vanguard ist ein persistent verbundener Online-Extraction-Shooter. Obwohl du solo spielen kannst (ohne Squad), teilst du dir die Karte immer mit anderen Online-Spielern und Squads."
+  },
+  {
+    question: "Was passiert mit meiner Ausrüstung, wenn ich als Solo-Spieler sterbe?",
+    answer: "Wie in EVE Online ist der Tod bestrafend. Du verlierst alle physischen Gegenstände und Waffen, die dein Klon bei sich trug. Alle zuvor erfolgreich extrahierten Blaupausen bleiben jedoch im Orbit freigeschaltet."
+  },
+  {
+    question: "Können Solo-Spieler PvP in EVE Vanguard komplett vermeiden?",
+    answer: "Nicht ganz. Die gesamte Karte ist PvP-aktiviert. Du kannst PvP-Begegnungen jedoch erheblich minimieren, indem du dich an die Randgebiete der Karte hältst und hochstufige Points of Interest meidest."
+  },
+  {
+    question: "Wie stellen Solo-Spieler neue Waffen her?",
+    answer: "Solo-Spieler müssen ihr Bergbauwerkzeug verwenden, um Erze zu sammeln, und Behälter nach Blaupausen durchsuchen. Nach der erfolgreichen Extraktion werden diese Materialien im Orbit verwendet, um neue Waffen und Chipsätze herzustellen."
+  }
+]} />
+
+</Section>

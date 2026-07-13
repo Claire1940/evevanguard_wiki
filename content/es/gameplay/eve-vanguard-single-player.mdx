@@ -1,0 +1,169 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "EVE Vanguard Single Player: Guía de Supervivencia Solo y Extracción PvE",
+  description: "Domina las tácticas de un solo jugador en EVE Vanguard. Aprende cómo los clones de guerra en solitario pueden sobrevivir a encuentros PvE, recolectar recursos y extraer de forma segura en la Operación Avalon.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Solo+Survival+Guide",
+  date: "2026-07-13",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, single player, guía solo, supervivencia, extracción PvE, Operación Avalon"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **EVE Vanguard Single Player**: Aunque el juego carece de una campaña dedicada sin conexión, los jugadores en solitario pueden desplegarse, recolectar y extraer con éxito centrándose en las afueras de bajo riesgo.
+- **Mitigación de Riesgos**: Evita los Puntos de Interés (POI) de alto nivel donde los escuadrones coordinados y los NPCs de élite dominan el campo de batalla.
+- **Industria y Planos**: Asegura planos durante las incursiones en solitario para fabricar el equipo perdido de vuelta en órbita, mitigando la penalización por la muerte del clon.
+- **Pesos de Combate**: El movimiento se siente sólido pero ágil, con una fuerte inspiración en la jugabilidad de Battlefield 6 y Unreal Tournament.
+</Callout>
+
+<Section icon={Map} title="EVE Vanguard Single Player: Viabilidad en Solitario en la Operación Avalon">
+
+EVE Vanguard introduce una experiencia de shooter de extracción persistente y dura vinculada directamente al universo masivo de EVE Online. Una pregunta común entre los mercenarios es si el estilo de juego **eve vanguard single player** es viable. Aunque el juego no cuenta con una campaña de historia tradicional fuera de línea, los jugadores en solitario pueden desplegarse en las superficies planetarias sembradas de restos como clones de guerra solitarios. Tener éxito como operador en solitario requiere un cambio distintivo de mentalidad, priorizando el sigilo, la navegación táctica y el saqueo periférico sobre las confrontaciones directas.
+
+**Puntos Destacados del Video:**
+- **Universo Persistente**: Los clones de guerra se despliegan desde la órbita, y su conciencia regresa al Jardín Residente tras la muerte.
+- **Rediseño del Movimiento**: El combate con armas presenta una sensación pesada pero ágil, fuertemente influenciada por las mecánicas de Battlefield 6.
+- **Riesgo vs. Recompensa**: Los mapas creados a mano cuentan con zonas etiquetadas que indican la dificultad de los NPC y los niveles de botín.
+
+<YouTubeEmbed videoId="TA2Y2jLRRYg" title="EVE Vanguard Reinvented Its Gameplay With Some Notes from Battlefield 6 | Hands-On Preview" />
+
+<Callout type="warning" title="Siempre en Guardia">
+Todo el mapa en la Operación Avalon tiene el PvP habilitado. Incluso si te concentras por completo en objetivos PvE, otros escuadrones de jugadores pueden atacarte en cualquier momento. Los jugadores en solitario deben mantener una conciencia situacional constante.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Dinámica Solo vs. Escuadrón y Evaluación de Riesgos">
+
+Desplegarse solo significa enfrentarse tanto a facciones NPC hostiles, como la Legión de Mordu, como a escuadrones de jugadores coordinados. Para sobrevivir como un clon de guerra en solitario, debes comprender la escala de dificultad regional del mapa. Las zonas de alto nivel, como el Bloque de Mando en el noroeste, están diseñadas como incursiones de alto nivel y son virtualmente imposibles de completar para un solo jugador sin equipo de primer nivel y una ejecución impecable.
+
+La siguiente tabla resume los perfiles de riesgo para diferentes regiones del mapa desde una perspectiva en solitario:
+
+| Tipo de Región | Dificultad NPC | Actividad de Jugadores | Viabilidad Solo | Acción Recomendada |
+| :--- | :--- | :--- | :--- | :--- |
+| **Afueras** | Baja | Muy Baja | Excelente | Cosechar recursos básicos y escapar |
+| **POI de Nivel Medio** | Media | Moderada | Moderada | Infiltrarse, tomar botín, evitar peleas |
+| **Bloques de Mando** | Élite | Alta | Baja | Evitar a menos que estés muy equipado |
+
+<CardGrid cols={3}>
+  <Card title="Saqueo Periférico">
+    - Concéntrate en áreas de bajo riesgo
+    - Bajo riesgo de encontrar escuadrones
+    - Ideal para recolectar materiales básicos de artesanía
+  </Card>
+  <Card title="Navegación Sigilosa">
+    - Usa las estructuras para romper las líneas de visión
+    - Evita los campos abiertos donde acechan los francotiradores
+    - Escucha los disparos lejanos para ubicar a otros jugadores
+  </Card>
+  <Card title="Extracción Táctica">
+    - Localiza los Puentes Armónicos temprano
+    - Extrae tan pronto como tu inventario esté lleno
+    - No tientes a la suerte por un contenedor extra
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Vulnerabilidad al Saquear">
+Abrir contenedores activa un corto período de espera donde el botín se revela objeto por objeto. Siempre despeja el área inmediata y busca cobertura antes de interactuar con cualquier contenedor.
+</Callout>
+
+</Section>
+
+<Section icon={Steps} title="Bucle de Supervivencia Solo Paso a Paso">
+
+Para establecer un bucle de juego sostenible en **eve vanguard single player**, sigue esta ruta de progresión estructurada para minimizar las pérdidas y aumentar tu inventario orbital.
+
+<Steps>
+  <Step num="1" title="Preparar el Equipamiento">
+    Equipa equipo básico y chipsets. No lleves tus armas más raras en incursiones en solitario hasta que tengas planos seguros.
+  </Step>
+  <Step num="2" title="Desplegarse y Explorar">
+    Transpórtate a la superficie. Revisa inmediatamente tu mapa, identifica el POI de baja amenaza más cercano y localiza los Puentes Armónicos activos.
+  </Step>
+  <Step num="3" title="Cosechar y Saquear">
+    Usa tu herramienta de minería para recolectar recursos planetarios. Busca en contenedores comunes componentes de fabricación y planos de armas.
+  </Step>
+  <Step num="4" title="Asegurar la Extracción">
+    Muévete con cautela hacia un punto de extracción. Activa el Puente Armónico para transportar tu botín físico a la órbita y cargar tu conciencia.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Seguro de Planos">
+Si mueres, pierdes todo el equipo físico de tu clon. Sin embargo, una vez que extraes con éxito un plano de arma, puedes fabricar copias de esa arma indefinidamente usando materiales minados.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Progresión, Industria y Artesanía para Jugadores en Solitario">
+
+La industria juega un papel crítico en EVE Vanguard, especialmente para los jugadores en solitario que no pueden confiar en compañeros de equipo para compartir equipo. Al reunir recursos en la superficie, puedes regresar a la órbita y utilizar los sistemas de fabricación para construir equipamientos personalizados.
+
+La siguiente tabla detalla los recursos principales y sus usos industriales:
+
+| Tipo de Recurso | Método de Adquisición | Uso Industrial Principal | Prioridad Solo |
+| :--- | :--- | :--- | :--- |
+| **Depósitos de Mineral** | Herramienta de Minería | Fabricación de armas, componentes base | Alta |
+| **Planos** | Saqueo de Contenedores | Desbloqueo de artesanía de armas y equipo | Crítica |
+| **Chipsets** | POIs Especiales | Mejora de estadísticas (velocidad de recarga, óptica) | Media |
+| **Piezas Comunes** | Cajas Industriales | Mantenimiento y ensamblaje de equipo básico | Alta |
+
+| Clase de Arma | Inspirado En | Rango Óptimo | Calificación Combate Solo |
+| :--- | :--- | :--- | :--- |
+| **Fusil de Asalto** | Battlefield 6 | Medio | ★★★★☆ |
+| **Cañón de Metralla** | Unreal Tournament | Corto | ★★★☆☆ |
+| **Fusil de Precisión** | Halo | Largo | ★★★★★ |
+
+<Callout type="info" title="Personalización de Chipsets">
+Los chipsets permiten a los jugadores en solitario construir un sistema de pseudo-clases. Equipar mejoras que aumentan la velocidad de recarga o añaden ópticas avanzadas puede nivelar significativamente el campo de juego contra grupos más grandes.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Hitos de Progresión en Solitario">
+
+Establece objetivos claros y realistas para tus despliegues en solitario para asegurar una progresión constante sin contratiempos innecesarios.
+
+<Checklist
+  id="solo-vanguard-goals"
+  title="Hitos del Clon de Guerra en Solitario:"
+  items={[
+    "Extraer con éxito en 5 despliegues de bajo riesgo",
+    "Localizar y extraer 3 planos de armas únicos",
+    "Minar suficiente mineral para fabricar un equipo de respaldo completo",
+    "Desbloquear y equipar un conjunto completo de chipsets enfocados en la supervivencia",
+    "Navegar y extraer con éxito de un POI de nivel medio"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Existe una campaña real fuera de línea para EVE Vanguard single player?",
+    answer: "No. EVE Vanguard es un shooter de extracción en línea conectado de forma persistente. Aunque puedes jugar solo (sin un escuadrón), siempre compartirás el mapa con otros jugadores y escuadrones en línea."
+  },
+  {
+    question: "¿Qué pasa con mi equipo si muero como jugador en solitario?",
+    answer: "Al igual que en EVE Online, la muerte es punitiva. Pierdes todos los objetos físicos y armas que llevaba tu clon. Sin embargo, cualquier plano que hayas extraído con éxito previamente permanecerá desbloqueado en la órbita."
+  },
+  {
+    question: "¿Pueden los jugadores en solitario evitar completamente el PvP en EVE Vanguard?",
+    answer: "No del todo. Todo el mapa tiene el PvP habilitado. Sin embargo, puedes minimizar significativamente los encuentros PvP manteniéndote en las afueras del mapa y evitando los Puntos de Interés de alto nivel."
+  },
+  {
+    question: "¿Cómo fabrican nuevas armas los jugadores en solitario?",
+    answer: "Los jugadores en solitario deben usar su herramienta de minería para recolectar minerales y buscar planos en los contenedores. Una vez extraídos, estos materiales se utilizan en órbita para fabricar nuevas armas y chipsets."
+  }
+]} />
+
+</Section>
