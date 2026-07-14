@@ -1,0 +1,165 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Settings, Wrench, Terminal } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "eve vanguard easy anti cheat: Setup & Troubleshooting Guide",
+  description: "Resolve eve vanguard easy anti cheat installation errors, configure Linux Proton settings, and fix launch failures for a smooth 2026 gaming experience.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/1e293b/fff?text=EAC+Setup+Guide",
+  date: "2026-07-14",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Core Requirement**: The **eve vanguard easy anti cheat** service must be active for all multiplayer sessions to prevent unauthorized client modifications.
+- **Installation Path**: EAC usually installs automatically within the Vanguard directory, but manual triggers are required if the service fails to initialize.
+- **Linux Compatibility**: Specific environment variables like **PROTON_EAC_ENABLE=1** are essential for Steam Deck and Linux users to bypass login loops.
+- **Common Fix**: Most launch issues stem from administrative permission conflicts or outdated certificates in the EAC binaries folder.
+- **Service Status**: Always verify that the Easy Anti-Cheat service is set to Manual or Automatic in the Windows Services manager before launching the game.
+</Callout>
+
+<Section icon={Shield} title="Understanding the Eve Vanguard EAC Integration">
+
+The **eve vanguard easy anti cheat** system serves as the primary defensive layer against third-party software interference in the New Eden battlefield. Unlike the standard EVE Online client, Vanguard requires a kernel-level anti-cheat service to maintain the integrity of its competitive extraction shooter mechanics. This service monitors the game’s memory space and prevents the injection of malicious code that could provide unfair advantages, such as wallhacks or aimbots.
+
+In 2026, CCP Games has streamlined the integration of EAC within the Vanguard launcher. However, because the game is frequently updated, the anti-cheat certificates may occasionally fall out of sync with the local client. This results in the "EAC Not Installed" or "Initialization Failed" errors that prevent players from reaching the deployment screen. Understanding how this service interacts with your operating system is the first step toward a stable gaming environment.
+
+| Feature | Specification | Requirement |
+|---|---|---|
+| **Service Type** | Kernel-mode Driver | Administrative Privileges |
+| **Launch Trigger** | Vanguard.exe Execution | Automatic Service Start |
+| **Network Port** | TCP/UDP 443, 80 | Firewall Exception Required |
+| **Storage Usage** | < 100 MB | Local Disk Installation |
+
+<Callout type="tip" title="Security Note">
+EAC only runs while Eve Vanguard is active. Once you close the game client, the kernel driver stops monitoring your system processes to ensure privacy and resource efficiency.
+</Callout>
+
+</Section>
+
+<Section icon={Wrench} title="Step-by-Step Installation & Repair">
+
+If you encounter a message stating that the **eve vanguard easy anti cheat** service is missing, the launcher has likely failed to register the service with your Windows Registry. This often happens during a clean installation or after a major Windows update that resets service permissions. Follow these steps to manually trigger the installation or repair the existing files.
+
+<Steps>
+  <Step num="1" title="Locate the EAC Directory">
+    Navigate to the installation folder of Eve Vanguard. By default, this is found in `C:\Program Files\CCP\Vanguard\EasyAntiCheat`. Look for the executable named `EasyAntiCheat_Setup.exe`.
+  </Step>
+  <Step num="2" title="Execute as Administrator">
+    Right-click `EasyAntiCheat_Setup.exe` and select **Run as Administrator**. This is a critical step; without elevated permissions, the setup utility cannot modify the Windows Service list.
+  </Step>
+  <Step num="3" title="Select Vanguard and Repair">
+    In the dropdown menu, select **Eve Vanguard** (it may appear as 'Game 831' or similar in some versions). Click the **Repair Service** button. If the service is missing, the button will read **Install Service**.
+  </Step>
+  <Step num="4" title="Verify File Integrity">
+    Open your game launcher (Steam or Standalone) and use the **Verify Files** tool. This ensures that the `EasyAntiCheat_x64.dll` file is present and matches the latest version from the server.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Anti-Virus Interference">
+Some aggressive anti-virus suites, such as Bitdefender or Norton, may quarantine the EAC driver. Always add the Vanguard installation folder to your anti-virus exclusion list to prevent recurring deletion of the EAC binaries.
+</Callout>
+
+</Section>
+
+<Section icon={Terminal} title="Linux and Steam Deck Configuration">
+
+Running **eve vanguard easy anti cheat** on Linux via Proton requires specific adjustments that are not necessary for Windows users. Many players report being able to reach the login screen but finding themselves unable to enter a match because the EAC heartbeat is not detected by the server. This is typically due to the Proton sandbox blocking the EAC runtime.
+
+To resolve this, you must ensure that the EAC runtime for Linux is installed via Steam and that the correct launch options are applied.
+
+| Configuration Variable | Value | Purpose |
+|---|---|---|
+| `PROTON_EAC_ENABLE` | `1` | Forces Proton to initialize the EAC bridge |
+| `PROTON_USE_EAC_RUNTIME` | `1` | Directs the game to use the Steam EAC Runtime |
+| `WINEDLLOVERRIDES` | `easyanticheat_x64=n,b` | Ensures the native DLL is prioritized |
+
+<CardGrid cols={2}>
+  <Card title="Steam Launch Options">
+    Right-click Eve Vanguard in Steam > Properties > General > Launch Options. Paste: `PROTON_EAC_ENABLE=1 %command%`. This allows the anti-cheat to communicate with the Wine prefix correctly.
+  </Card>
+  <Card title="Runtime Installation">
+    Search for **Proton EasyAntiCheat Runtime** in your Steam Library. Ensure it is installed and updated. Without this specific runtime, the Windows-based EAC files cannot translate to Linux.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Proton Version Recommendation">
+For the best compatibility in 2026, use **Proton Experimental** or **GE-Proton 9-x**. These versions contain the latest patches for EAC communication protocols used by Vanguard.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Troubleshooting Common Error Codes">
+
+When the **eve vanguard easy anti cheat** system fails, it usually provides a specific error code. Identifying these codes can save hours of troubleshooting. Most errors relate to file access, network connectivity, or system integrity checks.
+
+| Error Code | Meaning | Recommended Action |
+|---|---|---|
+| **10011** | Service Not Found | Run the EAC Setup utility as Admin and click Install. |
+| **30005** | CreateFile Failed | Delete the `.sys` file in the EAC folder and restart the PC. |
+| **20006** | Driver Signature Error | Disable Windows Test Mode or update your OS drivers. |
+| **Lighting.exe** | Conflict Detected | Close RGB software (iCUE, Razer Synapse) that might trigger EAC. |
+
+<Checklist
+  id="eac-troubleshooting-checklist"
+  title="Pre-Launch Verification List:"
+  items={[
+    "Windows is updated to the latest 2026 security patch",
+    "Easy Anti-Cheat service is set to 'Manual' in Services.msc",
+    "DNS cache has been flushed (ipconfig /flushdns)",
+    "No Virtual Machines (VMs) are running in the background",
+    "Game files have been verified through the launcher"
+  ]}
+/>
+
+<Callout type="success" title="Advanced Fix">
+If you are stuck in a "Waiting for Game" loop, navigate to `C:\Users\[YourUser]\AppData\Roaming\EasyAntiCheat` and delete the certificates folder. The game will regenerate these files on the next launch, often clearing corrupted authentication tokens.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Network and Firewall Optimization">
+
+The **eve vanguard easy anti cheat** service must maintain a constant "heartbeat" connection with the authentication servers. If your network latency is too high or if a firewall is blocking the outbound packets, you will be kicked from the session with a "Security Violation" or "Timed Out" error. 
+
+For players in 2026 using advanced routers or VPNs, ensuring that the EAC traffic is not being inspected or delayed is paramount.
+
+| Protocol | Port Range | Application |
+|---|---|---|
+| **TCP** | 80, 443 | Certificate Validation |
+| **UDP** | 20000 - 30000 | Game Data & EAC Heartbeat |
+| **TCP** | 27015 - 27030 | Steam Integration (if applicable) |
+
+<Callout type="warning" title="VPN Usage">
+While VPNs can help with routing, some VPN IP ranges are flagged by EAC as "High Risk." If you experience constant kicks, try whitelisting the Vanguard executable in your VPN's split-tunneling settings.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Why does eve vanguard easy anti cheat say it's not installed even after I installed it?",
+    answer: "This usually happens because the Windows Service registry entry was not created. Run the EasyAntiCheat_Setup.exe in the game folder as an administrator and select 'Repair' to re-register the service."
+  },
+  {
+    question: "Can I play Eve Vanguard on Steam Deck in 2026?",
+    answer: "Yes, but you must install the 'Proton EasyAntiCheat Runtime' from Steam and add 'PROTON_EAC_ENABLE=1' to your launch options. Some updates may require switching to Proton Experimental."
+  },
+  {
+    question: "Does EAC impact my FPS or game performance?",
+    answer: "EAC has a minimal impact on CPU performance. However, conflicts with other low-level drivers (like RGB controllers or older anti-virus) can cause stuttering. Disabling non-essential background services is recommended."
+  },
+  {
+    question: "What should I do if I get a 'Blue Screen' related to EasyAntiCheat.sys?",
+    answer: "This is often caused by a conflict with Windows Hyper-V or Core Isolation. Try disabling 'Memory Integrity' in Windows Security settings or updating your motherboard's BIOS to ensure full compatibility with kernel-level drivers."
+  }
+]} />
+
+</Section>

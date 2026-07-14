@@ -1,0 +1,171 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Activity, Settings, Wrench, AlertTriangle } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Cierres de EVE Vanguard: Soluciones para errores de inicio y rendimiento",
+  description: "Resuelve los problemas de cierres de EVE Vanguard con nuestra guía completa de 2026. Soluciona errores de Easy Anti-Cheat, fallos de inicio y optimiza la estabilidad del juego.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Fixing+Vanguard+Crashes",
+  date: "2026-07-14",
+  author: "Equipo de la Wiki de EVE Vanguard",
+  keywords: "EVE Vanguard, cierres, crash, solución, Easy Anti-Cheat, rendimiento, guía"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Identifica el cierre**: La mayoría de los problemas de **cierres de EVE Vanguard** ocurren durante la inicialización de Easy Anti-Cheat (EAC) o inmediatamente después de la pantalla de inicio.
+- **Actualiza los controladores**: Asegúrate de que los controladores de tu GPU estén actualizados a las versiones más recientes de 2026 para soportar la arquitectura Unreal Engine 5 del juego.
+- **Verifica los archivos**: Usa el EVE Launcher para verificar la integridad de los archivos del juego y reparar datos de configuración corruptos.
+- **Desactiva las superposiciones**: Las superposiciones de terceros como Discord o Steam pueden causar que el juego se cierre sin mostrar un mensaje de error.
+- **Requisitos del sistema**: Confirma que tu hardware cumple con los requisitos mínimos de VRAM y CPU para el despliegue actual de Vanguard.
+</Callout>
+
+<Section icon={AlertTriangle} title="Identificación de los síntomas de cierre de EVE Vanguard">
+
+Comprender por qué ocurren los **cierres de EVE Vanguard** es el primer paso hacia una solución permanente. Los jugadores informan con frecuencia que el juego no se inicia después de que aparece la pantalla de "Easy Anti-Cheat" (EAC). Este cierre de "ventana blanca" a menudo indica un fallo de comunicación entre el servicio anti-trampas y el ejecutable del juego.
+
+<CardGrid cols={3}>
+  <Card title="Fallo de inicio">
+    - **Síntoma**: El juego se cierra tras el logo del "oso espía" de EAC.
+    - **Causa**: Archivos de configuración corruptos o tiempo de espera agotado del servicio EAC.
+    - **Solución**: Reinstalar EAC o borrar los datos locales de la aplicación.
+  </Card>
+  <Card title="Cierre a mitad de partida">
+    - **Síntoma**: Salida repentina al escritorio durante el combate.
+    - **Causa**: Agotamiento de la VRAM o inestabilidad del controlador de la GPU.
+    - **Solución**: Reducir la calidad de las texturas o actualizar los controladores.
+  </Card>
+  <Card title="Pantalla negra">
+    - **Síntoma**: El audio se reproduce pero la pantalla permanece negra.
+    - **Causa**: Desajuste de resolución o errores de DirectX 12.
+    - **Solución**: Forzar el modo ventana mediante las opciones de lanzamiento.
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Conflictos con el Anti-Cheat">
+Muchos casos de **cierres de EVE Vanguard** son provocados por software en segundo plano que EAC percibe como una amenaza. Asegúrate de no tener software de macros o herramientas de depuración ejecutándose antes de iniciar el juego.
+</Callout>
+
+| Tipo de cierre | Causa principal | Gravedad |
+| :--- | :--- | :--- |
+| **Cierre al inicio** | Easy Anti-Cheat / Permisos | Crítica |
+| **CTD aleatorio** | Fuga de memoria / Sobrecarga de VRAM | Moderada |
+| **Tartamudeo/Congelación** | Cuello de botella de CPU / Compilación de Shaders | Baja |
+| **Desconexión de red** | Sincronización del servidor / Bloqueo de Firewall | Moderada |
+
+</Section>
+
+<Section icon={Shield} title="Requisitos del sistema y compatibilidad">
+
+Antes de profundizar en soluciones técnicas complejas, debes asegurarte de que tu hardware sea capaz de ejecutar la versión más reciente de 2026 de EVE Vanguard. A medida que el juego evoluciona, aumenta su dependencia del almacenamiento NVMe de alta velocidad y de las arquitecturas de GPU modernas. Ejecutar el juego en hardware por debajo del umbral mínimo es una de las razones principales de los **cierres de EVE Vanguard**.
+
+<Callout type="info" title="Comprobación de hardware">
+Si tu ordenador apenas cumple con los requisitos mínimos, el juego puede cerrarse durante encuentros de combate de alta intensidad debido al estrangulamiento térmico o picos de RAM.
+</Callout>
+
+| Componente | Requisito mínimo | Recomendado (2026) |
+| :--- | :--- | :--- |
+| **SO** | Windows 10/11 (64 bits) | Windows 11 (Última versión) |
+| **CPU** | Intel i5-9400 / Ryzen 5 2600 | Intel i7-12700K / Ryzen 7 7800X3D |
+| **RAM** | 16 GB DDR4 | 32 GB DDR5 |
+| **GPU** | GTX 1660 Super (6GB) | RTX 4070 / RX 7800 XT |
+| **DirectX** | Versión 12 | Versión 12 |
+| **Almacenamiento** | 50 GB SSD | 50 GB NVMe M.2 |
+
+</Section>
+
+<Section icon={Wrench} title="Guía de solución de problemas paso a paso">
+
+Si tu hardware es suficiente pero sigues experimentando **cierres de EVE Vanguard**, sigue estos pasos secuenciales para reparar la instalación. Estos pasos abordan los conflictos de software más comunes reportados por la comunidad en 2026.
+
+<Steps>
+  <Step num="1" title="Verificar archivos del juego">
+    Abre el EVE Launcher, navega a los ajustes de Vanguard y selecciona "Verificar integridad". Este proceso busca archivos faltantes o corruptos que causan que el juego falle durante la secuencia de carga.
+  </Step>
+  <Step num="2" title="Reparar Easy Anti-Cheat">
+    Navega a la carpeta `EasyAntiCheat` dentro del directorio de instalación de Vanguard. Ejecuta `EasyAntiCheat_Setup.exe` como administrador y selecciona la opción "Reparar" para EVE Vanguard.
+  </Step>
+  <Step num="3" title="Borrar caché y configuraciones">
+    Presiona `Win + R`, escribe `%LOCALAPPDATA%` y busca la carpeta de Vanguard. Elimina la carpeta `Saved`. Esto restablecerá tus ajustes gráficos y borrará las cachés temporales de shaders que podrían estar corruptas.
+  </Step>
+  <Step num="4" title="Actualizar controladores gráficos">
+    Descarga los controladores más recientes de NVIDIA, AMD o Intel. Realiza una "Instalación limpia" para asegurar que ningún remanente de controladores antiguos interfiera con el renderizador Unreal Engine 5 de Vanguard.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Derechos de administrador">
+Ejecuta siempre tanto el EVE Launcher como el ejecutable de Vanguard como Administrador. Esto evita que el juego se cierre cuando intenta escribir archivos temporales en directorios del sistema protegidos.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Ajustes de configuración avanzados">
+
+A veces, el método estándar de "Verificar y reparar" no es suficiente para detener los **cierres de EVE Vanguard**. En estos casos, es posible que debas modificar archivos de configuración específicos o ajustes del sistema para omitir los errores de inicio.
+
+| Ajuste | Acción | Resultado |
+| :--- | :--- | :--- |
+| **Superposición** | Desactivar Discord/Steam Overlay | Reduce conflictos de llamadas a la GPU |
+| **Pantalla completa** | Cambiar a Ventana sin bordes | Corrige cierres al inicio basados en la resolución |
+| **V-Sync** | Desactivar en el juego / Activar en panel GPU | Estabiliza el ritmo de frames y evita bloqueos |
+| **DirectX** | Forzar DX11 (si es compatible) | Omite errores de controlador específicos de DX12 |
+| **Plan de energía** | Establecer en "Alto rendimiento" | Evita la bajada de frecuencia de la CPU durante las cargas |
+
+<Callout type="success" title="Optimización de Discord">
+Muchos jugadores han descubierto que desactivar la "Aceleración de hardware" en los ajustes de Discord reduce significativamente la frecuencia de los cierres a mitad de partida en EVE Vanguard.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de verificación de mantenimiento de estabilidad">
+
+Para asegurar que no encuentres **cierres de EVE Vanguard** durante operaciones críticas, mantén un entorno de sistema limpio. El mantenimiento regular de tu entorno de software es tan importante como las actualizaciones del propio juego.
+
+<Checklist
+  id="stability-maintenance"
+  title="Comprobaciones de estabilidad previas al vuelo:"
+  items={[
+    "Buscar actualizaciones de Windows (Seguridad y .NET Framework)",
+    "Desactivar aplicaciones en segundo plano no esenciales",
+    "Monitorear las temperaturas de la GPU durante el juego",
+    "Asegurar al menos un 15% de espacio libre en tu SSD",
+    "Verificar que el servicio EAC esté configurado en inicio Manual en los Servicios de Windows"
+  ]}
+/>
+
+<Callout type="info" title="Recursos externos">
+Para problemas persistentes, consulta los [Foros oficiales de EVE Online](https://forums.eveonline.com/t/vanguard-fails-to-launch/469741) o la comunidad de Discord de EVE Vanguard. Muchos cierres "inevitables" suelen rastrearse como errores conocidos por los desarrolladores durante fases de despliegue específicas.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Por qué EVE Vanguard se cierra justo en la pantalla de inicio?",
+    answer: "Esto suele ser causado por un fallo al inicializar Easy Anti-Cheat (EAC). Puede deberse a un firewall que bloquea el servicio, una instalación de EAC corrupta o software en segundo plano como controladores de iluminación (software RGB) que se marcan como riesgo de seguridad."
+  },
+  {
+    question: "¿Puede la falta de VRAM causar que el juego se cierre al escritorio?",
+    answer: "Sí. EVE Vanguard es exigente gráficamente. Si tu GPU tiene menos de 6GB de VRAM, el juego puede cerrarse al cargar texturas de alta resolución o entrar en zonas de combate densas. Bajar el ajuste de 'Calidad de texturas' es la mejor manera de mitigar esto."
+  },
+  {
+    question: "¿Cómo soluciono el error 'Easy Anti-Cheat no instalado'?",
+    answer: "Navega a la carpeta de instalación del juego, busca la carpeta EasyAntiCheat y ejecuta el archivo de configuración como administrador. Haz clic en 'Instalar' o 'Reparar' para volver a registrar el servicio en tu sistema operativo."
+  },
+  {
+    question: "¿Es compatible el juego con Windows 10 para las versiones de 2026?",
+    answer: "Aunque Windows 10 sigue siendo compatible, las actualizaciones de 2026 para EVE Vanguard están optimizadas para la programación mejorada de Windows 11 y el DirectX 12 Agility SDK. Actualizar puede resolver cierres persistentes a nivel de sistema operativo."
+  }
+]} />
+
+<Callout type="tip" title="Nota final">
+Si has seguido todos los pasos y el juego sigue cerrándose, realiza una desinstalación completa, elimina manualmente la carpeta de datos locales de la aplicación y luego realiza una instalación limpia en una unidad SSD diferente si es posible.
+</Callout>
+
+</Section>

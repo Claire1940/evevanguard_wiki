@@ -1,0 +1,165 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Settings, Wrench, Terminal } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Eve Vanguard Easy Anti-Cheat: Installations- & Fehlerbehebungs-Leitfaden",
+  description: "Beheben Sie Installationsfehler von Eve Vanguard Easy Anti-Cheat, konfigurieren Sie Linux Proton-Einstellungen und beheben Sie Startfehler für ein reibungsloses Spielerlebnis im Jahr 2026.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/1e293b/fff?text=EAC+Setup+Guide",
+  date: "2026-07-14",
+  author: "Eve Vanguard Wiki-Team"
+}
+
+<Callout type="info" title="Kurzanleitung">
+- **Kernanforderung**: Der Dienst **eve vanguard easy anti cheat** muss für alle Multiplayer-Sitzungen aktiv sein, um unbefugte Client-Modifikationen zu verhindern.
+- **Installationspfad**: EAC wird normalerweise automatisch im Vanguard-Verzeichnis installiert, aber manuelle Aktionen sind erforderlich, wenn der Dienst nicht initialisiert werden kann.
+- **Linux-Kompatibilität**: Spezifische Umgebungsvariablen wie **PROTON_EAC_ENABLE=1** sind für Steam Deck- und Linux-Benutzer unerlässlich, um Anmeldeschleifen zu umgehen.
+- **Häufige Lösung**: Die meisten Startprobleme resultieren aus Konflikten mit Administratorrechten oder veralteten Zertifikaten im EAC-Binärordner.
+- **Dienststatus**: Stellen Sie vor dem Starten des Spiels immer sicher, dass der Easy Anti-Cheat-Dienst in der Windows-Diensteverwaltung auf „Manuell“ oder „Automatisch“ eingestellt ist.
+</Callout>
+
+<Section icon={Shield} title="Die Integration von Eve Vanguard EAC verstehen">
+
+Das **eve vanguard easy anti cheat**-System dient als primäre Schutzmaßnahme gegen die Einflussnahme von Drittanbieter-Software auf dem Schlachtfeld von New Eden. Im Gegensatz zum Standard-EVE-Online-Client erfordert Vanguard einen Anti-Cheat-Dienst auf Kernel-Ebene, um die Integrität seiner kompetitiven Extraction-Shooter-Mechaniken zu wahren. Dieser Dienst überwacht den Speicherbereich des Spiels und verhindert das Einschleusen von schädlichem Code, der unfaire Vorteile wie Wallhacks oder Aimbots verschaffen könnte.
+
+Im Jahr 2026 hat CCP Games die Integration von EAC in den Vanguard-Launcher optimiert. Da das Spiel jedoch häufig aktualisiert wird, können die Anti-Cheat-Zertifikate gelegentlich nicht mehr mit dem lokalen Client synchron sein. Dies führt zu den Fehlern „EAC nicht installiert“ oder „Initialisierung fehlgeschlagen“, die verhindern, dass Spieler den Bereitstellungsbildschirm erreichen. Zu verstehen, wie dieser Dienst mit Ihrem Betriebssystem interagiert, ist der erste Schritt zu einer stabilen Spielumgebung.
+
+| Funktion | Spezifikation | Anforderung |
+|---|---|---|
+| **Diensttyp** | Kernel-Treiber | Administratorrechte |
+| **Startauslöser** | Ausführung der Vanguard.exe | Automatischer Dienststart |
+| **Netzwerkport** | TCP/UDP 443, 80 | Firewall-Ausnahme erforderlich |
+| **Speicherplatz** | < 100 MB | Lokale Festplatteninstallation |
+
+<Callout type="tip" title="Sicherheitshinweis">
+EAC läuft nur, während Eve Vanguard active ist. Sobald Sie den Spiel-Client schließen, stoppt der Kernel-Treiber die Überwachung Ihrer Systemprozesse, um Privatsphäre und Ressourceneffizienz zu gewährleisten.
+</Callout>
+
+</Section>
+
+<Section icon={Wrench} title="Schritt-für-Schritt-Installation & Reparatur">
+
+Wenn Sie eine Meldung erhalten, dass der Dienst **eve vanguard easy anti cheat** fehlt, hat der Launcher den Dienst wahrscheinlich nicht erfolgreich in Ihrer Windows-Registrierung registriert. Dies geschieht häufig bei einer Neuinstallation oder nach einem großen Windows-Update, das die Dienstberechtigungen zurücksetzt. Befolgen Sie diese Schritte, um die Installation manuell auszulösen oder die vorhandenen Dateien zu reparieren.
+
+<Steps>
+  <Step num="1" title="EAC-Verzeichnis finden">
+    Navigieren Sie zum Installationsordner von Eve Vanguard. Standardmäßig befindet sich dieser unter `C:\Program Files\CCP\Vanguard\EasyAntiCheat`. Suchen Sie nach der ausführbaren Datei namens `EasyAntiCheat_Setup.exe`.
+  </Step>
+  <Step num="2" title="Als Administrator ausführen">
+    Klicken Sie mit der rechten Maustaste auf `EasyAntiCheat_Setup.exe` und wählen Sie **Als Administrator ausführen**. Dies ist ein kritischer Schritt; ohne erhöhte Rechte kann das Setup-Programm die Windows-Dienstliste nicht ändern.
+  </Step>
+  <Step num="3" title="Vanguard auswählen und reparieren">
+    Wählen Sie im Dropdown-Menü **Eve Vanguard** aus (in einigen Versionen wird es möglicherweise als „Game 831“ oder ähnlich angezeigt). Klicken Sie auf die Schaltfläche **Dienst reparieren**. Wenn der Dienst fehlt, lautet die Schaltfläche **Dienst installieren**.
+  </Step>
+  <Step num="4" title="Dateiintegrität überprüfen">
+    Öffnen Sie Ihren Spiel-Launcher (Steam oder Standalone) und verwenden Sie das Tool zur **Überprüfung der Spieldateien**. Dies stellt sicher, dass die Datei `EasyAntiCheat_x64.dll` vorhanden ist und mit der neuesten Version auf dem Server übereinstimmt.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Antiviren-Interferenz">
+Einige aggressive Antiviren-Suiten wie Bitdefender oder Norton verschieben den EAC-Treiber möglicherweise in die Quarantäne. Fügen Sie den Vanguard-Installationsordner immer zur Ausnahmeliste Ihres Antivirenprogramms hinzu, um ein wiederholtes Löschen der EAC-Binärdateien zu verhindern.
+</Callout>
+
+</Section>
+
+<Section icon={Terminal} title="Konfiguration für Linux und Steam Deck">
+
+Das Ausführen von **eve vanguard easy anti cheat** unter Linux über Proton erfordert spezifische Anpassungen, die für Windows-Benutzer nicht erforderlich sind. Viele Spieler berichten, dass sie zwar den Anmeldebildschirm erreichen, aber keinem Match beitreten können, weil der EAC-Heartbeat vom Server nicht erkannt wird. Dies liegt in der Regel daran, dass die Proton-Sandbox die EAC-Laufzeitumgebung blockiert.
+
+Um dies zu beheben, müssen Sie sicherstellen, dass die EAC-Laufzeitumgebung für Linux über Steam installiert ist und die richtigen Startoptionen angewendet werden.
+
+| Konfigurationsvariable | Wert | Zweck |
+|---|---|---|
+| `PROTON_EAC_ENABLE` | `1` | Zwingt Proton, die EAC-Bridge zu initialisieren |
+| `PROTON_USE_EAC_RUNTIME` | `1` | Weist das Spiel an, die Steam-EAC-Laufzeitumgebung zu verwenden |
+| `WINEDLLOVERRIDES` | `easyanticheat_x64=n,b` | Stellt sicher, dass die native DLL priorisiert wird |
+
+<CardGrid cols={2}>
+  <Card title="Steam-Startoptionen">
+    Klicken Sie in Steam mit der rechten Maustaste auf Eve Vanguard > Eigenschaften > Allgemein > Startoptionen. Fügen Sie Folgendes ein: `PROTON_EAC_ENABLE=1 %command%`. Dadurch kann das Anti-Cheat-System korrekt mit dem Wine-Präfix kommunizieren.
+  </Card>
+  <Card title="Installation der Laufzeitumgebung">
+    Suchen Sie in Ihrer Steam-Bibliothek nach **Proton EasyAntiCheat Runtime**. Stellen Sie sicher, dass es installiert und aktualisiert ist. Ohne diese spezielle Laufzeitumgebung können die Windows-basierten EAC-Dateien nicht für Linux übersetzt werden.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Empfehlung der Proton-Version">
+Für die beste Kompatibilität im Jahr 2026 verwenden Sie **Proton Experimental** oder **GE-Proton 9-x**. Diese Versionen enthalten die neuesten Patches für die von Vanguard verwendeten EAC-Kommunikationsprotokolle.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Fehlerbehebung für häufige Fehlercodes">
+
+Wenn das **eve vanguard easy anti cheat**-System fehlschlägt, gibt es normalerweise einen bestimmten Fehlercode aus. Das Identifizieren dieser Codes kann Stunden der Fehlersuche sparen. Die meisten Fehler beziehen sich auf Dateizugriff, Netzwerkverbindung oder Systemintegritätsprüfungen.
+
+| Fehlercode | Bedeutung | Empfohlene Maßnahme |
+|---|---|---|
+| **10011** | Dienst nicht gefunden | Führen Sie das EAC-Setup-Programm als Administrator aus und klicken Sie auf Installieren. |
+| **30005** | CreateFile fehlgeschlagen | Löschen Sie die `.sys`-Datei im EAC-Ordner und starten Sie den PC neu. |
+| **20006** | Treibersignaturfehler | Deaktivieren Sie den Windows-Testmodus oder aktualisieren Sie Ihre Betriebssystemtreiber. |
+| **Lighting.exe** | Konflikt erkannt | Schließen Sie RGB-Software (iCUE, Razer Synapse), die EAC auslösen könnte. |
+
+<Checklist
+  id="eac-troubleshooting-checklist"
+  title="Überprüfungsliste vor dem Start:"
+  items={[
+    "Windows ist auf dem neuesten Sicherheits-Patch von 2026 aktualisiert",
+    "Easy Anti-Cheat-Dienst ist in Services.msc auf „Manuell“ eingestellt",
+    "DNS-Cache wurde geleert (ipconfig /flushdns)",
+    "Es laufen keine virtuellen Maschinen (VMs) im Hintergrund",
+    "Spieldateien wurden über den Launcher überprüft"
+  ]}
+/>
+
+<Callout type="success" title="Erweiterte Lösung">
+Wenn Sie in einer „Warten auf Spiel“-Schleife feststecken, navigieren Sie zu `C:\Users\[IhrBenutzer]\AppData\Roaming\EasyAntiCheat` und löschen Sie den Ordner „certificates“. Das Spiel generiert diese Dateien beim nächsten Start neu, wodurch beschädigte Authentifizierungs-Token oft gelöscht werden.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Netzwerk- und Firewall-Optimierung">
+
+Der Dienst **eve vanguard easy anti cheat** muss eine ständige „Heartbeat“-Verbindung mit den Authentifizierungsservern aufrechterhalten. Wenn Ihre Netzwerklatenz zu hoch ist oder eine Firewall die ausgehenden Pakete blockiert, werden Sie mit der Fehlermeldung „Sicherheitsverletzung“ (Security Violation) oder „Zeitüberschreitung“ (Timed Out) aus der Sitzung geworfen.
+
+Für Spieler, die im Jahr 2026 fortschrittliche Router oder VPNs verwenden, ist es von größter Bedeutung sicherzustellen, dass der EAC-Datenverkehr nicht überprüft oder verzögert wird.
+
+| Protokoll | Portbereich | Anwendung |
+|---|---|---|
+| **TCP** | 80, 443 | Zertifikatsvalidierung |
+| **UDP** | 20000 - 30000 | Spieldaten & EAC-Heartbeat |
+| **TCP** | 27015 - 27030 | Steam-Integration (falls zutreffend) |
+
+<Callout type="warning" title="VPN-Nutzung">
+Obwohl VPNs beim Routing helfen können, werden einige VPN-IP-Bereiche von EAC als „High Risk“ eingestuft. Wenn Sie ständige Verbindungsabbrüche erleben, versuchen Sie, die ausführbare Vanguard-Datei in den Split-Tunneling-Einstellungen Ihres VPNs auf die Whitelist zu setzen.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Häufig gestellte Fragen (FAQ)">
+
+<FAQ items={[
+  {
+    question: "Warum meldet Eve Vanguard Easy Anti-Cheat, dass es nicht installiert ist, obwohl ich es installiert habe?",
+    answer: "Dies geschieht in der Regel, weil der Registrierungseintrag für den Windows-Dienst nicht erstellt wurde. Führen Sie die Datei EasyAntiCheat_Setup.exe im Spielordner als Administrator aus und wählen Sie „Reparieren“, um den Dienst neu zu registrieren."
+  },
+  {
+    question: "Kann ich Eve Vanguard im Jahr 2026 auf dem Steam Deck spielen?",
+    answer: "Ja, aber Sie müssen die „Proton EasyAntiCheat Runtime“ über Steam installieren und „PROTON_EAC_ENABLE=1“ zu Ihren Startoptionen hinzufügen. Einige Updates erfordern möglicherweise den Wechsel zu Proton Experimental."
+  },
+  {
+    question: "Beeinflusst EAC meine FPS oder die Spielleistung?",
+    answer: "EAC hat nur minimale Auswirkungen auf die CPU-Leistung. Konflikte mit anderen Treibern auf niedriger Ebene (wie RGB-Controllern oder älteren Virenscannern) können jedoch zu Rucklern führen. Es wird empfohlen, nicht benötigte Hintergrunddienste zu deaktivieren."
+  },
+  {
+    question: "Was soll ich tun, wenn ich einen Bluescreen im Zusammenhang mit EasyAntiCheat.sys erhalte?",
+    answer: "Dies wird häufig durch einen Konflikt mit Windows Hyper-V oder der Kernisolierung verursacht. Versuchen Sie, die „Speicherintegrität“ in den Windows-Sicherheitseinstellungen zu deaktivieren oder das BIOS Ihres Mainboards zu aktualisieren, um die volle Kompatibilität mit Kernel-Treibern zu gewährleisten."
+  }
+]} />
+
+</Section>

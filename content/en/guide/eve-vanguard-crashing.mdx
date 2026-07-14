@@ -1,0 +1,170 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Activity, Settings, Wrench, AlertTriangle } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "eve vanguard crashing: Fixes for Launch Failures & Performance",
+  description: "Resolve eve vanguard crashing issues with our comprehensive 2026 guide. Fix Easy Anti-Cheat errors, launch failures, and optimize game stability.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Fixing+Vanguard+Crashes",
+  date: "2026-07-14",
+  author: "eve vanguard Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Identify the crash**: Most **eve vanguard crashing** issues occur during the Easy Anti-Cheat (EAC) initialization or immediately after the splash screen.
+- **Update drivers**: Ensure your GPU drivers are updated to the latest 2026 versions to support the game's Unreal Engine 5 architecture.
+- **Verify files**: Use the EVE Launcher to verify the integrity of game files to fix corrupted configuration data.
+- **Disable overlays**: Third-party overlays like Discord or Steam can cause the game to close without an error message.
+- **System requirements**: Confirm your hardware meets the minimum VRAM and CPU requirements for the current Vanguard deployment.
+</Callout>
+
+<Section icon={AlertTriangle} title="Identifying eve vanguard crashing Symptoms">
+
+Understanding why **eve vanguard crashing** occurs is the first step toward a permanent fix. Players frequently report that the game fails to launch after the "Easy Anti-Cheat" (EAC) splash screen appears. This "white window" crash often indicates a handshake failure between the anti-cheat service and the game executable.
+
+<CardGrid cols={3}>
+  <Card title="Launch Failure">
+    - **Symptom**: Game closes after the EAC "spyware bear" logo.
+    - **Cause**: Corrupt config files or EAC service timeout.
+    - **Fix**: Reinstall EAC or clear local app data.
+  </Card>
+  <Card title="Mid-Game Crash">
+    - **Symptom**: Sudden exit to desktop during combat.
+    - **Cause**: VRAM exhaustion or GPU driver instability.
+    - **Fix**: Lower texture quality or update drivers.
+  </Card>
+  <Card title="Black Screen">
+    - **Symptom**: Audio plays but the screen remains black.
+    - **Cause**: Resolution mismatch or DirectX 12 errors.
+    - **Fix**: Force windowed mode via launch options.
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Anti-Cheat Conflicts">
+Many **eve vanguard crashing** instances are triggered by background software that EAC perceives as a threat. Ensure you have no macro software or debugging tools running before launching the game.
+</Callout>
+
+| Crash Type | Primary Cause | Severity |
+| :--- | :--- | :--- |
+| **Startup Crash** | Easy Anti-Cheat / Permissions | Critical |
+| **Random CTD** | Memory Leak / VRAM Overload | Moderate |
+| **Stuttering/Freeze** | CPU Bottleneck / Shader Compilation | Low |
+| **Network Disconnect** | Server Sync / Firewall Block | Moderate |
+
+</Section>
+
+<Section icon={Shield} title="System Requirements and Compatibility">
+
+Before diving into deep technical fixes, you must ensure your hardware is capable of running the latest 2026 build of EVE Vanguard. As the game evolves, its reliance on high-speed NVMe storage and modern GPU architectures increases. Running the game on hardware below the minimum threshold is a primary reason for **eve vanguard crashing**.
+
+<Callout type="info" title="Hardware Check">
+If your computer barely meets the minimum requirements, the game may crash during high-intensity combat encounters due to thermal throttling or RAM spikes.
+</Callout>
+
+| Component | Minimum Requirement | Recommended (2026) |
+| :--- | :--- | :--- |
+| **OS** | Windows 10/11 (64-bit) | Windows 11 (Latest Build) |
+| **CPU** | Intel i5-9400 / Ryzen 5 2600 | Intel i7-12700K / Ryzen 7 7800X3D |
+| **RAM** | 16 GB DDR4 | 32 GB DDR5 |
+| **GPU** | GTX 1660 Super (6GB) | RTX 4070 / RX 7800 XT |
+| **DirectX** | Version 12 | Version 12 |
+| **Storage** | 50 GB SSD | 50 GB NVMe M.2 |
+
+</Section>
+
+<Section icon={Wrench} title="Step-by-Step Troubleshooting Guide">
+
+If your hardware is sufficient but you are still experiencing **eve vanguard crashing**, follow these sequential steps to repair the installation. These steps address the most common software conflicts reported by the community in 2026.
+
+<Steps>
+  <Step num="1" title="Verify Game Files">
+    Open the EVE Launcher, navigate to the Vanguard settings, and select "Verify Integrity." This process checks for missing or corrupted assets that cause the game to fail during the loading sequence.
+  </Step>
+  <Step num="2" title="Repair Easy Anti-Cheat">
+    Navigate to the `EasyAntiCheat` folder within your Vanguard installation directory. Run `EasyAntiCheat_Setup.exe` as an administrator and select the "Repair" option for EVE Vanguard.
+  </Step>
+  <Step num="3" title="Clear Cache and Configs">
+    Press `Win + R`, type `%LOCALAPPDATA%`, and find the Vanguard folder. Delete the `Saved` folder. This resets your graphics settings and clears temporary shader caches that might be corrupted.
+  </Step>
+  <Step num="4" title="Update Graphics Drivers">
+    Download the latest drivers from NVIDIA, AMD, or Intel. Perform a "Clean Installation" to ensure no legacy driver remnants are interfering with Vanguard's Unreal Engine 5 renderer.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Administrator Rights">
+Always run both the EVE Launcher and the Vanguard executable as an Administrator. This prevents the game from crashing when it attempts to write temporary files to protected system directories.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Advanced Configuration Fixes">
+
+Sometimes the standard "Verify and Repair" method isn't enough to stop **eve vanguard crashing**. In these cases, you may need to modify specific configuration files or system settings to bypass launch errors.
+
+| Setting | Action | Result |
+| :--- | :--- | :--- |
+| **Overlay** | Disable Discord/Steam Overlay | Reduces GPU hook conflicts |
+| **Full Screen** | Switch to Borderless Window | Fixes resolution-based startup crashes |
+| **V-Sync** | Disable in-game / Enable in GPU Panel | Stabilizes frame pacing and prevents hangs |
+| **DirectX** | Force DX11 (if supported) | Bypasses DX12-specific driver errors |
+| **Power Plan** | Set to "High Performance" | Prevents CPU downclocking during loads |
+
+<Callout type="success" title="Discord Optimization">
+Many players have found that disabling "Hardware Acceleration" within Discord's settings significantly reduces the frequency of mid-game crashes in EVE Vanguard.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Stability Maintenance Checklist">
+
+To ensure you don't encounter **eve vanguard crashing** during critical operations, maintain a clean system environment. Regular maintenance of your software environment is just as important as the game updates themselves.
+
+<Checklist
+  id="stability-maintenance"
+  title="Pre-Flight Stability Checks:"
+  items={[
+    "Check for Windows Updates (Security & .NET Framework)",
+    "Disable non-essential background applications",
+    "Monitor GPU temperatures during gameplay",
+    "Ensure at least 15% free space on your SSD",
+    "Verify EAC service is set to Manual start in Windows Services"
+  ]}
+/>
+
+<Callout type="info" title="External Resources">
+For persistent issues, consult the [Official EVE Online Forums](https://forums.eveonline.com/t/vanguard-fails-to-launch/469741) or the EVE Vanguard Discord community. Many "unfixable" crashes are often tracked as known bugs by the developers during specific deployment phases.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="FAQ">
+
+<FAQ items={[
+  {
+    question: "Why does eve vanguard crashing happen right at the splash screen?",
+    answer: "This is usually caused by Easy Anti-Cheat (EAC) failing to initialize. This can be due to a firewall blocking the service, a corrupt EAC installation, or background software like lighting controllers (RGB software) being flagged as a security risk."
+  },
+  {
+    question: "Can low VRAM cause the game to exit to desktop?",
+    answer: "Yes. EVE Vanguard is graphically intensive. If your GPU has less than 6GB of VRAM, the game may crash when loading high-resolution textures or entering dense combat zones. Lowering the 'Texture Quality' setting is the best way to mitigate this."
+  },
+  {
+    question: "How do I fix the 'Easy Anti-Cheat not installed' error?",
+    answer: "Navigate to the game's installation folder, find the EasyAntiCheat folder, and run the setup file as an administrator. Click 'Install' or 'Repair' to re-register the service with your operating system."
+  },
+  {
+    question: "Does the game support Windows 10 for the 2026 builds?",
+    answer: "While Windows 10 is still supported, the 2026 updates for EVE Vanguard are optimized for Windows 11's improved scheduling and DirectX 12 Agility SDK. Upgrading may resolve persistent OS-level crashes."
+  }
+]} />
+
+<Callout type="tip" title="Final Note">
+If you have followed all steps and the game still crashes, perform a full uninstallation, delete the local app data folder manually, and then perform a fresh install on a different SSD drive if possible.
+</Callout>
+
+</Section>
